@@ -1,0 +1,4 @@
+# List the Telegram channels to monitor, one per line.
+# Use the public username (the part after t.me/), e.g.:
+# rybar
+# wargonzo
