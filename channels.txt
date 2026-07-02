@@ -1,4 +1,13 @@
-# List the Telegram channels to monitor, one per line.
-# Use the public username (the part after t.me/), e.g.:
-# rybar
-# wargonzo
+# Telegram channels to monitor — one username per line (the part after t.me/).
+# Verified 2026-07-02. Lines starting with # are ignored.
+
+rybar              # Рыбарь — 1.55M subs
+dva_majors         # Два майора (Two Majors) — 1.16M subs
+wargonzo           # WarGonzo (Semyon Pegov) — 754K subs
+Sladkov_plus       # Сладков+ (Aleksandr Sladkov) — 707K subs
+epoddubny          # Поддубный |Z|О|V| (Yevgeny Poddubny) — 578K subs
+sashakots          # Kotsnews (Aleksandr Kots) — 479K subs
+grey_zone          # GREY ZONE (Wagner-affiliated) — 343K subs
+rusich_army        # Архангел Спецназа (Arkhangel Spetsnaza) — 1.04M subs
+vysokygovorit      # Старше Эдды (Starshe Eddy) — 491K subs
+ngp_razvedka       # НгП раZVедка — 96K subs
