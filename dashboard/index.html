@@ -7,22 +7,9 @@
 <style>
   /* Eurasia Group chart style: Arial, white surfaces, EG brand palette, black text */
   :root {
-    --navy: #00205B;      /* EG 281C — topic: Strikes on Ukraine */
-    --blue: #1D4F91;      /* EG 7686C — links */
-    --ltblue: #00A3E0;    /* EG 299C — topic: Frontline */
-    --ochre: #D19000;     /* EG 7550C — topic: Ukraine strikes on Russia */
-    --teal: #005A70;      /* EG 7470C — topic: West & NATO */
-    --violet: #7D55C7;    /* EG 2665C — topic: Russia internal */
-    --orange: #FF6900;    /* EG 1505C — topic: Criticism */
-    --neg: #BA0C2F;       /* EG 200C */
-    --neu: #FFCD00;       /* EG 116C */
-    --pos: #658D18;       /* EG 370C */
-    --ink: #000000;
-    --line: #d9d9d9;
-    --gridline: #ececec;
-    --page: #f4f4f4;
-    --card: #ffffff;
-    --wash: rgba(29,79,145,0.07);
+    --navy: #00205B; --blue: #1D4F91; --neg: #BA0C2F; --neu: #FFCD00; --pos: #658D18;
+    --ink: #000000; --line: #d9d9d9; --gridline: #ececec; --page: #f4f4f4; --card: #ffffff;
+    --wash: rgba(29,79,145,0.07); --grey: #8D9092; --violet: #7D55C7; --ochre: #D19000;
   }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--page); color: var(--ink);
@@ -31,13 +18,12 @@
   a:hover { text-decoration: underline; }
   .wrap { max-width: 1200px; margin: 0 auto; padding: 24px 20px 60px; }
 
-  .mock-banner { background: var(--wash); border: 1px dashed var(--blue); padding: 8px 14px;
-    font-size: 12.5px; margin-bottom: 20px; }
-
   header.top { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 16px; }
   header.top h1 { font-size: 22px; font-weight: bold; margin: 0; color: var(--navy); }
   .date-label { font-size: 14px; }
   .subtitle { font-style: italic; font-size: 14px; margin: 2px 0 16px; }
+  #loadnote { background: var(--wash); border: 1px dashed var(--blue); padding: 10px 14px;
+    font-size: 13px; margin-bottom: 18px; display: none; }
 
   .tabs { display: flex; gap: 2px; border-bottom: 2px solid var(--navy); margin-bottom: 20px; }
   .tabs button { appearance: none; background: none; border: none; font: inherit; font-size: 13.5px;
@@ -97,23 +83,22 @@
   .barrow .val { font-size: 12px; font-variant-numeric: tabular-nums; }
   .axisline { border-left: 2px solid var(--line); }
 
-  /* popular posts */
   .pop-row { display: flex; gap: 10px; padding: 9px 0; border-top: 1px solid var(--gridline); font-size: 12.5px; align-items: baseline; }
   .pop-row:first-of-type { border-top: none; }
   .pop-row .rank { flex: none; font-weight: bold; color: var(--navy); width: 16px; }
   .pop-row .body { flex: 1; }
-  .pop-row .t { display: block; }
   .pop-row .meta { font-size: 11.5px; }
   .pop-row .stats { flex: none; text-align: right; font-size: 11.5px; font-variant-numeric: tabular-nums; }
   .pop-row .stats b { display: block; font-size: 13px; }
 
-  .arch-row { display: flex; align-items: baseline; gap: 12px; padding: 8px 2px; border-top: 1px solid var(--gridline); font-size: 13px; }
+  .arch-row { display: flex; align-items: baseline; gap: 12px; padding: 8px 2px; border-top: 1px solid var(--gridline);
+    font-size: 13px; cursor: pointer; }
   .arch-row:first-of-type { border-top: none; }
-  .arch-row .d { font-weight: bold; min-width: 90px; }
+  .arch-row:hover { background: var(--wash); }
+  .arch-row.current { background: var(--wash); }
+  .arch-row .d { font-weight: bold; min-width: 90px; color: var(--blue); }
   .arch-row .t { flex: 1; }
   .arch-row .cnt { font-size: 12px; font-variant-numeric: tabular-nums; }
-  .search { width: 100%; padding: 8px 12px; border: 1px solid var(--line); background: var(--page);
-    color: var(--ink); font-size: 13px; margin-bottom: 10px; font-family: inherit; }
 
   .chart-legend { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: 13px; font-size: 12px; }
   .chart-legend .row { display: flex; align-items: center; gap: 7px; }
@@ -136,7 +121,6 @@
   .spark-tile .m-val { margin-left: auto; font-size: 14px; font-weight: bold; font-variant-numeric: tabular-nums; }
   .spark-tile .m-word { font-size: 11.5px; font-style: italic; margin: 0 0 4px 18px; }
 
-  /* explorer controls */
   .controls { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 12px; }
   .controls select { font: inherit; font-size: 13px; padding: 5px 8px; border: 1px solid var(--line); background: #fff; color: var(--ink); }
   .rangebtn { appearance: none; font: inherit; font-size: 12px; font-weight: bold; padding: 5px 12px;
@@ -170,13 +154,12 @@
 <body>
 <div class="wrap">
 
-  <div class="mock-banner">🔧 <strong>MOCKUP v4 · Eurasia Group style</strong> — built from real posts pulled 1–2 July 2026; source links and engagement numbers are real. Counts, sentiment shares and history are illustrative.</div>
-
   <header class="top">
     <h1>ZBloggers Monitor</h1>
-    <span class="date-label">Daily brief · Wednesday 2 July 2026 · 06:00 UTC</span>
+    <span class="date-label" id="dateLabel">loading…</span>
   </header>
   <p class="subtitle">What 10 major pro-Kremlin military Telegram channels are saying — collected, filtered and translated automatically</p>
+  <div id="loadnote"></div>
 
   <nav class="tabs">
     <button class="active" data-tab="brief">Daily brief</button>
@@ -186,113 +169,49 @@
 
   <!-- ============ TAB 1: DAILY BRIEF ============ -->
   <div class="tabpage active" id="tab-brief">
-    <div class="kpis">
-      <div class="tile"><div class="label">Posts collected</div><div class="value">214</div><div class="note">10 channels, 24 h</div></div>
-      <div class="tile"><div class="label">Substantive after filtering</div><div class="value">89</div><div class="note">ads &amp; fundraisers removed</div></div>
-      <div class="tile"><div class="label">New / developing flags</div><div class="value">2</div><div class="note">watchlist otherwise quiet</div></div>
-      <div class="tile"><div class="label">Mood of coverage</div><div class="value">42%<span style="font-size:15px; color:var(--pos)"> positive</span></div><div class="note">38% neutral · 20% negative</div></div>
-    </div>
-
+    <div class="kpis" id="kpis"></div>
     <div class="cols">
       <div>
         <section class="card">
           <h2>🚩 New &amp; developing</h2>
           <div class="h-sub">Stories the channels haven't discussed before, spreading rumours, and sharp mood swings</div>
-          <div class="flag">
-            <span class="ftag tag new">NEW TOPIC</span>
-            <p><strong>Fuel-retail targeting campaign.</strong> First appeared 1 July, now in 4 channels and framed as deliberate doctrine ("the fuel artery of the front is being cut"). Today channels add reports of civilians stockpiling petrol in Sumy, Kharkiv, Dnipropetrovsk. <span class="srcs"><a href="https://t.me/rybar/81451" target="_blank">Rybar ↗</a><a href="https://t.me/sashakots/62752" target="_blank">Kots ↗</a><a href="https://t.me/dva_majors/95516" target="_blank">Two Majors ↗</a></span></p>
-          </div>
-          <div class="flag">
-            <span class="ftag tag mood">MOOD SWING</span>
-            <p><strong>Negotiations coverage turned sharply negative.</strong> "Spirit of Anchorage" polemics spreading — Rybar warns against blaming the talks for setbacks, implying others are doing exactly that. 55% of negotiations posts negative today vs 31% a week ago. <span class="srcs"><a href="https://t.me/rybar/81444" target="_blank">Rybar ↗</a></span></p>
-          </div>
-          <div class="flag">
-            <span class="ftag tag quiet">QUIET</span>
-            <p><strong>Watchlist:</strong> no mobilisation rumours, no criticism of Putin, no nuclear signalling, no Belarus-entry chatter in the last 24 h. Monitored daily; flagged the moment any appears in ≥2 channels.</p>
-          </div>
+          <div id="flags"></div>
         </section>
-
         <section class="card">
           <h2>Today's brief</h2>
-          <div class="h-sub">Six developments · every link opens the original Telegram post</div>
-          <p class="brief-lead">Dominant story: the largest combined strike on Kyiv in weeks. Tone triumphant on strikes, increasingly open about fuel-targeting doctrine, irritable on diplomacy.</p>
-
-          <div class="dev">
-            <h3>1. Mass combined strike on Kyiv — rare Zircon concentration</h3>
-            <p>Full "long-range lineup" claimed: Kh-101, Kalibr, Iskander-M, Zircons in unusual concentration, jet-powered Geran-3s; Ukrainian tally of 74 missiles + 496 drones relayed. Claimed targets: Radionix (missile seekers/electronics) and Athlon Avia (strike drones).</p>
-            <div class="srcs"><span class="tag multi">✓ 4 channels</span><a href="https://t.me/sashakots/62763" target="_blank">Kots: strike anatomy ↗</a><a href="https://t.me/sashakots/62773" target="_blank">Kots: targets ↗</a><a href="https://t.me/rybar/81461" target="_blank">Rybar ↗</a><a href="https://t.me/dva_majors/95487" target="_blank">Two Majors ↗</a><a href="https://t.me/wargonzo/35237" target="_blank">WarGonzo ↗</a></div>
-          </div>
-          <div class="dev">
-            <h3>2. Petrol stations now a systematic target set</h3>
-            <p>Seven more stations hit per Rybar; Kots counts five in Dnipropetrovsk oblast alone. See flag above — this is the campaign's second day.</p>
-            <div class="srcs"><span class="tag multi">✓ 3 channels</span><a href="https://t.me/rybar/81451" target="_blank">Rybar ↗</a><a href="https://t.me/sashakots/62752" target="_blank">Kots ↗</a><a href="https://t.me/dva_majors/95516" target="_blank">Two Majors ↗</a></div>
-          </div>
-          <div class="dev">
-            <h3>3. Claimed advances: Hulyaipole &amp; Pokrovsk directions</h3>
-            <p>Kopani claimed taken (1 km past Rovne); gains claimed in eastern Shevchenko and near Zolotyi Kolodyaz. MoD-sourced — unconfirmed until geolocated.</p>
-            <div class="srcs"><span class="tag single">◌ MoD via channels</span><a href="https://t.me/wargonzo/35224" target="_blank">WarGonzo svodka ↗</a><a href="https://t.me/rybar/81456" target="_blank">Rybar svodka ↗</a></div>
-          </div>
-          <div class="dev">
-            <h3>4. Detailed specs of UK "Project Brakestop" missiles for Ukraine</h3>
-            <p>≥500 km range, 225 kg warhead, ≤£400k unit cost, ≥20/month; 3 of 27 bidders reached trials. Signals anxiety about Ukrainian deep-strike capacity.</p>
-            <div class="srcs"><span class="tag single">◌ single source</span><a href="https://t.me/dva_majors/95499" target="_blank">Two Majors ↗</a></div>
-          </div>
-          <div class="dev">
-            <h3>5. NATO Ankara summit (7–8 July) framed as war-economy summit</h3>
-            <p>"Tens of billions" in defence contracts expected; separately, mockery of Ukraine's €6.6 bn European Peace Facility request.</p>
-            <div class="srcs"><span class="tag single">◌ single source + Reuters citation</span><a href="https://t.me/rybar/81460" target="_blank">Rybar: summit ↗</a><a href="https://t.me/rybar/81459" target="_blank">Rybar: EPF ↗</a></div>
-          </div>
-          <div class="dev">
-            <h3>6. Germany charges ex-SBU officer over Nord Stream</h3>
-            <p>Framed across channels as vindication of Moscow's account; matches Western press reporting.</p>
-            <div class="srcs"><span class="tag single">◌ single source</span><a href="https://t.me/sashakots/62758" target="_blank">Kots ↗</a></div>
-          </div>
+          <div class="h-sub">Every link opens the original Telegram post</div>
+          <div id="brief"></div>
         </section>
-
-        <section class="card">
+        <section class="card" id="narrCard">
           <h2>Narrative watch</h2>
           <div class="h-sub">Recurring frames — useful for reading intent, not events</div>
-          <div class="flag"><span class="ftag tag rising">RISING</span><p><strong>European rearmament = weakness</strong> — Europe arms Ukraine because its own arsenals "wouldn't survive a month in the kill-zone". <span class="srcs"><a href="https://t.me/vysokygovorit/23239" target="_blank">Starshe Eddy ↗</a></span></p></div>
-          <div class="flag"><span class="ftag tag quiet">STEADY</span><p><strong>Civilisational-decline essays</strong> — Rybar's "Europe's brand collapse" long-read; standard demoralisation genre. <span class="srcs"><a href="https://t.me/rybar/81458" target="_blank">Rybar ↗</a></span></p></div>
+          <div id="narratives"></div>
         </section>
       </div>
-
       <div>
         <section class="card">
-          <h2>Topic mix today</h2>
-          <div class="h-sub">89 substantive posts · full breakdown in Trends &amp; mood</div>
+          <h2>Topic mix</h2>
+          <div class="h-sub" id="mixSub"></div>
           <div class="mixbar" id="mixbar"></div>
           <div class="mixlegend" id="mixlegend"></div>
           <div class="source">Source: Telegram; Eurasia Group analysis</div>
         </section>
-
         <section class="card">
           <h2>Most popular posts</h2>
-          <div class="h-sub">by views, last 24 h — real engagement data from the Telegram API</div>
-          <div class="pop-row"><span class="rank">1</span><div class="body"><span class="t"><a href="https://t.me/rybar/81455" target="_blank">Daily digest: fuel-campaign roundup ↗</a></span><span class="meta">Rybar</span></div><div class="stats"><b>167K</b>views · 19 forwards</div></div>
-          <div class="pop-row"><span class="rank">2</span><div class="body"><span class="t"><a href="https://t.me/rybar/81451" target="_blank">SVO chronicle: 7 petrol stations hit ↗</a></span><span class="meta">Rybar</span></div><div class="stats"><b>112K</b>views · 58 forwards</div></div>
-          <div class="pop-row"><span class="rank">3</span><div class="body"><span class="t"><a href="https://t.me/rybar/81458" target="_blank">"Europe's brand collapse" essay ↗</a></span><span class="meta">Rybar</span></div><div class="stats"><b>88K</b>views · 116 forwards</div></div>
-          <div class="pop-row"><span class="rank">4</span><div class="body"><span class="t"><a href="https://t.me/rybar/81456" target="_blank">Morning svodka: strike on Kyiv ↗</a></span><span class="meta">Rybar</span></div><div class="stats"><b>81K</b>views · 49 forwards</div></div>
-          <div class="pop-row"><span class="rank">5</span><div class="body"><span class="t"><a href="https://t.me/sashakots/62763" target="_blank">Strike anatomy: the full lineup ↗</a></span><span class="meta">Kotsnews · <strong>most forwarded (405)</strong></span></div><div class="stats"><b>29K</b>views · 405 forwards</div></div>
+          <div class="h-sub">by views — engagement data from the Telegram API</div>
+          <div id="popular"></div>
           <div class="source">Source: Telegram; Eurasia Group analysis</div>
         </section>
-
         <section class="card">
           <h2>Posts by channel</h2>
-          <div class="h-sub">substantive posts, last 24 h</div>
+          <div class="h-sub">substantive posts</div>
           <div class="axisline" id="barchart"></div>
           <div class="source">Source: Telegram; Eurasia Group analysis</div>
         </section>
-
         <section class="card">
           <h2>Archive</h2>
-          <div class="h-sub">every day's brief and all raw posts, kept forever</div>
-          <input class="search" value="🔍 Search all archived posts… (live version)" disabled>
-          <div class="arch-row"><span class="d">2 Jul 2026</span><span class="t">Mass strike on Kyiv; fuel-network campaign</span><span class="cnt">89</span></div>
-          <div class="arch-row"><span class="d">1 Jul 2026</span><span class="t">Petrol-station strikes begin; Burluk advances</span><span class="cnt">96</span></div>
-          <div class="arch-row"><span class="d">30 Jun 2026</span><span class="t">Rovne claimed; drone attacks on Crimea grid</span><span class="cnt">78</span></div>
-          <div class="arch-row"><span class="d">29 Jun 2026</span><span class="t">Kupyansk fighting; EU drone-funding debate</span><span class="cnt">84</span></div>
-          <div class="arch-row"><span class="d">28 Jun 2026</span><span class="t">Quiet day; internal polemics over talks</span><span class="cnt">61</span></div>
+          <div class="h-sub">click any day to load it — every raw post is also kept in the database</div>
+          <div id="archive"></div>
         </section>
       </div>
     </div>
@@ -302,18 +221,12 @@
   <div class="tabpage" id="tab-trends">
     <section class="card">
       <h2>Mood summary — where sentiment is marching</h2>
-      <div class="h-sub">Net balance = share of positive posts minus share of negative posts on each topic. Arrows show the week's direction.</div>
-      <div class="mood-line"><span class="arrow up">▲</span><p><strong>Strikes on Ukraine — strongly positive and rising</strong> (net +78, up 20 pts on the week). Triumphant coverage of the Kyiv strike and the fuel campaign.</p></div>
-      <div class="mood-line"><span class="arrow flat">▬</span><p><strong>Frontline — positive, steady</strong> (net +41). Confident but measured; no frustration with the pace of advances.</p></div>
-      <div class="mood-line"><span class="arrow down">▼</span><p><strong>Ukraine strikes on Russia — negative and worsening</strong> (net −57, down 27 pts). Crimea's fuel and power situation is the sore spot.</p></div>
-      <div class="mood-line"><span class="arrow down">▼</span><p><strong>West &amp; NATO — negative, deteriorating</strong> (net −37). Rearmament anxiety building ahead of the Ankara summit; negotiations coverage sharply negative (see flag).</p></div>
-      <div class="mood-line"><span class="arrow flat">▬</span><p><strong>Russia internal — neutral</strong> (net 0). Routine coverage plus ideology essays; mobilisation entirely absent.</p></div>
-      <div class="mood-line"><span class="arrow flat">▬</span><p><strong>Criticism — low volume, steady</strong> (4 posts/day, aimed at army logistics). No criticism of political leadership — that remains a key tripwire to watch.</p></div>
+      <div class="h-sub">Net balance = share of positive posts minus share of negative posts on each topic.</div>
+      <div id="moodsummary"></div>
     </section>
-
     <section class="card">
-      <h2>Sentiment by topic — today</h2>
-      <div class="h-sub">Each substantive post is classified negative / neutral / positive (the bloggers' own mood on that topic). Bars show shares of posts.</div>
+      <h2>Sentiment by topic</h2>
+      <div class="h-sub">Each substantive post is classified negative / neutral / positive (the bloggers' own mood). Bars show shares of posts.</div>
       <div class="chart-legend" style="margin: 0 0 12px">
         <div class="row"><span class="swatch" style="background:var(--neg)"></span>Negative</div>
         <div class="row"><span class="swatch" style="background:var(--neu)"></span>Neutral</div>
@@ -321,40 +234,41 @@
         <div class="row" style="margin-left:auto; font-style:italic">Net = % positive − % negative</div>
       </div>
       <div id="sentbars"></div>
-      <div class="source">Source: Telegram; Eurasia Group analysis. Criticism posts are negative by definition and tracked by volume instead — see Methodology.</div>
+      <div class="source">Source: Telegram; Eurasia Group analysis. Criticism posts are negative by definition and tracked by volume — see Methodology.</div>
     </section>
-
     <section class="card">
-      <h2>Net mood balance — 7-day trend</h2>
+      <h2>Net mood balance — trend</h2>
       <div class="h-sub">A falling line = the bloggers are turning negative on that topic. Dashed line = neutral.</div>
       <div class="spark-grid" id="moodgrid"></div>
       <div class="source">Source: Telegram; Eurasia Group analysis</div>
     </section>
-
     <section class="card">
       <h2>Topic mix over time</h2>
-      <div class="h-sub">substantive posts per day by topic, last 7 days — a line pulling away from the pack = a story taking over</div>
+      <div class="h-sub">substantive posts per day by topic — a line pulling away from the pack = a story taking over</div>
+      <div class="controls">
+        <button class="rangebtn tm" data-days="14">14 days</button>
+        <button class="rangebtn tm active" data-days="30">30 days</button>
+        <button class="rangebtn tm" data-days="90">90 days</button>
+      </div>
       <div id="topiclines"></div>
       <div class="chart-legend" id="topiclegend"></div>
       <div class="source">Source: Telegram; Eurasia Group analysis</div>
     </section>
-
     <section class="card">
       <h2>Subtopic explorer</h2>
-      <div class="h-sub">Pick any subtopic and time range to see how its coverage has moved — e.g. strike mentions over the past three months.</div>
+      <div class="h-sub">Pick any subtopic and time range to see how its coverage has moved.</div>
       <div class="controls">
         <select id="subselect"></select>
-        <button class="rangebtn" data-days="7">7 days</button>
-        <button class="rangebtn active" data-days="30">30 days</button>
-        <button class="rangebtn" data-days="90">90 days</button>
+        <button class="rangebtn ex" data-days="14">14 days</button>
+        <button class="rangebtn ex active" data-days="30">30 days</button>
+        <button class="rangebtn ex" data-days="90">90 days</button>
       </div>
       <div id="explorer"></div>
-      <div class="source">Source: Telegram; Eurasia Group analysis. Mockup shows simulated history; the live version draws on the full archive.</div>
+      <div class="source">Source: Telegram; Eurasia Group analysis</div>
     </section>
-
     <section class="card">
-      <h2>Subtopic breakdown — today</h2>
-      <div class="h-sub">posts today, change vs 7-day average, and sentiment split per subtheme</div>
+      <h2>Subtopic breakdown</h2>
+      <div class="h-sub">posts on the selected day, change vs 7-day average, and sentiment split</div>
       <table class="subtopics">
         <thead><tr><th>Subtopic</th><th style="text-align:right">Posts</th><th style="text-align:right">vs 7-day avg</th><th style="text-align:center">Neg / Neu / Pos</th><th style="text-align:right">Net</th></tr></thead>
         <tbody id="subtable"></tbody>
@@ -389,7 +303,7 @@
         <p>Aleksandr Kots of Komsomolskaya Pravda; member of the presidential Human Rights Council. Known for detailed strike "razbory" (breakdowns).</p>
         <div class="read"><strong>How to read:</strong> his target-by-target strike analyses are the most specific claims available — ideal for cross-checking against damage reports.</div></div>
       <div class="chan"><h3>GREY ZONE</h3><div class="meta"><a href="https://t.me/grey_zone" target="_blank">@grey_zone</a> · 343K subscribers</div>
-        <p>Wagner-affiliated, anonymous. Harder edge; historically willing to criticise the MoD.</p>
+        <p>Wagner-affiliated, anonymous. Harder edge; historically willing to criticise the MoD. <strong>Dormant since July 2025</strong> — kept as a tripwire: a revival would itself be a signal.</p>
         <div class="read"><strong>How to read:</strong> a barometer of siloviki-adjacent discontent; criticism here often precedes wider milblogger frustration.</div></div>
       <div class="chan"><h3>Архангел Спецназа · Arkhangel Spetsnaza</h3><div class="meta"><a href="https://t.me/rusich_army" target="_blank">@rusich_army</a> · 1.04M subscribers</div>
         <p>Anonymous hardline channel linked to VDV circles (investigated by iStories, Sep 2024); graphic content, aggressive tone, big fundraising operation.</p>
@@ -406,13 +320,14 @@
       <h2>Methodology</h2>
       <div class="h-sub">How the daily brief is produced</div>
       <p><strong>Sources &amp; bias.</strong> ⚠️ All monitored channels are pro-Kremlin propaganda outlets. Claims are signals to investigate, not facts. Sentiment reflects the bloggers' mood, not battlefield reality; channel-relayed "Ukrainian sources" are selectively quoted.</p>
-      <p><strong>1. Collection.</strong> Every morning at 06:00 UTC the system pulls the previous 24 hours of posts from all 10 channels via the Telegram API, including views and forward counts. Raw posts (original Russian) are archived permanently before any processing.</p>
-      <p><strong>2. Filtering.</strong> Ads, fundraisers, merchandise, memes and personal notes are removed. Typically ~40% of posts survive as "substantive".</p>
-      <p><strong>3. Classification.</strong> Claude (Anthropic's AI model) translates each post and assigns one topic and one subtopic. The <strong>Criticism</strong> topic captures posts whose main point is complaint or blame, with subcategories for the target: army command &amp; logistics, government &amp; ministries, Putin personally, regional authorities.</p>
-      <p><strong>4. Sentiment.</strong> Each post is classified <strong>negative, neutral or positive</strong> — the blogger's own mood about the subject, from Russia's perspective (e.g. a post celebrating a strike = positive; a post complaining about drone attacks on Crimea = negative). Topic-level scores are simple shares of posts; <strong>net balance = % positive − % negative</strong>. Criticism posts are negative by definition, so that topic is tracked by volume and target instead.</p>
-      <p><strong>5. Flags.</strong> A story is flagged <strong>NEW</strong> when a theme absent from the previous 14 days appears in ≥2 channels; <strong>MOOD SWING</strong> when a topic's net balance moves ≥15 points day-on-day; and a standing <strong>watchlist</strong> (mobilisation rumours, criticism of Putin, nuclear signalling, Belarus entry) is checked every day.</p>
-      <p><strong>6. Corroboration tags.</strong> ✓ = claim repeated independently by 2+ channels; ◌ = single source. Repetition across propaganda channels is not verification — it measures how hard a message is being pushed.</p>
-      <p><strong>Limitations.</strong> Counts depend on Telegram API availability; engagement figures (views/forwards) are Telegram's own and can be inflated.</p>
+      <p><strong>1. Collection.</strong> Every morning at ~05:30 UTC the system pulls the previous day's posts from all 10 channels via the Telegram API, including views and forward counts. Raw posts (original Russian) are archived permanently in monthly CSV files before any processing.</p>
+      <p><strong>2. Filtering.</strong> Ads, fundraisers, merchandise, memes and personal notes are removed by the classifier. Typically ~40% of posts survive as "substantive".</p>
+      <p><strong>3. Classification.</strong> Claude (Anthropic's AI) translates each post and assigns one topic and one subtopic from a fixed taxonomy. The <strong>Criticism</strong> topic captures posts whose main point is complaint or blame, with subcategories for the target: army command &amp; logistics, government &amp; ministries, Putin personally, regional authorities.</p>
+      <p><strong>4. Sentiment.</strong> Each post is classified <strong>negative, neutral or positive</strong> — the blogger's own mood about the subject, from Russia's perspective. Topic scores are shares of posts; <strong>net balance = % positive − % negative</strong>. Criticism posts are negative by definition, so that topic is tracked by volume and target instead.</p>
+      <p><strong>5. Flags.</strong> A story is flagged <strong>NEW</strong> when a subtopic absent from the previous 14 days draws 3+ posts in 2+ channels; <strong>MOOD SWING</strong> when a topic's net balance moves ≥25 points day-on-day; and a standing <strong>watchlist</strong> (mobilisation rumours, criticism of Putin) alerts the moment 2+ channels touch it.</p>
+      <p><strong>6. Brief.</strong> A stronger Claude model writes the daily brief, narrative watch and mood summary from the classified posts, with a link to every source post. ✓ = claim repeated by 2+ channels; ◌ = single source. Repetition across propaganda channels is not verification — it measures how hard a message is being pushed.</p>
+      <p><strong>Data access.</strong> Raw posts: <code>data/posts/YYYY-MM.csv</code>. Classifications: <code>data/analysis/classified-YYYY-MM.csv</code>. Daily analysis: <code>data/analysis/days/</code>. All in the project's GitHub repository.</p>
+      <p><strong>Limitations.</strong> Counts depend on Telegram API availability; engagement figures are Telegram's own and can be inflated; classification and sentiment are automated and imperfect — click through to source posts before relying on any specific claim.</p>
     </section>
   </div>
 
@@ -421,265 +336,362 @@
 
 <div id="tip"></div>
 <script>
-  // ---- tabs ----
-  document.querySelectorAll(".tabs button").forEach(b => b.addEventListener("click", () => {
-    document.querySelectorAll(".tabs button").forEach(x => x.classList.remove("active"));
-    document.querySelectorAll(".tabpage").forEach(x => x.classList.remove("active"));
-    b.classList.add("active");
-    document.getElementById("tab-" + b.dataset.tab).classList.add("active");
-  }));
+const DATA_BASE = "../data/analysis";
+const TOPICS = {
+  strikes_on_ukraine:        { label: "Strikes on Ukraine",        color: "#00205B" },
+  frontline:                 { label: "Frontline",                 color: "#00A3E0" },
+  ukraine_strikes_on_russia: { label: "Ukraine strikes on Russia", color: "#D19000" },
+  west_nato:                 { label: "West & NATO",               color: "#005A70" },
+  russia_internal:           { label: "Russia internal",           color: "#7D55C7" },
+  criticism:                 { label: "Criticism",                 color: "#FF6900" },
+};
+const C = { neg: "#BA0C2F", neu: "#FFCD00", pos: "#658D18", grey: "#8D9092" };
+const esc = s => (s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+const fmtDate = d => new Date(d + "T00:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
+const fmtShort = d => new Date(d + "T00:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "short", timeZone: "UTC" });
+const fmtViews = v => v >= 1e6 ? (v / 1e6).toFixed(1) + "M" : v >= 1e3 ? Math.round(v / 1e3) + "K" : v;
+const netColor = n => n === null || n === undefined ? "#000" : n > 9 ? C.pos : n < -9 ? C.neg : "#000";
+const moodWord = s => s >= 60 ? "strongly positive" : s >= 25 ? "positive" : s >= 10 ? "mildly positive" : s > -10 ? "mixed" : s > -25 ? "mildly negative" : s > -60 ? "negative" : "strongly negative";
 
-  // ---- topics (EG palette) ----
-  const TOPICS = [
-    ["Strikes on Ukraine", "#00205B"],
-    ["Frontline", "#00A3E0"],
-    ["Ukraine strikes on Russia", "#D19000"],
-    ["West & NATO", "#005A70"],
-    ["Russia internal", "#7D55C7"],
-    ["Criticism", "#FF6900"],
-  ];
-  const TODAY = [31, 22, 7, 14, 11, 4]; // sums to 89
-  const COLORS = { neg: "#BA0C2F", neu: "#FFCD00", pos: "#658D18" };
+let INDEX = null, DAY = null;
 
-  // topic mix bar + legend
-  const mixbar = document.getElementById("mixbar"), mixleg = document.getElementById("mixlegend");
-  const todayTotal = TODAY.reduce((a, b) => a + b, 0);
-  TOPICS.forEach(([n, c], i) => {
-    const seg = document.createElement("div");
-    seg.style.flex = TODAY[i]; seg.style.background = c;
-    seg.dataset.tip = `${n} — ${TODAY[i]} posts (${Math.round(TODAY[i] / todayTotal * 100)}%)`;
-    mixbar.appendChild(seg);
-    const r = document.createElement("div"); r.className = "row";
-    r.innerHTML = `<span class="swatch" style="background:${c}"></span>${n}<span class="n">${TODAY[i]}</span>`;
-    mixleg.appendChild(r);
+// ---- tabs ----
+document.querySelectorAll(".tabs button").forEach(b => b.addEventListener("click", () => {
+  document.querySelectorAll(".tabs button").forEach(x => x.classList.remove("active"));
+  document.querySelectorAll(".tabpage").forEach(x => x.classList.remove("active"));
+  b.classList.add("active");
+  document.getElementById("tab-" + b.dataset.tab).classList.add("active");
+}));
+
+// ---- generic multi-line SVG chart ----
+function lineChart(el, series, xlabels, opts = {}) {
+  const W = opts.width || 680, H = opts.height || 240;
+  const L = 34, R = 12, T = 12, B = 26;
+  const iw = W - L - R, ih = H - T - B;
+  const allVals = series.flatMap(s => s.values).filter(v => v !== null && v !== undefined);
+  const rawMax = Math.max(5, ...allVals), rawMin = Math.min(0, ...allVals);
+  const yMax = opts.yMax ?? rawMax * 1.12, yMin = opts.yMin ?? rawMin * (rawMin < 0 ? 1.12 : 1);
+  const step = (yMax - yMin) > 120 ? 50 : (yMax - yMin) > 60 ? 20 : (yMax - yMin) > 25 ? 10 : 5;
+  const n = xlabels.length;
+  const x = i => L + (n === 1 ? iw / 2 : i / (n - 1) * iw);
+  const y = v => T + ih - ((v - yMin) / (yMax - yMin)) * ih;
+  let svg = `<svg width="100%" viewBox="0 0 ${W} ${H}" style="max-width:${W}px; display:block">`;
+  for (let v = Math.ceil(yMin / step) * step; v <= yMax; v += step) {
+    svg += `<line x1="${L}" y1="${y(v)}" x2="${W - R}" y2="${y(v)}" stroke="#ececec" stroke-width="1"/>
+            <text x="${L - 6}" y="${y(v) + 3.5}" font-size="10" fill="#000" text-anchor="end">${v}</text>`;
+  }
+  if (yMin < 0) svg += `<line x1="${L}" y1="${y(0)}" x2="${W - R}" y2="${y(0)}" stroke="#8D9092" stroke-width="1" stroke-dasharray="3 3"/>`;
+  else svg += `<line x1="${L}" y1="${y(0)}" x2="${W - R}" y2="${y(0)}" stroke="#d9d9d9" stroke-width="1.5"/>`;
+  const lblEvery = Math.max(1, Math.ceil(n / 10));
+  xlabels.forEach((lb, i) => {
+    if (i % lblEvery === 0 || i === n - 1)
+      svg += `<text x="${x(i)}" y="${H - 8}" font-size="10" fill="#000" text-anchor="middle">${lb}</text>`;
   });
-
-  // ---- posts by channel ----
-  const chData = [["Rybar",18],["Two Majors",16],["Kotsnews",14],["WarGonzo",12],["Starshe Eddy",8],["Poddubny",7],["Sladkov+",6],["Arkhangel",4],["Grey Zone",3],["NgP raZVedka",1]];
-  const chMax = Math.max(...chData.map(d => d[1]));
-  const bc = document.getElementById("barchart");
-  for (const [name, v] of chData) {
-    const r = document.createElement("div");
-    r.className = "barrow";
-    r.innerHTML = `<span class="name">${name}</span><div class="bartrack"><div class="fill" style="width:${v/chMax*100}%" data-tip="${name}: ${v} substantive posts, last 24 h"></div></div><span class="val">${v}</span>`;
-    bc.appendChild(r);
-  }
-
-  // ---- sentiment by topic ----
-  const SENT = [ // [topicIdx, neg%, neu%, pos%]
-    [0, 3, 16, 81], [1, 9, 41, 50], [2, 57, 43, 0], [3, 45, 47, 8], [4, 20, 60, 20],
-  ];
-  const sb = document.getElementById("sentbars");
-  for (const [ti, ne, nu, po] of SENT) {
-    const net = po - ne;
-    const row = document.createElement("div"); row.className = "sentrow";
-    row.innerHTML = `<span class="name">${TOPICS[ti][0]}</span>
-      <div class="senttrack">
-        <div style="flex:${ne}; background:${COLORS.neg}" data-tip="${TOPICS[ti][0]}: ${ne}% of posts negative"></div>
-        <div style="flex:${nu}; background:${COLORS.neu}" data-tip="${TOPICS[ti][0]}: ${nu}% of posts neutral"></div>
-        <div style="flex:${po}; background:${COLORS.pos}" data-tip="${TOPICS[ti][0]}: ${po}% of posts positive"></div>
-      </div>
-      <span class="net" style="color:${net > 9 ? COLORS.pos : net < -9 ? COLORS.neg : "#000"}">${net > 0 ? "+" : ""}${net}</span>`;
-    sb.appendChild(row);
-  }
-  const cr = document.createElement("div"); cr.className = "sentrow";
-  cr.innerHTML = `<span class="name">Criticism</span><div style="font-size:12px; font-style:italic">tracked by volume &amp; target — 4 posts today, aimed at army logistics</div><span class="net">n/a</span>`;
-  sb.appendChild(cr);
-
-  // ---- net mood balance sparklines ----
-  const DAYS = ["26 Jun","27 Jun","28 Jun","29 Jun","30 Jun","1 Jul","2 Jul"];
-  const MOODS = [
-    [0, [58,62,55,60,65,72,78]],
-    [1, [30,36,28,30,36,44,41]],
-    [2, [-30,-35,-42,-38,-48,-44,-57]],
-    [3, [-22,-26,-28,-32,-30,-34,-37]],
-    [4, [2,-2,-6,-2,-8,-4,0]],
-  ];
-  const word = s => s >= 60 ? "strongly positive" : s >= 25 ? "positive" : s >= 10 ? "mildly positive" : s > -10 ? "mixed" : s > -25 ? "mildly negative" : s > -60 ? "negative" : "strongly negative";
-  const mg = document.getElementById("moodgrid");
-  for (const [ti, vals] of MOODS) {
-    const [name, c] = TOPICS[ti];
-    const cur = vals[vals.length - 1];
-    const pts = vals.map((v, i) => `${i * 36 + 4},${34 - v * 0.28}`).join(" ");
-    const t = document.createElement("div"); t.className = "spark-tile";
-    t.innerHTML = `<div class="t-head"><span class="swatch" style="background:${c}"></span>${name}<span class="m-val" style="color:${cur > 9 ? COLORS.pos : cur < -9 ? COLORS.neg : "#000"}">${cur > 0 ? "+" : ""}${cur}</span></div>
-      <div class="m-word">${word(cur)}</div>
-      <svg width="230" height="68" viewBox="0 0 230 68" data-tip="${name}, net balance: ${vals.map((v,i)=>DAYS[i]+" "+(v>0?"+":"")+v).join(", ")}">
-        <line x1="4" y1="34" x2="226" y2="34" stroke="#d9d9d9" stroke-width="1" stroke-dasharray="3 3"/>
-        <polyline points="${pts}" fill="none" stroke="${c}" stroke-width="2"/>
-        <circle cx="${6 * 36 + 4}" cy="${34 - cur * 0.28}" r="3.5" fill="${c}"/>
-      </svg>`;
-    mg.appendChild(t);
-  }
-  const cvol = document.createElement("div"); cvol.className = "spark-tile";
-  const CVALS = [3,3,4,4,3,4,4];
-  const cpts = CVALS.map((v, i) => `${i * 36 + 4},${60 - v * 12}`).join(" ");
-  cvol.innerHTML = `<div class="t-head"><span class="swatch" style="background:#FF6900"></span>Criticism (volume)<span class="m-val">4</span></div>
-    <div class="m-word">posts per day — spikes matter more than the level</div>
-    <svg width="230" height="68" viewBox="0 0 230 68" data-tip="Criticism posts/day: ${CVALS.map((v,i)=>DAYS[i]+" "+v).join(", ")}">
-      <line x1="4" y1="60" x2="226" y2="60" stroke="#d9d9d9" stroke-width="1"/>
-      <polyline points="${cpts}" fill="none" stroke="#FF6900" stroke-width="2"/>
-      <circle cx="${6 * 36 + 4}" cy="${60 - 4 * 12}" r="3.5" fill="#FF6900"/>
-    </svg>`;
-  mg.appendChild(cvol);
-
-  // ---- generic multi-line SVG chart ----
-  function lineChart(el, series, xlabels, opts = {}) {
-    el.innerHTML = "";
-    const W = opts.width || 680, H = opts.height || 240;
-    const L = 34, R = 12, T = 12, B = 26;
-    const iw = W - L - R, ih = H - T - B;
-    const yMax = opts.yMax || Math.max(5, ...series.flatMap(s => s.values)) * 1.15;
-    const step = yMax > 60 ? 20 : yMax > 25 ? 10 : 5;
-    const n = xlabels.length;
-    const x = i => L + (n === 1 ? iw / 2 : i / (n - 1) * iw);
-    const y = v => T + ih - (v / yMax) * ih;
-    let svg = `<svg width="100%" viewBox="0 0 ${W} ${H}" style="max-width:${W}px; display:block">`;
-    for (let v = 0; v <= yMax; v += step) {
-      svg += `<line x1="${L}" y1="${y(v)}" x2="${W - R}" y2="${y(v)}" stroke="#ececec" stroke-width="1"/>
-              <text x="${L - 6}" y="${y(v) + 3.5}" font-size="10" fill="#000" text-anchor="end">${v}</text>`;
-    }
-    svg += `<line x1="${L}" y1="${y(0)}" x2="${W - R}" y2="${y(0)}" stroke="#d9d9d9" stroke-width="1.5"/>`;
-    const lblEvery = Math.max(1, Math.ceil(n / 10));
-    xlabels.forEach((lb, i) => {
-      if (i % lblEvery === 0 || i === n - 1)
-        svg += `<text x="${x(i)}" y="${H - 8}" font-size="10" fill="#000" text-anchor="middle">${lb}</text>`;
-    });
-    for (const s of series) {
-      const pts = s.values.map((v, i) => `${x(i)},${y(v)}`).join(" ");
-      svg += `<polyline points="${pts}" fill="none" stroke="${s.color}" stroke-width="2"/>`;
-      const last = s.values[s.values.length - 1];
-      svg += `<circle cx="${x(n - 1)}" cy="${y(last)}" r="3.5" fill="${s.color}"/>`;
-      s.values.forEach((v, i) => {
-        svg += `<circle cx="${x(i)}" cy="${y(v)}" r="9" fill="transparent" data-tip="${xlabels[i]} — ${s.name}: ${v} posts"/>`;
-      });
-    }
-    svg += `</svg>`;
-    el.innerHTML = svg;
-  }
-
-  // ---- topic mix over time (line chart) ----
-  const MIX = [ // per topic, 7 days
-    [18,20,12,22,20,30,31],
-    [20,18,16,20,18,22,22],
-    [8,10,8,10,12,9,7],
-    [12,14,11,16,14,19,14],
-    [9,9,10,12,11,12,11],
-    [3,3,4,4,3,4,4],
-  ];
-  lineChart(document.getElementById("topiclines"),
-    TOPICS.map(([n, c], i) => ({ name: n, color: c, values: MIX[i] })), DAYS, { yMax: 35 });
-  const tl = document.getElementById("topiclegend");
-  TOPICS.forEach(([n, c]) => {
-    const r = document.createElement("div"); r.className = "row";
-    r.innerHTML = `<span class="swatch" style="background:${c}"></span>${n}`;
-    tl.appendChild(r);
-  });
-
-  // ---- subtopic explorer ----
-  const SUBTOPICS = [ // name, topicIdx, series params {base, amp, phase} + overrides
-    ["Deep strikes on cities & industry", 0, { base: 10, amp: 7, phase: 0 }],
-    ["Fuel-infrastructure campaign", 0, { flat: 0, tail: [4, 9, 13] }],
-    ["Pokrovsk direction", 1, { base: 7, amp: 3, phase: 2 }],
-    ["Hulyaipole direction", 1, { base: 4, amp: 3, phase: 4 }],
-    ["Kupyansk direction", 1, { base: 4, amp: 2, phase: 1 }],
-    ["Crimea fuel & energy crisis", 2, { base: 2, amp: 3, phase: 3 }],
-    ["Drones on Russian regions", 2, { base: 3, amp: 2, phase: 5 }],
-    ["Military aid to Ukraine", 3, { base: 4, amp: 3, phase: 2 }],
-    ["European rearmament", 3, { base: 3, amp: 2, phase: 6 }],
-    ["Negotiations & diplomacy", 3, { base: 2, amp: 4, phase: 1 }],
-    ["Security & treason cases", 4, { base: 3, amp: 2, phase: 3 }],
-    ["Economy & sanctions", 4, { base: 2, amp: 2, phase: 5 }],
-    ["Mobilisation & recruitment", 4, { flat: 0 }],
-    ["Criticism: army command & logistics", 5, { base: 2, amp: 2, phase: 4 }],
-    ["Criticism: Putin personally", 5, { flat: 0 }],
-  ];
-  // deterministic pseudo-noise so the mockup is stable
-  const noise = (i, seed) => { const t = Math.sin(i * 12.9898 + seed * 78.233) * 43758.5453; return t - Math.floor(t); };
-  const genSeries = (p, days) => {
-    const out = [];
-    for (let i = 0; i < days; i++) {
-      if ("flat" in p) {
-        const tail = p.tail || [];
-        const fromEnd = days - 1 - i;
-        out.push(fromEnd < tail.length ? tail[tail.length - 1 - fromEnd] : p.flat);
-      } else {
-        const wave = Math.sin(i / 6 + p.phase) * p.amp * 0.5;
-        out.push(Math.max(0, Math.round(p.base + wave + noise(i, p.phase) * p.amp - p.amp / 2)));
+  for (const s of series) {
+    const pts = s.values.map((v, i) => v === null || v === undefined ? null : `${x(i)},${y(v)}`);
+    let path = "", started = false;
+    pts.forEach(p => { if (p) { path += (started ? " " : "") + p; started = true; } });
+    svg += `<polyline points="${path}" fill="none" stroke="${s.color}" stroke-width="2"/>`;
+    for (let i = s.values.length - 1; i >= 0; i--) {
+      if (s.values[i] !== null && s.values[i] !== undefined) {
+        svg += `<circle cx="${x(i)}" cy="${y(s.values[i])}" r="3" fill="${s.color}"/>`;
+        break;
       }
     }
-    return out;
-  };
-  const dateLabels = days => {
-    const out = [], end = new Date(2026, 6, 2);
-    for (let i = days - 1; i >= 0; i--) {
-      const d = new Date(end); d.setDate(end.getDate() - i);
-      out.push(d.toLocaleDateString("en-GB", { day: "numeric", month: "short" }));
-    }
-    return out;
-  };
-  const sel = document.getElementById("subselect");
-  SUBTOPICS.forEach(([n], i) => {
-    const o = document.createElement("option"); o.value = i; o.textContent = n;
-    sel.appendChild(o);
-  });
-  sel.value = 0;
-  let expDays = 30;
-  function drawExplorer() {
-    const [name, ti, p] = SUBTOPICS[+sel.value];
-    lineChart(document.getElementById("explorer"),
-      [{ name, color: TOPICS[ti][1], values: genSeries(p, expDays) }], dateLabels(expDays));
-  }
-  sel.addEventListener("change", drawExplorer);
-  document.querySelectorAll(".rangebtn").forEach(b => b.addEventListener("click", () => {
-    document.querySelectorAll(".rangebtn").forEach(x => x.classList.remove("active"));
-    b.classList.add("active");
-    expDays = +b.dataset.days;
-    drawExplorer();
-  }));
-  drawExplorer();
-
-  // ---- subtopic table ----
-  const SUB = [
-    { g: 0, rows: [["Deep strikes on cities & industry", 18, "+6", [2,13,85], ""], ["Fuel-infrastructure campaign", 13, "+9", [5,25,70], "NEW"]] },
-    { g: 1, rows: [["Pokrovsk direction", 8, "+1", [8,42,50], ""], ["Hulyaipole direction", 6, "+2", [5,35,60], ""], ["Kupyansk direction", 4, "−1", [15,55,30], ""], ["Other directions", 4, "0", [10,50,40], ""]] },
-    { g: 2, rows: [["Crimea fuel & energy crisis", 4, "+1", [70,30,0], ""], ["Drones on Russian regions", 3, "−1", [45,55,0], ""]] },
-    { g: 3, rows: [["Military aid to Ukraine", 5, "+2", [50,42,8], ""], ["European rearmament", 4, "+1", [40,50,10], ""], ["Negotiations & diplomacy", 4, "+1", [55,40,5], "MOOD ▼"], ["Alliance politics", 1, "0", [20,70,10], ""]] },
-    { g: 4, rows: [["Ideology & society essays", 4, "+1", [15,55,30], ""], ["Security & treason cases", 3, "+1", [10,80,10], ""], ["Elite politics", 2, "0", [15,70,15], ""], ["Economy & sanctions", 2, "0", [35,55,10], ""], ["Mobilisation & recruitment", 0, "0", null, "WATCHLIST"]] },
-    { g: 5, rows: [["Army command & logistics", 2, "+1", null, ""], ["Government & ministries", 1, "0", null, ""], ["Putin personally", 0, "0", null, "WATCHLIST"], ["Regional authorities", 1, "+1", null, ""]] },
-  ];
-  const st = document.getElementById("subtable");
-  const split = s => {
-    if (!s) return `<span>—</span>`;
-    const [ne, nu, po] = s;
-    return `<div class="minisplit" data-tip="Negative ${ne}% · Neutral ${nu}% · Positive ${po}%">
-      <div style="flex:${ne}; background:${COLORS.neg}"></div><div style="flex:${nu}; background:${COLORS.neu}"></div><div style="flex:${po}; background:${COLORS.pos}"></div></div>`;
-  };
-  SUB.forEach(({ g, rows }) => {
-    const gr = document.createElement("tr"); gr.className = "group";
-    const gTotal = rows.reduce((a, r) => a + r[1], 0);
-    gr.innerHTML = `<td><span class="swatch" style="background:${TOPICS[g][1]}"></span>${TOPICS[g][0]}</td><td class="num">${gTotal}</td><td></td><td></td><td></td>`;
-    st.appendChild(gr);
-    rows.forEach(([n, p, d, s, badge]) => {
-      const tr = document.createElement("tr");
-      const badgeHtml = badge === "NEW" ? ` <span class="tag new">NEW</span>` : badge === "MOOD ▼" ? ` <span class="tag mood">MOOD ▼</span>` : badge === "WATCHLIST" ? ` <span class="tag quiet">WATCHLIST</span>` : "";
-      const net = s ? s[2] - s[0] : null;
-      tr.innerHTML = `<td style="padding-left:26px">${n}${badgeHtml}</td><td class="num">${p}</td><td class="num">${d}</td><td>${split(s)}</td><td class="num" style="color:${net === null ? "#000" : net > 9 ? COLORS.pos : net < -9 ? COLORS.neg : "#000"}">${net === null ? "—" : (net > 0 ? "+" : "") + net}</td>`;
-      st.appendChild(tr);
+    s.values.forEach((v, i) => {
+      if (v !== null && v !== undefined)
+        svg += `<circle cx="${x(i)}" cy="${y(v)}" r="9" fill="transparent" data-tip="${esc(xlabels[i])} — ${esc(s.name)}: ${v}${opts.unit || ""}"/>`;
     });
-  });
+  }
+  svg += `</svg>`;
+  el.innerHTML = svg;
+}
 
-  // ---- shared tooltip ----
-  const tip = document.getElementById("tip");
-  document.addEventListener("mousemove", e => {
-    const t = e.target.closest("[data-tip]");
-    if (t) {
-      tip.textContent = t.dataset.tip;
-      tip.style.display = "block";
-      tip.style.left = Math.min(e.clientX + 14, innerWidth - 300) + "px";
-      tip.style.top = (e.clientY + 14) + "px";
-    } else tip.style.display = "none";
-  });
+// ---- rendering ----
+function renderDay() {
+  const d = DAY;
+  document.getElementById("dateLabel").textContent = "Daily brief · " + fmtDate(d.date) + " (UTC)";
+
+  // KPIs
+  const so = d.sentiment_overall;
+  const nFlags = d.flags.filter(f => ["new_topic", "mood_swing", "watchlist_alert"].includes(f.type)).length;
+  document.getElementById("kpis").innerHTML = `
+    <div class="tile"><div class="label">Posts collected</div><div class="value">${d.total_posts}</div><div class="note">10 channels</div></div>
+    <div class="tile"><div class="label">Substantive after filtering</div><div class="value">${d.substantive_posts}</div><div class="note">ads &amp; fundraisers removed</div></div>
+    <div class="tile"><div class="label">New / developing flags</div><div class="value">${nFlags}</div><div class="note">${nFlags ? "see below" : "watchlist quiet"}</div></div>
+    <div class="tile"><div class="label">Mood of coverage</div><div class="value">${so.pos_pct}%<span style="font-size:15px; color:${C.pos}"> positive</span></div><div class="note">${so.neu_pct}% neutral · ${so.neg_pct}% negative</div></div>`;
+
+  // Flags
+  const flagTexts = (d.brief && d.brief.flag_texts) || [];
+  const tagFor = t => t === "new_topic" ? `<span class="ftag tag new">NEW TOPIC</span>`
+    : t === "mood_swing" ? `<span class="ftag tag mood">MOOD SWING</span>`
+    : t === "watchlist_alert" ? `<span class="ftag tag new">⚠ WATCHLIST</span>` : `<span class="ftag tag quiet">FLAG</span>`;
+  let fh = flagTexts.map(f => `<div class="flag">${tagFor(f.type)}<p><strong>${esc(f.title)}.</strong> ${esc(f.body)}</p></div>`).join("");
+  if (!flagTexts.length) {
+    fh += d.flags.filter(f => ["new_topic", "mood_swing", "watchlist_alert"].includes(f.type))
+      .map(f => `<div class="flag">${tagFor(f.type)}<p><strong>${esc(f.label || "")}</strong> ${f.posts ? f.posts + " posts in " + f.channels + " channels" : ""} ${f.move ? "net balance moved " + (f.move > 0 ? "+" : "") + f.move + " pts" : ""}</p></div>`).join("");
+  }
+  const quiet = d.flags.find(f => f.type === "watchlist_quiet");
+  if (quiet && quiet.items.length)
+    fh += `<div class="flag"><span class="ftag tag quiet">QUIET</span><p><strong>Watchlist:</strong> no ${quiet.items.map(esc).join(", no ").toLowerCase()} on this day. Monitored daily; flagged the moment any appears in 2+ channels.</p></div>`;
+  if (!fh) fh = `<div class="flag"><span class="ftag tag quiet">QUIET</span><p>No new developments flagged.</p></div>`;
+  document.getElementById("flags").innerHTML = fh;
+
+  // Brief
+  const b = d.brief;
+  if (b) {
+    document.getElementById("brief").innerHTML =
+      `<p class="brief-lead">${esc(b.lead)}</p>` +
+      b.developments.map((dev, i) => `
+        <div class="dev">
+          <h3>${i + 1}. ${esc(dev.title)}</h3>
+          <p>${esc(dev.body)}</p>
+          <div class="srcs">${dev.corroboration === "multi" ? `<span class="tag multi">✓ multiple channels</span>` : `<span class="tag single">◌ single source</span>`}
+            ${dev.sources.map(s => `<a href="${esc(s.url)}" target="_blank">${esc(s.label)} ↗</a>`).join("")}</div>
+        </div>`).join("");
+    document.getElementById("narratives").innerHTML = (b.narrative_watch || []).map(n => `
+      <div class="flag"><span class="ftag tag ${n.tag === "RISING" ? "rising" : n.tag === "NEW" ? "new" : "quiet"}">${esc(n.tag)}</span>
+        <p><strong>${esc(n.title)}</strong> — ${esc(n.body)} ${n.url ? `<span class="srcs"><a href="${esc(n.url)}" target="_blank">source ↗</a></span>` : ""}</p></div>`).join("")
+      || `<p style="font-size:13px">No narrative notes for this day.</p>`;
+  } else {
+    document.getElementById("brief").innerHTML = `<p class="brief-lead">No written brief for this day (archive days carry classification and statistics only — briefs are generated for each new day going forward).</p>`;
+    document.getElementById("narratives").innerHTML = `<p style="font-size:13px">—</p>`;
+  }
+
+  // Topic mix
+  document.getElementById("mixSub").textContent = `${d.substantive_posts} substantive posts · full breakdown in Trends & mood`;
+  const mixbar = document.getElementById("mixbar"), mixleg = document.getElementById("mixlegend");
+  mixbar.innerHTML = ""; mixleg.innerHTML = "";
+  for (const [k, t] of Object.entries(TOPICS)) {
+    const n = d.topics[k] ? d.topics[k].posts : 0;
+    if (n > 0) {
+      const seg = document.createElement("div");
+      seg.style.flex = n; seg.style.background = t.color;
+      seg.dataset.tip = `${t.label} — ${n} posts (${Math.round(n / d.substantive_posts * 100)}%)`;
+      mixbar.appendChild(seg);
+    }
+    mixleg.insertAdjacentHTML("beforeend",
+      `<div class="row"><span class="swatch" style="background:${t.color}"></span>${t.label}<span class="n">${n}</span></div>`);
+  }
+
+  // Popular posts
+  const fwd = d.top_forwarded && d.top_forwarded[0] ? d.top_forwarded[0].link : null;
+  document.getElementById("popular").innerHTML = d.top_viewed.map((p, i) => `
+    <div class="pop-row"><span class="rank">${i + 1}</span>
+      <div class="body"><a href="${esc(p.link)}" target="_blank">${esc(p.summary_en || "View post")} ↗</a>
+        <div class="meta">${esc(p.channel_label)}${p.link === fwd ? " · <strong>most forwarded</strong>" : ""}</div></div>
+      <div class="stats"><b>${fmtViews(p.views)}</b>views · ${p.forwards} fwd</div>
+    </div>`).join("");
+
+  // Posts by channel
+  const chEntries = Object.entries(d.channels);
+  const chMax = Math.max(1, ...chEntries.map(e => e[1]));
+  document.getElementById("barchart").innerHTML = chEntries.map(([name, v]) => `
+    <div class="barrow"><span class="name">${esc(name)}</span>
+      <div class="bartrack"><div class="fill" style="width:${v / chMax * 100}%" data-tip="${esc(name)}: ${v} substantive posts"></div></div>
+      <span class="val">${v}</span></div>`).join("");
+
+  renderTrendsForDay();
+}
+
+function renderArchive() {
+  const days = [...INDEX.days].reverse();
+  document.getElementById("archive").innerHTML = days.map(x => `
+    <div class="arch-row ${DAY && x.date === DAY.date ? "current" : ""}" data-day="${x.date}">
+      <span class="d">${fmtShort(x.date)}</span>
+      <span class="t">${esc(x.headline || "classification only")}</span>
+      <span class="cnt">${x.substantive}</span></div>`).join("");
+  document.querySelectorAll(".arch-row").forEach(r => r.addEventListener("click", () => loadDay(r.dataset.day)));
+}
+
+function renderTrendsForDay() {
+  const d = DAY;
+  // Mood summary
+  const ml = (d.brief && d.brief.mood_lines) || [];
+  document.getElementById("moodsummary").innerHTML = ml.length ? ml.map(m => `
+    <div class="mood-line"><span class="arrow ${m.arrow === "up" ? "up" : m.arrow === "down" ? "down" : "flat"}">${m.arrow === "up" ? "▲" : m.arrow === "down" ? "▼" : "▬"}</span>
+      <p><strong>${esc(m.topic)}</strong> — ${esc(m.text)}</p></div>`).join("")
+    : Object.entries(TOPICS).map(([k, t]) => {
+        const tp = d.topics[k];
+        if (!tp || !tp.posts) return "";
+        return `<div class="mood-line"><span class="arrow flat">▬</span><p><strong>${t.label}</strong> — ${tp.posts} posts, ${tp.net === null ? "tracked by volume" : "net " + (tp.net > 0 ? "+" : "") + tp.net + " (" + moodWord(tp.net) + ")"}</p></div>`;
+      }).join("");
+
+  // Sentiment split bars
+  let sh = "";
+  for (const [k, t] of Object.entries(TOPICS)) {
+    const tp = d.topics[k];
+    if (!tp || !tp.posts) continue;
+    if (k === "criticism") {
+      sh += `<div class="sentrow"><span class="name">${t.label}</span>
+        <div style="font-size:12px; font-style:italic">tracked by volume &amp; target — ${tp.posts} post${tp.posts > 1 ? "s" : ""} this day</div>
+        <span class="net">n/a</span></div>`;
+      continue;
+    }
+    sh += `<div class="sentrow"><span class="name">${t.label}</span>
+      <div class="senttrack">
+        <div style="flex:${tp.neg}; background:${C.neg}" data-tip="${t.label}: ${tp.neg} negative posts"></div>
+        <div style="flex:${tp.neu}; background:${C.neu}" data-tip="${t.label}: ${tp.neu} neutral posts"></div>
+        <div style="flex:${tp.pos}; background:${C.pos}" data-tip="${t.label}: ${tp.pos} positive posts"></div>
+      </div>
+      <span class="net" style="color:${netColor(tp.net)}">${tp.net > 0 ? "+" : ""}${tp.net}</span></div>`;
+  }
+  document.getElementById("sentbars").innerHTML = sh;
+
+  // Subtopic table (vs 7-day avg from index)
+  const idx = INDEX.days;
+  const pos = idx.findIndex(x => x.date === d.date);
+  const window7 = idx.slice(Math.max(0, pos - 7), pos);
+  const avg = key => window7.length ? window7.reduce((a, x) => a + (x.subtopics[key] || 0), 0) / window7.length : null;
+  let th = "";
+  for (const [k, t] of Object.entries(TOPICS)) {
+    const rows = d.subtopics.filter(r => r.topic === k && (r.posts > 0 || ["mobilisation", "putin"].includes(r.subtopic)));
+    if (!rows.length) continue;
+    const gTotal = rows.reduce((a, r) => a + r.posts, 0);
+    th += `<tr class="group"><td><span class="swatch" style="background:${t.color}"></span>${t.label}</td><td class="num">${gTotal}</td><td></td><td></td><td></td></tr>`;
+    for (const r of rows.sort((a, b) => b.posts - a.posts)) {
+      const a7 = avg(`${r.topic}/${r.subtopic}`);
+      const delta = a7 === null ? "—" : (r.posts - a7 >= 0.5 ? "+" + Math.round(r.posts - a7) : r.posts - a7 <= -0.5 ? "−" + Math.round(a7 - r.posts) : "0");
+      const watch = ["mobilisation", "putin"].includes(r.subtopic) && r.posts === 0 ? ` <span class="tag quiet">WATCHLIST</span>` : "";
+      const split = k === "criticism" || !r.posts ? `<span>—</span>`
+        : `<div class="minisplit" data-tip="Negative ${r.neg} · Neutral ${r.neu} · Positive ${r.pos}">
+            <div style="flex:${r.neg}; background:${C.neg}"></div><div style="flex:${r.neu}; background:${C.neu}"></div><div style="flex:${r.pos}; background:${C.pos}"></div></div>`;
+      const net = k === "criticism" || r.net === null ? "—" : (r.net > 0 ? "+" : "") + r.net;
+      th += `<tr><td style="padding-left:26px">${esc(r.label)}${watch}</td><td class="num">${r.posts}</td><td class="num">${delta}</td><td>${split}</td><td class="num" style="color:${netColor(r.net)}">${net}</td></tr>`;
+    }
+  }
+  document.getElementById("subtable").innerHTML = th;
+}
+
+// ---- index-driven charts ----
+let tmDays = 30, exDays = 30;
+
+function renderIndexCharts() {
+  const days = INDEX.days;
+  const slice = n => days.slice(-n);
+  const labels = arr => arr.map(x => fmtShort(x.date));
+
+  // net mood sparklines (last 14 days)
+  const s14 = slice(14);
+  const mg = document.getElementById("moodgrid");
+  mg.innerHTML = "";
+  for (const [k, t] of Object.entries(TOPICS)) {
+    if (k === "criticism") {
+      const vals = s14.map(x => x.topics[k] ?? 0);
+      const cur = vals[vals.length - 1] ?? 0;
+      const w = 230 / Math.max(1, vals.length - 1);
+      const vmax = Math.max(4, ...vals);
+      const pts = vals.map((v, i) => `${i * w + 4},${62 - v / vmax * 50}`).join(" ");
+      mg.insertAdjacentHTML("beforeend", `<div class="spark-tile">
+        <div class="t-head"><span class="swatch" style="background:${t.color}"></span>Criticism (volume)<span class="m-val">${cur}</span></div>
+        <div class="m-word">posts per day — spikes matter more than the level</div>
+        <svg width="238" height="68" viewBox="0 0 238 68" data-tip="Criticism posts/day: ${s14.map((x, i) => fmtShort(x.date) + " " + vals[i]).join(", ")}">
+          <line x1="4" y1="62" x2="234" y2="62" stroke="#d9d9d9" stroke-width="1"/>
+          <polyline points="${pts}" fill="none" stroke="${t.color}" stroke-width="2"/></svg></div>`);
+      continue;
+    }
+    const vals = s14.map(x => x.nets[k]);
+    const known = vals.filter(v => v !== null && v !== undefined);
+    if (!known.length) continue;
+    const cur = known[known.length - 1];
+    const w = 230 / Math.max(1, vals.length - 1);
+    let pts = "", started = false;
+    vals.forEach((v, i) => { if (v !== null && v !== undefined) { pts += (started ? " " : "") + `${i * w + 4},${34 - v * 0.28}`; started = true; } });
+    mg.insertAdjacentHTML("beforeend", `<div class="spark-tile">
+      <div class="t-head"><span class="swatch" style="background:${t.color}"></span>${t.label}<span class="m-val" style="color:${netColor(cur)}">${cur > 0 ? "+" : ""}${cur}</span></div>
+      <div class="m-word">${moodWord(cur)}</div>
+      <svg width="238" height="68" viewBox="0 0 238 68" data-tip="${t.label}, net balance: ${s14.map((x, i) => fmtShort(x.date) + " " + (vals[i] === null || vals[i] === undefined ? "–" : (vals[i] > 0 ? "+" : "") + vals[i])).join(", ")}">
+        <line x1="4" y1="34" x2="234" y2="34" stroke="#d9d9d9" stroke-width="1" stroke-dasharray="3 3"/>
+        <polyline points="${pts}" fill="none" stroke="${t.color}" stroke-width="2"/></svg></div>`);
+  }
+
+  // topic mix over time
+  const tm = slice(tmDays);
+  lineChart(document.getElementById("topiclines"),
+    Object.entries(TOPICS).map(([k, t]) => ({ name: t.label, color: t.color, values: tm.map(x => x.topics[k] ?? 0) })),
+    labels(tm), { unit: " posts" });
+  document.getElementById("topiclegend").innerHTML = Object.values(TOPICS)
+    .map(t => `<div class="row"><span class="swatch" style="background:${t.color}"></span>${t.label}</div>`).join("");
+
+  // subtopic explorer
+  drawExplorer();
+}
+
+function drawExplorer() {
+  const sel = document.getElementById("subselect");
+  if (!sel.options.length) {
+    const keys = new Set();
+    INDEX.days.forEach(x => Object.keys(x.subtopics).forEach(k => keys.add(k)));
+    if (DAY) DAY.subtopics.forEach(r => keys.add(`${r.topic}/${r.subtopic}`));
+    const labelOf = key => {
+      const [tk, sk] = key.split("/");
+      const row = DAY && DAY.subtopics.find(r => r.topic === tk && r.subtopic === sk);
+      return (TOPICS[tk] ? TOPICS[tk].label + ": " : "") + (row ? row.label : sk);
+    };
+    [...keys].sort().forEach(k => {
+      const o = document.createElement("option"); o.value = k; o.textContent = labelOf(k);
+      sel.appendChild(o);
+    });
+    sel.addEventListener("change", drawExplorer);
+  }
+  const key = sel.value || sel.options[0]?.value;
+  if (!key) return;
+  const [tk] = key.split("/");
+  const ex = INDEX.days.slice(-exDays);
+  lineChart(document.getElementById("explorer"),
+    [{ name: sel.selectedOptions[0]?.textContent || key, color: TOPICS[tk] ? TOPICS[tk].color : "#00205B",
+       values: ex.map(x => x.subtopics[key] || 0) }],
+    ex.map(x => fmtShort(x.date)), { unit: " posts" });
+}
+
+document.querySelectorAll(".rangebtn.tm").forEach(b => b.addEventListener("click", () => {
+  document.querySelectorAll(".rangebtn.tm").forEach(x => x.classList.remove("active"));
+  b.classList.add("active"); tmDays = +b.dataset.days; renderIndexCharts();
+}));
+document.querySelectorAll(".rangebtn.ex").forEach(b => b.addEventListener("click", () => {
+  document.querySelectorAll(".rangebtn.ex").forEach(x => x.classList.remove("active"));
+  b.classList.add("active"); exDays = +b.dataset.days; drawExplorer();
+}));
+
+// ---- data loading ----
+async function loadDay(date) {
+  const resp = await fetch(`${DATA_BASE}/days/${date}.json`);
+  DAY = await resp.json();
+  renderDay();
+  renderArchive();
+}
+
+async function boot() {
+  try {
+    const resp = await fetch(`${DATA_BASE}/index.json`);
+    INDEX = await resp.json();
+  } catch (e) {
+    const note = document.getElementById("loadnote");
+    note.style.display = "block";
+    note.innerHTML = "<strong>Couldn't load data.</strong> If you opened this file directly from disk, run a local server instead: open a terminal in the project folder and run <code>python -m http.server</code>, then visit <a href='http://localhost:8000/dashboard/'>http://localhost:8000/dashboard/</a>.";
+    document.getElementById("dateLabel").textContent = "no data";
+    return;
+  }
+  const days = INDEX.days;
+  if (!days.length) return;
+  const withBrief = [...days].reverse().find(x => x.headline);
+  await loadDay((withBrief || days[days.length - 1]).date);
+  renderIndexCharts();
+}
+
+// ---- shared tooltip ----
+const tip = document.getElementById("tip");
+document.addEventListener("mousemove", e => {
+  const t = e.target.closest("[data-tip]");
+  if (t) {
+    tip.textContent = t.dataset.tip;
+    tip.style.display = "block";
+    tip.style.left = Math.min(e.clientX + 14, innerWidth - 300) + "px";
+    tip.style.top = (e.clientY + 14) + "px";
+  } else tip.style.display = "none";
+});
+
+boot();
 </script>
 </body>
 </html>

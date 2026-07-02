@@ -16,6 +16,7 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 from telethon.sync import TelegramClient
+from telethon.sessions import StringSession
 import os
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -80,8 +81,12 @@ def main():
     load_dotenv(ROOT / ".env")
     cutoff = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=args.days)
 
+    # Locally the login lives in zbloggers.session; on GitHub Actions it is
+    # provided as a compact string in the TELEGRAM_SESSION secret.
+    session = (StringSession(os.environ["TELEGRAM_SESSION"])
+               if os.environ.get("TELEGRAM_SESSION") else str(ROOT / "zbloggers"))
     client = TelegramClient(
-        str(ROOT / "zbloggers"),
+        session,
         int(os.environ["TELEGRAM_API_ID"]),
         os.environ["TELEGRAM_API_HASH"],
     )
