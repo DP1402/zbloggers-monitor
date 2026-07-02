@@ -83,8 +83,8 @@ def main():
 
     # Locally the login lives in zbloggers.session; on GitHub Actions it is
     # provided as a compact string in the TELEGRAM_SESSION secret.
-    session = (StringSession(os.environ["TELEGRAM_SESSION"])
-               if os.environ.get("TELEGRAM_SESSION") else str(ROOT / "zbloggers"))
+    session = (StringSession(os.environ["TELEGRAM_SESSION"].strip())
+               if os.environ.get("TELEGRAM_SESSION", "").strip() else str(ROOT / "zbloggers"))
     client = TelegramClient(
         session,
         int(os.environ["TELEGRAM_API_ID"]),
