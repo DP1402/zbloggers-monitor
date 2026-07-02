@@ -1,27 +1,67 @@
 {
  "days": [
   {
-   "battlefield": {
-    "pos": 9,
-    "neg": 2,
-    "neu": 0,
-    "net": 64,
-    "story": "Russian forces advance toward Seversky Donets, expand control near Lyman after heavy May fighting.",
-    "story_url": "https://t.me/rybar/80762",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/rusich_army/29814",
-      "t": "Russian drone kills three Ukrainian soldiers in vehicle who failed to observe or engage the approaching drone.",
-      "ch": "Arkhangel Spetsnaza"
-     },
-     {
-      "s": "neg",
-      "url": "https://t.me/wargonzo/34581",
-      "t": "Arbat unit retrieves fallen soldiers under constant drone attacks near Kramatorsk.",
-      "ch": "WarGonzo"
-     }
-    ]
+   "trackers": {
+    "frontline": {
+     "pos": 9,
+     "neg": 2,
+     "neu": 0,
+     "net": 64,
+     "story": "Russian forces advance toward Seversky Donets, expand control near Lyman after heavy May fighting.",
+     "story_url": "https://t.me/rybar/80762",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rusich_army/29814",
+       "t": "Russian drone kills three Ukrainian soldiers in vehicle who failed to observe or engage the approaching drone.",
+       "ch": "Arkhangel Spetsnaza"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/wargonzo/34581",
+       "t": "Arbat unit retrieves fallen soldiers under constant drone attacks near Kramatorsk.",
+       "ch": "WarGonzo"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 25,
+     "neg": 1,
+     "neu": 0,
+     "net": 92,
+     "story": "Russian combined strike hit energy infrastructure in Kyiv, Dnipro, Kharkiv; fires reported, power outages.",
+     "story_url": "https://t.me/dva_majors/93913",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/80780",
+       "t": "Russia struck Kyiv industrial sites, Kharkiv, Sumy, Chernihiv; Ukrainian drones hit Ilsky refinery; fuel rationing in LNR.",
+       "ch": "Rybar"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/dva_majors/93962",
+       "t": "Ukrainian FPV drone deliberately attacks church in Kursk region; Russian air defense intercepts footage.",
+       "ch": "Two Majors"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 0,
+     "neg": 11,
+     "neu": 1,
+     "net": -92,
+     "story": "Crimea faces fuel shortage due to Ukrainian strikes on logistics corridor; interactive gas station map launched.",
+     "story_url": "https://t.me/rybar/80772",
+     "examples": [
+      {
+       "s": "neg",
+       "url": "https://t.me/vysokygovorit/23064",
+       "t": "Zelenskyy warns of imminent new strike on Kyiv; contrast between street lighting and drone threat.",
+       "ch": "Starshe Eddy"
+      }
+     ]
+    }
    },
    "date": "2026-06-02",
    "total": 204,
@@ -64,21 +104,61 @@
    "flags": 0
   },
   {
-   "battlefield": {
-    "pos": 15,
-    "neg": 0,
-    "neu": 0,
-    "net": 100,
-    "story": "50th Varyag Brigade destroyed Ukrainian long-range drone launcher concealed in truck container to degrade attack capabilities.",
-    "story_url": "https://t.me/rybar/80792",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/rybar/80797",
-      "t": "Russian forces conduct offensive operations across Seversky Donets-Donbas canal near Malinovka.",
-      "ch": "Rybar"
-     }
-    ]
+   "trackers": {
+    "frontline": {
+     "pos": 15,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "50th Varyag Brigade destroyed Ukrainian long-range drone launcher concealed in truck container to degrade attack capabilities.",
+     "story_url": "https://t.me/rybar/80792",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/80797",
+       "t": "Russian forces conduct offensive operations across Seversky Donets-Donbas canal near Malinovka.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 7,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russian attacks damage Ukrainian fuel infrastructure; dozens of strikes on gas stations over two months.",
+     "story_url": "https://t.me/rybar/80803",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/80804",
+       "t": "Russian strikes hit logistics, sorting center, postal terminal in Ukraine; Ukrainian drones attack St. Petersburg.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 6,
+     "neg": 28,
+     "neu": 0,
+     "net": -65,
+     "story": "Ukraine attacked St. Petersburg oil terminal and Russian regions with 30+ drones; damage reported.",
+     "story_url": "https://t.me/dva_majors/93993",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/94003",
+       "t": "Russian air defense defeated drone attack, destroyed 59 UAVs over Leningrad region.",
+       "ch": "Two Majors"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/80791",
+       "t": "Ukrainian drones struck Boiky corvette in Kronstadt dry dock with at least two hits, revealing naval air defense vulnerabilities.",
+       "ch": "Rybar"
+      }
+     ]
+    }
    },
    "date": "2026-06-03",
    "total": 162,
@@ -124,21 +204,55 @@
    "flags": 2
   },
   {
-   "battlefield": {
-    "pos": 12,
-    "neg": 0,
-    "neu": 2,
-    "net": 86,
-    "story": "Russian forces advance in Kharkiv border region, crossing Volchya River and capturing multiple settlements.",
-    "story_url": "https://t.me/rybar/80809",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/vysokygovorit/23074",
-      "t": "34th Motorized Brigade scouts destroyed Ukrainian heavy drones launched from Kharkiv region near Belgorod border.",
-      "ch": "Starshe Eddy"
-     }
-    ]
+   "trackers": {
+    "frontline": {
+     "pos": 12,
+     "neg": 0,
+     "neu": 2,
+     "net": 86,
+     "story": "Russian forces advance in Kharkiv border region, crossing Volchya River and capturing multiple settlements.",
+     "story_url": "https://t.me/rybar/80809",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/vysokygovorit/23074",
+       "t": "34th Motorized Brigade scouts destroyed Ukrainian heavy drones launched from Kharkiv region near Belgorod border.",
+       "ch": "Starshe Eddy"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 8,
+     "neg": 1,
+     "neu": 0,
+     "net": 78,
+     "story": "Russian strikes lack systematic planning depth needed for decisive fuel infrastructure campaign effects.",
+     "story_url": "https://t.me/rybar/80815",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/94068",
+       "t": "Putin confirms Oreshnik missile tested on Ukraine; full-scale deployment against cities possible in future.",
+       "ch": "Two Majors"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 0,
+     "neg": 13,
+     "neu": 1,
+     "net": -93,
+     "story": "Ukraine strikes Crimea, Sevastopol, and southern Russian regions with 272+ drones; civilian casualties reported.",
+     "story_url": "https://t.me/dva_majors/94043",
+     "examples": [
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/80826",
+       "t": "55,000 Ukrainian drones intercepted over Russian regions this year; PMEF security concerns amid ongoing drone threat.",
+       "ch": "Rybar"
+      }
+     ]
+    }
    },
    "date": "2026-06-04",
    "total": 115,
@@ -185,21 +299,61 @@
    "flags": 3
   },
   {
-   "battlefield": {
-    "pos": 6,
-    "neg": 0,
-    "neu": 0,
-    "net": 100,
-    "story": "Russian forces repel Ukrainian infiltration attempts near Rodinskoe using drone strikes and artillery.",
-    "story_url": "https://t.me/rybar/80842",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/dva_majors/94078",
-      "t": "Russian drones and aircraft strike Ukrainian reconnaissance posts and positions near Zarechnoe in Zaporizhzhia; reported destruction of supplies and equipment.",
-      "ch": "Two Majors"
-     }
-    ]
+   "trackers": {
+    "frontline": {
+     "pos": 6,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russian forces repel Ukrainian infiltration attempts near Rodinskoe using drone strikes and artillery.",
+     "story_url": "https://t.me/rybar/80842",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/94078",
+       "t": "Russian drones and aircraft strike Ukrainian reconnaissance posts and positions near Zarechnoe in Zaporizhzhia; reported destruction of supplies and equipment.",
+       "ch": "Two Majors"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 5,
+     "neg": 0,
+     "neu": 1,
+     "net": 83,
+     "story": "Russian strikes destroyed five Ukrainian fuel stations; Ukrainian drone hit IAEA demining team, wounding sappers.",
+     "story_url": "https://t.me/rybar/80846",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/80845",
+       "t": "Ukrainian drones struck Romanian port and Azerbaijani cargo ship; summary of June 5 SVO developments.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 4,
+     "neg": 16,
+     "neu": 1,
+     "net": -57,
+     "story": "Ukrainian drones attack road corridor to Crimea causing fuel shortages and logistics disruptions.",
+     "story_url": "https://t.me/rybar/80838",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/94100",
+       "t": "Sevastopol air defenses shot down 9 Ukrainian drones; minor damage reported, no casualties.",
+       "ch": "Two Majors"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/80837",
+       "t": "Swedish court orders transfer of Russian shadow fleet cargo ship Caffa to Ukraine.",
+       "ch": "Rybar"
+      }
+     ]
+    }
    },
    "date": "2026-06-05",
    "total": 146,
@@ -243,27 +397,67 @@
    "flags": 4
   },
   {
-   "battlefield": {
-    "pos": 10,
-    "neg": 1,
-    "neu": 1,
-    "net": 75,
-    "story": "Russian forces advance east of Oskol near Kupyansk, reducing Ukrainian bridgehead positions.",
-    "story_url": "https://t.me/rybar/80862",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/rybar/80859",
-      "t": "Russian forces capture village Shevchenko on Slobozhan direction; advancing toward key Ukrainian supply node.",
-      "ch": "Rybar"
-     },
-     {
-      "s": "neg",
-      "url": "https://t.me/ngp_razvedka/25514",
-      "t": "Analysis notes Ukrainian personnel distributed in small groups across houses to avoid concentrated strikes.",
-      "ch": "NgP raZVedka"
-     }
-    ]
+   "trackers": {
+    "frontline": {
+     "pos": 10,
+     "neg": 1,
+     "neu": 1,
+     "net": 75,
+     "story": "Russian forces advance east of Oskol near Kupyansk, reducing Ukrainian bridgehead positions.",
+     "story_url": "https://t.me/rybar/80862",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/80859",
+       "t": "Russian forces capture village Shevchenko on Slobozhan direction; advancing toward key Ukrainian supply node.",
+       "ch": "Rybar"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/ngp_razvedka/25514",
+       "t": "Analysis notes Ukrainian personnel distributed in small groups across houses to avoid concentrated strikes.",
+       "ch": "NgP raZVedka"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 4,
+     "neg": 0,
+     "neu": 1,
+     "net": 80,
+     "story": "Russian strikes on Zaporizhzhia, Krivoy Rog, Dnipro, Kharkiv; 50+ drones hit Odesa.",
+     "story_url": "https://t.me/dva_majors/94131",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/80863",
+       "t": "Russian Geranium drones struck targets in Poltava, Kryvyi Rih, Dnipropetrovsk; Ukrainian drones attacked Leningrad region.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 6,
+     "neg": 15,
+     "neu": 1,
+     "net": -41,
+     "story": "Russian Geranium drones struck two Ukrainian speedboats near Odessa in Black Sea.",
+     "story_url": "https://t.me/rybar/80861",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/sashakots/62197",
+       "t": "Russian drones destroy two Ukrainian speedboats; personnel killed in Black Sea operation.",
+       "ch": "Kotsnews"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/80851",
+       "t": "376 Ukrainian drones intercepted across 18 Russian regions; debris falls near Leningrad.",
+       "ch": "Rybar"
+      }
+     ]
+    }
    },
    "date": "2026-06-06",
    "total": 112,
@@ -304,21 +498,61 @@
    "flags": 1
   },
   {
-   "battlefield": {
-    "pos": 10,
-    "neg": 0,
-    "neu": 0,
-    "net": 100,
-    "story": "Russian special forces destroyed enemy firing position; wounded soldier evacuated after blocking and eliminating target.",
-    "story_url": "https://t.me/rusich_army/29872",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/sashakots/62213",
-      "t": "Russian forces encircle Ukrainian contingent in central Konstantinovka after advancing across Moskovskaya Street.",
-      "ch": "Kotsnews"
-     }
-    ]
+   "trackers": {
+    "frontline": {
+     "pos": 10,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russian special forces destroyed enemy firing position; wounded soldier evacuated after blocking and eliminating target.",
+     "story_url": "https://t.me/rusich_army/29872",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/sashakots/62213",
+       "t": "Russian forces encircle Ukrainian contingent in central Konstantinovka after advancing across Moskovskaya Street.",
+       "ch": "Kotsnews"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 4,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russian forces strike Ukrainian energy infrastructure in Odesa, Zaporizhzhia and Kyiv regions causing power outages.",
+     "story_url": "https://t.me/rybar/80884",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/94187",
+       "t": "Russian drone strike on Ukrainian electric locomotive in Zaporizhzhia; source warns of continued attacks on trains.",
+       "ch": "Two Majors"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 1,
+     "neg": 10,
+     "neu": 0,
+     "net": -82,
+     "story": "Ukrainian drones intensified attacks on Russian rear areas, logistics routes, and Crimea fuel supplies.",
+     "story_url": "https://t.me/dva_majors/94157",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/94161",
+       "t": "Russian Geran drones destroyed two Ukrainian speedboats near Odesa in Black Sea.",
+       "ch": "Two Majors"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/80869",
+       "t": "Ukrainian drones intensified attacks on Russian rear areas, logistics routes, and Crimea fuel supplies.",
+       "ch": "Rybar"
+      }
+     ]
+    }
    },
    "date": "2026-06-07",
    "total": 132,
@@ -363,21 +597,61 @@
    "flags": 3
   },
   {
-   "battlefield": {
-    "pos": 7,
-    "neg": 0,
-    "neu": 0,
-    "net": 100,
-    "story": "Russian forces advance in Konstantinovka city, crossing Krivoy Torets river and moving toward northwestern outskirts to cut supplies.",
-    "story_url": "https://t.me/rybar/80906",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/Sladkov_plus/15603",
-      "t": "Russian forces liberate Shevchenko and Grany; advance 1km toward Slatino on Kharkiv front.",
-      "ch": "Sladkov+"
-     }
-    ]
+   "trackers": {
+    "frontline": {
+     "pos": 7,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russian forces advance in Konstantinovka city, crossing Krivoy Torets river and moving toward northwestern outskirts to cut supplies.",
+     "story_url": "https://t.me/rybar/80906",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/Sladkov_plus/15603",
+       "t": "Russian forces liberate Shevchenko and Grany; advance 1km toward Slatino on Kharkiv front.",
+       "ch": "Sladkov+"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 8,
+     "neg": 0,
+     "neu": 1,
+     "net": 89,
+     "story": "Russian strikes on Kharkiv, Kryvyi Rih, Dnipropetrovsk, Pavlograd, Odesa; Russian advances in Sumy direction.",
+     "story_url": "https://t.me/dva_majors/94210",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/80910",
+       "t": "Russian forces strike Zatoka bridge, energy facilities, and fuel depots across Ukraine; Ukraine hits targets in Russian regions.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 1,
+     "neg": 11,
+     "neu": 0,
+     "net": -83,
+     "story": "Ukrainian drones attacked Moscow-Simferopol passenger train; assistant engineer killed; rail movement suspended in Crimea.",
+     "story_url": "https://t.me/rybar/80895",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/94214",
+       "t": "Russian air defense intercepted and destroyed 310 Ukrainian drones over multiple Russian regions overnight.",
+       "ch": "Two Majors"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/dva_majors/94261",
+       "t": "Ukrainian drone strikes gas station in Skadovsk killing one civilian.",
+       "ch": "Two Majors"
+      }
+     ]
+    }
    },
    "date": "2026-06-08",
    "total": 142,
@@ -421,21 +695,55 @@
    "flags": 0
   },
   {
-   "battlefield": {
-    "pos": 9,
-    "neg": 0,
-    "neu": 2,
-    "net": 82,
-    "story": "Russian forces advance on Burlyuk direction, secure forest lines near Volchansk and push Ukrainian defenders back one kilometer.",
-    "story_url": "https://t.me/rybar/80936",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/rybar/80935",
-      "t": "Russian forces continue advances despite difficult positions; Ukraine conducts terrorism in Balashikha amid political struggles.",
-      "ch": "Rybar"
-     }
-    ]
+   "trackers": {
+    "frontline": {
+     "pos": 9,
+     "neg": 0,
+     "neu": 2,
+     "net": 82,
+     "story": "Russian forces advance on Burlyuk direction, secure forest lines near Volchansk and push Ukrainian defenders back one kilometer.",
+     "story_url": "https://t.me/rybar/80936",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/80935",
+       "t": "Russian forces continue advances despite difficult positions; Ukraine conducts terrorism in Balashikha amid political struggles.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 4,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russian forces attack Zatoka bridge again using Geran drones; bridge hit over 12 times since 2022 but repeatedly repaired.",
+     "story_url": "https://t.me/rybar/80933",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/94293",
+       "t": "Russian glide bombs strike Ukrainian positions near Huliaipole with 241 daily strikes, causing systematic target destruction.",
+       "ch": "Two Majors"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 0,
+     "neg": 8,
+     "neu": 0,
+     "net": -100,
+     "story": "Ukraine attacked Crimea infrastructure with new 'Behemoth' drone; 140 drones intercepted over Russia.",
+     "story_url": "https://t.me/dva_majors/94266",
+     "examples": [
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/80919",
+       "t": "Ukraine attacked Crimea infrastructure with new drone; 140 drones downed over Russian regions.",
+       "ch": "Rybar"
+      }
+     ]
+    }
    },
    "date": "2026-06-09",
    "total": 122,
@@ -480,27 +788,73 @@
    "flags": 3
   },
   {
-   "battlefield": {
-    "pos": 9,
-    "neg": 1,
-    "neu": 0,
-    "net": 80,
-    "story": "Russian forces advanced on Kharkiv-Sumy border, captured Taratutino, Novodmitrovka, Granovo and pushed toward Kazacha Lopan.",
-    "story_url": "https://t.me/rybar/80944",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/rybar/80966",
-      "t": "Russian forces strike Kharkiv; heavy fighting continues on Konstantinovsk and Dobroilsk directions.",
-      "ch": "Rybar"
-     },
-     {
-      "s": "neg",
-      "url": "https://t.me/wargonzo/34743",
-      "t": "Ukraine deploys US drones with AI targeting systems; Russia claims 87 enemy targets destroyed in one location.",
-      "ch": "WarGonzo"
-     }
-    ]
+   "trackers": {
+    "frontline": {
+     "pos": 9,
+     "neg": 1,
+     "neu": 0,
+     "net": 80,
+     "story": "Russian forces advanced on Kharkiv-Sumy border, captured Taratutino, Novodmitrovka, Granovo and pushed toward Kazacha Lopan.",
+     "story_url": "https://t.me/rybar/80944",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/80966",
+       "t": "Russian forces strike Kharkiv; heavy fighting continues on Konstantinovsk and Dobroilsk directions.",
+       "ch": "Rybar"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/wargonzo/34743",
+       "t": "Ukraine deploys US drones with AI targeting systems; Russia claims 87 enemy targets destroyed in one location.",
+       "ch": "WarGonzo"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 5,
+     "neg": 1,
+     "neu": 0,
+     "net": 67,
+     "story": "Ukrainian attack on Dniproruden injures five civilians including teenager in apartment courtyard.",
+     "story_url": "https://t.me/dva_majors/94351",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/94371",
+       "t": "Russian forces strike two cargo ships in Black Sea off Odesa carrying metal and wheat exports.",
+       "ch": "Two Majors"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/dva_majors/94355",
+       "t": "Ukrainian air defense downed a Russian drone over Sumy, causing four casualties.",
+       "ch": "Two Majors"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 1,
+     "neg": 19,
+     "neu": 1,
+     "net": -86,
+     "story": "Ukrainian drones struck Russian cities; refinery fires, power outages reported; Russia claims 8 drones intercepted en route to Moscow.",
+     "story_url": "https://t.me/dva_majors/94305",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/94306",
+       "t": "Russian air defense destroyed 326 Ukrainian drones over multiple regions overnight.",
+       "ch": "Two Majors"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/dva_majors/94309",
+       "t": "Ukrainian drone destroyed Sevastopol Panorama museum building; artwork reportedly ruined by direct hit.",
+       "ch": "Two Majors"
+      }
+     ]
+    }
    },
    "date": "2026-06-10",
    "total": 190,
@@ -546,27 +900,67 @@
    "flags": 5
   },
   {
-   "battlefield": {
-    "pos": 19,
-    "neg": 1,
-    "neu": 0,
-    "net": 90,
-    "story": "Russian forces liberate Okhrimovka and Rozkoshne, advance significantly in Konstantinovka direction.",
-    "story_url": "https://t.me/rybar/81004",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/rusich_army/29918",
-      "t": "Russian forces target Ukrainian mobile drone control vehicles disguised as civilian trucks.",
-      "ch": "Arkhangel Spetsnaza"
-     },
-     {
-      "s": "neg",
-      "url": "https://t.me/rybar/81003",
-      "t": "Ukrainian forces expand presence near Stepnohirsk, occupy new positions threatening Russian lines.",
-      "ch": "Rybar"
-     }
-    ]
+   "trackers": {
+    "frontline": {
+     "pos": 19,
+     "neg": 1,
+     "neu": 0,
+     "net": 90,
+     "story": "Russian forces liberate Okhrimovka and Rozkoshne, advance significantly in Konstantinovka direction.",
+     "story_url": "https://t.me/rybar/81004",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rusich_army/29918",
+       "t": "Russian forces target Ukrainian mobile drone control vehicles disguised as civilian trucks.",
+       "ch": "Arkhangel Spetsnaza"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/81003",
+       "t": "Ukrainian forces expand presence near Stepnohirsk, occupy new positions threatening Russian lines.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 3,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russian drone Geran evades interception, debris strikes train in Sumy.",
+     "story_url": "https://t.me/vysokygovorit/23115",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/wargonzo/34763",
+       "t": "Russian strikes on Odesa ports threaten collapse of Ukrainian agricultural exports; over 90% transit these ports.",
+       "ch": "WarGonzo"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 4,
+     "neg": 15,
+     "neu": 0,
+     "net": -58,
+     "story": "Ukrainian drones strike Crimea, Krasnodar, Lipetsk; fuel crisis in Sevastopol continues; some drones intercepted.",
+     "story_url": "https://t.me/dva_majors/94383",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/94384",
+       "t": "Russian air defense intercepts and destroys 330 Ukrainian drones across multiple regions and Black Sea.",
+       "ch": "Two Majors"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/80999",
+       "t": "Russian-owned tanker Caroline Bezengi hit by mine near Yemen, Russian shadow fleet repeatedly targeted worldwide.",
+       "ch": "Rybar"
+      }
+     ]
+    }
    },
    "date": "2026-06-11",
    "total": 179,
@@ -611,27 +1005,60 @@
    "flags": 1
   },
   {
-   "battlefield": {
-    "pos": 7,
-    "neg": 1,
-    "neu": 1,
-    "net": 67,
-    "story": "Russian advances in southern Zaporizhzhia; Ukrainian drone attacks on Crimea and Russian industrial targets continue.",
-    "story_url": "https://t.me/rybar/81031",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/rusich_army/29934",
-      "t": "Russian forces advance near Pokrovsk capturing Novo-Aleksandrovka and establishing positions in Myrne.",
-      "ch": "Arkhangel Spetsnaza"
-     },
-     {
-      "s": "neg",
-      "url": "https://t.me/dva_majors/94438",
-      "t": "Russian forces in Zaporizhzhia direction face superior Ukrainian surveillance and logistics disruption.",
-      "ch": "Two Majors"
-     }
-    ]
+   "trackers": {
+    "frontline": {
+     "pos": 7,
+     "neg": 1,
+     "neu": 1,
+     "net": 67,
+     "story": "Russian advances in southern Zaporizhzhia; Ukrainian drone attacks on Crimea and Russian industrial targets continue.",
+     "story_url": "https://t.me/rybar/81031",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rusich_army/29934",
+       "t": "Russian forces advance near Pokrovsk capturing Novo-Aleksandrovka and establishing positions in Myrne.",
+       "ch": "Arkhangel Spetsnaza"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/dva_majors/94438",
+       "t": "Russian forces in Zaporizhzhia direction face superior Ukrainian surveillance and logistics disruption.",
+       "ch": "Two Majors"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 1,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russian forces destroyed another Nova Poshta terminal in occupied Zaporizhzhia.",
+     "story_url": "https://t.me/dva_majors/94450",
+     "examples": []
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 1,
+     "neg": 10,
+     "neu": 1,
+     "net": -75,
+     "story": "Ukraine operates 5000+ drones with growing production; poses sustained threat to Russian regions.",
+     "story_url": "https://t.me/rybar/81021",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81024",
+       "t": "Russian air defense achieves 96% interception rate against 1700 Ukrainian drones weekly.",
+       "ch": "Rybar"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/81023",
+       "t": "Ukraine has abundant drone and cruise missile reserves; Russia must strengthen air defense.",
+       "ch": "Rybar"
+      }
+     ]
+    }
    },
    "date": "2026-06-12",
    "total": 115,
@@ -675,27 +1102,61 @@
    "flags": 1
   },
   {
-   "battlefield": {
-    "pos": 8,
-    "neg": 2,
-    "neu": 1,
-    "net": 55,
-    "story": "Russian forces strike bridge in Liman direction; Ukraine attacks Crimea energy and Kherson-Crimea crossings.",
-    "story_url": "https://t.me/rybar/81050",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/rybar/81046",
-      "t": "Russian forces advance in urban combat in Konstantinovka, clearing districts despite Ukrainian supply efforts.",
-      "ch": "Rybar"
-     },
-     {
-      "s": "neg",
-      "url": "https://t.me/vysokygovorit/23123",
-      "t": "Post criticizes 2023 Ukrainian offensive tactics based on failed Kharkov region tactics and Western miscalculation.",
-      "ch": "Starshe Eddy"
-     }
-    ]
+   "trackers": {
+    "frontline": {
+     "pos": 8,
+     "neg": 2,
+     "neu": 1,
+     "net": 55,
+     "story": "Russian forces strike bridge in Liman direction; Ukraine attacks Crimea energy and Kherson-Crimea crossings.",
+     "story_url": "https://t.me/rybar/81050",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81046",
+       "t": "Russian forces advance in urban combat in Konstantinovka, clearing districts despite Ukrainian supply efforts.",
+       "ch": "Rybar"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/vysokygovorit/23123",
+       "t": "Post criticizes 2023 Ukrainian offensive tactics based on failed Kharkov region tactics and Western miscalculation.",
+       "ch": "Starshe Eddy"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 6,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russia deploys new Geran-5 jet-powered drone with higher speed, harder to intercept.",
+     "story_url": "https://t.me/dva_majors/94464",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/94466",
+       "t": "Russia uses online-controlled Gerani drones with relay retransmitters mimicking Ukrainian Starlink capabilities.",
+       "ch": "Two Majors"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 0,
+     "neg": 10,
+     "neu": 1,
+     "net": -91,
+     "story": "Analysis: 60% of Ukrainian deep-strike drones carry no warhead, forcing Russia to waste expensive air defense.",
+     "story_url": "https://t.me/rybar/81036",
+     "examples": [
+      {
+       "s": "neg",
+       "url": "https://t.me/dva_majors/94488",
+       "t": "Post analyzes Ukrainian coordinated information-combat operation targeting Crimea through strikes and propaganda.",
+       "ch": "Two Majors"
+      }
+     ]
+    }
    },
    "date": "2026-06-13",
    "total": 110,
@@ -740,27 +1201,60 @@
    "flags": 2
   },
   {
-   "battlefield": {
-    "pos": 12,
-    "neg": 1,
-    "neu": 1,
-    "net": 79,
-    "story": "Russian strikes on Ukrainian infrastructure; Ukraine attacking Russian regions with hundreds of drones intercepted.",
-    "story_url": "https://t.me/rybar/81075",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/dva_majors/94566",
-      "t": "Russian aircraft FABs targeting villages in Kharkiv and Luhansk regions.",
-      "ch": "Two Majors"
-     },
-     {
-      "s": "neg",
-      "url": "https://t.me/rybar/81072",
-      "t": "Ukrainian small groups infiltrating and expanding gray zone near Dnipropetrovsk with drone support.",
-      "ch": "Rybar"
-     }
-    ]
+   "trackers": {
+    "frontline": {
+     "pos": 12,
+     "neg": 1,
+     "neu": 1,
+     "net": 79,
+     "story": "Russian strikes on Ukrainian infrastructure; Ukraine attacking Russian regions with hundreds of drones intercepted.",
+     "story_url": "https://t.me/rybar/81075",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/94566",
+       "t": "Russian aircraft FABs targeting villages in Kharkiv and Luhansk regions.",
+       "ch": "Two Majors"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/81072",
+       "t": "Ukrainian small groups infiltrating and expanding gray zone near Dnipropetrovsk with drone support.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 1,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russia building air defense on logistics routes; Ukrainian drones becoming persistent threat but manageable.",
+     "story_url": "https://t.me/vysokygovorit/23130",
+     "examples": []
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 5,
+     "neg": 12,
+     "neu": 0,
+     "net": -41,
+     "story": "Ukrainian long-range drone campaign targets Russian logistics, energy infrastructure, and economy to demoralize society.",
+     "story_url": "https://t.me/dva_majors/94513",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/94571",
+       "t": "Ukrainian homemade rockets detonated during launch near Crimea with losses.",
+       "ch": "Two Majors"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/81065",
+       "t": "Ukraine conducted mass drone attack on Russian regions; 249 drones intercepted; fires and damage reported.",
+       "ch": "Rybar"
+      }
+     ]
+    }
    },
    "date": "2026-06-14",
    "total": 165,
@@ -803,21 +1297,61 @@
    "flags": 3
   },
   {
-   "battlefield": {
-    "pos": 16,
-    "neg": 0,
-    "neu": 1,
-    "net": 94,
-    "story": "Russian forces continue clearing Konstantinovka southwest sector, face Ukrainian resistance on eastern flanks.",
-    "story_url": "https://t.me/rybar/81089",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/rybar/81090",
-      "t": "Russian units advance near Malaya Korchakova, approach settlements of Khotyn and Pisarevka with 10km wedge formation.",
-      "ch": "Rybar"
-     }
-    ]
+   "trackers": {
+    "frontline": {
+     "pos": 16,
+     "neg": 0,
+     "neu": 1,
+     "net": 94,
+     "story": "Russian forces continue clearing Konstantinovka southwest sector, face Ukrainian resistance on eastern flanks.",
+     "story_url": "https://t.me/rybar/81089",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81090",
+       "t": "Russian units advance near Malaya Korchakova, approach settlements of Khotyn and Pisarevka with 10km wedge formation.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 22,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russia conducted massive strikes on Kyiv defense industry targets including drone, radar and logistics facilities.",
+     "story_url": "https://t.me/rybar/81081",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81092",
+       "t": "Russian strikes hit Kyiv; Russian forces advance near Kupiansk, Sumy, and Konstantinovka; Ukrainian draft resistance grows.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 2,
+     "neg": 7,
+     "neu": 0,
+     "net": -56,
+     "story": "Ukrainian drones attack Russian regions; three killed in Tula region, civilian casualties in Bryansk.",
+     "story_url": "https://t.me/dva_majors/94573",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81084",
+       "t": "Ukrainian military conscription centers face public backlash and violence; multiple incidents of citizens attacking TCC officers reported across cities.",
+       "ch": "Rybar"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/81077",
+       "t": "Ukrainian drones attack Russian regions; three killed in Tula, civilian casualties in Bryansk region.",
+       "ch": "Rybar"
+      }
+     ]
+    }
    },
    "date": "2026-06-15",
    "total": 186,
@@ -863,21 +1397,61 @@
    "flags": 1
   },
   {
-   "battlefield": {
-    "pos": 14,
-    "neg": 0,
-    "neu": 2,
-    "net": 88,
-    "story": "Russian forces advance near Minkova and capture Malaya Piskunovka on Slavic direction, reducing Ukrainian positions.",
-    "story_url": "https://t.me/rybar/81114",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/rybar/81109",
-      "t": "Russian forces expand Burluk direction gains, control new forest lines, form wedge toward Belyy Kolodets.",
-      "ch": "Rybar"
-     }
-    ]
+   "trackers": {
+    "frontline": {
+     "pos": 14,
+     "neg": 0,
+     "neu": 2,
+     "net": 88,
+     "story": "Russian forces advance near Minkova and capture Malaya Piskunovka on Slavic direction, reducing Ukrainian positions.",
+     "story_url": "https://t.me/rybar/81114",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81109",
+       "t": "Russian forces expand Burluk direction gains, control new forest lines, form wedge toward Belyy Kolodets.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 6,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russia deployed new Banderol cruise missiles against Kyiv; at least three struck unconfirmed targets.",
+     "story_url": "https://t.me/wargonzo/34868",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/sashakots/62389",
+       "t": "Russia uses new Banderol cruise missile, cheap Kh-101 alternative, against Kyiv with 500km range.",
+       "ch": "Kotsnews"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 1,
+     "neg": 13,
+     "neu": 1,
+     "net": -80,
+     "story": "Ukrainian drones damage Russian oil refinery in Krasnodar; three farm workers killed in Bryansk strike.",
+     "story_url": "https://t.me/dva_majors/94614",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/94657",
+       "t": "Russian frigate fires warning shots at British yacht in English Channel approaching dangerously.",
+       "ch": "Two Majors"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/81107",
+       "t": "Ukraine launches massive 200-drone attack on Moscow region, damaging refinery and injuring civilians.",
+       "ch": "Rybar"
+      }
+     ]
+    }
    },
    "date": "2026-06-16",
    "total": 141,
@@ -920,21 +1494,54 @@
    "flags": 2
   },
   {
-   "battlefield": {
-    "pos": 18,
-    "neg": 0,
-    "neu": 1,
-    "net": 95,
-    "story": "Russian forces advance on Sumy direction with ongoing firefights; Ukrainian supply problems reported.",
-    "story_url": "https://t.me/dva_majors/94661",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/rybar/81146",
-      "t": "Russian forces advance in Konstantinovka, expanding control of northeastern outskirts and capturing Gora district.",
-      "ch": "Rybar"
-     }
-    ]
+   "trackers": {
+    "frontline": {
+     "pos": 18,
+     "neg": 0,
+     "neu": 1,
+     "net": 95,
+     "story": "Russian forces advance on Sumy direction with ongoing firefights; Ukrainian supply problems reported.",
+     "story_url": "https://t.me/dva_majors/94661",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81146",
+       "t": "Russian forces advance in Konstantinovka, expanding control of northeastern outskirts and capturing Gora district.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 1,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russian forces strike fuel infrastructure in Slavyansk and Trostyanets; Ukraine attacks civilian bus in Bryansk.",
+     "story_url": "https://t.me/rybar/81149",
+     "examples": []
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 1,
+     "neg": 19,
+     "neu": 1,
+     "net": -86,
+     "story": "Ukrainian Su-24M crashed in Khmelnytsky; two pilots killed while carrying Storm Shadow cruise missiles.",
+     "story_url": "https://t.me/rybar/81125",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/sashakots/62409",
+       "t": "Russia targets Ukrainian fuel stations and Novaya Pochta logistics hubs, disrupting military supply lines.",
+       "ch": "Kotsnews"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/81130",
+       "t": "Ukrainian drone strikes bus with Belarusian children in Bryansk, killing woman and wounding six including five children.",
+       "ch": "Rybar"
+      }
+     ]
+    }
    },
    "date": "2026-06-17",
    "total": 149,
@@ -978,21 +1585,67 @@
    "flags": 1
   },
   {
-   "battlefield": {
-    "pos": 12,
-    "neg": 0,
-    "neu": 1,
-    "net": 92,
-    "story": "Russian forces capture Rai-Aleksandrovka after months of fighting, securing key Ukrainian defensive position.",
-    "story_url": "https://t.me/rybar/81171",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/Sladkov_plus/15671",
-      "t": "Russian forces consolidate positions on Kazachy Lopan outskirts; enemy foreign mercenaries redeployed to critical frontline sectors.",
-      "ch": "Sladkov+"
-     }
-    ]
+   "trackers": {
+    "frontline": {
+     "pos": 12,
+     "neg": 0,
+     "neu": 1,
+     "net": 92,
+     "story": "Russian forces capture Rai-Aleksandrovka after months of fighting, securing key Ukrainian defensive position.",
+     "story_url": "https://t.me/rybar/81171",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/Sladkov_plus/15671",
+       "t": "Russian forces consolidate positions on Kazachy Lopan outskirts; enemy foreign mercenaries redeployed to critical frontline sectors.",
+       "ch": "Sladkov+"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 20,
+     "neg": 1,
+     "neu": 0,
+     "net": 90,
+     "story": "Russian strikes on Kiev, Poltava, Sumy, Kharkov region; Ukrainian strikes on Crimea, Gvoko oil base and infrastructure.",
+     "story_url": "https://t.me/rybar/81176",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rusich_army/30000",
+       "t": "Russian blogger argues Russian strikes on Ukraine lack propaganda due to limited objective control footage.",
+       "ch": "Arkhangel Spetsnaza"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/ngp_razvedka/25611",
+       "t": "Blogger criticizes Russia for not targeting Ukrainian civilians and deep rear, despite capacity for mines and humanitarian catastrophe.",
+       "ch": "NgP raZVedka"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 4,
+     "neg": 26,
+     "neu": 1,
+     "net": -71,
+     "story": "Record drone attack: 555 drones destroyed overnight; Moscow oil refinery hit second time in three days.",
+     "story_url": "https://t.me/sashakots/62419",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/94698",
+       "t": "Russian military destroyed 555 Ukrainian drones overnight across Russian regions.",
+       "ch": "Two Majors"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/vysokygovorit/23149",
+       "t": "Ukrainian drone strike on Moscow refinery; blogger dismisses it versus potential Russian dam breakthrough near Kyiv.",
+       "ch": "Starshe Eddy"
+      }
+     ]
+    }
    },
    "date": "2026-06-18",
    "total": 190,
@@ -1040,21 +1693,61 @@
    "flags": 0
   },
   {
-   "battlefield": {
-    "pos": 15,
-    "neg": 0,
-    "neu": 1,
-    "net": 94,
-    "story": "Russian forces advance on Sumy direction, capture prisoners, repel Ukrainian counterattacks.",
-    "story_url": "https://t.me/dva_majors/94747",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/rybar/81199",
-      "t": "Russian forces successfully advancing in Konstantinovka with control expanding to northern and northwestern districts.",
-      "ch": "Rybar"
-     }
-    ]
+   "trackers": {
+    "frontline": {
+     "pos": 15,
+     "neg": 0,
+     "neu": 1,
+     "net": 94,
+     "story": "Russian forces advance on Sumy direction, capture prisoners, repel Ukrainian counterattacks.",
+     "story_url": "https://t.me/dva_majors/94747",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81199",
+       "t": "Russian forces successfully advancing in Konstantinovka with control expanding to northern and northwestern districts.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 14,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Analysis proposes destroying Ukrainian critical infrastructure to make economic recovery unprofitable for Western sponsors.",
+     "story_url": "https://t.me/rybar/81193",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81190",
+       "t": "Russian drones strike Ukrainian fuel infrastructure in Odesa region including truck depot and vessels in Ilichevsk port.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 3,
+     "neg": 12,
+     "neu": 0,
+     "net": -60,
+     "story": "Ukrainian forces increasingly deploy Piranha aerostats carrying Hornet drones to extend range and evade air defense detection.",
+     "story_url": "https://t.me/rybar/81194",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/94792",
+       "t": "Russian air defense shot down 76 Ukrainian drones attacking Moscow; no damage or casualties reported.",
+       "ch": "Two Majors"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/81196",
+       "t": "Ukraine used decoy drone groups over a week to exhaust Russian air defense before launching a massive attack on Moscow region.",
+       "ch": "Rybar"
+      }
+     ]
+    }
    },
    "date": "2026-06-19",
    "total": 179,
@@ -1099,27 +1792,67 @@
    "flags": 1
   },
   {
-   "battlefield": {
-    "pos": 13,
-    "neg": 1,
-    "neu": 0,
-    "net": 86,
-    "story": "Russian forces advance toward Slavyansk; Yurkova liberated on approach route.",
-    "story_url": "https://t.me/rybar/81222",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/rybar/81218",
-      "t": "Russian forces capture Yurkova, first settlement east of Seversky Donets canal, advancing toward Slavyansk-Kramatorsk.",
-      "ch": "Rybar"
-     },
-     {
-      "s": "neg",
-      "url": "https://t.me/ngp_razvedka/25636",
-      "t": "Ukrainian forces conduct remote minefield placement on LDNR checkpoint roads; civilian warning issued.",
-      "ch": "NgP raZVedka"
-     }
-    ]
+   "trackers": {
+    "frontline": {
+     "pos": 13,
+     "neg": 1,
+     "neu": 0,
+     "net": 86,
+     "story": "Russian forces advance toward Slavyansk; Yurkova liberated on approach route.",
+     "story_url": "https://t.me/rybar/81222",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81218",
+       "t": "Russian forces capture Yurkova, first settlement east of Seversky Donets canal, advancing toward Slavyansk-Kramatorsk.",
+       "ch": "Rybar"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/ngp_razvedka/25636",
+       "t": "Ukrainian forces conduct remote minefield placement on LDNR checkpoint roads; civilian warning issued.",
+       "ch": "NgP raZVedka"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 10,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russian air campaign destroys Ukrainian fuel infrastructure, roads, bridges across Dnipro; first remote minefield laid on E-50 highway.",
+     "story_url": "https://t.me/rybar/81223",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/94873",
+       "t": "Russian air strikes on Mezhevaya settlement damage enemy rear logistics and supplies.",
+       "ch": "Two Majors"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 10,
+     "neg": 5,
+     "neu": 0,
+     "net": 33,
+     "story": "Russian air defenses claim 266 Ukrainian drones destroyed; Russian strikes hit logistics and infrastructure across Ukraine.",
+     "story_url": "https://t.me/dva_majors/94804",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81206",
+       "t": "Russian forces claim 266 Ukrainian drones destroyed; Russia continues strikes on Ukrainian logistics and infrastructure.",
+       "ch": "Rybar"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/dva_majors/94874",
+       "t": "Ukrainian drone debris falls on Krymsk, Krasnodar Krai; outbuilding fire with no casualties.",
+       "ch": "Two Majors"
+      }
+     ]
+    }
    },
    "date": "2026-06-20",
    "total": 152,
@@ -1163,21 +1896,61 @@
    "flags": 2
   },
   {
-   "battlefield": {
-    "pos": 13,
-    "neg": 0,
-    "neu": 1,
-    "net": 93,
-    "story": "Russian forces cleared pocket near Nikiforovka, Ukrainian drones hit Crimea with casualties.",
-    "story_url": "https://t.me/rybar/81247",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/dva_majors/94918",
-      "t": "Russian naval drone operators intercept and destroy Ukrainian attack drones before target engagement.",
-      "ch": "Two Majors"
-     }
-    ]
+   "trackers": {
+    "frontline": {
+     "pos": 13,
+     "neg": 0,
+     "neu": 1,
+     "net": 93,
+     "story": "Russian forces cleared pocket near Nikiforovka, Ukrainian drones hit Crimea with casualties.",
+     "story_url": "https://t.me/rybar/81247",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/94918",
+       "t": "Russian naval drone operators intercept and destroy Ukrainian attack drones before target engagement.",
+       "ch": "Two Majors"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 5,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Digest summarizes mass strikes on Crimea, Ukrainian blocking tactics, and counter-measures to protect Crimean bridge.",
+     "story_url": "https://t.me/rybar/81246",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/94923",
+       "t": "Geran drones systematically destroy fuel stations for Ukrainian forces, cutting logistics.",
+       "ch": "Two Majors"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 1,
+     "neg": 28,
+     "neu": 0,
+     "net": -93,
+     "story": "Ukraine escalated with long-range strikes on Moscow and southern Russia, overwhelming Russian air defense and hitting refineries.",
+     "story_url": "https://t.me/dva_majors/94879",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/94928",
+       "t": "Russian air defense claims 168 Ukrainian drones shot down over western and southern Russian regions.",
+       "ch": "Two Majors"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/81229",
+       "t": "Ukrainian massive strike on Crimea targets Kerch transport hub, bridge, port; 4 dead, 28 wounded, traffic blocked 7+ hours.",
+       "ch": "Rybar"
+      }
+     ]
+    }
    },
    "date": "2026-06-21",
    "total": 145,
@@ -1223,21 +1996,67 @@
    "flags": 2
   },
   {
-   "battlefield": {
-    "pos": 17,
-    "neg": 0,
-    "neu": 2,
-    "net": 89,
-    "story": "Russian forces expanded control zone on Sumy-Kharkiv border, cleared forests near Pokrovka, repelled Ukrainian counterattacks.",
-    "story_url": "https://t.me/rybar/81251",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/rybar/81258",
-      "t": "Russian forces advance on Konstantinovka outskirts, capture hospital complex and Grusska balka area.",
-      "ch": "Rybar"
-     }
-    ]
+   "trackers": {
+    "frontline": {
+     "pos": 17,
+     "neg": 0,
+     "neu": 2,
+     "net": 89,
+     "story": "Russian forces expanded control zone on Sumy-Kharkiv border, cleared forests near Pokrovka, repelled Ukrainian counterattacks.",
+     "story_url": "https://t.me/rybar/81251",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81258",
+       "t": "Russian forces advance on Konstantinovka outskirts, capture hospital complex and Grusska balka area.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 11,
+     "neg": 1,
+     "neu": 0,
+     "net": 83,
+     "story": "Russia strikes previously untouched Ukrainian targets including Vasilkovsky Island, three cargo ships, and fuel depots.",
+     "story_url": "https://t.me/rusich_army/30062",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/94938",
+       "t": "Russian strike damaged large agricultural facility in Odesa region causing fire and fuel spill.",
+       "ch": "Two Majors"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/wargonzo/35000",
+       "t": "Ukrainian heavy drones armed with NATO M433 munitions conduct strikes on Donetsk; Russian air defense struggles.",
+       "ch": "WarGonzo"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 8,
+     "neg": 12,
+     "neu": 0,
+     "net": -20,
+     "story": "Russia claims 59 drones shot down over Moscow, 168 over regions; Russian strikes on Odesa ports and multiple Ukrainian oblasts.",
+     "story_url": "https://t.me/dva_majors/94937",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81252",
+       "t": "Russia claims 59 drones shot down over Moscow, 168 over regions; Russian strikes on Odesa ports and multiple Ukrainian oblasts.",
+       "ch": "Rybar"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/81253",
+       "t": "Ukraine lacks fuel shortage due to imports despite Russian strikes on refineries; black market mini-refineries supply some needs.",
+       "ch": "Rybar"
+      }
+     ]
+    }
    },
    "date": "2026-06-22",
    "total": 185,
@@ -1283,27 +2102,67 @@
    "flags": 3
   },
   {
-   "battlefield": {
-    "pos": 10,
-    "neg": 3,
-    "neu": 4,
-    "net": 41,
-    "story": "Ukrainian drone activity increased in Crimea region, threatening Kinburn Peninsula with potential amphibious landing.",
-    "story_url": "https://t.me/rusich_army/30067",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/sashakots/62546",
-      "t": "Russian forces advance in Red Liman, capture five strongpoints and clear 52 buildings; Ukrainian soldiers intimidated.",
-      "ch": "Kotsnews"
-     },
-     {
-      "s": "neg",
-      "url": "https://t.me/vysokygovorit/23179",
-      "t": "Ukrainian drone operations increasing in Crimea region, disrupting logistics and threatening potential amphibious assault.",
-      "ch": "Starshe Eddy"
-     }
-    ]
+   "trackers": {
+    "frontline": {
+     "pos": 10,
+     "neg": 3,
+     "neu": 4,
+     "net": 41,
+     "story": "Ukrainian drone activity increased in Crimea region, threatening Kinburn Peninsula with potential amphibious landing.",
+     "story_url": "https://t.me/rusich_army/30067",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/sashakots/62546",
+       "t": "Russian forces advance in Red Liman, capture five strongpoints and clear 52 buildings; Ukrainian soldiers intimidated.",
+       "ch": "Kotsnews"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/vysokygovorit/23179",
+       "t": "Ukrainian drone operations increasing in Crimea region, disrupting logistics and threatening potential amphibious assault.",
+       "ch": "Starshe Eddy"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 5,
+     "neg": 0,
+     "neu": 1,
+     "net": 83,
+     "story": "Russian forces conduct combined strikes on Kyiv, Odesa, Dnipropetrovsk, Kharkiv; Pavlograd targeted.",
+     "story_url": "https://t.me/rybar/81290",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81286",
+       "t": "Russian forces intensify strikes on Ukrainian railway locomotives and rolling stock due to shortage and high repair costs.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 2,
+     "neg": 8,
+     "neu": 0,
+     "net": -60,
+     "story": "Ukrainian drones attacked Russian regions including Voronezh, Dubna, Crimea; 141 drones shot down; 5 killed in Voronezh.",
+     "story_url": "https://t.me/dva_majors/94995",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/sashakots/62541",
+       "t": "Russian air defense shot down five British Storm Shadow missiles over multiple Russian regions.",
+       "ch": "Kotsnews"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/81268",
+       "t": "Ukrainian drones attacked Russian regions including Voronezh, Dubna, Crimea; 141 drones shot down; 5 killed in Voronezh.",
+       "ch": "Rybar"
+      }
+     ]
+    }
    },
    "date": "2026-06-23",
    "total": 173,
@@ -1350,21 +2209,61 @@
    "flags": 4
   },
   {
-   "battlefield": {
-    "pos": 19,
-    "neg": 0,
-    "neu": 1,
-    "net": 95,
-    "story": "Russian forces advance in Konstantinovka; systematically destroy Ukrainian drone relays and antennas for air support.",
-    "story_url": "https://t.me/sashakots/62575",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/rybar/81301",
-      "t": "Russian forces liberate Ivolzhanskoe and advance near Khoten on Sumy direction after breaking Ukrainian resistance.",
-      "ch": "Rybar"
-     }
-    ]
+   "trackers": {
+    "frontline": {
+     "pos": 19,
+     "neg": 0,
+     "neu": 1,
+     "net": 95,
+     "story": "Russian forces advance in Konstantinovka; systematically destroy Ukrainian drone relays and antennas for air support.",
+     "story_url": "https://t.me/sashakots/62575",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81301",
+       "t": "Russian forces liberate Ivolzhanskoe and advance near Khoten on Sumy direction after breaking Ukrainian resistance.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 12,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russia strikes Sumy, Kharkiv, Pavlograd; frontline updates on Sumy, Kursk directions and multiple battlefields.",
+     "story_url": "https://t.me/dva_majors/95056",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81294",
+       "t": "Russia strikes Sumy, Kharkiv, Pavlograd; frontline updates on Sumy, Kursk directions and multiple battlefields.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 1,
+     "neg": 7,
+     "neu": 1,
+     "net": -67,
+     "story": "Zelenskyy threatens Crimea operations; Ukraine's remote strikes damage Russian logistics and reputation.",
+     "story_url": "https://t.me/dva_majors/95110",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/95108",
+       "t": "Russian air defense destroys 245 Ukrainian drones over multiple Russian regions daily.",
+       "ch": "Two Majors"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/dva_majors/95055",
+       "t": "Ukrainian drone attack blacks out Sevastopol; governor urges residents to conserve power and remain calm.",
+       "ch": "Two Majors"
+      }
+     ]
+    }
    },
    "date": "2026-06-24",
    "total": 159,
@@ -1411,21 +2310,67 @@
    "flags": 2
   },
   {
-   "battlefield": {
-    "pos": 11,
-    "neg": 0,
-    "neu": 0,
-    "net": 100,
-    "story": "Russian mobile fire groups successfully intercept Ukrainian drones over Donetsk using air defense systems.",
-    "story_url": "https://t.me/sashakots/62599",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/epoddubny/27914",
-      "t": "Russian forces destroy Ukrainian tank with Lancet drone, disrupting enemy reserve movement and offensive potential.",
-      "ch": "Poddubny"
-     }
-    ]
+   "trackers": {
+    "frontline": {
+     "pos": 11,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russian mobile fire groups successfully intercept Ukrainian drones over Donetsk using air defense systems.",
+     "story_url": "https://t.me/sashakots/62599",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/epoddubny/27914",
+       "t": "Russian forces destroy Ukrainian tank with Lancet drone, disrupting enemy reserve movement and offensive potential.",
+       "ch": "Poddubny"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 15,
+     "neg": 1,
+     "neu": 0,
+     "net": 88,
+     "story": "Russian forces systematically striking Ukrainian fuel depots and gas stations; Apple banned VK apps.",
+     "story_url": "https://t.me/rybar/81331",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81322",
+       "t": "Russia shifts fuel-infrastructure strikes to gas stations and fuel trucks as primary targets.",
+       "ch": "Rybar"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/81317",
+       "t": "Russian strike on Preobrazhenskiy bridge in Zaporizhzhia missed all targets; single attack insufficient for objective.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 4,
+     "neg": 12,
+     "neu": 0,
+     "net": -50,
+     "story": "Ukraine drones attack Crimea, Sevastopol, and Krasnodar fuel depot; Russia strikes Ukrainian energy infrastructure.",
+     "story_url": "https://t.me/dva_majors/95112",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81324",
+       "t": "Ukrainian call centers systematically defraud EU citizens through phone scams.",
+       "ch": "Rybar"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/81312",
+       "t": "Ukraine drones attack Crimea, Sevastopol, and Krasnodar fuel depot; Russia strikes Ukrainian energy infrastructure.",
+       "ch": "Rybar"
+      }
+     ]
+    }
    },
    "date": "2026-06-25",
    "total": 164,
@@ -1471,27 +2416,67 @@
    "flags": 1
   },
   {
-   "battlefield": {
-    "pos": 12,
-    "neg": 2,
-    "neu": 0,
-    "net": 71,
-    "story": "Ukraine counterattacks on West-Zaporizhzhia direction, threatens Russian positions in Kamenske.",
-    "story_url": "https://t.me/rybar/81348",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/rybar/81346",
-      "t": "Russian forces destroy new American MAAWLR air defense system in Kharkiv region.",
-      "ch": "Rybar"
-     },
-     {
-      "s": "neg",
-      "url": "https://t.me/rybar/81344",
-      "t": "Ukrainian forces occupy Primorsky and pressure Plawi on Zaporizhzhia sector; situation deteriorating.",
-      "ch": "Rybar"
-     }
-    ]
+   "trackers": {
+    "frontline": {
+     "pos": 12,
+     "neg": 2,
+     "neu": 0,
+     "net": 71,
+     "story": "Ukraine counterattacks on West-Zaporizhzhia direction, threatens Russian positions in Kamenske.",
+     "story_url": "https://t.me/rybar/81348",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81346",
+       "t": "Russian forces destroy new American MAAWLR air defense system in Kharkiv region.",
+       "ch": "Rybar"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/81344",
+       "t": "Ukrainian forces occupy Primorsky and pressure Plawi on Zaporizhzhia sector; situation deteriorating.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 16,
+     "neg": 0,
+     "neu": 1,
+     "net": 94,
+     "story": "Russia strikes five Ukrainian trains via Geran drones in Kharkiv and Zaporizhzhia regions.",
+     "story_url": "https://t.me/rybar/81347",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81340",
+       "t": "Russian strike on Kiev and Kremenchuk refinery causes fires and secondary detonations; infrastructure targets destroyed.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 2,
+     "neg": 7,
+     "neu": 0,
+     "net": -56,
+     "story": "Ukrainian drone attacks on Moscow, Tula, and other Russian regions; partial infrastructure damage reported.",
+     "story_url": "https://t.me/dva_majors/95175",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/epoddubny/27937",
+       "t": "Russia destroys five Ukrainian locomotives via Geran-2 drones on rail network in Zaporizhzhia and Kharkiv.",
+       "ch": "Poddubny"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/81337",
+       "t": "Ukraine launches massive drone attack; 706 drones destroyed over multiple Russian regions; civilian damage reported.",
+       "ch": "Rybar"
+      }
+     ]
+    }
    },
    "date": "2026-06-26",
    "total": 157,
@@ -1536,21 +2521,61 @@
    "flags": 2
   },
   {
-   "battlefield": {
-    "pos": 18,
-    "neg": 0,
-    "neu": 1,
-    "net": 95,
-    "story": "Russian forces maintain readiness on Kinburn Peninsula; Ukrainian SSO units activating near Ochakov.",
-    "story_url": "https://t.me/rusich_army/30111",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/rybar/81362",
-      "t": "Russian forces advance near Novoskelevatoe, force river crossings, improve tactical position in Dnipropetrovsk direction.",
-      "ch": "Rybar"
-     }
-    ]
+   "trackers": {
+    "frontline": {
+     "pos": 18,
+     "neg": 0,
+     "neu": 1,
+     "net": 95,
+     "story": "Russian forces maintain readiness on Kinburn Peninsula; Ukrainian SSO units activating near Ochakov.",
+     "story_url": "https://t.me/rusich_army/30111",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81362",
+       "t": "Russian forces advance near Novoskelevatoe, force river crossings, improve tactical position in Dnipropetrovsk direction.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 12,
+     "neg": 2,
+     "neu": 1,
+     "net": 67,
+     "story": "Analyst proposes targeting Ukrainian supply infrastructure in southern regions to collapse logistics systems.",
+     "story_url": "https://t.me/rybar/81368",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81354",
+       "t": "Russian analysis of Ukrainian oil depots in Odesa region as potential strike targets.",
+       "ch": "Rybar"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/81357",
+       "t": "Russian strikes on Ukrainian fuel infrastructure insufficient; most depots in Dnipropetrovsk region undamaged.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 0,
+     "neg": 7,
+     "neu": 0,
+     "net": -100,
+     "story": "Ukraine strikes Volgograd weapons plant; 175 drones shot down over Russia.",
+     "story_url": "https://t.me/dva_majors/95222",
+     "examples": [
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/81352",
+       "t": "Ukraine strikes Volgograd factory; 175 drones intercepted; Russian logistics under pressure.",
+       "ch": "Rybar"
+      }
+     ]
+    }
    },
    "date": "2026-06-27",
    "total": 137,
@@ -1592,21 +2617,61 @@
    "flags": 3
   },
   {
-   "battlefield": {
-    "pos": 15,
-    "neg": 0,
-    "neu": 0,
-    "net": 100,
-    "story": "Ukrainian flag raised on Kinburn Spit was propaganda stunt; Russian forces maintain control.",
-    "story_url": "https://t.me/rybar/81382",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/rybar/81384",
-      "t": "Russian Vostok group captured Novoselovka in Zaporizhzhia direction with fierce Ukrainian resistance.",
-      "ch": "Rybar"
-     }
-    ]
+   "trackers": {
+    "frontline": {
+     "pos": 15,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Ukrainian flag raised on Kinburn Spit was propaganda stunt; Russian forces maintain control.",
+     "story_url": "https://t.me/rybar/81382",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81384",
+       "t": "Russian Vostok group captured Novoselovka in Zaporizhzhia direction with fierce Ukrainian resistance.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 9,
+     "neg": 0,
+     "neu": 1,
+     "net": 90,
+     "story": "Russian strikes hit ten fuel stations, Ukrainian training camp in Nikolaev region; tactical advances continue.",
+     "story_url": "https://t.me/rybar/81388",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81379",
+       "t": "Five Geran drones hit Ukrainian naval training camp near Nikolaev, destroying facilities and amphibious equipment.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 2,
+     "neg": 10,
+     "neu": 0,
+     "net": -67,
+     "story": "Week saw mutual escalation of long-range strikes; Ukrainian drones targeted Russian refineries, affecting fuel production nationwide.",
+     "story_url": "https://t.me/dva_majors/95272",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/95274",
+       "t": "Russian air defense destroyed 213 Ukrainian drones overnight across multiple regions.",
+       "ch": "Two Majors"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/rusich_army/30120",
+       "t": "Ukrainian special forces preparing major amphibious operation on Kinburn Peninsula with smoke screen tactics.",
+       "ch": "Arkhangel Spetsnaza"
+      }
+     ]
+    }
    },
    "date": "2026-06-28",
    "total": 143,
@@ -1651,21 +2716,61 @@
    "flags": 3
   },
   {
-   "battlefield": {
-    "pos": 13,
-    "neg": 0,
-    "neu": 2,
-    "net": 87,
-    "story": "Russian Vostok group captures three settlements in Dnipropetrovsk direction over three days.",
-    "story_url": "https://t.me/rybar/81406",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/rybar/81408",
-      "t": "Russian forces capture settlements near Pokrovsk and Aleksandrovka on Dnieper direction for third consecutive day.",
-      "ch": "Rybar"
-     }
-    ]
+   "trackers": {
+    "frontline": {
+     "pos": 13,
+     "neg": 0,
+     "neu": 2,
+     "net": 87,
+     "story": "Russian Vostok group captures three settlements in Dnipropetrovsk direction over three days.",
+     "story_url": "https://t.me/rybar/81406",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81408",
+       "t": "Russian forces capture settlements near Pokrovsk and Aleksandrovka on Dnieper direction for third consecutive day.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 14,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Geran drones strike Ukrainian fuel storage facility; new missile modifications improve strike accuracy.",
+     "story_url": "https://t.me/rybar/81407",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81411",
+       "t": "Geran drone strikes reach new level with fuel depot hit in Kirovograd achieving visual confirmation.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 3,
+     "neg": 6,
+     "neu": 0,
+     "net": -33,
+     "story": "Ukrainian drones struck Russian energy infrastructure in Zaporizhzhia and Kherson regions, causing widespread blackouts and airport closure.",
+     "story_url": "https://t.me/dva_majors/95317",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81400",
+       "t": "Russian gas tanker equipped with machine guns as defense against Ukrainian attacks; reflects pattern of vessel targeting.",
+       "ch": "Rybar"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/81394",
+       "t": "Ukrainian drones struck Russian energy infrastructure in Zaporizhzhia and Kherson causing widespread blackouts; Crym bridge closed.",
+       "ch": "Rybar"
+      }
+     ]
+    }
    },
    "date": "2026-06-29",
    "total": 173,
@@ -1712,21 +2817,61 @@
    "flags": 3
   },
   {
-   "battlefield": {
-    "pos": 15,
-    "neg": 0,
-    "neu": 1,
-    "net": 94,
-    "story": "Russian forces advance on Slavyansk direction and Zaporizhzhia; Ukrainian airborne landing on Kinburn threatened.",
-    "story_url": "https://t.me/rybar/81426",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/rybar/81422",
-      "t": "Russian Vostok grouping captured Lesnoye and Rovnoye, Ukrainian counterattacks attempting recovery near Vozdvizhevka.",
-      "ch": "Rybar"
-     }
-    ]
+   "trackers": {
+    "frontline": {
+     "pos": 15,
+     "neg": 0,
+     "neu": 1,
+     "net": 94,
+     "story": "Russian forces advance on Slavyansk direction and Zaporizhzhia; Ukrainian airborne landing on Kinburn threatened.",
+     "story_url": "https://t.me/rybar/81426",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81422",
+       "t": "Russian Vostok grouping captured Lesnoye and Rovnoye, Ukrainian counterattacks attempting recovery near Vozdvizhevka.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 9,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Destroying Ukrainian fuel infrastructure disrupts logistics chain and collapses enemy supply operations.",
+     "story_url": "https://t.me/rybar/81427",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81428",
+       "t": "Russian forces destroyed nearly twenty gas stations and Sumy thermal power plant; Ukrainian drone attacks wounded civilians.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 1,
+     "neg": 11,
+     "neu": 1,
+     "net": -77,
+     "story": "Ukraine launched massive drone attacks on Russian territory; air defense systems intercepted over 50 drones approaching Moscow.",
+     "story_url": "https://t.me/dva_majors/95363",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/ngp_razvedka/25717",
+       "t": "Monaco investigation identifies SBU as responsible for bombing attempt targeting Ukrainian oligarch Yermolaev.",
+       "ch": "NgP raZVedka"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/81418",
+       "t": "Ukrainian drones kill six-month-old infant and mother in Egorievsk; 419 drones intercepted over 21 Russian regions.",
+       "ch": "Rybar"
+      }
+     ]
+    }
    },
    "date": "2026-06-30",
    "total": 160,
@@ -1773,21 +2918,61 @@
    "flags": 3
   },
   {
-   "battlefield": {
-    "pos": 23,
-    "neg": 0,
-    "neu": 0,
-    "net": 100,
-    "story": "Russian forces conduct combined operations against Ukrainian military in multiple directions with documented tactical successes.",
-    "story_url": "https://t.me/dva_majors/95411",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/rybar/81439",
-      "t": "Russian forces conduct combined operations against Ukrainian military in multiple directions with documented tactical successes.",
-      "ch": "Rybar"
-     }
-    ]
+   "trackers": {
+    "frontline": {
+     "pos": 23,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russian forces conduct combined operations against Ukrainian military in multiple directions with documented tactical successes.",
+     "story_url": "https://t.me/dva_majors/95411",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81439",
+       "t": "Russian forces conduct combined operations against Ukrainian military in multiple directions with documented tactical successes.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 17,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Laser-guided munitions improve accuracy of Russian guided bombs against Ukrainian bridge and infrastructure targets.",
+     "story_url": "https://t.me/rybar/81441",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81447",
+       "t": "Russian drones strike over 70 Ukrainian fuel stations in week; Helianthus-4 Siker drones with autopilot increasingly deployed.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 5,
+     "neg": 8,
+     "neu": 1,
+     "net": -21,
+     "story": "Russia establishes effective multi-layer defense against Ukrainian sea drones.",
+     "story_url": "https://t.me/rybar/81442",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/vysokygovorit/23228",
+       "t": "Russian drone strikes Ukrainian police officer in Zolochiv, inflicting casualties.",
+       "ch": "Starshe Eddy"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/rusich_army/30153",
+       "t": "Ukraine struck Russian targets including Crimea, DPR, and Penza region with 300+ drones in 24 hours.",
+       "ch": "Arkhangel Spetsnaza"
+      }
+     ]
+    }
    },
    "date": "2026-07-01",
    "total": 188,
@@ -1831,21 +3016,55 @@
    "flags": 2
   },
   {
-   "battlefield": {
-    "pos": 5,
-    "neg": 0,
-    "neu": 0,
-    "net": 100,
-    "story": "Russian forces advancing on all fronts; Konstantinovka key target for further Donbas offensive operations.",
-    "story_url": "https://t.me/Sladkov_plus/15715",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/wargonzo/35224",
-      "t": "Russian forces establish control of Kopani and advance in Zaporizhzhia and Donetsk sectors.",
-      "ch": "WarGonzo"
-     }
-    ]
+   "trackers": {
+    "frontline": {
+     "pos": 5,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russian forces advancing on all fronts; Konstantinovka key target for further Donbas offensive operations.",
+     "story_url": "https://t.me/Sladkov_plus/15715",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/wargonzo/35224",
+       "t": "Russian forces establish control of Kopani and advance in Zaporizhzhia and Donetsk sectors.",
+       "ch": "WarGonzo"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 21,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russian massive overnight strike on Kyiv with missiles and drones causes fires and damage.",
+     "story_url": "https://t.me/dva_majors/95486",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81456",
+       "t": "Russian massive overnight strike on Kyiv with missiles and drones causes fires and damage.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 0,
+     "neg": 7,
+     "neu": 1,
+     "net": -88,
+     "story": "Ukrainian drones strike Russian oil refinery in Nizhny Novgorod region.",
+     "story_url": "https://t.me/dva_majors/95488",
+     "examples": [
+      {
+       "s": "neg",
+       "url": "https://t.me/rusich_army/30166",
+       "t": "Russia shot down 327 drones and hit Kstovo refinery; drones targeting Leningrad region and multiple regions.",
+       "ch": "Arkhangel Spetsnaza"
+      }
+     ]
+    }
    },
    "date": "2026-07-02",
    "total": 126,

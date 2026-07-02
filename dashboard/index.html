@@ -231,22 +231,26 @@
       <div id="moodsummary"></div>
     </section>
     <section class="card">
-      <h2>Battlefield tracker</h2>
-      <div class="h-sub">How the bloggers feel about Russia's frontline progress, day by day: positive posts up (green), negative down (red). Hover any day for that day's main battlefield story.</div>
+      <h2>Is Russia winning? — sentiment trackers</h2>
+      <div class="h-sub" id="bfSub"></div>
       <div class="controls">
+        <button class="rangebtn tk active" data-topic="frontline">⚔ Battlefield</button>
+        <button class="rangebtn tk" data-topic="strikes_on_ukraine">✈ Russia's air campaign</button>
+        <button class="rangebtn tk" data-topic="ukraine_strikes_on_russia">🛡 Ukraine's strikes on Russia</button>
+        <span style="flex:1 1 auto"></span>
         <button class="rangebtn bf" data-days="14">14 days</button>
         <button class="rangebtn bf active" data-days="30">30 days</button>
         <button class="rangebtn bf" data-days="90">90 days</button>
       </div>
       <div id="bfchart"></div>
       <div class="chart-legend" style="margin-top: 10px">
-        <div class="row"><span class="swatch" style="background:var(--pos)"></span>Positive posts (gains look good)</div>
-        <div class="row"><span class="swatch" style="background:var(--neg)"></span>Negative posts (going badly)</div>
+        <div class="row"><span class="swatch" style="background:var(--pos)"></span><span id="legPos"></span></div>
+        <div class="row"><span class="swatch" style="background:var(--neg)"></span><span id="legNeg"></span></div>
         <div class="row"><span class="swatch" style="background:#00205B; height:2px; width:14px"></span>Net balance (%)</div>
       </div>
-      <h2 style="margin-top: 18px; font-size: 14px">Main battlefield story by day</h2>
+      <h2 style="margin-top: 18px; font-size: 14px">Main story by day</h2>
       <div id="bfstories"></div>
-      <div class="source">Source: Telegram; Eurasia Group analysis. Story = the day's most-viewed frontline post.</div>
+      <div class="source">Source: Telegram; Eurasia Group analysis. Story = the day's most-viewed post on the selected topic. In all three trackers green = good news for Russia, red = bad news for Russia, as presented by the bloggers themselves.</div>
     </section>
 
     <section class="card">
@@ -588,17 +592,35 @@ function renderTrendsForDay() {
   document.getElementById("subtable").innerHTML = th;
 }
 
-// ---- battlefield tracker ----
-let bfDays = 30;
+// ---- "is Russia winning?" trackers ----
+const TRACKERS = {
+  frontline: {
+    sub: "How the bloggers feel about Russia's frontline progress, day by day: posts saying gains look good go up (green), posts saying it's going badly go down (red). Hover any day for that day's main story.",
+    pos: "Gains look good", neg: "Going badly", storyWord: "frontline",
+  },
+  strikes_on_ukraine: {
+    sub: "Is Russia's air and strike campaign on Ukraine seen as working? Green = strikes presented as landing and effective; red = doubts, failures or complaints that the campaign isn't delivering.",
+    pos: "Campaign seen as succeeding", neg: "Campaign seen as faltering", storyWord: "strike-campaign",
+  },
+  ukraine_strikes_on_russia: {
+    sub: "How much are Ukraine's strikes inside Russia hurting? Red = Ukrainian strikes presented as succeeding or causing real damage; green = repelled, intercepted or downplayed.",
+    pos: "Repelled / downplayed", neg: "Ukrainian strikes hurting Russia", storyWord: "strikes-on-Russia",
+  },
+};
+let bfDays = 30, bfTopic = "frontline";
 
 function renderBattlefield() {
-  const days = INDEX.days.filter(x => x.battlefield).slice(-bfDays);
-  if (!days.length) { document.getElementById("bfchart").innerHTML = ""; return; }
+  const meta = TRACKERS[bfTopic];
+  document.getElementById("bfSub").textContent = meta.sub;
+  document.getElementById("legPos").textContent = meta.pos;
+  document.getElementById("legNeg").textContent = meta.neg;
+  const days = INDEX.days.filter(x => x.trackers && x.trackers[bfTopic]).slice(-bfDays);
+  if (!days.length) { document.getElementById("bfchart").innerHTML = ""; document.getElementById("bfstories").innerHTML = ""; return; }
 
   const W = 680, H = 260, L = 34, R = 40, T = 12, B = 26;
   const iw = W - L - R, ih = H - T - B;
-  const maxPos = Math.max(3, ...days.map(x => x.battlefield.pos));
-  const maxNeg = Math.max(3, ...days.map(x => x.battlefield.neg));
+  const maxPos = Math.max(3, ...days.map(x => x.trackers[bfTopic].pos));
+  const maxNeg = Math.max(3, ...days.map(x => x.trackers[bfTopic].neg));
   const span = maxPos + maxNeg;
   const y0 = T + (maxPos / span) * ih;                 // zero line
   const yPos = v => (v / span) * ih;                   // bar heights
@@ -616,7 +638,7 @@ function renderBattlefield() {
   const lblEvery = Math.max(1, Math.ceil(n / 10));
   days.forEach((x, i) => {
     const cx = L + i * slot + slot / 2;
-    const bf = x.battlefield;
+    const bf = x.trackers[bfTopic];
     const tipTxt = `${fmtShort(x.date)} — ${bf.pos} positive / ${bf.neg} negative` +
       (bf.net === null ? "" : ` (net ${bf.net > 0 ? "+" : ""}${bf.net})`) +
       (bf.story ? `. Main story: ${bf.story}` : "");
@@ -630,8 +652,8 @@ function renderBattlefield() {
   const yNet = v => T + ih - ((v + 100) / 200) * ih;
   let pts = "", started = false;
   days.forEach((x, i) => {
-    if (x.battlefield.net !== null && x.battlefield.net !== undefined) {
-      pts += (started ? " " : "") + `${L + i * slot + slot / 2},${yNet(x.battlefield.net)}`;
+    if (x.trackers[bfTopic].net !== null && x.trackers[bfTopic].net !== undefined) {
+      pts += (started ? " " : "") + `${L + i * slot + slot / 2},${yNet(x.trackers[bfTopic].net)}`;
       started = true;
     }
   });
@@ -644,11 +666,11 @@ function renderBattlefield() {
 
   const recent = [...days].reverse().slice(0, 10);
   document.getElementById("bfstories").innerHTML = recent.map(x => {
-    const bf = x.battlefield;
+    const bf = x.trackers[bfTopic];
     const net = bf.net === null || bf.net === undefined ? "—" : (bf.net > 0 ? "+" : "") + bf.net;
     const story = bf.story
       ? (bf.story_url ? `<a href="${esc(bf.story_url)}" target="_blank">${esc(bf.story)} ↗</a>` : esc(bf.story))
-      : "no substantive frontline posts";
+      : "no substantive posts on this topic";
     const extras = (bf.examples || []).map(e =>
       `<a href="${esc(e.url)}" target="_blank" style="white-space:nowrap; margin-left:10px; font-size:11.5px; color:${e.s === "pos" ? C.pos : C.neg}; font-weight:bold" data-tip="${esc((e.s === "pos" ? "Positive" : "Negative") + " example — " + e.ch + ": " + e.t)}">${e.s === "pos" ? "▲ upbeat post" : "▼ frustrated post"} ↗</a>`).join("");
     return `<div class="bf-row"><span class="d">${fmtShort(x.date)}</span>
@@ -660,6 +682,10 @@ function renderBattlefield() {
 document.querySelectorAll(".rangebtn.bf").forEach(b => b.addEventListener("click", () => {
   document.querySelectorAll(".rangebtn.bf").forEach(x => x.classList.remove("active"));
   b.classList.add("active"); bfDays = +b.dataset.days; renderBattlefield();
+}));
+document.querySelectorAll(".rangebtn.tk").forEach(b => b.addEventListener("click", () => {
+  document.querySelectorAll(".rangebtn.tk").forEach(x => x.classList.remove("active"));
+  b.classList.add("active"); bfTopic = b.dataset.topic; renderBattlefield();
 }));
 
 // ---- index-driven charts ----

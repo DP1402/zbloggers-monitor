@@ -409,16 +409,20 @@ def save_day(day: str, agg: dict, flags: list[dict], classified: list[dict],
         json.dumps(doc, ensure_ascii=False, indent=1), encoding="utf-8")
 
 
-def battlefield_block(d: dict) -> dict:
-    """Frontline sentiment counts + the day's main battlefield story with links.
+# Topics with their own "is Russia winning?" tracker on the dashboard
+TRACKER_TOPICS = ["frontline", "strikes_on_ukraine", "ukraine_strikes_on_russia"]
 
-    story/story_url: the most-viewed substantive frontline post.
-    examples: the most-viewed positive and negative frontline posts (clickable
+
+def tracker_block(d: dict, topic: str) -> dict:
+    """Sentiment counts for one topic + the day's main story with links.
+
+    story/story_url: the most-viewed substantive post on the topic.
+    examples: the most-viewed positive and negative posts (clickable
     evidence for each side of the mood), excluding the story post itself.
     """
-    t = d["topics"].get("frontline", {})
+    t = d["topics"].get(topic, {})
     fl = sorted([p for p in d.get("posts", [])
-                 if p.get("topic") == "frontline" and p.get("substantive")],
+                 if p.get("topic") == topic and p.get("substantive")],
                 key=lambda p: -(p.get("views") or 0))
     story, story_url = "", ""
     examples = []
@@ -441,7 +445,7 @@ def rebuild_index():
     for path in sorted(DAYS_DIR.glob("*.json")):
         d = json.loads(path.read_text(encoding="utf-8"))
         days.append({
-            "battlefield": battlefield_block(d),
+            "trackers": {t: tracker_block(d, t) for t in TRACKER_TOPICS},
             "date": d["date"],
             "total": d["total_posts"],
             "substantive": d["substantive_posts"],
