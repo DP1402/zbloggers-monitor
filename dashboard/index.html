@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZBloggers Monitor — Daily Brief</title>
+<style>
+  .viz-root, :root {
+    --surface-1: #fcfcfb;
+    --page: #f9f9f7;
+    --ink-1: #0b0b0b;
+    --ink-2: #52514e;
+    --muted: #898781;
+    --grid: #e1e0d9;
+    --baseline: #c3c2b7;
+    --border: rgba(11,11,11,0.10);
+    --series-1: #2a78d6;  /* blue   — Strikes on Ukraine */
+    --series-2: #1baf7a;  /* aqua   — Frontline */
+    --series-3: #eda100;  /* yellow — West & NATO */
+    --series-4: #008300;  /* green  — Russia internal */
+    --series-5: #4a3aa7;  /* violet — Narratives */
+    --accent: #2a78d6;
+    --wash: rgba(42,120,214,0.08);
+  }
+  @media (prefers-color-scheme: dark) {
+    .viz-root, :root {
+      --surface-1: #1a1a19;
+      --page: #0d0d0d;
+      --ink-1: #ffffff;
+      --ink-2: #c3c2b7;
+      --muted: #898781;
+      --grid: #2c2c2a;
+      --baseline: #383835;
+      --border: rgba(255,255,255,0.10);
+      --series-1: #3987e5;
+      --series-2: #199e70;
+      --series-3: #c98500;
+      --series-4: #008300;
+      --series-5: #9085e9;
+      --accent: #3987e5;
+      --wash: rgba(57,135,229,0.12);
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--page); color: var(--ink-1);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 15px; line-height: 1.5;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 24px 20px 60px; }
+
+  /* mockup banner */
+  .mock-banner {
+    background: var(--wash); border: 1px dashed var(--accent); border-radius: 8px;
+    padding: 8px 14px; font-size: 13px; color: var(--ink-2); margin-bottom: 20px;
+  }
+
+  header.top { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 16px; margin-bottom: 4px; }
+  header.top h1 { font-size: 22px; margin: 0; letter-spacing: -0.2px; }
+  .date-label { font-size: 15px; color: var(--ink-2); }
+  .subtitle { color: var(--ink-2); font-size: 13.5px; margin: 2px 0 6px; }
+  .caveat {
+    display: inline-flex; align-items: center; gap: 6px; font-size: 12.5px; color: var(--ink-2);
+    border: 1px solid var(--border); border-radius: 999px; padding: 3px 12px; margin-bottom: 24px;
+    background: var(--surface-1);
+  }
+
+  /* KPI row */
+  .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 24px; }
+  .tile {
+    background: var(--surface-1); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px 12px;
+  }
+  .tile .label { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.4px; }
+  .tile .value { font-size: 30px; font-weight: 650; margin-top: 2px; }
+  .tile .note { font-size: 12px; color: var(--ink-2); margin-top: 2px; }
+  .tile svg.spark { display: block; margin-top: 6px; }
+
+  /* layout */
+  .cols { display: grid; grid-template-columns: 1.6fr 1fr; gap: 20px; align-items: start; }
+  @media (max-width: 900px) { .cols { grid-template-columns: 1fr; } }
+
+  section.card {
+    background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px;
+    padding: 20px 22px; margin-bottom: 20px;
+  }
+  section.card h2 { font-size: 15px; margin: 0 0 4px; letter-spacing: 0.1px; }
+  section.card .h-sub { font-size: 12.5px; color: var(--muted); margin-bottom: 14px; }
+
+  /* brief */
+  .brief-lead { font-size: 14.5px; color: var(--ink-2); margin: 0 0 14px; }
+  .dev { padding: 12px 0; border-top: 1px solid var(--grid); }
+  .dev:first-of-type { border-top: none; }
+  .dev h3 { font-size: 14.5px; margin: 0 0 4px; }
+  .dev p { margin: 0 0 8px; font-size: 13.5px; color: var(--ink-2); }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip {
+    font-size: 11.5px; color: var(--ink-2); border: 1px solid var(--border);
+    border-radius: 999px; padding: 1px 9px; background: transparent;
+  }
+  .chip.src { background: var(--wash); border-color: transparent; color: var(--accent); }
+  .tag { font-size: 11.5px; border-radius: 4px; padding: 1px 7px; font-weight: 600; }
+  .tag.multi { color: #006300; background: rgba(12,163,12,0.12); }
+  .tag.single { color: var(--ink-2); background: rgba(137,135,129,0.15); }
+  .tag.frame { color: #8a4f00; background: rgba(237,161,0,0.14); }
+  @media (prefers-color-scheme: dark) {
+    .tag.multi { color: #0ca30c; }
+    .tag.frame { color: #eda100; }
+  }
+
+  /* topic legend for donut-less mix bar */
+  .mixbar { display: flex; height: 22px; border-radius: 5px; overflow: hidden; gap: 2px; margin: 10px 0 12px; background: var(--page); }
+  .mixbar div { height: 100%; }
+  .mixlegend { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 16px; font-size: 12.5px; color: var(--ink-2); }
+  .mixlegend .row { display: flex; align-items: center; gap: 7px; }
+  .swatch { width: 10px; height: 10px; border-radius: 3px; flex: none; }
+  .mixlegend .n { margin-left: auto; color: var(--ink-1); font-variant-numeric: tabular-nums; }
+
+  /* bar chart */
+  .barchart { margin-top: 6px; }
+  .barrow { display: grid; grid-template-columns: 110px 1fr 34px; align-items: center; gap: 10px; padding: 3px 0; }
+  .barrow .name { font-size: 12.5px; color: var(--ink-2); text-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .bartrack { position: relative; height: 16px; }
+  .bartrack .fill {
+    position: absolute; left: 0; top: 0; bottom: 0;
+    background: var(--series-1); border-radius: 0 4px 4px 0;
+  }
+  .barrow .val { font-size: 12px; color: var(--ink-1); font-variant-numeric: tabular-nums; }
+  .axisline { border-left: 2px solid var(--baseline); }
+
+  /* archive */
+  .arch-row {
+    display: flex; align-items: baseline; gap: 12px; padding: 9px 2px;
+    border-top: 1px solid var(--grid); font-size: 13.5px;
+  }
+  .arch-row:first-of-type { border-top: none; }
+  .arch-row .d { font-weight: 600; min-width: 90px; }
+  .arch-row .t { color: var(--ink-2); flex: 1; }
+  .arch-row .cnt { color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+  .search { width: 100%; padding: 8px 12px; border: 1px solid var(--border); border-radius: 8px;
+    background: var(--page); color: var(--muted); font-size: 13px; margin-bottom: 10px; }
+
+  footer { color: var(--muted); font-size: 12.5px; margin-top: 8px; line-height: 1.6; }
+
+  /* tooltip */
+  #tip {
+    position: fixed; pointer-events: none; z-index: 10; display: none;
+    background: var(--ink-1); color: var(--page); font-size: 12px; padding: 6px 10px;
+    border-radius: 6px; max-width: 260px;
+  }
+</style>
+</head>
+<body class="viz-root" data-palette="#2a78d6,#1baf7a,#eda100,#008300,#4a3aa7">
+<div class="wrap">
+
+  <div class="mock-banner">🔧 <strong>MOCKUP</strong> — layout preview built from real posts pulled 1–2 July 2026. Numbers are illustrative; the live version updates automatically every morning.</div>
+
+  <header class="top">
+    <h1>ZBloggers Monitor</h1>
+    <span class="date-label">Daily brief · Wednesday 2 July 2026 · 06:00 UTC</span>
+  </header>
+  <p class="subtitle">What 10 major pro-Russian military Telegram channels are saying — collected, filtered and translated automatically.</p>
+  <div class="caveat">⚠️ Source channels are propaganda outlets. Claims are <strong>signals to investigate, not facts</strong> — corroboration tags show how widely each claim is repeated.</div>
+
+  <div class="kpis">
+    <div class="tile"><div class="label">Posts collected</div><div class="value">214</div><div class="note">across 10 channels, 24 h</div></div>
+    <div class="tile"><div class="label">Substantive after filtering</div><div class="value">89</div><div class="note">ads, fundraisers &amp; memes removed</div></div>
+    <div class="tile"><div class="label">Major developments</div><div class="value">6</div><div class="note">in today's brief</div></div>
+    <div class="tile">
+      <div class="label">Post volume, 7 days</div>
+      <div class="value">214</div>
+      <svg class="spark" width="120" height="28" viewBox="0 0 120 28" aria-hidden="true">
+        <polyline points="0,18 20,15 40,20 60,12 80,16 100,9 120,6" fill="none" stroke="var(--series-1)" stroke-width="2"/>
+        <circle cx="120" cy="6" r="3" fill="var(--series-1)"/>
+      </svg>
+    </div>
+  </div>
+
+  <div class="cols">
+    <div>
+      <section class="card">
+        <h2>Today's brief</h2>
+        <div class="h-sub">Written by AI from the filtered posts · original Russian linked for every claim</div>
+        <p class="brief-lead">The dominant story overnight is the largest combined strike on Kyiv in weeks, alongside a continuing systematic campaign against Ukraine's fuel-retail network. Milblogger tone is triumphant on strikes and increasingly open about targeting doctrine.</p>
+
+        <div class="dev">
+          <h3>1. Mass combined strike on Kyiv — rare concentration of Zircon missiles</h3>
+          <p>Channels describe the night's strike as the full "long-range lineup": Kh-101s from strategic bombers, Kalibrs from the Black Sea, Iskander-M, Zircons "for the first time in a long while in such concentration on one target", plus jet-powered Geran-3 drones in series. Two Majors relays Ukrainian tallies of <strong>74 missiles and 496 drones</strong>. Kots names claimed targets in detail: <em>Radionix</em> (seeker heads/electronics for the Flamingo and Neptune-MD programmes) and <em>Athlon Avia</em> (strike drones). Rybar notes Zelensky publicly pre-warned of the strike.</p>
+          <div class="chips">
+            <span class="tag multi">✓ 4 channels, consistent</span>
+            <span class="chip src"><a href="https://t.me/sashakots" target="_blank">Kotsnews</a></span>
+            <span class="chip src"><a href="https://t.me/rybar" target="_blank">Rybar</a></span>
+            <span class="chip src"><a href="https://t.me/dva_majors" target="_blank">Two Majors</a></span>
+            <span class="chip src"><a href="https://t.me/wargonzo" target="_blank">WarGonzo</a></span>
+          </div>
+        </div>
+
+        <div class="dev">
+          <h3>2. Petrol stations emerging as a deliberate target set</h3>
+          <p>Second consecutive day of strikes on fuel retail: Rybar counts <strong>seven more petrol stations hit</strong>, Kots reports five in Dnipropetrovsk oblast alone and frames stations in Dnipropetrovsk/Kharkiv/Sumy as "the fuel artery of the front… being cut". Channels are unusually explicit that this is a coordinated campaign, extending it to fuel depots and warehouses in Kharkiv and Mykolaiv oblast.</p>
+          <div class="chips">
+            <span class="tag multi">✓ 2 channels, consistent</span>
+            <span class="chip src"><a href="https://t.me/rybar" target="_blank">Rybar</a></span>
+            <span class="chip src"><a href="https://t.me/sashakots" target="_blank">Kotsnews</a></span>
+          </div>
+        </div>
+
+        <div class="dev">
+          <h3>3. Claimed advances: Hulyaipole and Pokrovsk directions</h3>
+          <p>WarGonzo's morning summary claims control of <em>Kopani</em> (1 km from Rovne, taken the day before) on the Hulyaipole direction, fighting near Iskra, and gains in eastern Shevchenko plus Kutuzivka/Zolotyi Kolodyaz on the Pokrovsk (Krasnoarmiysk) direction. Sourced to the Russian MoD — treat as unconfirmed until geolocated.</p>
+          <div class="chips">
+            <span class="tag single">◌ single source (MoD via channels)</span>
+            <span class="chip src"><a href="https://t.me/wargonzo" target="_blank">WarGonzo</a></span>
+            <span class="chip src"><a href="https://t.me/rybar" target="_blank">Rybar</a></span>
+          </div>
+        </div>
+
+        <div class="dev">
+          <h3>4. Detailed leak-style post on UK "Project Brakestop" missiles for Ukraine</h3>
+          <p>Two Majors circulates specifics of a British long-range missile programme: ≥500 km range, 225 kg warhead, ≤£400k unit cost, ≥20/month production, with 3 of 27 bidders reaching trials in the Hebrides. Level of detail suggests genuine reporting being amplified; signals milblogger anxiety about Ukrainian deep-strike capacity.</p>
+          <div class="chips">
+            <span class="tag single">◌ single source</span>
+            <span class="chip src"><a href="https://t.me/dva_majors" target="_blank">Two Majors</a></span>
+          </div>
+        </div>
+
+        <div class="dev">
+          <h3>5. NATO Ankara summit (7–8 July) framed as war-economy summit</h3>
+          <p>Rybar previews the summit: Rutte promising "tens of billions" in defence contracts, a dedicated defence-industry day, and the narrative that Europe is consolidating for long-term confrontation. Separately, channels mock Ukraine's request for <strong>€6.6 bn from the European Peace Facility</strong> (citing Reuters).</p>
+          <div class="chips">
+            <span class="tag single">◌ single source + Reuters citation</span>
+            <span class="chip src"><a href="https://t.me/rybar" target="_blank">Rybar</a></span>
+          </div>
+        </div>
+
+        <div class="dev">
+          <h3>6. Germany charges ex-SBU officer over Nord Stream</h3>
+          <p>Kots reports Germany's federal prosecutors charging "Serhiy K." (named by channels as Kuznetsov, ex-SBU) with attacking civilian energy infrastructure — framed across channels as vindication of Moscow's account.</p>
+          <div class="chips">
+            <span class="tag single">◌ single source, matches Western press</span>
+            <span class="chip src"><a href="https://t.me/sashakots" target="_blank">Kotsnews</a></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Narrative watch</h2>
+        <div class="h-sub">Recurring frames and mood — useful for reading intent, not events</div>
+        <div class="dev">
+          <p><span class="tag frame">frame</span> <strong>"Don't blame the spirit of Anchorage"</strong> — Rybar pushes back against scapegoating the negotiation track for battlefield setbacks; a visible internal debate in the Z-space about the talks.</p>
+          <p><span class="tag frame">frame</span> <strong>European rearmament = weakness</strong> — Starshe Eddy argues Europe arms Ukraine because its own arsenals couldn't survive "a month in the kill-zone"; rearmament coverage is rising across channels ahead of the NATO summit.</p>
+          <p><span class="tag frame">frame</span> <strong>Civilisational decline essays</strong> — Rybar's long-form "Europe's brand collapse" piece; standard demoralisation genre, notable mainly for volume.</p>
+        </div>
+      </section>
+    </div>
+
+    <div>
+      <section class="card">
+        <h2>Topic mix</h2>
+        <div class="h-sub">89 substantive posts, last 24 h</div>
+        <div class="mixbar" id="mixbar" role="img" aria-label="Topic mix: Strikes on Ukraine 31, Frontline 22, West and NATO 17, Russia internal 11, Narratives 8">
+          <div style="flex:31; background:var(--series-1)" data-tip="Strikes on Ukraine — 31 posts (35%)"></div>
+          <div style="flex:22; background:var(--series-2)" data-tip="Frontline — 22 posts (25%)"></div>
+          <div style="flex:17; background:var(--series-3)" data-tip="West &amp; NATO — 17 posts (19%)"></div>
+          <div style="flex:11; background:var(--series-4)" data-tip="Russia internal — 11 posts (12%)"></div>
+          <div style="flex:8;  background:var(--series-5)" data-tip="Narratives &amp; ideology — 8 posts (9%)"></div>
+        </div>
+        <div class="mixlegend">
+          <div class="row"><span class="swatch" style="background:var(--series-1)"></span>Strikes on Ukraine <span class="n">31</span></div>
+          <div class="row"><span class="swatch" style="background:var(--series-2)"></span>Frontline <span class="n">22</span></div>
+          <div class="row"><span class="swatch" style="background:var(--series-3)"></span>West &amp; NATO <span class="n">17</span></div>
+          <div class="row"><span class="swatch" style="background:var(--series-4)"></span>Russia internal <span class="n">11</span></div>
+          <div class="row"><span class="swatch" style="background:var(--series-5)"></span>Narratives <span class="n">8</span></div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Posts by channel</h2>
+        <div class="h-sub">substantive posts, last 24 h</div>
+        <div class="barchart axisline" id="barchart"></div>
+      </section>
+
+      <section class="card">
+        <h2>Archive</h2>
+        <div class="h-sub">every day's brief and all raw posts, kept forever</div>
+        <input class="search" value="🔍 Search all archived posts… (live version)" disabled>
+        <div class="arch-row"><span class="d">2 Jul 2026</span><span class="t">Mass strike on Kyiv; fuel-network campaign</span><span class="cnt">89 posts</span></div>
+        <div class="arch-row"><span class="d">1 Jul 2026</span><span class="t">Petrol-station strikes begin; Burluk advances</span><span class="cnt">96 posts</span></div>
+        <div class="arch-row"><span class="d">30 Jun 2026</span><span class="t">Rovne claimed; drone attacks on Crimea grid</span><span class="cnt">78 posts</span></div>
+        <div class="arch-row"><span class="d">29 Jun 2026</span><span class="t">Kupyansk fighting; EU drone-funding debate</span><span class="cnt">84 posts</span></div>
+        <div class="arch-row"><span class="d">28 Jun 2026</span><span class="t">Quiet day; internal polemics over talks</span><span class="cnt">61 posts</span></div>
+      </section>
+    </div>
+  </div>
+
+  <footer>
+    <strong>How this works:</strong> every morning at 06:00 UTC the system collects the last 24 h of posts from the 10 monitored channels, removes ads/fundraisers/memes, then Claude translates the rest, groups claims by topic, tags how many channels independently repeat each claim, and writes this brief. Raw posts (original Russian + translation) are archived in the database behind the Archive panel.<br>
+    Monitored: Rybar · Two Majors · WarGonzo · Sladkov+ · Poddubny · Kotsnews · Grey Zone · Arkhangel Spetsnaza · Starshe Eddy · NgP raZVedka
+  </footer>
+</div>
+
+<div id="tip"></div>
+<script>
+  // Posts-by-channel horizontal bar chart (single series → one hue, direct labels)
+  const data = [
+    ["Rybar", 18], ["Two Majors", 16], ["Kotsnews", 14], ["WarGonzo", 12],
+    ["Starshe Eddy", 8], ["Poddubny", 7], ["Sladkov+", 6], ["Arkhangel", 4],
+    ["Grey Zone", 3], ["NgP raZVedka", 1],
+  ];
+  const max = Math.max(...data.map(d => d[1]));
+  const chart = document.getElementById("barchart");
+  for (const [name, v] of data) {
+    const row = document.createElement("div");
+    row.className = "barrow";
+    row.innerHTML = `<span class="name">${name}</span>
+      <div class="bartrack"><div class="fill" style="width:${(v / max) * 100}%" data-tip="${name}: ${v} substantive posts in the last 24 h"></div></div>
+      <span class="val">${v}</span>`;
+    chart.appendChild(row);
+  }
+
+  // shared hover tooltip
+  const tip = document.getElementById("tip");
+  document.addEventListener("mousemove", e => {
+    const t = e.target.closest("[data-tip]");
+    if (t) {
+      tip.textContent = t.dataset.tip;
+      tip.style.display = "block";
+      tip.style.left = Math.min(e.clientX + 14, innerWidth - 280) + "px";
+      tip.style.top = (e.clientY + 14) + "px";
+    } else tip.style.display = "none";
+  });
+</script>
+</body>
+</html>
