@@ -1,57 +1,57 @@
 {
  "date": "2026-06-13",
  "total_posts": 110,
- "substantive_posts": 61,
+ "substantive_posts": 58,
  "sentiment_overall": {
-  "pos_pct": 33,
-  "neg_pct": 56,
-  "neu_pct": 11
+  "pos_pct": 38,
+  "neg_pct": 50,
+  "neu_pct": 12
  },
  "topics": {
   "strikes_on_ukraine": {
    "label": "Strikes on Ukraine",
-   "posts": 8,
-   "neg": 1,
+   "posts": 6,
+   "neg": 0,
    "neu": 0,
-   "pos": 7,
-   "net": 75
+   "pos": 6,
+   "net": 100
   },
   "frontline": {
    "label": "Frontline",
-   "posts": 10,
-   "neg": 1,
-   "neu": 2,
-   "pos": 7,
-   "net": 60
+   "posts": 11,
+   "neg": 2,
+   "neu": 1,
+   "pos": 8,
+   "net": 55
   },
   "ukraine_strikes_on_russia": {
    "label": "Ukraine strikes on Russia",
    "posts": 11,
-   "neg": 11,
-   "neu": 0,
+   "neg": 10,
+   "neu": 1,
    "pos": 0,
-   "net": -100
+   "net": -91
   },
   "west_nato": {
    "label": "West & NATO",
    "posts": 21,
-   "neg": 14,
-   "neu": 3,
-   "pos": 4,
-   "net": -48
+   "neg": 12,
+   "neu": 2,
+   "pos": 7,
+   "net": -24
   },
   "russia_internal": {
    "label": "Russia internal",
    "posts": 7,
    "neg": 3,
-   "neu": 2,
-   "pos": 2,
-   "net": -14
+   "neu": 3,
+   "pos": 1,
+   "net": -29
   },
   "criticism": {
    "label": "Criticism",
-   "posts": 4,
-   "neg": 4,
+   "posts": 2,
+   "neg": 2,
    "neu": 0,
    "pos": 0,
    "net": -100
@@ -62,34 +62,34 @@
    "topic": "strikes_on_ukraine",
    "subtopic": "deep_strikes",
    "label": "Deep strikes on cities & industry",
-   "posts": 3,
-   "channels": 3,
+   "posts": 1,
+   "channels": 1,
    "neg": 0,
    "neu": 0,
-   "pos": 3,
+   "pos": 1,
    "net": 100
   },
   {
    "topic": "strikes_on_ukraine",
    "subtopic": "fuel_infrastructure",
    "label": "Fuel-infrastructure campaign",
-   "posts": 2,
-   "channels": 2,
+   "posts": 1,
+   "channels": 1,
    "neg": 0,
    "neu": 0,
-   "pos": 2,
+   "pos": 1,
    "net": 100
   },
   {
    "topic": "strikes_on_ukraine",
    "subtopic": "other",
    "label": "Other strikes on Ukraine",
-   "posts": 3,
-   "channels": 2,
-   "neg": 1,
+   "posts": 4,
+   "channels": 3,
+   "neg": 0,
    "neu": 0,
-   "pos": 2,
-   "net": 33
+   "pos": 4,
+   "net": 100
   },
   {
    "topic": "frontline",
@@ -128,41 +128,41 @@
    "topic": "frontline",
    "subtopic": "other",
    "label": "Other directions",
-   "posts": 8,
-   "channels": 5,
-   "neg": 0,
-   "neu": 2,
-   "pos": 6,
-   "net": 75
+   "posts": 9,
+   "channels": 6,
+   "neg": 1,
+   "neu": 1,
+   "pos": 7,
+   "net": 67
   },
   {
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "crimea_energy",
    "label": "Crimea fuel & energy crisis",
-   "posts": 1,
-   "channels": 1,
-   "neg": 1,
+   "posts": 0,
+   "channels": 0,
+   "neg": 0,
    "neu": 0,
    "pos": 0,
-   "net": -100
+   "net": null
   },
   {
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "drones_on_regions",
    "label": "Drones on Russian regions",
-   "posts": 6,
+   "posts": 7,
    "channels": 3,
    "neg": 6,
-   "neu": 0,
+   "neu": 1,
    "pos": 0,
-   "net": -100
+   "net": -86
   },
   {
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "other",
    "label": "Other Ukrainian strikes",
    "posts": 4,
-   "channels": 2,
+   "channels": 3,
    "neg": 4,
    "neu": 0,
    "pos": 0,
@@ -174,21 +174,21 @@
    "label": "Military aid to Ukraine",
    "posts": 5,
    "channels": 3,
-   "neg": 3,
-   "neu": 1,
+   "neg": 4,
+   "neu": 0,
    "pos": 1,
-   "net": -40
+   "net": -60
   },
   {
    "topic": "west_nato",
    "subtopic": "rearmament",
    "label": "European rearmament",
-   "posts": 4,
-   "channels": 4,
-   "neg": 2,
+   "posts": 3,
+   "channels": 3,
+   "neg": 0,
    "neu": 1,
-   "pos": 1,
-   "net": -25
+   "pos": 2,
+   "net": 67
   },
   {
    "topic": "west_nato",
@@ -216,34 +216,34 @@
    "topic": "west_nato",
    "subtopic": "other",
    "label": "Other West & NATO",
-   "posts": 6,
+   "posts": 7,
    "channels": 3,
-   "neg": 4,
+   "neg": 3,
    "neu": 0,
-   "pos": 2,
-   "net": -33
+   "pos": 4,
+   "net": 14
   },
   {
    "topic": "russia_internal",
    "subtopic": "ideology_society",
    "label": "Ideology & society essays",
-   "posts": 0,
-   "channels": 0,
-   "neg": 0,
-   "neu": 0,
-   "pos": 0,
-   "net": null
+   "posts": 3,
+   "channels": 3,
+   "neg": 1,
+   "neu": 1,
+   "pos": 1,
+   "net": 0
   },
   {
    "topic": "russia_internal",
    "subtopic": "security_cases",
    "label": "Security & treason cases",
-   "posts": 0,
-   "channels": 0,
-   "neg": 0,
-   "neu": 0,
+   "posts": 2,
+   "channels": 2,
+   "neg": 1,
+   "neu": 1,
    "pos": 0,
-   "net": null
+   "net": -50
   },
   {
    "topic": "russia_internal",
@@ -271,31 +271,31 @@
    "topic": "russia_internal",
    "subtopic": "mobilisation",
    "label": "Mobilisation & recruitment",
-   "posts": 2,
-   "channels": 2,
+   "posts": 1,
+   "channels": 1,
    "neg": 0,
    "neu": 1,
-   "pos": 1,
-   "net": 50
+   "pos": 0,
+   "net": 0
   },
   {
    "topic": "russia_internal",
    "subtopic": "other",
    "label": "Other Russia internal",
-   "posts": 5,
-   "channels": 4,
-   "neg": 3,
-   "neu": 1,
-   "pos": 1,
-   "net": -40
+   "posts": 1,
+   "channels": 1,
+   "neg": 1,
+   "neu": 0,
+   "pos": 0,
+   "net": -100
   },
   {
    "topic": "criticism",
    "subtopic": "army_command",
    "label": "Army command & logistics",
-   "posts": 2,
-   "channels": 2,
-   "neg": 2,
+   "posts": 1,
+   "channels": 1,
+   "neg": 1,
    "neu": 0,
    "pos": 0,
    "net": -100
@@ -304,9 +304,9 @@
    "topic": "criticism",
    "subtopic": "government",
    "label": "Government & ministries",
-   "posts": 2,
-   "channels": 2,
-   "neg": 2,
+   "posts": 1,
+   "channels": 1,
+   "neg": 1,
    "neu": 0,
    "pos": 0,
    "net": -100
@@ -346,8 +346,8 @@
   }
  ],
  "channels": {
-  "Two Majors": 22,
-  "Rybar": 12,
+  "Two Majors": 20,
+  "Rybar": 11,
   "Kotsnews": 7,
   "WarGonzo": 5,
   "Poddubny": 5,
@@ -359,38 +359,38 @@
  "top_viewed": [
   {
    "channel_label": "Rybar",
-   "link": "https://t.me/rybar/81053",
-   "views": 274642,
-   "forwards": 46,
-   "summary_en": "US intelligence officially confirms bio-laboratories in Ukraine, indicating hidden research facilities across multiple regions."
-  },
-  {
-   "channel_label": "Rybar",
    "link": "https://t.me/rybar/81041",
    "views": 270456,
    "forwards": 795,
-   "summary_en": "US intelligence officially acknowledges existence of 40+ biolab facilities in Ukraine, validating Russian claims."
+   "summary_en": "US intelligence confirms 40+ biolab network in Ukraine, validating Russian military claims from 2022."
   },
   {
    "channel_label": "Rybar",
    "link": "https://t.me/rybar/81050",
    "views": 193083,
    "forwards": 88,
-   "summary_en": "Russian forces strike crossing at Mayaky; Ukrainian drones attack Crimea energy infrastructure daily."
+   "summary_en": "Russian forces strike bridge in Liman direction; Ukraine attacks Crimea energy and Kherson-Crimea crossings."
   },
   {
    "channel_label": "Rybar",
    "link": "https://t.me/rybar/81046",
    "views": 192698,
    "forwards": 133,
-   "summary_en": "Russian forces continue offensive in Konstantinovka, advancing through urban terrain despite Ukrainian resistance."
+   "summary_en": "Russian forces advance in urban combat in Konstantinovka, clearing districts despite Ukrainian supply efforts."
   },
   {
    "channel_label": "Rybar",
    "link": "https://t.me/rybar/81044",
    "views": 190067,
    "forwards": 193,
-   "summary_en": "Ukrainian forces destroy key bridge near Andriivka using coordinated FPV drone swarm attacks on structural supports."
+   "summary_en": "Russian forces destroy bridge across Nitreus river using FPV drones to disrupt Ukrainian logistics on Lyman direction."
+  },
+  {
+   "channel_label": "Rybar",
+   "link": "https://t.me/rybar/81042",
+   "views": 187893,
+   "forwards": 109,
+   "summary_en": "DIY radar technology from hobbyists cannot replace industrial-scale military manufacturing."
   }
  ],
  "top_forwarded": [
@@ -399,47 +399,42 @@
    "link": "https://t.me/dva_majors/94485",
    "views": 135702,
    "forwards": 1720,
-   "summary_en": "Ukrainian drones attacked Crimean Titan chemical plant with 20+ aircraft, highlighting disregard for environmental concerns."
+   "summary_en": "Ukraine launches 20+ drones against Crimean Titan chemical plant in Armyansk."
   },
   {
    "channel_label": "Two Majors",
    "link": "https://t.me/dva_majors/94489",
    "views": 109912,
    "forwards": 921,
-   "summary_en": "Post advocates dehumanization tactics in warfare, claiming Ukrainian methods justify Russian retaliatory atrocities."
+   "summary_en": "Post argues Russia must dehumanize Ukrainians and commit war crimes against civilians as strategic necessity."
   },
   {
    "channel_label": "Rybar",
    "link": "https://t.me/rybar/81041",
    "views": 270456,
    "forwards": 795,
-   "summary_en": "US intelligence officially acknowledges existence of 40+ biolab facilities in Ukraine, validating Russian claims."
+   "summary_en": "US intelligence confirms 40+ biolab network in Ukraine, validating Russian military claims from 2022."
   }
  ],
  "flags": [
   {
    "type": "mood_swing",
-   "topic": "strikes_on_ukraine",
-   "label": "Strikes on Ukraine",
-   "net": 75,
-   "move": 25
+   "topic": "west_nato",
+   "label": "West & NATO",
+   "net": -24,
+   "move": 62
   },
   {
    "type": "mood_swing",
    "topic": "russia_internal",
    "label": "Russia internal",
-   "net": -14,
-   "move": -94
-  },
-  {
-   "type": "watchlist_alert",
-   "label": "Mobilisation rumours",
-   "posts": 2,
-   "channels": 2
+   "net": -29,
+   "move": -49
   },
   {
    "type": "watchlist_quiet",
    "items": [
+    "Mobilisation rumours",
     "Criticism of Putin"
    ]
   }
@@ -850,7 +845,7 @@
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "drones_on_regions",
    "sentiment": "neg",
-   "summary_en": "Ukrainian drones attacked Temryuk port terminal; one killed, three wounded; 177 drones intercepted overnight."
+   "summary_en": "Ukrainian drones attacked Temryuk oil terminal and Kherson bridges; Russia shot down 177 drones overnight."
   },
   {
    "channel": "dva_majors",
@@ -878,7 +873,7 @@
    "topic": "west_nato",
    "subtopic": "alliance_politics",
    "sentiment": "neg",
-   "summary_en": "NATO generals warn Russia could attack NATO members by 2029 with sufficient military capability restored."
+   "summary_en": "German military commander predicts Russia could attack NATO by 2029 after military recovery."
   },
   {
    "channel": "dva_majors",
@@ -892,7 +887,7 @@
    "topic": "strikes_on_ukraine",
    "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "Russia deployed new Geran-5 jet-powered drone with higher speed, harder to intercept from small arms."
+   "summary_en": "Russia deploys new Geran-5 jet-powered drone with higher speed, harder to intercept."
   },
   {
    "channel": "sashakots",
@@ -904,9 +899,9 @@
    "forwards": 93,
    "substantive": true,
    "topic": "russia_internal",
-   "subtopic": "other",
+   "subtopic": "ideology_society",
    "sentiment": "neg",
-   "summary_en": "Regional official describes daily Ukrainian drone attacks expanding into civilian transport in border areas with casualties."
+   "summary_en": "Regional official describes daily Ukrainian drone attacks on Belgorod, civilian casualties."
   },
   {
    "channel": "dva_majors",
@@ -920,7 +915,7 @@
    "topic": "russia_internal",
    "subtopic": "mobilisation",
    "sentiment": "neu",
-   "summary_en": "Over 1.5 million people engaged in armed struggle through volunteer corps alongside official military service."
+   "summary_en": "Over 1.5 million personnel engaged in armed struggle via military service and volunteer corps."
   },
   {
    "channel": "rybar",
@@ -932,9 +927,9 @@
    "forwards": 274,
    "substantive": true,
    "topic": "ukraine_strikes_on_russia",
-   "subtopic": "drones_on_regions",
+   "subtopic": "other",
    "sentiment": "neg",
-   "summary_en": "60% of Ukrainian deep-strike drones in May were decoys without warheads; forcing Russia to waste expensive air defense."
+   "summary_en": "Analysis: 60% of Ukrainian deep-strike drones carry no warhead, forcing Russia to waste expensive air defense."
   },
   {
    "channel": "dva_majors",
@@ -946,9 +941,9 @@
    "forwards": 69,
    "substantive": true,
    "topic": "strikes_on_ukraine",
-   "subtopic": "deep_strikes",
+   "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "Russia uses online-controlled Geran drones via relay systems while satellite constellation deployment continues."
+   "summary_en": "Russia uses online-controlled Gerani drones with relay retransmitters mimicking Ukrainian Starlink capabilities."
   },
   {
    "channel": "Sladkov_plus",
@@ -1017,8 +1012,8 @@
    "substantive": true,
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "drones_on_regions",
-   "sentiment": "neg",
-   "summary_en": "177 drones shot down overnight; 362 total destroyed; Temryuk terminals attacked again with fire; multiple regional strikes."
+   "sentiment": "neu",
+   "summary_en": "Russia shot down 177 drones overnight; Ukrainian attacks hit Temryuk oil terminal and multiple regions."
   },
   {
    "channel": "dva_majors",
@@ -1032,7 +1027,7 @@
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "drones_on_regions",
    "sentiment": "neg",
-   "summary_en": "One civilian killed, five wounded in Kherson region from Ukrainian drone attacks on vehicles and infrastructure."
+   "summary_en": "Ukrainian drone attacks in Kherson region killed 1 civilian, wounded 5 over past 24 hours."
   },
   {
    "channel": "wargonzo",
@@ -1045,8 +1040,8 @@
    "substantive": true,
    "topic": "frontline",
    "subtopic": "other",
-   "sentiment": "neu",
-   "summary_en": "Russian forces advance on Zaporizhzhia and Donets fronts; fighting near Myrne, Ternovate, and Konstuntynivka."
+   "sentiment": "pos",
+   "summary_en": "Russian forces advance in Zaporizhzhia and Donetsk fronts, capturing new positions and settlements."
   },
   {
    "channel": "dva_majors",
@@ -1057,10 +1052,10 @@
    "views": 96416,
    "forwards": 401,
    "substantive": true,
-   "topic": "ukraine_strikes_on_russia",
-   "subtopic": "other",
+   "topic": "russia_internal",
+   "subtopic": "security_cases",
    "sentiment": "neg",
-   "summary_en": "Ukrainian forces using drones to remotely mine Crimea roads with improvised devices disguised as household items."
+   "summary_en": "Ukraine drones remote-mine Crimean highway with improvised devices disguised as household items."
   },
   {
    "channel": "dva_majors",
@@ -1102,7 +1097,7 @@
    "topic": "west_nato",
    "subtopic": "military_aid",
    "sentiment": "neg",
-   "summary_en": "Western European governments fail to increase defense spending despite NATO promises on Russian threat."
+   "summary_en": "Western European governments fail to increase defense spending despite NATO promises amid Russian threat."
   },
   {
    "channel": "dva_majors",
@@ -1116,7 +1111,7 @@
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "other",
    "sentiment": "neg",
-   "summary_en": "Ukrainian attacks on Dzhankoi bridge near Crimea; traffic rerouted via alternate road; services working on-site."
+   "summary_en": "Ukrainian attacks on Crimean bridge near Dzhankoy forced temporary closure; traffic rerouted."
   },
   {
    "channel": "epoddubny",
@@ -1128,9 +1123,9 @@
    "forwards": 73,
    "substantive": true,
    "topic": "strikes_on_ukraine",
-   "subtopic": "fuel_infrastructure",
+   "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "Russia strikes Krivoy Rog thermal power station to disrupt military supply transport."
+   "summary_en": "Russia strikes Kryvorizh thermal power plant with Gerani drones to disrupt Ukrainian military logistics."
   },
   {
    "channel": "dva_majors",
@@ -1144,7 +1139,7 @@
    "topic": "west_nato",
    "subtopic": "alliance_politics",
    "sentiment": "neg",
-   "summary_en": "Lithuania, Poland, France conduct Suwalki Corridor exercises to control access routes to Kaliningrad."
+   "summary_en": "NATO exercises near Suwalki Corridor simulate control of key access routes to Kaliningrad region."
   },
   {
    "channel": "sashakots",
@@ -1156,9 +1151,9 @@
    "forwards": 25,
    "substantive": true,
    "topic": "strikes_on_ukraine",
-   "subtopic": "fuel_infrastructure",
+   "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "Russia strikes Krivoy Rog thermal power station to disrupt military supply transport."
+   "summary_en": "Russia strikes Kryvorizh thermal power plant with Gerani drones to disrupt Ukrainian military logistics."
   },
   {
    "channel": "dva_majors",
@@ -1168,11 +1163,11 @@
    "date_utc": "2026-06-13 08:32:27",
    "views": 91552,
    "forwards": 92,
-   "substantive": true,
-   "topic": "russia_internal",
-   "subtopic": "other",
-   "sentiment": "neg",
-   "summary_en": "Military medic recounts inability to save severely wounded soldier, experiencing helplessness and trauma."
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
   },
   {
    "channel": "rybar",
@@ -1214,7 +1209,7 @@
    "topic": "frontline",
    "subtopic": "hulyaipole",
    "sentiment": "pos",
-   "summary_en": "Russian air force and strike drones attacked Ukrainian reserves and artillery on Zaporizhzhia direction."
+   "summary_en": "Russian aviation and drones strike Ukrainian reserves and artillery on Zaporizhzhia direction."
   },
   {
    "channel": "rusich_army",
@@ -1242,7 +1237,7 @@
    "topic": "west_nato",
    "subtopic": "military_aid",
    "sentiment": "pos",
-   "summary_en": "Trump administration may cut US military aid to Europe by 30-100% across platforms and systems."
+   "summary_en": "Trump administration may cut US military support to Europe by 30-100% across various capabilities."
   },
   {
    "channel": "epoddubny",
@@ -1256,7 +1251,7 @@
    "topic": "strikes_on_ukraine",
    "subtopic": "deep_strikes",
    "sentiment": "pos",
-   "summary_en": "Russian airstrikes using FAB-3000 and FAB-1500 destroyed Ukrainian shelters and equipment near Belitskoe and Shchurovo."
+   "summary_en": "Russian aircraft destroy Ukrainian brigade shelters in DNR with FAB-3000 and FAB-1500 bombs."
   },
   {
    "channel": "epoddubny",
@@ -1270,7 +1265,7 @@
    "topic": "russia_internal",
    "subtopic": "other",
    "sentiment": "neg",
-   "summary_en": "Russian official describes escalating Ukrainian drone attacks on Belgorod civilians and civilian infrastructure."
+   "summary_en": "Ukrainian drones expand terror attacks on Russian civilians in Belgorod and beyond frontline zones."
   },
   {
    "channel": "rybar",
@@ -1284,7 +1279,7 @@
    "topic": "west_nato",
    "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "US intelligence officially acknowledges existence of 40+ biolab facilities in Ukraine, validating Russian claims."
+   "summary_en": "US intelligence confirms 40+ biolab network in Ukraine, validating Russian military claims from 2022."
   },
   {
    "channel": "dva_majors",
@@ -1296,9 +1291,9 @@
    "forwards": 73,
    "substantive": true,
    "topic": "russia_internal",
-   "subtopic": "other",
+   "subtopic": "ideology_society",
    "sentiment": "pos",
-   "summary_en": "D.Skiff 'Infantryman-M' body armor passes comprehensive tests including water, fragmentation and explosive resistance."
+   "summary_en": "Russian D. Skiff body armor passes comprehensive trials in water and combat conditions."
   },
   {
    "channel": "epoddubny",
@@ -1312,7 +1307,7 @@
    "topic": "frontline",
    "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "Russian artillery destroyed Ukrainian command posts and shelters in Konstantinovka with guided munitions."
+   "summary_en": "Russian forces destroy Ukrainian command posts and shelters in Konstantinovka with artillery."
   },
   {
    "channel": "dva_majors",
@@ -1325,8 +1320,8 @@
    "substantive": true,
    "topic": "west_nato",
    "subtopic": "military_aid",
-   "sentiment": "neu",
-   "summary_en": "US military tests CURTAIN CALL drone swarm system for autonomous air defense against multiple simultaneous threats."
+   "sentiment": "neg",
+   "summary_en": "US tests swarm drone defense system CURTAIN CALL against coordinated unmanned threats."
   },
   {
    "channel": "epoddubny",
@@ -1354,7 +1349,7 @@
    "topic": "west_nato",
    "subtopic": "alliance_politics",
    "sentiment": "neg",
-   "summary_en": "NATO conducts Dzielny Dzik military exercises near Kaliningrad with 6000 troops, including German and Polish forces."
+   "summary_en": "NATO exercises near Kaliningrad with 6000 troops and 600 vehicles in June 2026."
   },
   {
    "channel": "vysokygovorit",
@@ -1368,7 +1363,7 @@
    "topic": "west_nato",
    "subtopic": "alliance_politics",
    "sentiment": "neg",
-   "summary_en": "NATO conducts Dzielny Dzik military exercises near Kaliningrad with 6000 troops, including German and Polish forces."
+   "summary_en": "NATO exercises near Kaliningrad with 6000 troops and 600 vehicles in June 2026."
   },
   {
    "channel": "ngp_razvedka",
@@ -1382,7 +1377,7 @@
    "topic": "west_nato",
    "subtopic": "alliance_politics",
    "sentiment": "neg",
-   "summary_en": "NATO Suwalki corridor exercises create tension point on Kaliningrad border despite stated defensive purposes."
+   "summary_en": "NATO Suwalki corridor exercises create tension point near Kaliningrad region."
   },
   {
    "channel": "Sladkov_plus",
@@ -1410,7 +1405,7 @@
    "topic": "west_nato",
    "subtopic": "negotiations",
    "sentiment": "neu",
-   "summary_en": "Iran and US near agreement including Hormuz Strait opening, US naval blockade removal, and sanctions relief."
+   "summary_en": "Iran and USA negotiate ceasefire agreement covering Hormuz Strait and nuclear program."
   },
   {
    "channel": "sashakots",
@@ -1422,9 +1417,9 @@
    "forwards": 141,
    "substantive": true,
    "topic": "strikes_on_ukraine",
-   "subtopic": "deep_strikes",
+   "subtopic": "fuel_infrastructure",
    "sentiment": "pos",
-   "summary_en": "Putin outlines three-pronged Russian response to Ukrainian drone attacks: air defense, infrastructure repair, and strikes."
+   "summary_en": "Putin outlines three-pronged response to Ukrainian drone terror: air defense, repairs, strikes."
   },
   {
    "channel": "rybar",
@@ -1436,9 +1431,9 @@
    "forwards": 109,
    "substantive": true,
    "topic": "russia_internal",
-   "subtopic": "other",
+   "subtopic": "ideology_society",
    "sentiment": "neu",
-   "summary_en": "DIY radar production differs fundamentally from military-grade manufacturing despite cost advantages."
+   "summary_en": "DIY radar technology from hobbyists cannot replace industrial-scale military manufacturing."
   },
   {
    "channel": "dva_majors",
@@ -1452,7 +1447,7 @@
    "topic": "west_nato",
    "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "US intelligence officially acknowledges existence of 40+ biolab facilities in Ukraine, validating Russian claims."
+   "summary_en": "US intelligence confirms 40+ biolab network in Ukraine, validating Russian military claims from 2022."
   },
   {
    "channel": "dva_majors",
@@ -1493,8 +1488,8 @@
    "substantive": true,
    "topic": "west_nato",
    "subtopic": "other",
-   "sentiment": "neg",
-   "summary_en": "French education system investigation reveals widespread child abuse and sexual violence in Paris schools and daycare."
+   "sentiment": "pos",
+   "summary_en": "French schools face abuse scandal affecting 100+ children across Paris facilities."
   },
   {
    "channel": "epoddubny",
@@ -1508,7 +1503,7 @@
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "other",
    "sentiment": "neg",
-   "summary_en": "Ukrainian drones attacked Zaporizhzhia nuclear facility transport section, damaging vehicles and fuel infrastructure."
+   "summary_en": "Ukrainian forces attack Zaporizhzhia nuclear plant transport facility, destroying vehicles."
   },
   {
    "channel": "dva_majors",
@@ -1520,9 +1515,9 @@
    "forwards": 1720,
    "substantive": true,
    "topic": "ukraine_strikes_on_russia",
-   "subtopic": "other",
+   "subtopic": "drones_on_regions",
    "sentiment": "neg",
-   "summary_en": "Ukrainian drones attacked Crimean Titan chemical plant with 20+ aircraft, highlighting disregard for environmental concerns."
+   "summary_en": "Ukraine launches 20+ drones against Crimean Titan chemical plant in Armyansk."
   },
   {
    "channel": "Sladkov_plus",
@@ -1536,7 +1531,7 @@
    "topic": "criticism",
    "subtopic": "army_command",
    "sentiment": "neg",
-   "summary_en": "Russian military looting during war requires post-conflict accountability and justice measures."
+   "summary_en": "Post discusses looting by Russian forces and moral ambiguity between military necessity and war crimes."
   },
   {
    "channel": "wargonzo",
@@ -1550,7 +1545,7 @@
    "topic": "frontline",
    "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "Russian drone operators destroy Ukrainian robotic vehicles near Orihiv using coordinated FPV drone strikes."
+   "summary_en": "Russian drone operators destroy Ukrainian robotic systems near Orekhovoe using FPV drones."
   },
   {
    "channel": "sashakots",
@@ -1564,7 +1559,7 @@
    "topic": "west_nato",
    "subtopic": "rearmament",
    "sentiment": "pos",
-   "summary_en": "Franco-German MGCS tank and fighter jet programs face budget cuts and delays, weakening European military capacity."
+   "summary_en": "Franco-German MGCS tank project faces budget cuts and delays due to disagreements between nations."
   },
   {
    "channel": "dva_majors",
@@ -1578,7 +1573,7 @@
    "topic": "west_nato",
    "subtopic": "military_aid",
    "sentiment": "neg",
-   "summary_en": "Ukraine establishes military production network across NATO countries, retaining design control and combat experience."
+   "summary_en": "Ukraine establishes weapons production network across NATO countries to sustain arms manufacturing independently."
   },
   {
    "channel": "vysokygovorit",
@@ -1603,10 +1598,10 @@
    "views": 85532,
    "forwards": 325,
    "substantive": true,
-   "topic": "criticism",
-   "subtopic": "army_command",
+   "topic": "frontline",
+   "subtopic": "other",
    "sentiment": "neg",
-   "summary_en": "Russian forces abandoned positions without resistance during 2022 Kharkiv retreat; Western strategy relied on this tactic."
+   "summary_en": "Post criticizes 2023 Ukrainian offensive tactics based on failed Kharkov region tactics and Western miscalculation."
   },
   {
    "channel": "dva_majors",
@@ -1620,7 +1615,7 @@
    "topic": "frontline",
    "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "Russian Marines eliminate Ukrainian sabotage group near Voskresenka, obtain intelligence from captured phone."
+   "summary_en": "Russian naval infantry destroys Ukrainian reconnaissance group near Voskresenko, captures intelligence from smartphone."
   },
   {
    "channel": "dva_majors",
@@ -1632,9 +1627,9 @@
    "forwards": 637,
    "substantive": true,
    "topic": "ukraine_strikes_on_russia",
-   "subtopic": "crimea_energy",
+   "subtopic": "other",
    "sentiment": "neg",
-   "summary_en": "Ukraine conducts coordinated information-warfare campaign against Crimea using strikes and media coverage."
+   "summary_en": "Post analyzes Ukrainian coordinated information-combat operation targeting Crimea through strikes and propaganda."
   },
   {
    "channel": "rusich_army",
@@ -1660,9 +1655,9 @@
    "forwards": 187,
    "substantive": true,
    "topic": "russia_internal",
-   "subtopic": "mobilisation",
-   "sentiment": "pos",
-   "summary_en": "Russian law allows commercial companies to destroy Ukrainian drones without military coordination to protect infrastructure."
+   "subtopic": "security_cases",
+   "sentiment": "neu",
+   "summary_en": "Russia permits commercial entities to defend against Ukrainian drones without coordination with authorities."
   },
   {
    "channel": "rybar",
@@ -1676,7 +1671,7 @@
    "topic": "frontline",
    "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "Ukrainian forces destroy key bridge near Andriivka using coordinated FPV drone swarm attacks on structural supports."
+   "summary_en": "Russian forces destroy bridge across Nitreus river using FPV drones to disrupt Ukrainian logistics on Lyman direction."
   },
   {
    "channel": "wargonzo",
@@ -1704,7 +1699,7 @@
    "topic": "criticism",
    "subtopic": "government",
    "sentiment": "neg",
-   "summary_en": "Post advocates dehumanization tactics in warfare, claiming Ukrainian methods justify Russian retaliatory atrocities."
+   "summary_en": "Post argues Russia must dehumanize Ukrainians and commit war crimes against civilians as strategic necessity."
   },
   {
    "channel": "rybar",
@@ -1718,7 +1713,7 @@
    "topic": "frontline",
    "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "Russian forces continue offensive in Konstantinovka, advancing through urban terrain despite Ukrainian resistance."
+   "summary_en": "Russian forces advance in urban combat in Konstantinovka, clearing districts despite Ukrainian supply efforts."
   },
   {
    "channel": "sashakots",
@@ -1729,10 +1724,10 @@
    "views": 31485,
    "forwards": 60,
    "substantive": true,
-   "topic": "strikes_on_ukraine",
-   "subtopic": "other",
+   "topic": "ukraine_strikes_on_russia",
+   "subtopic": "drones_on_regions",
    "sentiment": "neg",
-   "summary_en": "Children injured in Belgorod from Ukrainian strikes; regional officials visit hospital, acknowledge challenges."
+   "summary_en": "Ukrainian drones strike Belgorod residential area, injuring children; regional officials discuss security improvements."
   },
   {
    "channel": "sashakots",
@@ -1760,7 +1755,7 @@
    "topic": "west_nato",
    "subtopic": "other",
    "sentiment": "neg",
-   "summary_en": "USA allegedly funded 120 biological laboratories across 30 countries including Caucasus region through DTRA program."
+   "summary_en": "Post alleges USA financed network of biological laboratories across South Caucasus since early 2000s."
   },
   {
    "channel": "dva_majors",
@@ -1774,7 +1769,7 @@
    "topic": "west_nato",
    "subtopic": "military_aid",
    "sentiment": "neg",
-   "summary_en": "Ukrainian military specialists to establish drone defense systems in Latvia, suggesting future Ukrainian drone launches."
+   "summary_en": "Ukrainian military specialists to be based in Latvia to advise on drone defense systems targeting Ukrainian drones."
   },
   {
    "channel": "wargonzo",
@@ -1788,7 +1783,7 @@
    "topic": "west_nato",
    "subtopic": "other",
    "sentiment": "neg",
-   "summary_en": "Ukraine denies US intelligence confirming 40 secret bioweapon laboratories operated with American funding."
+   "summary_en": "Ukrainian MFA denies US intelligence revelations of 40 secret bioweapons laboratories on Ukrainian territory."
   },
   {
    "channel": "sashakots",
@@ -1816,7 +1811,7 @@
    "topic": "west_nato",
    "subtopic": "rearmament",
    "sentiment": "neu",
-   "summary_en": "US Air Force F-47 sixth-generation fighter program faces potential cost overruns and budget cuts."
+   "summary_en": "Post analyzes potential vulnerabilities in US F-47 fighter program under development for 2028 first flight."
   },
   {
    "channel": "ngp_razvedka",
@@ -1830,7 +1825,7 @@
    "topic": "frontline",
    "subtopic": "hulyaipole",
    "sentiment": "neg",
-   "summary_en": "Ukraine prepares offensive on Zaporizhzhia direction with reconnaissance, drone deployment, attempting Crimea corridor blockade."
+   "summary_en": "Ukrainian forces preparing major offensive on Zaporizhzhia direction with drone superiority and supply line isolation."
   },
   {
    "channel": "rybar",
@@ -1843,8 +1838,8 @@
    "substantive": true,
    "topic": "west_nato",
    "subtopic": "other",
-   "sentiment": "neg",
-   "summary_en": "US declassified documents reveal funding 120+ biological labs in 30 countries, including dangerous pathogens work."
+   "sentiment": "pos",
+   "summary_en": "US declassifies documents confirming 120+ biological laboratories in 30+ countries, including 40+ in Ukraine with dangerous pathogens."
   },
   {
    "channel": "dva_majors",
@@ -1856,9 +1851,9 @@
    "forwards": 84,
    "substantive": true,
    "topic": "west_nato",
-   "subtopic": "rearmament",
+   "subtopic": "other",
    "sentiment": "neg",
-   "summary_en": "German commander warns Russia may deploy nuclear weapons in space; Germany announces space defense development."
+   "summary_en": "German Space Command official warns Russia may develop nuclear weapons in orbit to disable satellite infrastructure."
   },
   {
    "channel": "dva_majors",
@@ -1868,11 +1863,11 @@
    "date_utc": "2026-06-13 19:48:14",
    "views": 96975,
    "forwards": 70,
-   "substantive": true,
-   "topic": "strikes_on_ukraine",
-   "subtopic": "other",
-   "sentiment": "pos",
-   "summary_en": "Crimean city Armyansk air quality meets hygiene standards after drone strike; no chemical contamination confirmed."
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
   },
   {
    "channel": "rybar",
@@ -1886,7 +1881,7 @@
    "topic": "frontline",
    "subtopic": "other",
    "sentiment": "neu",
-   "summary_en": "Russian forces strike crossing at Mayaky; Ukrainian drones attack Crimea energy infrastructure daily."
+   "summary_en": "Russian forces strike bridge in Liman direction; Ukraine attacks Crimea energy and Kherson-Crimea crossings."
   },
   {
    "channel": "dva_majors",
@@ -1914,7 +1909,7 @@
    "topic": "frontline",
    "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "Russian forces achieve strategic victory on Konstantinovsk direction, Ukrainian forces surrendering or attempting breakthrough."
+   "summary_en": "Russian breakthrough in Konstantinovsk direction with Ukrainian forces retreating or breaking out; advances near Hulyaipole."
   },
   {
    "channel": "rybar",
@@ -1924,11 +1919,11 @@
    "date_utc": "2026-06-13 20:08:01",
    "views": 274642,
    "forwards": 46,
-   "substantive": true,
-   "topic": "criticism",
-   "subtopic": "government",
-   "sentiment": "neg",
-   "summary_en": "US intelligence officially confirms bio-laboratories in Ukraine, indicating hidden research facilities across multiple regions."
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
   },
   {
    "channel": "dva_majors",
@@ -1942,7 +1937,7 @@
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "drones_on_regions",
    "sentiment": "neg",
-   "summary_en": "Ukrainian drone attacks damage Zaporizhzhia energy infrastructure causing partial power outages in region."
+   "summary_en": "Ukrainian drone attacks damage Zaporizhzhia region energy infrastructure causing partial blackouts."
   },
   {
    "channel": "vysokygovorit",
@@ -1955,8 +1950,8 @@
    "substantive": true,
    "topic": "west_nato",
    "subtopic": "rearmament",
-   "sentiment": "neg",
-   "summary_en": "European NATO members worried about potential US military withdrawal reducing aircraft, drones, fighters and ships by 30-50%."
+   "sentiment": "pos",
+   "summary_en": "NATO concerned about potential US cuts to military contingent in Europe reducing aircraft and ship deployments."
   },
   {
    "channel": "dva_majors",
@@ -1984,7 +1979,7 @@
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "drones_on_regions",
    "sentiment": "neg",
-   "summary_en": "Ukrainian FAB strikes on Zaporizhzhia cause power and water outages in city."
+   "summary_en": "Russian strikes with FABs on Zaporizhzhia cause power and water outages in the city."
   }
  ]
 }

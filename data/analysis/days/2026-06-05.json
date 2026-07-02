@@ -1,57 +1,57 @@
 {
  "date": "2026-06-05",
  "total_posts": 146,
- "substantive_posts": 70,
+ "substantive_posts": 69,
  "sentiment_overall": {
-  "pos_pct": 39,
-  "neg_pct": 44,
-  "neu_pct": 17
+  "pos_pct": 36,
+  "neg_pct": 54,
+  "neu_pct": 10
  },
  "topics": {
   "strikes_on_ukraine": {
    "label": "Strikes on Ukraine",
-   "posts": 5,
+   "posts": 6,
    "neg": 0,
-   "neu": 2,
-   "pos": 3,
-   "net": 60
+   "neu": 1,
+   "pos": 5,
+   "net": 83
   },
   "frontline": {
    "label": "Frontline",
-   "posts": 11,
-   "neg": 2,
-   "neu": 3,
+   "posts": 6,
+   "neg": 0,
+   "neu": 0,
    "pos": 6,
-   "net": 36
+   "net": 100
   },
   "ukraine_strikes_on_russia": {
    "label": "Ukraine strikes on Russia",
-   "posts": 20,
-   "neg": 7,
+   "posts": 21,
+   "neg": 16,
    "neu": 1,
-   "pos": 12,
-   "net": 25
+   "pos": 4,
+   "net": -57
   },
   "west_nato": {
    "label": "West & NATO",
-   "posts": 22,
-   "neg": 15,
-   "neu": 4,
-   "pos": 3,
-   "net": -55
+   "posts": 20,
+   "neg": 13,
+   "neu": 3,
+   "pos": 4,
+   "net": -45
   },
   "russia_internal": {
    "label": "Russia internal",
-   "posts": 5,
-   "neg": 0,
+   "posts": 11,
+   "neg": 3,
    "neu": 2,
-   "pos": 3,
-   "net": 60
+   "pos": 6,
+   "net": 27
   },
   "criticism": {
    "label": "Criticism",
-   "posts": 7,
-   "neg": 7,
+   "posts": 5,
+   "neg": 5,
    "neu": 0,
    "pos": 0,
    "net": -100
@@ -74,7 +74,7 @@
    "subtopic": "fuel_infrastructure",
    "label": "Fuel-infrastructure campaign",
    "posts": 2,
-   "channels": 2,
+   "channels": 1,
    "neg": 0,
    "neu": 1,
    "pos": 1,
@@ -84,12 +84,12 @@
    "topic": "strikes_on_ukraine",
    "subtopic": "other",
    "label": "Other strikes on Ukraine",
-   "posts": 2,
+   "posts": 3,
    "channels": 2,
    "neg": 0,
-   "neu": 1,
-   "pos": 1,
-   "net": 50
+   "neu": 0,
+   "pos": 3,
+   "net": 100
   },
   {
    "topic": "frontline",
@@ -106,6 +106,17 @@
    "topic": "frontline",
    "subtopic": "hulyaipole",
    "label": "Hulyaipole / Zaporizhzhia direction",
+   "posts": 1,
+   "channels": 1,
+   "neg": 0,
+   "neu": 0,
+   "pos": 1,
+   "net": 100
+  },
+  {
+   "topic": "frontline",
+   "subtopic": "kupyansk",
+   "label": "Kupyansk / Kharkiv direction",
    "posts": 0,
    "channels": 0,
    "neg": 0,
@@ -115,25 +126,14 @@
   },
   {
    "topic": "frontline",
-   "subtopic": "kupyansk",
-   "label": "Kupyansk / Kharkiv direction",
-   "posts": 1,
-   "channels": 1,
-   "neg": 1,
-   "neu": 0,
-   "pos": 0,
-   "net": -100
-  },
-  {
-   "topic": "frontline",
    "subtopic": "other",
    "label": "Other directions",
-   "posts": 10,
-   "channels": 5,
-   "neg": 1,
-   "neu": 3,
-   "pos": 6,
-   "net": 50
+   "posts": 5,
+   "channels": 4,
+   "neg": 0,
+   "neu": 0,
+   "pos": 5,
+   "net": 100
   },
   {
    "topic": "ukraine_strikes_on_russia",
@@ -150,23 +150,23 @@
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "drones_on_regions",
    "label": "Drones on Russian regions",
-   "posts": 4,
+   "posts": 6,
    "channels": 2,
-   "neg": 1,
+   "neg": 3,
    "neu": 1,
    "pos": 2,
-   "net": 25
+   "net": -17
   },
   {
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "other",
    "label": "Other Ukrainian strikes",
-   "posts": 16,
+   "posts": 15,
    "channels": 5,
-   "neg": 6,
+   "neg": 13,
    "neu": 0,
-   "pos": 10,
-   "net": 25
+   "pos": 2,
+   "net": -73
   },
   {
    "topic": "west_nato",
@@ -194,12 +194,12 @@
    "topic": "west_nato",
    "subtopic": "negotiations",
    "label": "Negotiations & diplomacy",
-   "posts": 12,
+   "posts": 11,
    "channels": 5,
    "neg": 8,
-   "neu": 3,
+   "neu": 2,
    "pos": 1,
-   "net": -58
+   "net": -64
   },
   {
    "topic": "west_nato",
@@ -216,34 +216,34 @@
    "topic": "west_nato",
    "subtopic": "other",
    "label": "Other West & NATO",
-   "posts": 2,
-   "channels": 2,
-   "neg": 2,
+   "posts": 1,
+   "channels": 1,
+   "neg": 0,
    "neu": 0,
-   "pos": 0,
-   "net": -100
+   "pos": 1,
+   "net": 100
   },
   {
    "topic": "russia_internal",
    "subtopic": "ideology_society",
    "label": "Ideology & society essays",
-   "posts": 0,
-   "channels": 0,
+   "posts": 2,
+   "channels": 2,
    "neg": 0,
-   "neu": 0,
-   "pos": 0,
-   "net": null
+   "neu": 1,
+   "pos": 1,
+   "net": 50
   },
   {
    "topic": "russia_internal",
    "subtopic": "security_cases",
    "label": "Security & treason cases",
-   "posts": 0,
-   "channels": 0,
+   "posts": 1,
+   "channels": 1,
    "neg": 0,
-   "neu": 0,
+   "neu": 1,
    "pos": 0,
-   "net": null
+   "net": 0
   },
   {
    "topic": "russia_internal",
@@ -271,31 +271,31 @@
    "topic": "russia_internal",
    "subtopic": "mobilisation",
    "label": "Mobilisation & recruitment",
-   "posts": 0,
-   "channels": 0,
-   "neg": 0,
+   "posts": 3,
+   "channels": 3,
+   "neg": 1,
    "neu": 0,
-   "pos": 0,
-   "net": null
+   "pos": 2,
+   "net": 33
   },
   {
    "topic": "russia_internal",
    "subtopic": "other",
    "label": "Other Russia internal",
    "posts": 5,
-   "channels": 4,
-   "neg": 0,
-   "neu": 2,
+   "channels": 5,
+   "neg": 2,
+   "neu": 0,
    "pos": 3,
-   "net": 60
+   "net": 20
   },
   {
    "topic": "criticism",
    "subtopic": "army_command",
    "label": "Army command & logistics",
-   "posts": 3,
+   "posts": 2,
    "channels": 2,
-   "neg": 3,
+   "neg": 2,
    "neu": 0,
    "pos": 0,
    "net": -100
@@ -337,21 +337,21 @@
    "topic": "criticism",
    "subtopic": "other",
    "label": "Other criticism",
-   "posts": 1,
-   "channels": 1,
-   "neg": 1,
+   "posts": 0,
+   "channels": 0,
+   "neg": 0,
    "neu": 0,
    "pos": 0,
-   "net": -100
+   "net": null
   }
  ],
  "channels": {
   "Two Majors": 20,
   "Rybar": 18,
-  "WarGonzo": 9,
-  "Kotsnews": 9,
-  "NgP raZVedka": 6,
-  "Arkhangel Spetsnaza": 4,
+  "WarGonzo": 10,
+  "Kotsnews": 8,
+  "Arkhangel Spetsnaza": 5,
+  "NgP raZVedka": 4,
   "Starshe Eddy": 3,
   "Sladkov+": 1
  },
@@ -361,35 +361,35 @@
    "link": "https://t.me/rybar/80838",
    "views": 274898,
    "forwards": 556,
-   "summary_en": "Ukrainian attacks on Crimean supply routes continue; fuel shortages and queues persist at gas stations."
+   "summary_en": "Ukrainian drones attack road corridor to Crimea causing fuel shortages and logistics disruptions."
   },
   {
    "channel_label": "Sladkov+",
    "link": "https://t.me/Sladkov_plus/15590",
    "views": 224436,
    "forwards": 97,
-   "summary_en": "Ukrainian forced conscription rackets escalate; military academy cadets secretly sent to frontlines; manpower shortages reported."
+   "summary_en": "Ukrainian military recruits coercing men in Kharkiv via fines; sending pilots to frontline without warning; personnel shortages in Ukrainian forces."
   },
   {
    "channel_label": "Arkhangel Spetsnaza",
    "link": "https://t.me/rusich_army/29849",
    "views": 192845,
    "forwards": 305,
-   "summary_en": "Analysis argues FPV air defense is only effective counter to drones but lacks scaling; bureaucratic obstacles prevent wider implementation."
+   "summary_en": "FPV air defense system only effective counter to drones; scaling lacks training, resources, bureaucratic barriers."
   },
   {
    "channel_label": "Rybar",
    "link": "https://t.me/rybar/80846",
    "views": 187266,
    "forwards": 90,
-   "summary_en": "Russia struck five gas stations across Ukraine; Ukraine hit three Russian fuel stations and injured sappers."
+   "summary_en": "Russian strikes destroyed five Ukrainian fuel stations; Ukrainian drone hit IAEA demining team, wounding sappers."
   },
   {
    "channel_label": "Rybar",
    "link": "https://t.me/rybar/80844",
    "views": 182743,
    "forwards": 338,
-   "summary_en": "Real-time commercial satellite imagery accelerates Ukrainian drone strikes on Russian targets."
+   "summary_en": "Western companies provide real-time satellite intelligence to Ukrainian drones, accelerating targeting by 90%."
   }
  ],
  "top_forwarded": [
@@ -398,63 +398,54 @@
    "link": "https://t.me/dva_majors/94101",
    "views": 178515,
    "forwards": 599,
-   "summary_en": "Russian analyst argues Zelenskyy's open letter to Putin demonstrates unwillingness to negotiate genuinely."
+   "summary_en": "Zelenskyy's open letter to Putin shows unreadiness for negotiations and Western pressure tactics."
   },
   {
    "channel_label": "Rybar",
    "link": "https://t.me/rybar/80838",
    "views": 274898,
    "forwards": 556,
-   "summary_en": "Ukrainian attacks on Crimean supply routes continue; fuel shortages and queues persist at gas stations."
+   "summary_en": "Ukrainian drones attack road corridor to Crimea causing fuel shortages and logistics disruptions."
   },
   {
    "channel_label": "Starshe Eddy",
    "link": "https://t.me/vysokygovorit/23078",
    "views": 133430,
    "forwards": 461,
-   "summary_en": "Zelensky's arrogant letter reflects false confidence; Ukraine's military power vastly inferior to Russia's."
+   "summary_en": "Zelensky's arrogant tone reflects delusional confidence that will cause Ukraine's destruction; Russia's military superiority is fundamental."
   }
  ],
  "flags": [
   {
    "type": "mood_swing",
-   "topic": "frontline",
-   "label": "Frontline",
-   "net": 36,
-   "move": -50
-  },
-  {
-   "type": "mood_swing",
    "topic": "ukraine_strikes_on_russia",
    "label": "Ukraine strikes on Russia",
-   "net": 25,
-   "move": 117
+   "net": -57,
+   "move": 36
   },
   {
    "type": "mood_swing",
    "topic": "west_nato",
    "label": "West & NATO",
-   "net": -55,
-   "move": -72
+   "net": -45,
+   "move": -39
   },
   {
    "type": "mood_swing",
    "topic": "russia_internal",
    "label": "Russia internal",
-   "net": 60,
-   "move": 35
+   "net": 27,
+   "move": 27
   },
   {
-   "type": "mood_swing",
-   "topic": "criticism",
-   "label": "Criticism",
-   "net": -100,
-   "move": -33
+   "type": "watchlist_alert",
+   "label": "Mobilisation rumours",
+   "posts": 3,
+   "channels": 3
   },
   {
    "type": "watchlist_quiet",
    "items": [
-    "Mobilisation rumours",
     "Criticism of Putin"
    ]
   }
@@ -1087,9 +1078,9 @@
    "forwards": 55,
    "substantive": true,
    "topic": "frontline",
-   "subtopic": "other",
+   "subtopic": "hulyaipole",
    "sentiment": "pos",
-   "summary_en": "Russian forces continue heavy fighting on Zaporizhzhia and Donetsk fronts with advances reported."
+   "summary_en": "Russian forces advance near Hulyaipole and expand control around Lesne; heavy fighting continues on Kamensk direction."
   },
   {
    "channel": "dva_majors",
@@ -1102,8 +1093,8 @@
    "substantive": true,
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "drones_on_regions",
-   "sentiment": "neu",
-   "summary_en": "Russia claims 123 Ukrainian drones shot down overnight; Russian strikes on Odesa and eastern regions reported."
+   "sentiment": "neg",
+   "summary_en": "Ukraine strikes Russian regions with 123 drones overnight; Russia reports strikes on Odesa and other Ukrainian cities; civilian wounded in Bryansk."
   },
   {
    "channel": "dva_majors",
@@ -1117,7 +1108,7 @@
    "topic": "frontline",
    "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "Russian 291st motorized rifle regiment drone operators report destroying enemy positions near Orekh."
+   "summary_en": "Russian drones strike Ukrainian positions near Orekhovskoye in Zaporizhzhia; reported destruction of enemy strongpoints and equipment."
   },
   {
    "channel": "dva_majors",
@@ -1155,11 +1146,11 @@
    "date_utc": "2026-06-05 06:45:25",
    "views": 39653,
    "forwards": 18,
-   "substantive": true,
-   "topic": "west_nato",
-   "subtopic": "negotiations",
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
    "sentiment": "neu",
-   "summary_en": "US demands Iran nuclear disarmament and regional ally abandonment; Iran views this as modern concession imperialism."
+   "summary_en": ""
   },
   {
    "channel": "dva_majors",
@@ -1200,8 +1191,8 @@
    "substantive": true,
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "drones_on_regions",
-   "sentiment": "pos",
-   "summary_en": "Ukrainian drone attacks decline; 142 drones shot down in 24 hours with reduced geographic scope."
+   "sentiment": "neu",
+   "summary_en": "Ukrainian drone attacks intensity decreases; 123 drones shot down; tanker and cargo ships attacked in Azov region with casualties."
   },
   {
    "channel": "wargonzo",
@@ -1214,8 +1205,8 @@
    "substantive": true,
    "topic": "west_nato",
    "subtopic": "military_aid",
-   "sentiment": "neg",
-   "summary_en": "US approves $1 billion aid and sanctions against Russia but freezes Tomahawk missile deployment to Europe."
+   "sentiment": "pos",
+   "summary_en": "US House approves new anti-Russia sanctions and $1 billion aid to Kyiv but freezes deployment of Tomahawk missiles to Germany."
   },
   {
    "channel": "Sladkov_plus",
@@ -1243,7 +1234,7 @@
    "topic": "frontline",
    "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "Russian 58th Army drones and airforce strike enemy temporary positions and reconnaissance stations."
+   "summary_en": "Russian drones and aircraft strike Ukrainian reconnaissance posts and positions near Zarechnoe in Zaporizhzhia; reported destruction of supplies and equipment."
   },
   {
    "channel": "rybar",
@@ -1257,7 +1248,7 @@
    "topic": "west_nato",
    "subtopic": "negotiations",
    "sentiment": "neu",
-   "summary_en": "Hungarian PM Madar optimistic about talks with Zelenskyy on Hungarian minority rights in Ukraine for EU membership."
+   "summary_en": "Hungarian PM Madyar optimistic about resolving Hungarian minority rights dispute with Ukraine to unblock EU accession talks."
   },
   {
    "channel": "rybar",
@@ -1268,10 +1259,10 @@
    "views": 160811,
    "forwards": 238,
    "substantive": true,
-   "topic": "criticism",
-   "subtopic": "other",
+   "topic": "west_nato",
+   "subtopic": "negotiations",
    "sentiment": "neg",
-   "summary_en": "Zelenskyy's letter to Putin is propaganda disguised as peace initiative with insults and threats."
+   "summary_en": "Zelenskyy's letter to Putin contains insults and threats rather than genuine diplomacy; appears aimed at stirring Russian domestic discontent."
   },
   {
    "channel": "dva_majors",
@@ -1281,11 +1272,11 @@
    "date_utc": "2026-06-05 08:08:12",
    "views": 91412,
    "forwards": 112,
-   "substantive": true,
-   "topic": "west_nato",
-   "subtopic": "other",
-   "sentiment": "neg",
-   "summary_en": "Apple removes MAX app from App Store citing sanctions compliance and unspecified legal requirements."
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
   },
   {
    "channel": "Sladkov_plus",
@@ -1296,10 +1287,10 @@
    "views": 224436,
    "forwards": 97,
    "substantive": true,
-   "topic": "frontline",
-   "subtopic": "kupyansk",
+   "topic": "russia_internal",
+   "subtopic": "mobilisation",
    "sentiment": "neg",
-   "summary_en": "Ukrainian forced conscription rackets escalate; military academy cadets secretly sent to frontlines; manpower shortages reported."
+   "summary_en": "Ukrainian military recruits coercing men in Kharkiv via fines; sending pilots to frontline without warning; personnel shortages in Ukrainian forces."
   },
   {
    "channel": "dva_majors",
@@ -1310,10 +1301,10 @@
    "views": 89695,
    "forwards": 209,
    "substantive": true,
-   "topic": "strikes_on_ukraine",
-   "subtopic": "fuel_infrastructure",
-   "sentiment": "pos",
-   "summary_en": "Sevastopol fuel shortage; gas distribution rationed to 20 liters per person amid Ukrainian drone threats."
+   "topic": "ukraine_strikes_on_russia",
+   "subtopic": "drones_on_regions",
+   "sentiment": "neg",
+   "summary_en": "Sevastopol fuel shortage; gas distribution restricted to emergency services; only 20 liters per person on ration."
   },
   {
    "channel": "dva_majors",
@@ -1327,7 +1318,7 @@
    "topic": "west_nato",
    "subtopic": "military_aid",
    "sentiment": "neu",
-   "summary_en": "Ukraine and Lithuania agree on long-term LNG terminal capacity reservations for 1 billion cubic meters annually."
+   "summary_en": "Ukraine and Lithuania agree on long-term LNG terminal access in Klaipeda; US gas to supply Ukraine with 1 billion cubic meters in 2026."
   },
   {
    "channel": "wargonzo",
@@ -1341,7 +1332,7 @@
    "topic": "west_nato",
    "subtopic": "negotiations",
    "sentiment": "neu",
-   "summary_en": "Putin and Zelenskyy express conditional willingness to meet; Trump positions himself as conflict mediator."
+   "summary_en": "Putin and Zelenskyy both express willingness to negotiate; Trump positions himself as mediator seeking war resolution before US midterm elections."
   },
   {
    "channel": "dva_majors",
@@ -1354,8 +1345,8 @@
    "substantive": true,
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "other",
-   "sentiment": "pos",
-   "summary_en": "Ukrainian unmanned boat with dozens kilograms of explosives detonates at Romanian NATO port Constanta."
+   "sentiment": "neg",
+   "summary_en": "Ukrainian drone explodes in Constanta NATO port; device was pre-programmed with timer carrying dozens of kilos of explosives."
   },
   {
    "channel": "rybar",
@@ -1367,9 +1358,9 @@
    "forwards": 58,
    "substantive": true,
    "topic": "strikes_on_ukraine",
-   "subtopic": "other",
+   "subtopic": "fuel_infrastructure",
    "sentiment": "neu",
-   "summary_en": "IAEA arranges seventh ceasefire this year at Zaporizhzhia nuclear plant for power line repairs."
+   "summary_en": "IAEA coordinates seventh local ceasefire at Zaporizhzhia nuclear plant to repair power lines; station operating on diesel backup generators."
   },
   {
    "channel": "sashakots",
@@ -1380,10 +1371,10 @@
    "views": 34311,
    "forwards": 81,
    "substantive": true,
-   "topic": "criticism",
-   "subtopic": "government",
+   "topic": "west_nato",
+   "subtopic": "negotiations",
    "sentiment": "neg",
-   "summary_en": "Russian commentator critiques Zelenskyy's open letter as domestic propaganda aimed at stoking internal discontent."
+   "summary_en": "Russian analyst responds to Zelenskyy's letter, characterizing it as propaganda aimed at destabilizing Russian society rather than genuine peace offer."
   },
   {
    "channel": "rybar",
@@ -1396,8 +1387,8 @@
    "substantive": true,
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "other",
-   "sentiment": "pos",
-   "summary_en": "Ukrainian Sargan-type unmanned boat explodes at Romanian Constanta port with tens of kilograms explosives."
+   "sentiment": "neg",
+   "summary_en": "Ukrainian Sargan-type naval drone explodes in Constanta port; carries tens of kilograms of explosives; electronic warfare variant suspected."
   },
   {
    "channel": "rusich_army",
@@ -1407,11 +1398,11 @@
    "date_utc": "2026-06-05 09:00:01",
    "views": 82268,
    "forwards": 41,
-   "substantive": false,
-   "topic": "none",
-   "subtopic": "none",
-   "sentiment": "neu",
-   "summary_en": ""
+   "substantive": true,
+   "topic": "frontline",
+   "subtopic": "other",
+   "sentiment": "pos",
+   "summary_en": "Russian forces report destroying Ukrainian cargo and personnel; claims Ukrainian forces operating without proper air defense coverage."
   },
   {
    "channel": "dva_majors",
@@ -1436,10 +1427,10 @@
    "views": 90239,
    "forwards": 61,
    "substantive": true,
-   "topic": "ukraine_strikes_on_russia",
+   "topic": "strikes_on_ukraine",
    "subtopic": "other",
-   "sentiment": "neg",
-   "summary_en": "Sevastopol governor reports Ukrainian attack repelled with 7 drones shot down near Crimea."
+   "sentiment": "pos",
+   "summary_en": "Sevastopol air defense repels Ukrainian attack, shoots down 7 drones near coastal areas."
   },
   {
    "channel": "ngp_razvedka",
@@ -1450,10 +1441,10 @@
    "views": 42738,
    "forwards": 76,
    "substantive": true,
-   "topic": "frontline",
-   "subtopic": "other",
+   "topic": "west_nato",
+   "subtopic": "negotiations",
    "sentiment": "neg",
-   "summary_en": "Military analyst dismisses peace negotiations, expects limited Ukrainian offensive operations in Zaporizhzhia and Kharkiv regions."
+   "summary_en": "Ukraine preparing offensives in Zaporizhzhia and Kharkiv; no grounds for negotiations with Russia."
   },
   {
    "channel": "dva_majors",
@@ -1480,8 +1471,8 @@
    "substantive": true,
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "other",
-   "sentiment": "pos",
-   "summary_en": "Ukrainian naval drone exploded in Romanian Constanza port; Romania criticized for NATO support enabling Ukrainian strikes."
+   "sentiment": "neg",
+   "summary_en": "Ukrainian sea drone explodes in Romanian port Constanta; multiple drones detected nearby."
   },
   {
    "channel": "dva_majors",
@@ -1508,8 +1499,8 @@
    "substantive": true,
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "other",
-   "sentiment": "pos",
-   "summary_en": "Four additional Ukrainian naval drones detected near Constanza after one detonated; likely targeting tankers from Bosphorus."
+   "sentiment": "neg",
+   "summary_en": "Ukrainian sea drones attack ships in Romania; four additional drones detected in Constanta area."
   },
   {
    "channel": "sashakots",
@@ -1522,8 +1513,8 @@
    "substantive": true,
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "other",
-   "sentiment": "pos",
-   "summary_en": "Five Azerbaijani sailors killed in Ukrainian drone attacks on civilian ships in Azov Sea; Baku distances itself from casualties."
+   "sentiment": "neg",
+   "summary_en": "Ukrainian drones attack civilian ships in Taganrog Gulf; five Azerbaijani sailors killed."
   },
   {
    "channel": "dva_majors",
@@ -1537,7 +1528,7 @@
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "other",
    "sentiment": "neg",
-   "summary_en": "Two civilian ships with Azerbaijani crews hit by Ukrainian drones in Azov Sea; five sailors killed, targeted at bridge."
+   "summary_en": "Ukrainian drones strike civilian cargo ships in Azov Sea; five Azerbaijani sailors killed, three wounded."
   },
   {
    "channel": "ngp_razvedka",
@@ -1547,11 +1538,11 @@
    "date_utc": "2026-06-05 10:32:47",
    "views": 44273,
    "forwards": 80,
-   "substantive": true,
-   "topic": "criticism",
-   "subtopic": "government",
-   "sentiment": "neg",
-   "summary_en": "Commentary criticizes Ukrainian regime for attacking Romania and killing Azerbaijanis, compares to Afghan drug trade conditions."
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
   },
   {
    "channel": "wargonzo",
@@ -1564,8 +1555,8 @@
    "substantive": true,
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "other",
-   "sentiment": "pos",
-   "summary_en": "Ukrainian naval drones attack Romanian Constanza port and Azov Sea cargo ships; five Azerbaijani sailors killed in indiscriminate terror."
+   "sentiment": "neg",
+   "summary_en": "Ukrainian sea drones attack ships in Constanta port and Azov Sea; third countries suffer from Ukrainian terror."
   },
   {
    "channel": "ngp_razvedka",
@@ -1592,8 +1583,8 @@
    "substantive": true,
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "other",
-   "sentiment": "pos",
-   "summary_en": "Ukrainian naval drone in Constanza equipped with Shatro electronic warfare systems from Unwave company."
+   "sentiment": "neg",
+   "summary_en": "Photo of destroyed Ukrainian sea drone in Romania shows Shatro electronic warfare systems."
   },
   {
    "channel": "sashakots",
@@ -1607,7 +1598,7 @@
    "topic": "west_nato",
    "subtopic": "negotiations",
    "sentiment": "pos",
-   "summary_en": "Putin stated before Zelenskyy's letter that negotiations possible only from Russia's winning position, citing troop losses and desertions."
+   "summary_en": "Putin states Russia negotiates only from position of strength; Ukraine losing monthly 40k troops, 20k desert."
   },
   {
    "channel": "rusich_army",
@@ -1618,10 +1609,10 @@
    "views": 192845,
    "forwards": 305,
    "substantive": true,
-   "topic": "criticism",
-   "subtopic": "army_command",
+   "topic": "russia_internal",
+   "subtopic": "other",
    "sentiment": "neg",
-   "summary_en": "Analysis argues FPV air defense is only effective counter to drones but lacks scaling; bureaucratic obstacles prevent wider implementation."
+   "summary_en": "FPV air defense system only effective counter to drones; scaling lacks training, resources, bureaucratic barriers."
   },
   {
    "channel": "dva_majors",
@@ -1649,7 +1640,7 @@
    "topic": "russia_internal",
    "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "Russia and Ukraine exchanged 185 prisoners each; UAE mediated; freed Russians undergoing rehabilitation before return home."
+   "summary_en": "Russia and Ukraine exchange 185 prisoners each; Russian servicemen to return home for rehabilitation."
   },
   {
    "channel": "rybar",
@@ -1662,8 +1653,8 @@
    "substantive": true,
    "topic": "west_nato",
    "subtopic": "military_aid",
-   "sentiment": "pos",
-   "summary_en": "Hungary lifted veto on EU Peace Fund, unblocking 6.6 billion euros for Ukraine weapons and compensation under new government."
+   "sentiment": "neg",
+   "summary_en": "Hungary drops veto, unblocks 6.6 billion euros EU military aid package for Ukraine."
   },
   {
    "channel": "vysokygovorit",
@@ -1674,10 +1665,10 @@
    "views": 95807,
    "forwards": 136,
    "substantive": true,
-   "topic": "criticism",
-   "subtopic": "army_command",
+   "topic": "russia_internal",
+   "subtopic": "other",
    "sentiment": "neg",
-   "summary_en": "Only effective anti-drone defense is FPV air defense systems; lack of scaling, training, and bureaucratic obstacles limit implementation."
+   "summary_en": "FPV air defense only effective counter to drones; lacks scaling, training, and resources for widespread use."
   },
   {
    "channel": "sashakots",
@@ -1691,7 +1682,7 @@
    "topic": "russia_internal",
    "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "Russia freed 185 military prisoners exchanged with Ukraine; UAE mediated; soldiers undergoing medical care before repatriation."
+   "summary_en": "185 Russian servicemen returned from captivity; receive medical and psychological support in Belarus."
   },
   {
    "channel": "rusich_army",
@@ -1716,10 +1707,10 @@
    "views": 86398,
    "forwards": 14,
    "substantive": true,
-   "topic": "frontline",
-   "subtopic": "other",
+   "topic": "russia_internal",
+   "subtopic": "ideology_society",
    "sentiment": "pos",
-   "summary_en": "152mm Giacinth-S self-propelled gun reinforced with additional armor and anti-drone protection due to enemy aerial threats."
+   "summary_en": "Self-propelled gun 2S5 fitted with additional armor and protection against drone attacks."
   },
   {
    "channel": "dva_majors",
@@ -1733,7 +1724,7 @@
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "other",
    "sentiment": "neg",
-   "summary_en": "Ukrainian drones targeted ship bridges in Azov Sea attacks killing five Azerbaijani sailors; aimed at civilian casualties."
+   "summary_en": "Ukrainian drones target civilian ships in Azov Sea, killing five Azerbaijani sailors, wounding three."
   },
   {
    "channel": "rybar",
@@ -1746,8 +1737,8 @@
    "substantive": true,
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "other",
-   "sentiment": "pos",
-   "summary_en": "Ukrainian forces attacked Romanian Constanza port and Azov Sea ships; killed five Azerbaijanis; Azerbaijan downplays Ukrainian responsibility."
+   "sentiment": "neg",
+   "summary_en": "Ukrainian forces attack Romanian port and Azov Sea ships; five Azerbaijanis killed, Baku downplays response."
   },
   {
    "channel": "ngp_razvedka",
@@ -1757,11 +1748,11 @@
    "date_utc": "2026-06-05 12:14:18",
    "views": 15861,
    "forwards": 62,
-   "substantive": true,
-   "topic": "west_nato",
-   "subtopic": "negotiations",
-   "sentiment": "neg",
-   "summary_en": "Putin's spokesman hints commander will respond to Zelenskyy's letter with critique of expired peace proposal."
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
   },
   {
    "channel": "wargonzo",
@@ -1775,7 +1766,7 @@
    "topic": "russia_internal",
    "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "Russia-Ukraine prisoner exchange: 185 military personnel freed on each side; UAE provided mediation; troops sent to Belarus for rehabilitation."
+   "summary_en": "Russia and Ukraine exchange 185 prisoners each; Russian servicemen transferred to Belarus for rehabilitation."
   },
   {
    "channel": "dva_majors",
@@ -1789,7 +1780,7 @@
    "topic": "west_nato",
    "subtopic": "alliance_politics",
    "sentiment": "neg",
-   "summary_en": "Armenia's government dismisses parliamentary demands to clarify frozen CSTO membership status amid payment suspension."
+   "summary_en": "Armenia freezes CSTO participation, ignores organization meetings, threatens withdrawal."
   },
   {
    "channel": "dva_majors",
@@ -1817,7 +1808,7 @@
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "other",
    "sentiment": "neg",
-   "summary_en": "Swedish court orders transfer of Russian shadow fleet vessel Caffa to Ukraine by late June."
+   "summary_en": "Swedish court orders transfer of Russian shadow fleet cargo ship Caffa to Ukraine."
   },
   {
    "channel": "dva_majors",
@@ -1831,7 +1822,7 @@
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "drones_on_regions",
    "sentiment": "pos",
-   "summary_en": "Sevastopol air defense reportedly shot down nine Ukrainian drones with no casualties; minor roof fire."
+   "summary_en": "Sevastopol air defenses shot down 9 Ukrainian drones; minor damage reported, no casualties."
   },
   {
    "channel": "dva_majors",
@@ -1845,7 +1836,7 @@
    "topic": "west_nato",
    "subtopic": "negotiations",
    "sentiment": "neg",
-   "summary_en": "Russian analyst argues Zelenskyy's open letter to Putin demonstrates unwillingness to negotiate genuinely."
+   "summary_en": "Zelenskyy's open letter to Putin shows unreadiness for negotiations and Western pressure tactics."
   },
   {
    "channel": "dva_majors",
@@ -1887,7 +1878,7 @@
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "drones_on_regions",
    "sentiment": "neg",
-   "summary_en": "Ukrainian drone struck gas station in Kursk region; fuel truck damaged, two civilians injured."
+   "summary_en": "Ukrainian drone attacked Kursk region AZS, damaged fuel truck, wounded two Russian civilians."
   },
   {
    "channel": "rusich_army",
@@ -1943,7 +1934,7 @@
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "other",
    "sentiment": "neg",
-   "summary_en": "Ukrainian drone attacked Zaporizhzhia nuclear plant, allegedly violating ceasefire; five Russians heavily wounded."
+   "summary_en": "Ukrainian drone attacked Zaporizhzhia nuclear plant, wounded five Russian military and three engineers."
   },
   {
    "channel": "rybar",
@@ -1957,7 +1948,7 @@
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "other",
    "sentiment": "neg",
-   "summary_en": "Ukrainian attacks on Crimean supply routes continue; fuel shortages and queues persist at gas stations."
+   "summary_en": "Ukrainian drones attack road corridor to Crimea causing fuel shortages and logistics disruptions."
   },
   {
    "channel": "sashakots",
@@ -1971,7 +1962,7 @@
    "topic": "frontline",
    "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "Russian drone operators claim destruction of Ukrainian vehicles including two Kozak armored vehicles and Humvees."
+   "summary_en": "Vega special forces destroyed Ukrainian vehicles including Kozak armored vehicles and HMMWV Humvees."
   },
   {
    "channel": "vysokygovorit",
@@ -2010,10 +2001,10 @@
    "views": 30258,
    "forwards": 59,
    "substantive": true,
-   "topic": "west_nato",
-   "subtopic": "negotiations",
+   "topic": "criticism",
+   "subtopic": "government",
    "sentiment": "neg",
-   "summary_en": "Russian military correspondent claims Zelenskyy's letter to Putin is Western attempt to destabilize Russia internally."
+   "summary_en": "Military correspondent criticizes Zelenskyy's rude letter to Putin as strategically foolish Western manipulation."
   },
   {
    "channel": "dva_majors",
@@ -2027,7 +2018,7 @@
    "topic": "strikes_on_ukraine",
    "subtopic": "deep_strikes",
    "sentiment": "pos",
-   "summary_en": "Russian forces conducted guided aerial bomb strikes on Stetskovka and Husinka in Sumy region."
+   "summary_en": "Russian guided aerial bombs struck Stetskovka and Gusinka in Sumy region."
   },
   {
    "channel": "dva_majors",
@@ -2037,11 +2028,11 @@
    "date_utc": "2026-06-05 15:22:26",
    "views": 99218,
    "forwards": 307,
-   "substantive": false,
-   "topic": "none",
-   "subtopic": "none",
-   "sentiment": "neu",
-   "summary_en": ""
+   "substantive": true,
+   "topic": "russia_internal",
+   "subtopic": "mobilisation",
+   "sentiment": "pos",
+   "summary_en": "Moscow BARS recruitment offers drone operators 220k rubles salary plus bonuses for downed enemy drones."
   },
   {
    "channel": "wargonzo",
@@ -2051,11 +2042,11 @@
    "date_utc": "2026-06-05 15:31:00",
    "views": 28470,
    "forwards": 20,
-   "substantive": false,
-   "topic": "none",
-   "subtopic": "none",
+   "substantive": true,
+   "topic": "russia_internal",
+   "subtopic": "ideology_society",
    "sentiment": "neu",
-   "summary_en": ""
+   "summary_en": "Memorial marking three-year anniversary of fallen DPR commander Roman Vorobyev from Somalia battalion."
   },
   {
    "channel": "sashakots",
@@ -2069,7 +2060,7 @@
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "Ukrainian unmanned vessels lost control due to Russian electronic warfare; all four self-destructed near Romania."
+   "summary_en": "Russian electronic warfare systems defeated Ukrainian sea drones forcing them toward Romania coast."
   },
   {
    "channel": "ngp_razvedka",
@@ -2080,10 +2071,10 @@
    "views": 16897,
    "forwards": 107,
    "substantive": true,
-   "topic": "west_nato",
-   "subtopic": "negotiations",
+   "topic": "criticism",
+   "subtopic": "government",
    "sentiment": "neg",
-   "summary_en": "Putin rejects Zelenskyy's letter, cites earlier secret meeting requests and dismisses talks as unproductive."
+   "summary_en": "Putin mocks Zelenskyy's letter as desperate back-channel pleading and Western manipulation attempt."
   },
   {
    "channel": "rybar",
@@ -2097,7 +2088,7 @@
    "topic": "west_nato",
    "subtopic": "alliance_politics",
    "sentiment": "pos",
-   "summary_en": "Putin at SPIEF describes world transitioning to multipolarity; criticizes Western aggression as short-sighted."
+   "summary_en": "Putin says Western policies are shortsighted; Russia open to equal cooperation in multipolar world."
   },
   {
    "channel": "rybar",
@@ -2110,8 +2101,8 @@
    "substantive": true,
    "topic": "west_nato",
    "subtopic": "other",
-   "sentiment": "neg",
-   "summary_en": "Germany granted citizenship to record 332,500 people in 2025; analyst frames as demographic replacement."
+   "sentiment": "pos",
+   "summary_en": "Germany issued record 332,500 passports in 2025, reflecting population replacement policy concerns."
   },
   {
    "channel": "dva_majors",
@@ -2125,7 +2116,7 @@
    "topic": "west_nato",
    "subtopic": "negotiations",
    "sentiment": "neg",
-   "summary_en": "Putin lists conditions for Zelenskyy meeting; rejects letter as inappropriate and unproductive for dialogue."
+   "summary_en": "Putin dismisses Zelenskyy's letter as improper and refuses meeting until Ukrainian conditions change."
   },
   {
    "channel": "ngp_razvedka",
@@ -2153,7 +2144,7 @@
    "topic": "west_nato",
    "subtopic": "negotiations",
    "sentiment": "neg",
-   "summary_en": "Putin rejects Zelensky's call for talks, says negotiations are meaningless given conflicting objectives."
+   "summary_en": "Putin rejects Zelensky's call for talks, saying negotiations are pointless given opposing war aims."
   },
   {
    "channel": "rusich_army",
@@ -2167,7 +2158,7 @@
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "Ukrainian naval drone attacked Romanian military port; NATO suffers consequences of supporting Ukraine."
+   "summary_en": "Ukrainian naval drone struck Romanian port, demonstrating NATO countries are collateral victims of Ukraine operations."
   },
   {
    "channel": "rybar",
@@ -2181,7 +2172,7 @@
    "topic": "west_nato",
    "subtopic": "military_aid",
    "sentiment": "neg",
-   "summary_en": "US Congress approves Ukraine support bill with lend-lease revival and intelligence assistance through 2027."
+   "summary_en": "US Congress approves Ukraine support bill restoring Lend-Lease powers and expanding sanctions on Russia."
   },
   {
    "channel": "vysokygovorit",
@@ -2195,7 +2186,7 @@
    "topic": "criticism",
    "subtopic": "army_command",
    "sentiment": "neg",
-   "summary_en": "Military forecasting mechanisms exist but appear ineffective; urgent need for specialized threat prediction organ."
+   "summary_en": "Russian military forecasting and threat-response mechanisms are inadequate, requiring specialized institutional reform."
   },
   {
    "channel": "dva_majors",
@@ -2264,8 +2255,8 @@
    "substantive": true,
    "topic": "frontline",
    "subtopic": "other",
-   "sentiment": "neu",
-   "summary_en": "Heavy fighting near Rodinsk; Ukrainian infiltration groups targeted by Russian drone strikes."
+   "sentiment": "pos",
+   "summary_en": "Russian forces repel Ukrainian infiltration attempts near Rodinskoe using drone strikes and artillery."
   },
   {
    "channel": "wargonzo",
@@ -2290,10 +2281,10 @@
    "views": 76048,
    "forwards": 11,
    "substantive": true,
-   "topic": "strikes_on_ukraine",
-   "subtopic": "other",
+   "topic": "ukraine_strikes_on_russia",
+   "subtopic": "drones_on_regions",
    "sentiment": "pos",
-   "summary_en": "Russian air defense successfully destroys another enemy target."
+   "summary_en": "Russian air defense successfully destroyed another Ukrainian drone target."
   },
   {
    "channel": "sashakots",
@@ -2318,10 +2309,10 @@
    "views": 104082,
    "forwards": 207,
    "substantive": true,
-   "topic": "russia_internal",
-   "subtopic": "other",
-   "sentiment": "neu",
-   "summary_en": "Effective anti-drone defense requires thermal optics and focused light, not sound-based detection methods."
+   "topic": "criticism",
+   "subtopic": "army_command",
+   "sentiment": "neg",
+   "summary_en": "Auditory drone detection methods obsolete; thermal optics and searchlight systems required for effective air defense."
   },
   {
    "channel": "rybar",
@@ -2332,10 +2323,10 @@
    "views": 172036,
    "forwards": 33,
    "substantive": true,
-   "topic": "frontline",
+   "topic": "strikes_on_ukraine",
    "subtopic": "other",
-   "sentiment": "neu",
-   "summary_en": "Zelensky's peace letter rejected by Putin; IAEA coordinates ceasefire at Zaporizhzhia nuclear plant."
+   "sentiment": "pos",
+   "summary_en": "Zelensky's peace proposal dismissed by Putin; IAEA documents repeated local ceasefires at Zaporizhzhia nuclear plant."
   },
   {
    "channel": "ngp_razvedka",
@@ -2349,7 +2340,7 @@
    "topic": "west_nato",
    "subtopic": "negotiations",
    "sentiment": "neg",
-   "summary_en": "Zelensky's letter to Putin dismissed as weak domestic theater; Putin's response is to continue operations."
+   "summary_en": "Zelensky's letter to Putin dismissed as internal propaganda; Putin instructs military to continue operations."
   },
   {
    "channel": "ngp_razvedka",
@@ -2377,7 +2368,7 @@
    "topic": "west_nato",
    "subtopic": "military_aid",
    "sentiment": "neg",
-   "summary_en": "Real-time commercial satellite imagery accelerates Ukrainian drone strikes on Russian targets."
+   "summary_en": "Western companies provide real-time satellite intelligence to Ukrainian drones, accelerating targeting by 90%."
   },
   {
    "channel": "wargonzo",
@@ -2388,10 +2379,10 @@
    "views": 34544,
    "forwards": 27,
    "substantive": true,
-   "topic": "frontline",
-   "subtopic": "other",
+   "topic": "russia_internal",
+   "subtopic": "mobilisation",
    "sentiment": "pos",
-   "summary_en": "Putin declares Russia will continue denazification, completely liberate Donbas, and maintain military advantages."
+   "summary_en": "Putin declares Russia will continue SVO, complete Donbas liberation, and maintain military-technical superiority."
   },
   {
    "channel": "ngp_razvedka",
@@ -2405,7 +2396,7 @@
    "topic": "west_nato",
    "subtopic": "negotiations",
    "sentiment": "neg",
-   "summary_en": "Trump refuses involvement in peace process; Russia must escalate drone technology to raise conflict costs."
+   "summary_en": "Trump denies interest in Ukraine peace process; Russia must rely on military escalation to achieve negotiated settlement."
   },
   {
    "channel": "dva_majors",
@@ -2430,10 +2421,10 @@
    "views": 182527,
    "forwards": 8,
    "substantive": true,
-   "topic": "frontline",
+   "topic": "strikes_on_ukraine",
    "subtopic": "other",
-   "sentiment": "neu",
-   "summary_en": "Ukrainian drones and boats attacked Romania and Azerbaijan; Russia conducted strikes on fuel infrastructure."
+   "sentiment": "pos",
+   "summary_en": "Ukrainian drones struck Romanian port and Azerbaijani cargo ship; summary of June 5 SVO developments."
   },
   {
    "channel": "rybar",
@@ -2446,8 +2437,8 @@
    "substantive": true,
    "topic": "strikes_on_ukraine",
    "subtopic": "fuel_infrastructure",
-   "sentiment": "neu",
-   "summary_en": "Russia struck five gas stations across Ukraine; Ukraine hit three Russian fuel stations and injured sappers."
+   "sentiment": "pos",
+   "summary_en": "Russian strikes destroyed five Ukrainian fuel stations; Ukrainian drone hit IAEA demining team, wounding sappers."
   },
   {
    "channel": "vysokygovorit",
@@ -2461,7 +2452,7 @@
    "topic": "criticism",
    "subtopic": "government",
    "sentiment": "neg",
-   "summary_en": "Zelensky's arrogant letter reflects false confidence; Ukraine's military power vastly inferior to Russia's."
+   "summary_en": "Zelensky's arrogant tone reflects delusional confidence that will cause Ukraine's destruction; Russia's military superiority is fundamental."
   },
   {
    "channel": "wargonzo",
@@ -2475,7 +2466,7 @@
    "topic": "west_nato",
    "subtopic": "alliance_politics",
    "sentiment": "neg",
-   "summary_en": "Lithuania seeks US nuclear weapons deployment amid concerns over declining American military presence in Europe."
+   "summary_en": "Lithuania seeks US nuclear weapons deployment due to concerns over reduced American military presence in Europe."
   },
   {
    "channel": "dva_majors",
@@ -2501,9 +2492,9 @@
    "forwards": 460,
    "substantive": true,
    "topic": "russia_internal",
-   "subtopic": "other",
+   "subtopic": "security_cases",
    "sentiment": "neu",
-   "summary_en": "LNR authorities restrict passenger transportation on roads toward DPR, Zaporizhzhia, Kherson, Crimea due to military situation."
+   "summary_en": "LNR authorities restrict passenger transport on key highways due to Ukrainian military aggression."
   }
  ]
 }

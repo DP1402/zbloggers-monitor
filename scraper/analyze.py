@@ -90,10 +90,14 @@ For each post decide:
 1. substantive: false for ads, fundraisers, merchandise, channel promos, podcasts/stream announcements, memes, greetings, personal notes and content with no analytical value. true otherwise.
 2. topic and subtopic (only for substantive posts), from this fixed taxonomy:
 {taxonomy_prompt()}
+   "frontline" is ONLY for the current state and progress of ground combat: advances, captured or lost settlements, retreats, encirclements, battles on specific directions. It is NOT for veteran profiles, heroism features, award announcements, human-interest stories from the front, memorials, history essays or weapons reviews — put those under russia_internal/ideology_society (or the closest other topic).
    Use topic "criticism" when the post's MAIN point is complaint or blame directed at Russian institutions or officials.
    If nothing fits well, pick the closest topic and subtopic "other".
-3. sentiment: the blogger's own mood about the subject, seen from Russia's perspective.
-   "pos" = celebrating, triumphant, confident. "neg" = worried, angry, frustrated, mournful. "neu" = factual/mixed.
+3. sentiment: is this GOOD or BAD news for RUSSIA's position and prospects, as the blogger presents it?
+   "pos" = good for Russia: Russian advances or captures, successful Russian strikes, Ukrainian losses, retreats, collapse or equipment destroyed, Ukrainian weakness.
+   "neg" = bad for Russia: Russian losses or retreats, successful Ukrainian strikes or advances, problems or shortages on the Russian side, threats to Russia, complaints about Russian performance.
+   IMPORTANT: a post gloating about Ukrainian defeats, casualties or failing positions is "pos" (good for Russia) even though its content is grim — never mark it "neg" just because it describes destruction.
+   "neu" = factual with no clear direction for Russia, or genuinely mixed.
    For criticism posts always use "neg".
 4. summary_en: one short English sentence (max 25 words) stating the post's key claim, specific and factual.
 

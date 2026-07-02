@@ -4,128 +4,124 @@
    "battlefield": {
     "pos": 9,
     "neg": 2,
-    "neu": 1,
-    "net": 58,
-    "story": "Russian forces advancing toward Siversky Donets river, controlling Tatyanivka and Pryshib after two months combat.",
+    "neu": 0,
+    "net": 64,
+    "story": "Russian forces advance toward Seversky Donets, expand control near Lyman after heavy May fighting.",
     "story_url": "https://t.me/rybar/80762",
     "examples": [
      {
       "s": "pos",
       "url": "https://t.me/rusich_army/29814",
-      "t": "Russian drone killed Ukrainian vehicle crew who failed to observe approaching target despite having three guns and multiple observers.",
+      "t": "Russian drone kills three Ukrainian soldiers in vehicle who failed to observe or engage the approaching drone.",
       "ch": "Arkhangel Spetsnaza"
      },
      {
       "s": "neg",
       "url": "https://t.me/wargonzo/34581",
-      "t": "Unit 'Arbat' recovers fallen soldiers under drone attacks; pledges never to abandon comrades dead or alive.",
+      "t": "Arbat unit retrieves fallen soldiers under constant drone attacks near Kramatorsk.",
       "ch": "WarGonzo"
      }
     ]
    },
    "date": "2026-06-02",
    "total": 204,
-   "substantive": 86,
+   "substantive": 83,
    "headline": "",
    "topics": {
-    "strikes_on_ukraine": 28,
-    "frontline": 12,
-    "ukraine_strikes_on_russia": 9,
-    "west_nato": 14,
-    "russia_internal": 19,
+    "strikes_on_ukraine": 26,
+    "frontline": 11,
+    "ukraine_strikes_on_russia": 12,
+    "west_nato": 10,
+    "russia_internal": 20,
     "criticism": 4
    },
    "nets": {
-    "strikes_on_ukraine": 71,
-    "frontline": 58,
-    "ukraine_strikes_on_russia": -67,
-    "west_nato": -36,
-    "russia_internal": -5,
+    "strikes_on_ukraine": 92,
+    "frontline": 64,
+    "ukraine_strikes_on_russia": -92,
+    "west_nato": -70,
+    "russia_internal": -10,
     "criticism": -100
    },
    "subtopics": {
     "strikes_on_ukraine/deep_strikes": 24,
-    "strikes_on_ukraine/fuel_infrastructure": 3,
-    "strikes_on_ukraine/other": 1,
-    "frontline/hulyaipole": 2,
+    "strikes_on_ukraine/fuel_infrastructure": 2,
+    "frontline/hulyaipole": 1,
     "frontline/other": 10,
     "ukraine_strikes_on_russia/crimea_energy": 1,
-    "ukraine_strikes_on_russia/drones_on_regions": 5,
-    "ukraine_strikes_on_russia/other": 3,
-    "west_nato/military_aid": 4,
-    "west_nato/rearmament": 1,
-    "west_nato/negotiations": 2,
-    "west_nato/alliance_politics": 4,
-    "west_nato/other": 3,
-    "russia_internal/ideology_society": 5,
-    "russia_internal/security_cases": 1,
-    "russia_internal/elite_politics": 3,
+    "ukraine_strikes_on_russia/drones_on_regions": 6,
+    "ukraine_strikes_on_russia/other": 5,
+    "west_nato/military_aid": 3,
+    "west_nato/rearmament": 2,
+    "west_nato/alliance_politics": 3,
+    "west_nato/other": 2,
+    "russia_internal/ideology_society": 8,
+    "russia_internal/security_cases": 2,
     "russia_internal/economy": 4,
-    "russia_internal/mobilisation": 3,
-    "russia_internal/other": 3,
+    "russia_internal/other": 6,
     "criticism/government": 4
    },
-   "flags": 1
+   "flags": 0
   },
   {
    "battlefield": {
-    "pos": 13,
+    "pos": 15,
     "neg": 0,
-    "neu": 2,
-    "net": 87,
-    "story": "Russian brigade destroyed Ukrainian drone launcher mounted on truck container; analysis of mobile BLA tactics.",
+    "neu": 0,
+    "net": 100,
+    "story": "50th Varyag Brigade destroyed Ukrainian long-range drone launcher concealed in truck container to degrade attack capabilities.",
     "story_url": "https://t.me/rybar/80792",
     "examples": [
      {
       "s": "pos",
-      "url": "https://t.me/rybar/80802",
-      "t": "Russian forces advance through Konstantinovka, controlling industrial zones and expanding territory across city.",
+      "url": "https://t.me/rybar/80797",
+      "t": "Russian forces conduct offensive operations across Seversky Donets-Donbas canal near Malinovka.",
       "ch": "Rybar"
      }
     ]
    },
    "date": "2026-06-03",
    "total": 162,
-   "substantive": 84,
+   "substantive": 87,
    "headline": "",
    "topics": {
     "strikes_on_ukraine": 7,
     "frontline": 15,
-    "ukraine_strikes_on_russia": 32,
+    "ukraine_strikes_on_russia": 34,
     "west_nato": 15,
-    "russia_internal": 10,
-    "criticism": 5
+    "russia_internal": 8,
+    "criticism": 8
    },
    "nets": {
     "strikes_on_ukraine": 100,
-    "frontline": 87,
-    "ukraine_strikes_on_russia": -94,
-    "west_nato": -60,
+    "frontline": 100,
+    "ukraine_strikes_on_russia": -65,
+    "west_nato": -67,
     "russia_internal": 0,
     "criticism": -100
    },
    "subtopics": {
+    "strikes_on_ukraine/deep_strikes": 3,
     "strikes_on_ukraine/fuel_infrastructure": 1,
-    "strikes_on_ukraine/other": 6,
-    "frontline/pokrovsk": 1,
+    "strikes_on_ukraine/other": 3,
     "frontline/hulyaipole": 1,
-    "frontline/other": 13,
-    "ukraine_strikes_on_russia/crimea_energy": 3,
-    "ukraine_strikes_on_russia/drones_on_regions": 28,
-    "ukraine_strikes_on_russia/other": 1,
-    "west_nato/military_aid": 7,
-    "west_nato/rearmament": 1,
-    "west_nato/alliance_politics": 4,
+    "frontline/other": 14,
+    "ukraine_strikes_on_russia/crimea_energy": 1,
+    "ukraine_strikes_on_russia/drones_on_regions": 29,
+    "ukraine_strikes_on_russia/other": 4,
+    "west_nato/military_aid": 5,
+    "west_nato/rearmament": 2,
+    "west_nato/alliance_politics": 5,
     "west_nato/other": 3,
-    "russia_internal/ideology_society": 2,
-    "russia_internal/security_cases": 3,
-    "russia_internal/elite_politics": 3,
+    "russia_internal/ideology_society": 3,
+    "russia_internal/security_cases": 1,
     "russia_internal/economy": 1,
     "russia_internal/mobilisation": 1,
-    "criticism/army_command": 2,
-    "criticism/government": 3
+    "russia_internal/other": 2,
+    "criticism/government": 7,
+    "criticism/other": 1
    },
-   "flags": 3
+   "flags": 2
   },
   {
    "battlefield": {
@@ -133,195 +129,193 @@
     "neg": 0,
     "neu": 2,
     "net": 86,
-    "story": "Russian forces advance in Kharkiv direction, capturing multiple settlements along Volchya river.",
+    "story": "Russian forces advance in Kharkiv border region, crossing Volchya River and capturing multiple settlements.",
     "story_url": "https://t.me/rybar/80809",
     "examples": [
      {
       "s": "pos",
       "url": "https://t.me/vysokygovorit/23074",
-      "t": "Russian reconnaissance neutralized Ukrainian heavy drone operators near Kharkiv-Belgorod border.",
+      "t": "34th Motorized Brigade scouts destroyed Ukrainian heavy drones launched from Kharkiv region near Belgorod border.",
       "ch": "Starshe Eddy"
      }
     ]
    },
    "date": "2026-06-04",
    "total": 115,
-   "substantive": 71,
+   "substantive": 70,
    "headline": "",
    "topics": {
-    "strikes_on_ukraine": 8,
+    "strikes_on_ukraine": 9,
     "frontline": 14,
-    "ukraine_strikes_on_russia": 13,
-    "west_nato": 18,
+    "ukraine_strikes_on_russia": 14,
+    "west_nato": 16,
     "russia_internal": 12,
-    "criticism": 6
+    "criticism": 5
    },
    "nets": {
-    "strikes_on_ukraine": 50,
+    "strikes_on_ukraine": 78,
     "frontline": 86,
-    "ukraine_strikes_on_russia": -92,
-    "west_nato": 17,
-    "russia_internal": 25,
-    "criticism": -67
+    "ukraine_strikes_on_russia": -93,
+    "west_nato": -6,
+    "russia_internal": 0,
+    "criticism": -100
    },
    "subtopics": {
     "strikes_on_ukraine/deep_strikes": 2,
     "strikes_on_ukraine/fuel_infrastructure": 2,
-    "strikes_on_ukraine/other": 4,
-    "frontline/hulyaipole": 5,
-    "frontline/kupyansk": 2,
-    "frontline/other": 7,
-    "ukraine_strikes_on_russia/drones_on_regions": 12,
-    "ukraine_strikes_on_russia/other": 1,
-    "west_nato/military_aid": 5,
-    "west_nato/rearmament": 2,
-    "west_nato/negotiations": 6,
-    "west_nato/alliance_politics": 1,
-    "west_nato/other": 4,
-    "russia_internal/ideology_society": 4,
-    "russia_internal/security_cases": 2,
-    "russia_internal/economy": 2,
-    "russia_internal/mobilisation": 2,
-    "russia_internal/other": 2,
-    "criticism/army_command": 1,
-    "criticism/government": 5
-   },
-   "flags": 5
-  },
-  {
-   "battlefield": {
-    "pos": 6,
-    "neg": 2,
-    "neu": 3,
-    "net": 36,
-    "story": "Ukrainian forced conscription rackets escalate; military academy cadets secretly sent to frontlines; manpower shortages reported.",
-    "story_url": "https://t.me/Sladkov_plus/15590",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/dva_majors/94078",
-      "t": "Russian 58th Army drones and airforce strike enemy temporary positions and reconnaissance stations.",
-      "ch": "Two Majors"
-     },
-     {
-      "s": "neg",
-      "url": "https://t.me/ngp_razvedka/25503",
-      "t": "Military analyst dismisses peace negotiations, expects limited Ukrainian offensive operations in Zaporizhzhia and Kharkiv regions.",
-      "ch": "NgP raZVedka"
-     }
-    ]
-   },
-   "date": "2026-06-05",
-   "total": 146,
-   "substantive": 70,
-   "headline": "",
-   "topics": {
-    "strikes_on_ukraine": 5,
-    "frontline": 11,
-    "ukraine_strikes_on_russia": 20,
-    "west_nato": 22,
-    "russia_internal": 5,
-    "criticism": 7
-   },
-   "nets": {
-    "strikes_on_ukraine": 60,
-    "frontline": 36,
-    "ukraine_strikes_on_russia": 25,
-    "west_nato": -55,
-    "russia_internal": 60,
-    "criticism": -100
-   },
-   "subtopics": {
-    "strikes_on_ukraine/deep_strikes": 1,
-    "strikes_on_ukraine/fuel_infrastructure": 2,
-    "strikes_on_ukraine/other": 2,
+    "strikes_on_ukraine/other": 5,
+    "frontline/pokrovsk": 1,
+    "frontline/hulyaipole": 7,
     "frontline/kupyansk": 1,
-    "frontline/other": 10,
-    "ukraine_strikes_on_russia/drones_on_regions": 4,
-    "ukraine_strikes_on_russia/other": 16,
-    "west_nato/military_aid": 5,
-    "west_nato/negotiations": 12,
-    "west_nato/alliance_politics": 3,
-    "west_nato/other": 2,
-    "russia_internal/other": 5,
-    "criticism/army_command": 3,
-    "criticism/government": 3,
-    "criticism/other": 1
-   },
-   "flags": 5
-  },
-  {
-   "battlefield": {
-    "pos": 16,
-    "neg": 0,
-    "neu": 4,
-    "net": 80,
-    "story": "Russian Geran drones struck two Ukrainian naval patrol boats off Odessa coast in Black Sea.",
-    "story_url": "https://t.me/rybar/80861",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/sashakots/62197",
-      "t": "Black Sea Fleet drones sink two Ukrainian speedboats with special operations forces aboard in coordinated attacks.",
-      "ch": "Kotsnews"
-     }
-    ]
-   },
-   "date": "2026-06-06",
-   "total": 112,
-   "substantive": 65,
-   "headline": "",
-   "topics": {
-    "strikes_on_ukraine": 7,
-    "frontline": 20,
-    "ukraine_strikes_on_russia": 19,
-    "west_nato": 9,
-    "russia_internal": 7,
-    "criticism": 3
-   },
-   "nets": {
-    "strikes_on_ukraine": 57,
-    "frontline": 80,
-    "ukraine_strikes_on_russia": -47,
-    "west_nato": -22,
-    "russia_internal": 43,
-    "criticism": -100
-   },
-   "subtopics": {
-    "strikes_on_ukraine/deep_strikes": 1,
-    "strikes_on_ukraine/other": 6,
-    "frontline/kupyansk": 5,
-    "frontline/other": 15,
-    "ukraine_strikes_on_russia/drones_on_regions": 16,
-    "ukraine_strikes_on_russia/other": 3,
-    "west_nato/military_aid": 3,
-    "west_nato/rearmament": 2,
-    "west_nato/alliance_politics": 1,
-    "west_nato/other": 3,
-    "russia_internal/ideology_society": 2,
-    "russia_internal/security_cases": 1,
-    "russia_internal/elite_politics": 1,
+    "frontline/other": 5,
+    "ukraine_strikes_on_russia/drones_on_regions": 12,
+    "ukraine_strikes_on_russia/other": 2,
+    "west_nato/military_aid": 4,
+    "west_nato/rearmament": 1,
+    "west_nato/negotiations": 6,
+    "west_nato/other": 5,
+    "russia_internal/ideology_society": 7,
+    "russia_internal/security_cases": 2,
     "russia_internal/economy": 1,
     "russia_internal/mobilisation": 1,
     "russia_internal/other": 1,
-    "criticism/army_command": 2,
-    "criticism/government": 1
+    "criticism/government": 4,
+    "criticism/other": 1
    },
    "flags": 3
   },
   {
    "battlefield": {
-    "pos": 8,
+    "pos": 6,
     "neg": 0,
-    "neu": 2,
-    "net": 80,
-    "story": "Special operations unit destroyed enemy firing position; one soldier wounded but evacuated after blocking enemy position.",
+    "neu": 0,
+    "net": 100,
+    "story": "Russian forces repel Ukrainian infiltration attempts near Rodinskoe using drone strikes and artillery.",
+    "story_url": "https://t.me/rybar/80842",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/dva_majors/94078",
+      "t": "Russian drones and aircraft strike Ukrainian reconnaissance posts and positions near Zarechnoe in Zaporizhzhia; reported destruction of supplies and equipment.",
+      "ch": "Two Majors"
+     }
+    ]
+   },
+   "date": "2026-06-05",
+   "total": 146,
+   "substantive": 69,
+   "headline": "",
+   "topics": {
+    "strikes_on_ukraine": 6,
+    "frontline": 6,
+    "ukraine_strikes_on_russia": 21,
+    "west_nato": 20,
+    "russia_internal": 11,
+    "criticism": 5
+   },
+   "nets": {
+    "strikes_on_ukraine": 83,
+    "frontline": 100,
+    "ukraine_strikes_on_russia": -57,
+    "west_nato": -45,
+    "russia_internal": 27,
+    "criticism": -100
+   },
+   "subtopics": {
+    "strikes_on_ukraine/deep_strikes": 1,
+    "strikes_on_ukraine/fuel_infrastructure": 2,
+    "strikes_on_ukraine/other": 3,
+    "frontline/hulyaipole": 1,
+    "frontline/other": 5,
+    "ukraine_strikes_on_russia/drones_on_regions": 6,
+    "ukraine_strikes_on_russia/other": 15,
+    "west_nato/military_aid": 5,
+    "west_nato/negotiations": 11,
+    "west_nato/alliance_politics": 3,
+    "west_nato/other": 1,
+    "russia_internal/ideology_society": 2,
+    "russia_internal/security_cases": 1,
+    "russia_internal/mobilisation": 3,
+    "russia_internal/other": 5,
+    "criticism/army_command": 2,
+    "criticism/government": 3
+   },
+   "flags": 4
+  },
+  {
+   "battlefield": {
+    "pos": 10,
+    "neg": 1,
+    "neu": 1,
+    "net": 75,
+    "story": "Russian forces advance east of Oskol near Kupyansk, reducing Ukrainian bridgehead positions.",
+    "story_url": "https://t.me/rybar/80862",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/rybar/80859",
+      "t": "Russian forces capture village Shevchenko on Slobozhan direction; advancing toward key Ukrainian supply node.",
+      "ch": "Rybar"
+     },
+     {
+      "s": "neg",
+      "url": "https://t.me/ngp_razvedka/25514",
+      "t": "Analysis notes Ukrainian personnel distributed in small groups across houses to avoid concentrated strikes.",
+      "ch": "NgP raZVedka"
+     }
+    ]
+   },
+   "date": "2026-06-06",
+   "total": 112,
+   "substantive": 64,
+   "headline": "",
+   "topics": {
+    "strikes_on_ukraine": 5,
+    "frontline": 12,
+    "ukraine_strikes_on_russia": 22,
+    "west_nato": 7,
+    "russia_internal": 16,
+    "criticism": 2
+   },
+   "nets": {
+    "strikes_on_ukraine": 80,
+    "frontline": 75,
+    "ukraine_strikes_on_russia": -41,
+    "west_nato": -57,
+    "russia_internal": 6,
+    "criticism": -100
+   },
+   "subtopics": {
+    "strikes_on_ukraine/other": 5,
+    "frontline/kupyansk": 5,
+    "frontline/other": 7,
+    "ukraine_strikes_on_russia/drones_on_regions": 14,
+    "ukraine_strikes_on_russia/other": 8,
+    "west_nato/military_aid": 5,
+    "west_nato/alliance_politics": 1,
+    "west_nato/other": 1,
+    "russia_internal/ideology_society": 6,
+    "russia_internal/security_cases": 3,
+    "russia_internal/elite_politics": 1,
+    "russia_internal/economy": 1,
+    "russia_internal/other": 5,
+    "criticism/army_command": 2
+   },
+   "flags": 1
+  },
+  {
+   "battlefield": {
+    "pos": 10,
+    "neg": 0,
+    "neu": 0,
+    "net": 100,
+    "story": "Russian special forces destroyed enemy firing position; wounded soldier evacuated after blocking and eliminating target.",
     "story_url": "https://t.me/rusich_army/29872",
     "examples": [
      {
       "s": "pos",
       "url": "https://t.me/sashakots/62213",
-      "t": "Russian forces encircle 150-200 Ukrainian troops in central Konstantinovka after cutting main supply routes.",
+      "t": "Russian forces encircle Ukrainian contingent in central Konstantinovka after advancing across Moskovskaya Street.",
       "ch": "Kotsnews"
      }
     ]
@@ -331,40 +325,290 @@
    "substantive": 57,
    "headline": "",
    "topics": {
-    "strikes_on_ukraine": 5,
+    "strikes_on_ukraine": 4,
     "frontline": 10,
     "ukraine_strikes_on_russia": 11,
-    "west_nato": 19,
-    "russia_internal": 8,
+    "west_nato": 17,
+    "russia_internal": 11,
     "criticism": 4
    },
    "nets": {
     "strikes_on_ukraine": 100,
-    "frontline": 80,
-    "ukraine_strikes_on_russia": -55,
-    "west_nato": -21,
-    "russia_internal": -12,
+    "frontline": 100,
+    "ukraine_strikes_on_russia": -82,
+    "west_nato": -18,
+    "russia_internal": 27,
     "criticism": -100
    },
    "subtopics": {
+    "strikes_on_ukraine/deep_strikes": 2,
     "strikes_on_ukraine/fuel_infrastructure": 1,
-    "strikes_on_ukraine/other": 4,
-    "frontline/hulyaipole": 2,
-    "frontline/other": 8,
-    "ukraine_strikes_on_russia/drones_on_regions": 7,
-    "ukraine_strikes_on_russia/other": 4,
-    "west_nato/military_aid": 5,
-    "west_nato/negotiations": 4,
-    "west_nato/alliance_politics": 1,
-    "west_nato/other": 9,
-    "russia_internal/ideology_society": 3,
+    "strikes_on_ukraine/other": 1,
+    "frontline/hulyaipole": 3,
+    "frontline/other": 7,
+    "ukraine_strikes_on_russia/drones_on_regions": 8,
+    "ukraine_strikes_on_russia/other": 3,
+    "west_nato/military_aid": 4,
+    "west_nato/negotiations": 3,
+    "west_nato/alliance_politics": 5,
+    "west_nato/other": 5,
+    "russia_internal/ideology_society": 5,
+    "russia_internal/security_cases": 1,
     "russia_internal/elite_politics": 2,
     "russia_internal/economy": 1,
     "russia_internal/other": 2,
-    "criticism/army_command": 3,
-    "criticism/government": 1
+    "criticism/army_command": 2,
+    "criticism/government": 2
    },
-   "flags": 2
+   "flags": 3
+  },
+  {
+   "battlefield": {
+    "pos": 7,
+    "neg": 0,
+    "neu": 0,
+    "net": 100,
+    "story": "Russian forces advance in Konstantinovka city, crossing Krivoy Torets river and moving toward northwestern outskirts to cut supplies.",
+    "story_url": "https://t.me/rybar/80906",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/Sladkov_plus/15603",
+      "t": "Russian forces liberate Shevchenko and Grany; advance 1km toward Slatino on Kharkiv front.",
+      "ch": "Sladkov+"
+     }
+    ]
+   },
+   "date": "2026-06-08",
+   "total": 142,
+   "substantive": 56,
+   "headline": "",
+   "topics": {
+    "strikes_on_ukraine": 9,
+    "frontline": 7,
+    "ukraine_strikes_on_russia": 12,
+    "west_nato": 19,
+    "russia_internal": 6,
+    "criticism": 3
+   },
+   "nets": {
+    "strikes_on_ukraine": 89,
+    "frontline": 100,
+    "ukraine_strikes_on_russia": -83,
+    "west_nato": -37,
+    "russia_internal": 50,
+    "criticism": -100
+   },
+   "subtopics": {
+    "strikes_on_ukraine/deep_strikes": 3,
+    "strikes_on_ukraine/fuel_infrastructure": 1,
+    "strikes_on_ukraine/other": 5,
+    "frontline/hulyaipole": 2,
+    "frontline/kupyansk": 1,
+    "frontline/other": 4,
+    "ukraine_strikes_on_russia/drones_on_regions": 6,
+    "ukraine_strikes_on_russia/other": 6,
+    "west_nato/military_aid": 4,
+    "west_nato/rearmament": 1,
+    "west_nato/negotiations": 1,
+    "west_nato/alliance_politics": 5,
+    "west_nato/other": 8,
+    "russia_internal/ideology_society": 3,
+    "russia_internal/elite_politics": 2,
+    "russia_internal/economy": 1,
+    "criticism/government": 3
+   },
+   "flags": 0
+  },
+  {
+   "battlefield": {
+    "pos": 9,
+    "neg": 0,
+    "neu": 2,
+    "net": 82,
+    "story": "Russian forces advance on Burlyuk direction, secure forest lines near Volchansk and push Ukrainian defenders back one kilometer.",
+    "story_url": "https://t.me/rybar/80936",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/rybar/80935",
+      "t": "Russian forces continue advances despite difficult positions; Ukraine conducts terrorism in Balashikha amid political struggles.",
+      "ch": "Rybar"
+     }
+    ]
+   },
+   "date": "2026-06-09",
+   "total": 122,
+   "substantive": 55,
+   "headline": "",
+   "topics": {
+    "strikes_on_ukraine": 4,
+    "frontline": 11,
+    "ukraine_strikes_on_russia": 8,
+    "west_nato": 17,
+    "russia_internal": 9,
+    "criticism": 6
+   },
+   "nets": {
+    "strikes_on_ukraine": 100,
+    "frontline": 82,
+    "ukraine_strikes_on_russia": -100,
+    "west_nato": -6,
+    "russia_internal": -33,
+    "criticism": -67
+   },
+   "subtopics": {
+    "strikes_on_ukraine/fuel_infrastructure": 1,
+    "strikes_on_ukraine/other": 3,
+    "frontline/pokrovsk": 3,
+    "frontline/kupyansk": 2,
+    "frontline/other": 6,
+    "ukraine_strikes_on_russia/crimea_energy": 3,
+    "ukraine_strikes_on_russia/drones_on_regions": 4,
+    "ukraine_strikes_on_russia/other": 1,
+    "west_nato/military_aid": 6,
+    "west_nato/rearmament": 1,
+    "west_nato/negotiations": 1,
+    "west_nato/alliance_politics": 3,
+    "west_nato/other": 6,
+    "russia_internal/ideology_society": 1,
+    "russia_internal/security_cases": 5,
+    "russia_internal/economy": 3,
+    "criticism/government": 4,
+    "criticism/other": 2
+   },
+   "flags": 3
+  },
+  {
+   "battlefield": {
+    "pos": 9,
+    "neg": 1,
+    "neu": 0,
+    "net": 80,
+    "story": "Russian forces advanced on Kharkiv-Sumy border, captured Taratutino, Novodmitrovka, Granovo and pushed toward Kazacha Lopan.",
+    "story_url": "https://t.me/rybar/80944",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/rybar/80966",
+      "t": "Russian forces strike Kharkiv; heavy fighting continues on Konstantinovsk and Dobroilsk directions.",
+      "ch": "Rybar"
+     },
+     {
+      "s": "neg",
+      "url": "https://t.me/wargonzo/34743",
+      "t": "Ukraine deploys US drones with AI targeting systems; Russia claims 87 enemy targets destroyed in one location.",
+      "ch": "WarGonzo"
+     }
+    ]
+   },
+   "date": "2026-06-10",
+   "total": 190,
+   "substantive": 74,
+   "headline": "",
+   "topics": {
+    "strikes_on_ukraine": 6,
+    "frontline": 10,
+    "ukraine_strikes_on_russia": 21,
+    "west_nato": 11,
+    "russia_internal": 15,
+    "criticism": 11
+   },
+   "nets": {
+    "strikes_on_ukraine": 67,
+    "frontline": 80,
+    "ukraine_strikes_on_russia": -86,
+    "west_nato": -36,
+    "russia_internal": 13,
+    "criticism": -100
+   },
+   "subtopics": {
+    "strikes_on_ukraine/deep_strikes": 2,
+    "strikes_on_ukraine/fuel_infrastructure": 1,
+    "strikes_on_ukraine/other": 3,
+    "frontline/hulyaipole": 1,
+    "frontline/kupyansk": 1,
+    "frontline/other": 8,
+    "ukraine_strikes_on_russia/drones_on_regions": 18,
+    "ukraine_strikes_on_russia/other": 3,
+    "west_nato/military_aid": 5,
+    "west_nato/alliance_politics": 2,
+    "west_nato/other": 4,
+    "russia_internal/ideology_society": 6,
+    "russia_internal/security_cases": 3,
+    "russia_internal/elite_politics": 1,
+    "russia_internal/economy": 2,
+    "russia_internal/mobilisation": 2,
+    "russia_internal/other": 1,
+    "criticism/army_command": 3,
+    "criticism/government": 8
+   },
+   "flags": 5
+  },
+  {
+   "battlefield": {
+    "pos": 19,
+    "neg": 1,
+    "neu": 0,
+    "net": 90,
+    "story": "Russian forces liberate Okhrimovka and Rozkoshne, advance significantly in Konstantinovka direction.",
+    "story_url": "https://t.me/rybar/81004",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/rusich_army/29918",
+      "t": "Russian forces target Ukrainian mobile drone control vehicles disguised as civilian trucks.",
+      "ch": "Arkhangel Spetsnaza"
+     },
+     {
+      "s": "neg",
+      "url": "https://t.me/rybar/81003",
+      "t": "Ukrainian forces expand presence near Stepnohirsk, occupy new positions threatening Russian lines.",
+      "ch": "Rybar"
+     }
+    ]
+   },
+   "date": "2026-06-11",
+   "total": 179,
+   "substantive": 77,
+   "headline": "",
+   "topics": {
+    "strikes_on_ukraine": 3,
+    "frontline": 20,
+    "ukraine_strikes_on_russia": 19,
+    "west_nato": 17,
+    "russia_internal": 16,
+    "criticism": 2
+   },
+   "nets": {
+    "strikes_on_ukraine": 100,
+    "frontline": 90,
+    "ukraine_strikes_on_russia": -58,
+    "west_nato": -41,
+    "russia_internal": 12,
+    "criticism": -100
+   },
+   "subtopics": {
+    "strikes_on_ukraine/deep_strikes": 1,
+    "strikes_on_ukraine/other": 2,
+    "frontline/pokrovsk": 2,
+    "frontline/kupyansk": 4,
+    "frontline/other": 14,
+    "ukraine_strikes_on_russia/drones_on_regions": 9,
+    "ukraine_strikes_on_russia/other": 10,
+    "west_nato/military_aid": 5,
+    "west_nato/rearmament": 2,
+    "west_nato/negotiations": 1,
+    "west_nato/alliance_politics": 2,
+    "west_nato/other": 7,
+    "russia_internal/ideology_society": 7,
+    "russia_internal/security_cases": 3,
+    "russia_internal/economy": 3,
+    "russia_internal/other": 3,
+    "criticism/government": 1,
+    "criticism/other": 1
+   },
+   "flags": 1
   },
   {
    "battlefield": {
@@ -372,383 +616,187 @@
     "neg": 1,
     "neu": 1,
     "net": 67,
-    "story": "Russian forces advance through Konstantinovka, pushing Ukrainian forces north and cutting supply lines.",
-    "story_url": "https://t.me/rybar/80906",
+    "story": "Russian advances in southern Zaporizhzhia; Ukrainian drone attacks on Crimea and Russian industrial targets continue.",
+    "story_url": "https://t.me/rybar/81031",
     "examples": [
      {
       "s": "pos",
-      "url": "https://t.me/Sladkov_plus/15603",
-      "t": "Russian forces liberate Shevchenko, advance toward Kazachia Lopan; 1km progress in Kharkiv direction.",
-      "ch": "Sladkov+"
-     },
-     {
-      "s": "neg",
-      "url": "https://t.me/wargonzo/34702",
-      "t": "Captured Russian soldier chooses death over captivity; interview describes trauma and sacrifice.",
-      "ch": "WarGonzo"
-     }
-    ]
-   },
-   "date": "2026-06-08",
-   "total": 142,
-   "substantive": 62,
-   "headline": "",
-   "topics": {
-    "strikes_on_ukraine": 9,
-    "frontline": 9,
-    "ukraine_strikes_on_russia": 13,
-    "west_nato": 22,
-    "russia_internal": 6,
-    "criticism": 3
-   },
-   "nets": {
-    "strikes_on_ukraine": 67,
-    "frontline": 67,
-    "ukraine_strikes_on_russia": -69,
-    "west_nato": -32,
-    "russia_internal": -33,
-    "criticism": -100
-   },
-   "subtopics": {
-    "strikes_on_ukraine/deep_strikes": 2,
-    "strikes_on_ukraine/fuel_infrastructure": 1,
-    "strikes_on_ukraine/other": 6,
-    "frontline/hulyaipole": 1,
-    "frontline/kupyansk": 2,
-    "frontline/other": 6,
-    "ukraine_strikes_on_russia/crimea_energy": 4,
-    "ukraine_strikes_on_russia/drones_on_regions": 5,
-    "ukraine_strikes_on_russia/other": 4,
-    "west_nato/military_aid": 4,
-    "west_nato/rearmament": 1,
-    "west_nato/negotiations": 2,
-    "west_nato/alliance_politics": 5,
-    "west_nato/other": 10,
-    "russia_internal/elite_politics": 3,
-    "russia_internal/economy": 3,
-    "criticism/army_command": 1,
-    "criticism/government": 2
-   },
-   "flags": 1
-  },
-  {
-   "battlefield": {
-    "pos": 7,
-    "neg": 1,
-    "neu": 4,
-    "net": 50,
-    "story": "Russian forces advance near Volchansk, securing new positions and improving tactical situation on Burluk direction.",
-    "story_url": "https://t.me/rybar/80936",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/rybar/80934",
-      "t": "Russian forces advance in Konstantinovka city, capturing chemical plant and multiple neighborhoods.",
-      "ch": "Rybar"
-     },
-     {
-      "s": "neg",
-      "url": "https://t.me/sashakots/62239",
-      "t": "Ukrainian forces in Konstantinovka face encirclement and deteriorating defensive positions from Russian troops.",
-      "ch": "Kotsnews"
-     }
-    ]
-   },
-   "date": "2026-06-09",
-   "total": 122,
-   "substantive": 58,
-   "headline": "",
-   "topics": {
-    "strikes_on_ukraine": 2,
-    "frontline": 12,
-    "ukraine_strikes_on_russia": 10,
-    "west_nato": 20,
-    "russia_internal": 10,
-    "criticism": 4
-   },
-   "nets": {
-    "strikes_on_ukraine": 100,
-    "frontline": 50,
-    "ukraine_strikes_on_russia": -80,
-    "west_nato": -20,
-    "russia_internal": -20,
-    "criticism": -100
-   },
-   "subtopics": {
-    "strikes_on_ukraine/fuel_infrastructure": 1,
-    "strikes_on_ukraine/other": 1,
-    "frontline/pokrovsk": 3,
-    "frontline/hulyaipole": 1,
-    "frontline/kupyansk": 2,
-    "frontline/other": 6,
-    "ukraine_strikes_on_russia/drones_on_regions": 7,
-    "ukraine_strikes_on_russia/other": 3,
-    "west_nato/military_aid": 8,
-    "west_nato/rearmament": 1,
-    "west_nato/negotiations": 2,
-    "west_nato/alliance_politics": 3,
-    "west_nato/other": 6,
-    "russia_internal/ideology_society": 2,
-    "russia_internal/security_cases": 5,
-    "russia_internal/economy": 3,
-    "criticism/army_command": 1,
-    "criticism/government": 2,
-    "criticism/other": 1
-   },
-   "flags": 0
-  },
-  {
-   "battlefield": {
-    "pos": 9,
-    "neg": 1,
-    "neu": 2,
-    "net": 67,
-    "story": "Russian forces captured villages in Kharkiv-Sumy border area, approaching Kazachya Lopan.",
-    "story_url": "https://t.me/rybar/80944",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/dva_majors/94372",
-      "t": "Russian drones detect Ukrainian infantry near Primorskoe; incendiary drops eliminate position.",
-      "ch": "Two Majors"
-     },
-     {
-      "s": "neg",
-      "url": "https://t.me/wargonzo/34743",
-      "t": "Ukraine deploys AI-equipped American drones targeting indiscriminately; Russian forces destroy 87+ enemy positions.",
-      "ch": "WarGonzo"
-     }
-    ]
-   },
-   "date": "2026-06-10",
-   "total": 190,
-   "substantive": 77,
-   "headline": "",
-   "topics": {
-    "strikes_on_ukraine": 7,
-    "frontline": 12,
-    "ukraine_strikes_on_russia": 24,
-    "west_nato": 11,
-    "russia_internal": 15,
-    "criticism": 8
-   },
-   "nets": {
-    "strikes_on_ukraine": 86,
-    "frontline": 67,
-    "ukraine_strikes_on_russia": -79,
-    "west_nato": -9,
-    "russia_internal": 53,
-    "criticism": -100
-   },
-   "subtopics": {
-    "strikes_on_ukraine/other": 7,
-    "frontline/hulyaipole": 1,
-    "frontline/kupyansk": 1,
-    "frontline/other": 10,
-    "ukraine_strikes_on_russia/drones_on_regions": 14,
-    "ukraine_strikes_on_russia/other": 10,
-    "west_nato/military_aid": 5,
-    "west_nato/negotiations": 1,
-    "west_nato/alliance_politics": 3,
-    "west_nato/other": 2,
-    "russia_internal/ideology_society": 5,
-    "russia_internal/security_cases": 5,
-    "russia_internal/economy": 2,
-    "russia_internal/mobilisation": 2,
-    "russia_internal/other": 1,
-    "criticism/army_command": 3,
-    "criticism/government": 5
-   },
-   "flags": 2
-  },
-  {
-   "battlefield": {
-    "pos": 16,
-    "neg": 1,
-    "neu": 6,
-    "net": 65,
-    "story": "Russian forces liberate Okhrimovka, advance in Konstantinovka and Roskoshnoye, destroy Ukrainian infrastructure.",
-    "story_url": "https://t.me/rybar/81004",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/rybar/81002",
-      "t": "Russian forces advance in Konstantinovka, liberate Roskoshnoye, complete encirclement.",
-      "ch": "Rybar"
-     },
-     {
-      "s": "neg",
-      "url": "https://t.me/rybar/81003",
-      "t": "Ukrainian forces expand presence near Stepnogorsk despite Russian efforts, situation deteriorating.",
-      "ch": "Rybar"
-     }
-    ]
-   },
-   "date": "2026-06-11",
-   "total": 179,
-   "substantive": 79,
-   "headline": "",
-   "topics": {
-    "strikes_on_ukraine": 4,
-    "frontline": 23,
-    "ukraine_strikes_on_russia": 18,
-    "west_nato": 16,
-    "russia_internal": 14,
-    "criticism": 4
-   },
-   "nets": {
-    "strikes_on_ukraine": 0,
-    "frontline": 65,
-    "ukraine_strikes_on_russia": -61,
-    "west_nato": -38,
-    "russia_internal": -7,
-    "criticism": -100
-   },
-   "subtopics": {
-    "strikes_on_ukraine/deep_strikes": 3,
-    "strikes_on_ukraine/other": 1,
-    "frontline/hulyaipole": 1,
-    "frontline/kupyansk": 4,
-    "frontline/other": 18,
-    "ukraine_strikes_on_russia/drones_on_regions": 9,
-    "ukraine_strikes_on_russia/other": 9,
-    "west_nato/military_aid": 5,
-    "west_nato/rearmament": 1,
-    "west_nato/alliance_politics": 1,
-    "west_nato/other": 9,
-    "russia_internal/ideology_society": 2,
-    "russia_internal/security_cases": 2,
-    "russia_internal/elite_politics": 1,
-    "russia_internal/economy": 5,
-    "russia_internal/mobilisation": 2,
-    "russia_internal/other": 2,
-    "criticism/army_command": 1,
-    "criticism/government": 3
-   },
-   "flags": 4
-  },
-  {
-   "battlefield": {
-    "pos": 7,
-    "neg": 2,
-    "neu": 2,
-    "net": 45,
-    "story": "Russian forces advancing north and northwest of Novoandriyivka; consolidated control and developing toward Mirne.",
-    "story_url": "https://t.me/rusich_army/29934",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/dva_majors/94434",
-      "t": "Russian soldiers improvise UAZ pickup for ammunition transport and casualty evacuation with better air observation.",
-      "ch": "Two Majors"
-     },
-     {
-      "s": "neg",
-      "url": "https://t.me/rusich_army/29929",
-      "t": "Ukrainian training shows soldiers using rifles against FPV drones; risky tactics likely result in vehicle destruction.",
+      "url": "https://t.me/rusich_army/29934",
+      "t": "Russian forces advance near Pokrovsk capturing Novo-Aleksandrovka and establishing positions in Myrne.",
       "ch": "Arkhangel Spetsnaza"
+     },
+     {
+      "s": "neg",
+      "url": "https://t.me/dva_majors/94438",
+      "t": "Russian forces in Zaporizhzhia direction face superior Ukrainian surveillance and logistics disruption.",
+      "ch": "Two Majors"
      }
     ]
    },
    "date": "2026-06-12",
    "total": 115,
-   "substantive": 56,
+   "substantive": 44,
    "headline": "",
    "topics": {
-    "strikes_on_ukraine": 2,
-    "frontline": 11,
+    "strikes_on_ukraine": 1,
+    "frontline": 9,
     "ukraine_strikes_on_russia": 12,
-    "west_nato": 19,
-    "russia_internal": 10,
-    "criticism": 2
+    "west_nato": 14,
+    "russia_internal": 5,
+    "criticism": 3
    },
    "nets": {
-    "strikes_on_ukraine": 50,
-    "frontline": 45,
-    "ukraine_strikes_on_russia": -83,
-    "west_nato": -47,
-    "russia_internal": 80,
+    "strikes_on_ukraine": 100,
+    "frontline": 67,
+    "ukraine_strikes_on_russia": -75,
+    "west_nato": -86,
+    "russia_internal": 20,
     "criticism": -100
    },
    "subtopics": {
-    "strikes_on_ukraine/other": 2,
-    "frontline/pokrovsk": 3,
-    "frontline/hulyaipole": 2,
+    "strikes_on_ukraine/other": 1,
+    "frontline/pokrovsk": 2,
+    "frontline/hulyaipole": 1,
     "frontline/other": 6,
-    "ukraine_strikes_on_russia/drones_on_regions": 11,
-    "ukraine_strikes_on_russia/other": 1,
-    "west_nato/military_aid": 9,
-    "west_nato/rearmament": 3,
-    "west_nato/negotiations": 3,
-    "west_nato/alliance_politics": 1,
-    "west_nato/other": 3,
-    "russia_internal/ideology_society": 4,
-    "russia_internal/security_cases": 2,
-    "russia_internal/mobilisation": 4,
-    "criticism/army_command": 1,
+    "ukraine_strikes_on_russia/drones_on_regions": 9,
+    "ukraine_strikes_on_russia/other": 3,
+    "west_nato/military_aid": 7,
+    "west_nato/rearmament": 1,
+    "west_nato/negotiations": 2,
+    "west_nato/alliance_politics": 2,
+    "west_nato/other": 2,
+    "russia_internal/ideology_society": 3,
+    "russia_internal/security_cases": 1,
+    "russia_internal/mobilisation": 1,
+    "criticism/government": 1,
+    "criticism/regional": 1,
     "criticism/other": 1
    },
-   "flags": 2
+   "flags": 1
   },
   {
    "battlefield": {
-    "pos": 7,
-    "neg": 1,
-    "neu": 2,
-    "net": 60,
-    "story": "Russian forces strike crossing at Mayaky; Ukrainian drones attack Crimea energy infrastructure daily.",
+    "pos": 8,
+    "neg": 2,
+    "neu": 1,
+    "net": 55,
+    "story": "Russian forces strike bridge in Liman direction; Ukraine attacks Crimea energy and Kherson-Crimea crossings.",
     "story_url": "https://t.me/rybar/81050",
     "examples": [
      {
       "s": "pos",
       "url": "https://t.me/rybar/81046",
-      "t": "Russian forces continue offensive in Konstantinovka, advancing through urban terrain despite Ukrainian resistance.",
+      "t": "Russian forces advance in urban combat in Konstantinovka, clearing districts despite Ukrainian supply efforts.",
       "ch": "Rybar"
      },
      {
       "s": "neg",
-      "url": "https://t.me/ngp_razvedka/25555",
-      "t": "Ukraine prepares offensive on Zaporizhzhia direction with reconnaissance, drone deployment, attempting Crimea corridor blockade.",
-      "ch": "NgP raZVedka"
+      "url": "https://t.me/vysokygovorit/23123",
+      "t": "Post criticizes 2023 Ukrainian offensive tactics based on failed Kharkov region tactics and Western miscalculation.",
+      "ch": "Starshe Eddy"
      }
     ]
    },
    "date": "2026-06-13",
    "total": 110,
-   "substantive": 61,
+   "substantive": 58,
    "headline": "",
    "topics": {
-    "strikes_on_ukraine": 8,
-    "frontline": 10,
+    "strikes_on_ukraine": 6,
+    "frontline": 11,
     "ukraine_strikes_on_russia": 11,
     "west_nato": 21,
     "russia_internal": 7,
-    "criticism": 4
+    "criticism": 2
    },
    "nets": {
-    "strikes_on_ukraine": 75,
-    "frontline": 60,
-    "ukraine_strikes_on_russia": -100,
-    "west_nato": -48,
-    "russia_internal": -14,
+    "strikes_on_ukraine": 100,
+    "frontline": 55,
+    "ukraine_strikes_on_russia": -91,
+    "west_nato": -24,
+    "russia_internal": -29,
     "criticism": -100
    },
    "subtopics": {
-    "strikes_on_ukraine/deep_strikes": 3,
-    "strikes_on_ukraine/fuel_infrastructure": 2,
-    "strikes_on_ukraine/other": 3,
+    "strikes_on_ukraine/deep_strikes": 1,
+    "strikes_on_ukraine/fuel_infrastructure": 1,
+    "strikes_on_ukraine/other": 4,
     "frontline/hulyaipole": 2,
-    "frontline/other": 8,
-    "ukraine_strikes_on_russia/crimea_energy": 1,
-    "ukraine_strikes_on_russia/drones_on_regions": 6,
+    "frontline/other": 9,
+    "ukraine_strikes_on_russia/drones_on_regions": 7,
     "ukraine_strikes_on_russia/other": 4,
     "west_nato/military_aid": 5,
-    "west_nato/rearmament": 4,
+    "west_nato/rearmament": 3,
     "west_nato/negotiations": 1,
     "west_nato/alliance_politics": 5,
-    "west_nato/other": 6,
-    "russia_internal/mobilisation": 2,
-    "russia_internal/other": 5,
+    "west_nato/other": 7,
+    "russia_internal/ideology_society": 3,
+    "russia_internal/security_cases": 2,
+    "russia_internal/mobilisation": 1,
+    "russia_internal/other": 1,
+    "criticism/army_command": 1,
+    "criticism/government": 1
+   },
+   "flags": 2
+  },
+  {
+   "battlefield": {
+    "pos": 12,
+    "neg": 1,
+    "neu": 1,
+    "net": 79,
+    "story": "Russian strikes on Ukrainian infrastructure; Ukraine attacking Russian regions with hundreds of drones intercepted.",
+    "story_url": "https://t.me/rybar/81075",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/dva_majors/94566",
+      "t": "Russian aircraft FABs targeting villages in Kharkiv and Luhansk regions.",
+      "ch": "Two Majors"
+     },
+     {
+      "s": "neg",
+      "url": "https://t.me/rybar/81072",
+      "t": "Ukrainian small groups infiltrating and expanding gray zone near Dnipropetrovsk with drone support.",
+      "ch": "Rybar"
+     }
+    ]
+   },
+   "date": "2026-06-14",
+   "total": 165,
+   "substantive": 69,
+   "headline": "",
+   "topics": {
+    "strikes_on_ukraine": 1,
+    "frontline": 14,
+    "ukraine_strikes_on_russia": 17,
+    "west_nato": 22,
+    "russia_internal": 11,
+    "criticism": 4
+   },
+   "nets": {
+    "strikes_on_ukraine": 100,
+    "frontline": 79,
+    "ukraine_strikes_on_russia": -41,
+    "west_nato": -64,
+    "russia_internal": 0,
+    "criticism": -100
+   },
+   "subtopics": {
+    "strikes_on_ukraine/other": 1,
+    "frontline/hulyaipole": 1,
+    "frontline/other": 13,
+    "ukraine_strikes_on_russia/drones_on_regions": 15,
+    "ukraine_strikes_on_russia/other": 2,
+    "west_nato/military_aid": 6,
+    "west_nato/negotiations": 5,
+    "west_nato/alliance_politics": 2,
+    "west_nato/other": 9,
+    "russia_internal/ideology_society": 7,
+    "russia_internal/security_cases": 1,
+    "russia_internal/elite_politics": 1,
+    "russia_internal/economy": 1,
+    "russia_internal/mobilisation": 1,
     "criticism/army_command": 2,
     "criticism/government": 2
    },
@@ -756,487 +804,174 @@
   },
   {
    "battlefield": {
-    "pos": 12,
+    "pos": 16,
     "neg": 0,
-    "neu": 2,
-    "net": 86,
-    "story": "Ukrainian infiltration groups advance in Dnipropetrovsk direction near Berezove village.",
-    "story_url": "https://t.me/rybar/81072",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/rusich_army/29958",
-      "t": "Drone warfare in tunnels effectively eliminates enemy escape routes through coordinated coordinated tactical operations.",
-      "ch": "Arkhangel Spetsnaza"
-     }
-    ]
-   },
-   "date": "2026-06-14",
-   "total": 165,
-   "substantive": 72,
-   "headline": "",
-   "topics": {
-    "strikes_on_ukraine": 4,
-    "frontline": 14,
-    "ukraine_strikes_on_russia": 19,
-    "west_nato": 20,
-    "russia_internal": 9,
-    "criticism": 6
-   },
-   "nets": {
-    "strikes_on_ukraine": 25,
-    "frontline": 86,
-    "ukraine_strikes_on_russia": -37,
-    "west_nato": -35,
-    "russia_internal": 0,
-    "criticism": -100
-   },
-   "subtopics": {
-    "strikes_on_ukraine/deep_strikes": 2,
-    "strikes_on_ukraine/other": 2,
-    "frontline/hulyaipole": 4,
-    "frontline/other": 10,
-    "ukraine_strikes_on_russia/drones_on_regions": 15,
-    "ukraine_strikes_on_russia/other": 4,
-    "west_nato/military_aid": 4,
-    "west_nato/negotiations": 6,
-    "west_nato/alliance_politics": 2,
-    "west_nato/other": 8,
-    "russia_internal/ideology_society": 4,
-    "russia_internal/security_cases": 2,
-    "russia_internal/elite_politics": 1,
-    "russia_internal/economy": 1,
-    "russia_internal/mobilisation": 1,
-    "criticism/army_command": 1,
-    "criticism/government": 4,
-    "criticism/other": 1
-   },
-   "flags": 3
-  },
-  {
-   "battlefield": {
-    "pos": 12,
-    "neg": 0,
-    "neu": 4,
-    "net": 75,
-    "story": "Russian forces continue clearing southwestern Konstantinovka with difficult fighting on flanks and eastern approaches.",
+    "neu": 1,
+    "net": 94,
+    "story": "Russian forces continue clearing Konstantinovka southwest sector, face Ukrainian resistance on eastern flanks.",
     "story_url": "https://t.me/rybar/81089",
     "examples": [
      {
       "s": "pos",
       "url": "https://t.me/rybar/81090",
-      "t": "Russian forces advance in border regions near Kursk, forming ten-kilometer salient toward Ukrainian defensive positions.",
+      "t": "Russian units advance near Malaya Korchakova, approach settlements of Khotyn and Pisarevka with 10km wedge formation.",
       "ch": "Rybar"
      }
     ]
    },
    "date": "2026-06-15",
    "total": 186,
-   "substantive": 78,
+   "substantive": 73,
    "headline": "",
    "topics": {
-    "strikes_on_ukraine": 26,
-    "frontline": 16,
-    "ukraine_strikes_on_russia": 6,
-    "west_nato": 18,
+    "strikes_on_ukraine": 22,
+    "frontline": 17,
+    "ukraine_strikes_on_russia": 9,
+    "west_nato": 14,
     "russia_internal": 7,
-    "criticism": 5
+    "criticism": 4
    },
    "nets": {
-    "strikes_on_ukraine": 81,
-    "frontline": 75,
-    "ukraine_strikes_on_russia": -50,
-    "west_nato": 6,
-    "russia_internal": 0,
+    "strikes_on_ukraine": 100,
+    "frontline": 94,
+    "ukraine_strikes_on_russia": -56,
+    "west_nato": 7,
+    "russia_internal": 14,
     "criticism": -100
    },
    "subtopics": {
-    "strikes_on_ukraine/deep_strikes": 19,
+    "strikes_on_ukraine/deep_strikes": 17,
     "strikes_on_ukraine/fuel_infrastructure": 2,
-    "strikes_on_ukraine/other": 5,
+    "strikes_on_ukraine/other": 3,
     "frontline/hulyaipole": 1,
     "frontline/kupyansk": 2,
-    "frontline/other": 13,
+    "frontline/other": 14,
     "ukraine_strikes_on_russia/drones_on_regions": 6,
-    "west_nato/military_aid": 3,
-    "west_nato/rearmament": 1,
-    "west_nato/negotiations": 9,
-    "west_nato/alliance_politics": 4,
-    "west_nato/other": 1,
-    "russia_internal/security_cases": 3,
-    "russia_internal/economy": 1,
+    "ukraine_strikes_on_russia/other": 3,
+    "west_nato/military_aid": 2,
+    "west_nato/negotiations": 6,
+    "west_nato/alliance_politics": 3,
+    "west_nato/other": 3,
+    "russia_internal/security_cases": 1,
+    "russia_internal/elite_politics": 1,
     "russia_internal/mobilisation": 1,
-    "russia_internal/other": 2,
-    "criticism/government": 4,
+    "russia_internal/other": 4,
+    "criticism/army_command": 1,
+    "criticism/government": 2,
     "criticism/other": 1
    },
-   "flags": 2
+   "flags": 1
   },
   {
    "battlefield": {
-    "pos": 10,
-    "neg": 1,
-    "neu": 5,
-    "net": 56,
-    "story": "Russian forces advance in Slavyansk direction with tactical successes near Mala Piskunovka.",
+    "pos": 14,
+    "neg": 0,
+    "neu": 2,
+    "net": 88,
+    "story": "Russian forces advance near Minkova and capture Malaya Piskunovka on Slavic direction, reducing Ukrainian positions.",
     "story_url": "https://t.me/rybar/81114",
     "examples": [
      {
       "s": "pos",
       "url": "https://t.me/rybar/81109",
-      "t": "Russian forces methodically expand control on Burluky direction, seizing lightly-held forests and widening tactical gaps.",
+      "t": "Russian forces expand Burluk direction gains, control new forest lines, form wedge toward Belyy Kolodets.",
       "ch": "Rybar"
-     },
-     {
-      "s": "neg",
-      "url": "https://t.me/ngp_razvedka/25600",
-      "t": "Analysis predicts Ukraine will launch combined assault on Crimea Bridge before major offensive operations.",
-      "ch": "NgP raZVedka"
      }
     ]
    },
    "date": "2026-06-16",
    "total": 141,
-   "substantive": 71,
+   "substantive": 70,
    "headline": "",
    "topics": {
     "strikes_on_ukraine": 6,
     "frontline": 16,
-    "ukraine_strikes_on_russia": 14,
-    "west_nato": 18,
-    "russia_internal": 15,
+    "ukraine_strikes_on_russia": 15,
+    "west_nato": 17,
+    "russia_internal": 14,
     "criticism": 2
    },
    "nets": {
-    "strikes_on_ukraine": 67,
-    "frontline": 56,
-    "ukraine_strikes_on_russia": -64,
-    "west_nato": -11,
-    "russia_internal": 60,
+    "strikes_on_ukraine": 100,
+    "frontline": 88,
+    "ukraine_strikes_on_russia": -80,
+    "west_nato": -24,
+    "russia_internal": -7,
     "criticism": -100
    },
    "subtopics": {
-    "strikes_on_ukraine/deep_strikes": 3,
-    "strikes_on_ukraine/other": 3,
-    "frontline/pokrovsk": 3,
+    "strikes_on_ukraine/deep_strikes": 4,
+    "strikes_on_ukraine/other": 2,
     "frontline/hulyaipole": 4,
     "frontline/kupyansk": 1,
-    "frontline/other": 8,
-    "ukraine_strikes_on_russia/drones_on_regions": 10,
-    "ukraine_strikes_on_russia/other": 4,
+    "frontline/other": 11,
+    "ukraine_strikes_on_russia/drones_on_regions": 9,
+    "ukraine_strikes_on_russia/other": 6,
     "west_nato/military_aid": 3,
     "west_nato/negotiations": 3,
-    "west_nato/alliance_politics": 3,
-    "west_nato/other": 9,
-    "russia_internal/ideology_society": 2,
-    "russia_internal/security_cases": 6,
+    "west_nato/alliance_politics": 6,
+    "west_nato/other": 5,
+    "russia_internal/ideology_society": 6,
+    "russia_internal/security_cases": 4,
     "russia_internal/mobilisation": 3,
-    "russia_internal/other": 4,
+    "russia_internal/other": 1,
     "criticism/army_command": 2
    },
    "flags": 2
   },
   {
    "battlefield": {
-    "pos": 15,
+    "pos": 18,
     "neg": 0,
-    "neu": 4,
-    "net": 79,
-    "story": "Russian forces strike Zaporizhzhia and Odesa; defensive battles in Sumy region with supply issues for Ukrainian forces.",
+    "neu": 1,
+    "net": 95,
+    "story": "Russian forces advance on Sumy direction with ongoing firefights; Ukrainian supply problems reported.",
     "story_url": "https://t.me/dva_majors/94661",
     "examples": [
      {
       "s": "pos",
       "url": "https://t.me/rybar/81146",
-      "t": "Russian forces advance in Konstantinovka, clearing Gora microdistrict and expanding presence on northeast outskirts.",
+      "t": "Russian forces advance in Konstantinovka, expanding control of northeastern outskirts and capturing Gora district.",
       "ch": "Rybar"
      }
     ]
    },
    "date": "2026-06-17",
    "total": 149,
-   "substantive": 80,
+   "substantive": 79,
    "headline": "",
    "topics": {
-    "strikes_on_ukraine": 2,
+    "strikes_on_ukraine": 1,
     "frontline": 19,
     "ukraine_strikes_on_russia": 21,
     "west_nato": 20,
-    "russia_internal": 15,
-    "criticism": 3
+    "russia_internal": 13,
+    "criticism": 5
    },
    "nets": {
     "strikes_on_ukraine": 100,
-    "frontline": 79,
-    "ukraine_strikes_on_russia": -76,
-    "west_nato": -35,
-    "russia_internal": 33,
+    "frontline": 95,
+    "ukraine_strikes_on_russia": -86,
+    "west_nato": -45,
+    "russia_internal": 23,
     "criticism": -100
    },
    "subtopics": {
     "strikes_on_ukraine/fuel_infrastructure": 1,
-    "strikes_on_ukraine/other": 1,
-    "frontline/hulyaipole": 4,
-    "frontline/other": 15,
-    "ukraine_strikes_on_russia/crimea_energy": 1,
-    "ukraine_strikes_on_russia/drones_on_regions": 6,
-    "ukraine_strikes_on_russia/other": 14,
-    "west_nato/military_aid": 4,
-    "west_nato/rearmament": 3,
-    "west_nato/negotiations": 1,
-    "west_nato/alliance_politics": 6,
-    "west_nato/other": 6,
-    "russia_internal/ideology_society": 3,
-    "russia_internal/security_cases": 3,
-    "russia_internal/economy": 2,
-    "russia_internal/mobilisation": 1,
-    "russia_internal/other": 6,
-    "criticism/government": 3
-   },
-   "flags": 1
-  },
-  {
-   "battlefield": {
-    "pos": 12,
-    "neg": 1,
-    "neu": 5,
-    "net": 61,
-    "story": "Ka-52 pilot Denis Chernavavin destroyed 17 vehicles in Zaporizhzhia; hero of Russia with 500+ combat sorties.",
-    "story_url": "https://t.me/rybar/81155",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/rybar/81171",
-      "t": "Russian forces complete clearance of Rai-Aleksandrovka after months of fighting.",
-      "ch": "Rybar"
-     },
-     {
-      "s": "neg",
-      "url": "https://t.me/sashakots/62427",
-      "t": "Body exchange: Russia transferred 522 bodies, received 33; author notes disparate proportions ignored by Ukrainian media.",
-      "ch": "Kotsnews"
-     }
-    ]
-   },
-   "date": "2026-06-18",
-   "total": 190,
-   "substantive": 103,
-   "headline": "",
-   "topics": {
-    "strikes_on_ukraine": 18,
-    "frontline": 18,
-    "ukraine_strikes_on_russia": 30,
-    "west_nato": 20,
-    "russia_internal": 4,
-    "criticism": 13
-   },
-   "nets": {
-    "strikes_on_ukraine": 83,
-    "frontline": 61,
-    "ukraine_strikes_on_russia": -53,
-    "west_nato": -55,
-    "russia_internal": 0,
-    "criticism": -100
-   },
-   "subtopics": {
-    "strikes_on_ukraine/deep_strikes": 6,
-    "strikes_on_ukraine/fuel_infrastructure": 7,
-    "strikes_on_ukraine/other": 5,
     "frontline/hulyaipole": 1,
-    "frontline/kupyansk": 3,
-    "frontline/other": 14,
-    "ukraine_strikes_on_russia/drones_on_regions": 27,
-    "ukraine_strikes_on_russia/other": 3,
-    "west_nato/military_aid": 9,
-    "west_nato/rearmament": 1,
-    "west_nato/negotiations": 3,
-    "west_nato/alliance_politics": 5,
-    "west_nato/other": 2,
-    "russia_internal/ideology_society": 2,
-    "russia_internal/security_cases": 1,
-    "russia_internal/economy": 1,
-    "criticism/army_command": 2,
-    "criticism/government": 10,
-    "criticism/other": 1
-   },
-   "flags": 1
-  },
-  {
-   "battlefield": {
-    "pos": 11,
-    "neg": 0,
-    "neu": 3,
-    "net": 79,
-    "story": "Morning briefing: Russian forces conduct offensive operations across multiple front directions.",
-    "story_url": "https://t.me/dva_majors/94747",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/rybar/81199",
-      "t": "Russian forces continue advancing in Konstantinovka urban area despite pockets of Ukrainian resistance.",
-      "ch": "Rybar"
-     }
-    ]
-   },
-   "date": "2026-06-19",
-   "total": 179,
-   "substantive": 81,
-   "headline": "",
-   "topics": {
-    "strikes_on_ukraine": 18,
-    "frontline": 14,
-    "ukraine_strikes_on_russia": 14,
-    "west_nato": 23,
-    "russia_internal": 7,
-    "criticism": 5
-   },
-   "nets": {
-    "strikes_on_ukraine": 89,
-    "frontline": 79,
-    "ukraine_strikes_on_russia": 0,
-    "west_nato": -65,
-    "russia_internal": 100,
-    "criticism": -100
-   },
-   "subtopics": {
-    "strikes_on_ukraine/deep_strikes": 7,
-    "strikes_on_ukraine/fuel_infrastructure": 5,
-    "strikes_on_ukraine/other": 6,
-    "frontline/pokrovsk": 1,
-    "frontline/other": 13,
-    "ukraine_strikes_on_russia/drones_on_regions": 12,
-    "ukraine_strikes_on_russia/other": 2,
-    "west_nato/military_aid": 8,
-    "west_nato/negotiations": 9,
-    "west_nato/alliance_politics": 3,
-    "west_nato/other": 3,
-    "russia_internal/ideology_society": 1,
-    "russia_internal/economy": 3,
-    "russia_internal/other": 3,
-    "criticism/army_command": 1,
-    "criticism/government": 4
-   },
-   "flags": 2
-  },
-  {
-   "battlefield": {
-    "pos": 13,
-    "neg": 0,
-    "neu": 4,
-    "net": 76,
-    "story": "Russian forces advance toward Slavyansk; summary of war chronicle including logistics strikes and sanctions issues.",
-    "story_url": "https://t.me/rybar/81222",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/rybar/81218",
-      "t": "88th motorized brigade liberates Yurkivka, breakthrough on southern flank of Slavyansk-Kramatorsk defensive line.",
-      "ch": "Rybar"
-     }
-    ]
-   },
-   "date": "2026-06-20",
-   "total": 152,
-   "substantive": 66,
-   "headline": "",
-   "topics": {
-    "strikes_on_ukraine": 14,
-    "frontline": 17,
-    "ukraine_strikes_on_russia": 12,
-    "west_nato": 15,
-    "russia_internal": 6,
-    "criticism": 2
-   },
-   "nets": {
-    "strikes_on_ukraine": 100,
-    "frontline": 76,
-    "ukraine_strikes_on_russia": -25,
-    "west_nato": -53,
-    "russia_internal": 0,
-    "criticism": -100
-   },
-   "subtopics": {
-    "strikes_on_ukraine/deep_strikes": 6,
-    "strikes_on_ukraine/fuel_infrastructure": 3,
-    "strikes_on_ukraine/other": 5,
-    "frontline/kupyansk": 1,
-    "frontline/other": 16,
-    "ukraine_strikes_on_russia/drones_on_regions": 9,
-    "ukraine_strikes_on_russia/other": 3,
-    "west_nato/military_aid": 2,
-    "west_nato/rearmament": 1,
-    "west_nato/negotiations": 3,
-    "west_nato/alliance_politics": 2,
-    "west_nato/other": 7,
-    "russia_internal/ideology_society": 1,
-    "russia_internal/elite_politics": 1,
-    "russia_internal/economy": 2,
-    "russia_internal/other": 2,
-    "criticism/government": 2
-   },
-   "flags": 2
-  },
-  {
-   "battlefield": {
-    "pos": 16,
-    "neg": 1,
-    "neu": 2,
-    "net": 79,
-    "story": "Russian naval drone operators destroyed Ukrainian attack drones before reaching targets in Konstantinovsky direction.",
-    "story_url": "https://t.me/dva_majors/94918",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/rusich_army/30046",
-      "t": "Russian forces tracked and destroyed Ukrainian transport vehicle.",
-      "ch": "Arkhangel Spetsnaza"
-     },
-     {
-      "s": "neg",
-      "url": "https://t.me/sashakots/62488",
-      "t": "Medic Mikhail Torgashev posthumously awarded Hero of Russia for shielding wounded soldiers from FPV drone strike.",
-      "ch": "Kotsnews"
-     }
-    ]
-   },
-   "date": "2026-06-21",
-   "total": 145,
-   "substantive": 80,
-   "headline": "",
-   "topics": {
-    "strikes_on_ukraine": 9,
-    "frontline": 19,
-    "ukraine_strikes_on_russia": 29,
-    "west_nato": 14,
-    "russia_internal": 3,
-    "criticism": 6
-   },
-   "nets": {
-    "strikes_on_ukraine": 78,
-    "frontline": 79,
-    "ukraine_strikes_on_russia": -79,
-    "west_nato": -57,
-    "russia_internal": -33,
-    "criticism": -100
-   },
-   "subtopics": {
-    "strikes_on_ukraine/deep_strikes": 4,
-    "strikes_on_ukraine/fuel_infrastructure": 2,
-    "strikes_on_ukraine/other": 3,
-    "frontline/hulyaipole": 2,
-    "frontline/kupyansk": 1,
-    "frontline/other": 16,
-    "ukraine_strikes_on_russia/crimea_energy": 14,
-    "ukraine_strikes_on_russia/drones_on_regions": 3,
-    "ukraine_strikes_on_russia/other": 12,
+    "frontline/other": 18,
+    "ukraine_strikes_on_russia/drones_on_regions": 7,
+    "ukraine_strikes_on_russia/other": 14,
     "west_nato/military_aid": 5,
-    "west_nato/negotiations": 5,
-    "west_nato/alliance_politics": 3,
-    "west_nato/other": 1,
-    "russia_internal/elite_politics": 1,
-    "russia_internal/economy": 1,
-    "russia_internal/mobilisation": 1,
-    "criticism/army_command": 2,
+    "west_nato/rearmament": 2,
+    "west_nato/negotiations": 1,
+    "west_nato/alliance_politics": 7,
+    "west_nato/other": 5,
+    "russia_internal/ideology_society": 2,
+    "russia_internal/security_cases": 4,
+    "russia_internal/economy": 3,
+    "russia_internal/other": 4,
+    "criticism/army_command": 1,
     "criticism/government": 3,
     "criticism/regional": 1
    },
@@ -1244,204 +979,450 @@
   },
   {
    "battlefield": {
-    "pos": 19,
+    "pos": 12,
     "neg": 0,
-    "neu": 2,
-    "net": 90,
-    "story": "Russian forces expand control through small group operations in Sumy-Kharkiv border area.",
-    "story_url": "https://t.me/rybar/81251",
+    "neu": 1,
+    "net": 92,
+    "story": "Russian forces capture Rai-Aleksandrovka after months of fighting, securing key Ukrainian defensive position.",
+    "story_url": "https://t.me/rybar/81171",
     "examples": [
      {
       "s": "pos",
-      "url": "https://t.me/rybar/81258",
-      "t": "Russian forces advance in Konstantinovka, capturing hospital complex and Gruzkaya balka area.",
-      "ch": "Rybar"
+      "url": "https://t.me/Sladkov_plus/15671",
+      "t": "Russian forces consolidate positions on Kazachy Lopan outskirts; enemy foreign mercenaries redeployed to critical frontline sectors.",
+      "ch": "Sladkov+"
      }
     ]
    },
-   "date": "2026-06-22",
-   "total": 185,
-   "substantive": 87,
+   "date": "2026-06-18",
+   "total": 190,
+   "substantive": 102,
    "headline": "",
    "topics": {
-    "strikes_on_ukraine": 18,
-    "frontline": 21,
-    "ukraine_strikes_on_russia": 15,
-    "west_nato": 13,
-    "russia_internal": 13,
-    "criticism": 7
+    "strikes_on_ukraine": 21,
+    "frontline": 13,
+    "ukraine_strikes_on_russia": 31,
+    "west_nato": 20,
+    "russia_internal": 11,
+    "criticism": 6
    },
    "nets": {
-    "strikes_on_ukraine": 78,
-    "frontline": 90,
-    "ukraine_strikes_on_russia": -33,
-    "west_nato": -85,
+    "strikes_on_ukraine": 90,
+    "frontline": 92,
+    "ukraine_strikes_on_russia": -71,
+    "west_nato": -35,
     "russia_internal": 0,
     "criticism": -100
    },
    "subtopics": {
-    "strikes_on_ukraine/deep_strikes": 7,
-    "strikes_on_ukraine/fuel_infrastructure": 3,
-    "strikes_on_ukraine/other": 8,
-    "frontline/pokrovsk": 1,
-    "frontline/hulyaipole": 1,
+    "strikes_on_ukraine/deep_strikes": 9,
+    "strikes_on_ukraine/fuel_infrastructure": 7,
+    "strikes_on_ukraine/other": 5,
     "frontline/kupyansk": 2,
-    "frontline/other": 17,
-    "ukraine_strikes_on_russia/drones_on_regions": 12,
+    "frontline/other": 11,
+    "ukraine_strikes_on_russia/crimea_energy": 1,
+    "ukraine_strikes_on_russia/drones_on_regions": 27,
     "ukraine_strikes_on_russia/other": 3,
-    "west_nato/military_aid": 3,
-    "west_nato/rearmament": 3,
-    "west_nato/negotiations": 2,
+    "west_nato/military_aid": 8,
+    "west_nato/rearmament": 1,
+    "west_nato/negotiations": 3,
     "west_nato/alliance_politics": 5,
-    "russia_internal/ideology_society": 2,
-    "russia_internal/security_cases": 4,
-    "russia_internal/economy": 3,
-    "russia_internal/other": 4,
-    "criticism/government": 5,
-    "criticism/regional": 1,
-    "criticism/other": 1
-   },
-   "flags": 3
-  },
-  {
-   "battlefield": {
-    "pos": 8,
-    "neg": 3,
-    "neu": 5,
-    "net": 31,
-    "story": "Enemy drone activity over Crimea and Kinburn threatens Russian logistics and indicates realistic amphibious landing scenario.",
-    "story_url": "https://t.me/rusich_army/30067",
-    "examples": [
-     {
-      "s": "pos",
-      "url": "https://t.me/sashakots/62546",
-      "t": "Russian forces advance in Red Liman, clearing 52 buildings; Ukrainian soldiers intimidated by commanders.",
-      "ch": "Kotsnews"
-     },
-     {
-      "s": "neg",
-      "url": "https://t.me/vysokygovorit/23179",
-      "t": "Enemy drone activity over Crimea and Kinburn threatens Russian logistics and indicates realistic amphibious landing scenario.",
-      "ch": "Starshe Eddy"
-     }
-    ]
-   },
-   "date": "2026-06-23",
-   "total": 173,
-   "substantive": 79,
-   "headline": "",
-   "topics": {
-    "strikes_on_ukraine": 5,
-    "frontline": 16,
-    "ukraine_strikes_on_russia": 12,
-    "west_nato": 27,
-    "russia_internal": 14,
-    "criticism": 5
-   },
-   "nets": {
-    "strikes_on_ukraine": 80,
-    "frontline": 31,
-    "ukraine_strikes_on_russia": -83,
-    "west_nato": -37,
-    "russia_internal": 57,
-    "criticism": -100
-   },
-   "subtopics": {
-    "strikes_on_ukraine/deep_strikes": 2,
-    "strikes_on_ukraine/other": 3,
-    "frontline/hulyaipole": 2,
-    "frontline/kupyansk": 1,
-    "frontline/other": 13,
-    "ukraine_strikes_on_russia/crimea_energy": 2,
-    "ukraine_strikes_on_russia/drones_on_regions": 10,
-    "west_nato/military_aid": 1,
-    "west_nato/rearmament": 2,
-    "west_nato/negotiations": 11,
-    "west_nato/alliance_politics": 7,
-    "west_nato/other": 6,
-    "russia_internal/ideology_society": 3,
-    "russia_internal/security_cases": 3,
+    "west_nato/other": 3,
+    "russia_internal/ideology_society": 6,
+    "russia_internal/security_cases": 2,
     "russia_internal/elite_politics": 1,
     "russia_internal/economy": 1,
-    "russia_internal/mobilisation": 3,
-    "russia_internal/other": 3,
-    "criticism/army_command": 3,
-    "criticism/government": 2
+    "russia_internal/other": 1,
+    "criticism/army_command": 2,
+    "criticism/government": 3,
+    "criticism/other": 1
    },
-   "flags": 5
+   "flags": 0
   },
   {
    "battlefield": {
-    "pos": 22,
+    "pos": 15,
     "neg": 0,
     "neu": 1,
-    "net": 96,
-    "story": "Russian forces advance in Konstantinovka, destroying Ukrainian drone relay infrastructure and reconnaissance capability.",
-    "story_url": "https://t.me/sashakots/62575",
+    "net": 94,
+    "story": "Russian forces advance on Sumy direction, capture prisoners, repel Ukrainian counterattacks.",
+    "story_url": "https://t.me/dva_majors/94747",
     "examples": [
      {
       "s": "pos",
-      "url": "https://t.me/rybar/81301",
-      "t": "Russian forces liberate Ivolzhanskoe and make tactical progress on Sumy direction against Ukrainian brigades.",
+      "url": "https://t.me/rybar/81199",
+      "t": "Russian forces successfully advancing in Konstantinovka with control expanding to northern and northwestern districts.",
       "ch": "Rybar"
      }
     ]
    },
-   "date": "2026-06-24",
-   "total": 159,
-   "substantive": 68,
+   "date": "2026-06-19",
+   "total": 179,
+   "substantive": 74,
+   "headline": "",
+   "topics": {
+    "strikes_on_ukraine": 14,
+    "frontline": 16,
+    "ukraine_strikes_on_russia": 15,
+    "west_nato": 18,
+    "russia_internal": 6,
+    "criticism": 5
+   },
+   "nets": {
+    "strikes_on_ukraine": 100,
+    "frontline": 94,
+    "ukraine_strikes_on_russia": -60,
+    "west_nato": -56,
+    "russia_internal": 83,
+    "criticism": -100
+   },
+   "subtopics": {
+    "strikes_on_ukraine/deep_strikes": 8,
+    "strikes_on_ukraine/fuel_infrastructure": 4,
+    "strikes_on_ukraine/other": 2,
+    "frontline/pokrovsk": 1,
+    "frontline/hulyaipole": 1,
+    "frontline/other": 14,
+    "ukraine_strikes_on_russia/drones_on_regions": 12,
+    "ukraine_strikes_on_russia/other": 3,
+    "west_nato/military_aid": 5,
+    "west_nato/negotiations": 9,
+    "west_nato/alliance_politics": 3,
+    "west_nato/other": 1,
+    "russia_internal/ideology_society": 1,
+    "russia_internal/economy": 1,
+    "russia_internal/other": 4,
+    "criticism/army_command": 1,
+    "criticism/government": 2,
+    "criticism/other": 2
+   },
+   "flags": 1
+  },
+  {
+   "battlefield": {
+    "pos": 13,
+    "neg": 1,
+    "neu": 0,
+    "net": 86,
+    "story": "Russian forces advance toward Slavyansk; Yurkova liberated on approach route.",
+    "story_url": "https://t.me/rybar/81222",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/rybar/81218",
+      "t": "Russian forces capture Yurkova, first settlement east of Seversky Donets canal, advancing toward Slavyansk-Kramatorsk.",
+      "ch": "Rybar"
+     },
+     {
+      "s": "neg",
+      "url": "https://t.me/ngp_razvedka/25636",
+      "t": "Ukrainian forces conduct remote minefield placement on LDNR checkpoint roads; civilian warning issued.",
+      "ch": "NgP raZVedka"
+     }
+    ]
+   },
+   "date": "2026-06-20",
+   "total": 152,
+   "substantive": 63,
    "headline": "",
    "topics": {
     "strikes_on_ukraine": 10,
-    "frontline": 23,
-    "ukraine_strikes_on_russia": 10,
-    "west_nato": 11,
-    "russia_internal": 8,
-    "criticism": 6
+    "frontline": 14,
+    "ukraine_strikes_on_russia": 15,
+    "west_nato": 12,
+    "russia_internal": 9,
+    "criticism": 3
    },
    "nets": {
-    "strikes_on_ukraine": 80,
-    "frontline": 96,
-    "ukraine_strikes_on_russia": -70,
-    "west_nato": -73,
-    "russia_internal": 12,
+    "strikes_on_ukraine": 100,
+    "frontline": 86,
+    "ukraine_strikes_on_russia": 33,
+    "west_nato": -42,
+    "russia_internal": 11,
     "criticism": -100
    },
    "subtopics": {
     "strikes_on_ukraine/deep_strikes": 4,
     "strikes_on_ukraine/fuel_infrastructure": 2,
     "strikes_on_ukraine/other": 4,
-    "frontline/kupyansk": 10,
-    "frontline/other": 13,
-    "ukraine_strikes_on_russia/crimea_energy": 5,
-    "ukraine_strikes_on_russia/drones_on_regions": 3,
+    "frontline/hulyaipole": 1,
+    "frontline/kupyansk": 2,
+    "frontline/other": 11,
+    "ukraine_strikes_on_russia/drones_on_regions": 13,
     "ukraine_strikes_on_russia/other": 2,
-    "west_nato/military_aid": 6,
-    "west_nato/negotiations": 2,
-    "west_nato/alliance_politics": 1,
-    "west_nato/other": 2,
-    "russia_internal/security_cases": 4,
+    "west_nato/military_aid": 2,
+    "west_nato/rearmament": 1,
+    "west_nato/alliance_politics": 2,
+    "west_nato/other": 7,
+    "russia_internal/ideology_society": 5,
     "russia_internal/economy": 2,
-    "russia_internal/mobilisation": 1,
+    "russia_internal/other": 2,
+    "criticism/government": 2,
+    "criticism/regional": 1
+   },
+   "flags": 2
+  },
+  {
+   "battlefield": {
+    "pos": 13,
+    "neg": 0,
+    "neu": 1,
+    "net": 93,
+    "story": "Russian forces cleared pocket near Nikiforovka, Ukrainian drones hit Crimea with casualties.",
+    "story_url": "https://t.me/rybar/81247",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/dva_majors/94918",
+      "t": "Russian naval drone operators intercept and destroy Ukrainian attack drones before target engagement.",
+      "ch": "Two Majors"
+     }
+    ]
+   },
+   "date": "2026-06-21",
+   "total": 145,
+   "substantive": 76,
+   "headline": "",
+   "topics": {
+    "strikes_on_ukraine": 5,
+    "frontline": 14,
+    "ukraine_strikes_on_russia": 29,
+    "west_nato": 16,
+    "russia_internal": 4,
+    "criticism": 8
+   },
+   "nets": {
+    "strikes_on_ukraine": 100,
+    "frontline": 93,
+    "ukraine_strikes_on_russia": -93,
+    "west_nato": -19,
+    "russia_internal": 50,
+    "criticism": -100
+   },
+   "subtopics": {
+    "strikes_on_ukraine/fuel_infrastructure": 2,
+    "strikes_on_ukraine/other": 3,
+    "frontline/pokrovsk": 1,
+    "frontline/hulyaipole": 1,
+    "frontline/kupyansk": 1,
+    "frontline/other": 11,
+    "ukraine_strikes_on_russia/crimea_energy": 11,
+    "ukraine_strikes_on_russia/drones_on_regions": 3,
+    "ukraine_strikes_on_russia/other": 15,
+    "west_nato/military_aid": 5,
+    "west_nato/rearmament": 1,
+    "west_nato/negotiations": 5,
+    "west_nato/alliance_politics": 4,
+    "west_nato/other": 1,
+    "russia_internal/ideology_society": 3,
+    "russia_internal/economy": 1,
+    "criticism/army_command": 1,
+    "criticism/government": 6,
+    "criticism/other": 1
+   },
+   "flags": 2
+  },
+  {
+   "battlefield": {
+    "pos": 17,
+    "neg": 0,
+    "neu": 2,
+    "net": 89,
+    "story": "Russian forces expanded control zone on Sumy-Kharkiv border, cleared forests near Pokrovka, repelled Ukrainian counterattacks.",
+    "story_url": "https://t.me/rybar/81251",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/rybar/81258",
+      "t": "Russian forces advance on Konstantinovka outskirts, capture hospital complex and Grusska balka area.",
+      "ch": "Rybar"
+     }
+    ]
+   },
+   "date": "2026-06-22",
+   "total": 185,
+   "substantive": 77,
+   "headline": "",
+   "topics": {
+    "strikes_on_ukraine": 12,
+    "frontline": 19,
+    "ukraine_strikes_on_russia": 20,
+    "west_nato": 12,
+    "russia_internal": 7,
+    "criticism": 7
+   },
+   "nets": {
+    "strikes_on_ukraine": 83,
+    "frontline": 89,
+    "ukraine_strikes_on_russia": -20,
+    "west_nato": -75,
+    "russia_internal": 0,
+    "criticism": -100
+   },
+   "subtopics": {
+    "strikes_on_ukraine/deep_strikes": 4,
+    "strikes_on_ukraine/fuel_infrastructure": 2,
+    "strikes_on_ukraine/other": 6,
+    "frontline/hulyaipole": 2,
+    "frontline/kupyansk": 2,
+    "frontline/other": 15,
+    "ukraine_strikes_on_russia/drones_on_regions": 14,
+    "ukraine_strikes_on_russia/other": 6,
+    "west_nato/military_aid": 2,
+    "west_nato/rearmament": 2,
+    "west_nato/negotiations": 2,
+    "west_nato/alliance_politics": 5,
+    "west_nato/other": 1,
+    "russia_internal/ideology_society": 3,
+    "russia_internal/economy": 3,
     "russia_internal/other": 1,
-    "criticism/army_command": 4,
-    "criticism/government": 2
+    "criticism/government": 4,
+    "criticism/regional": 1,
+    "criticism/other": 2
    },
    "flags": 3
   },
   {
    "battlefield": {
     "pos": 10,
+    "neg": 3,
+    "neu": 4,
+    "net": 41,
+    "story": "Ukrainian drone activity increased in Crimea region, threatening Kinburn Peninsula with potential amphibious landing.",
+    "story_url": "https://t.me/rusich_army/30067",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/sashakots/62546",
+      "t": "Russian forces advance in Red Liman, capture five strongpoints and clear 52 buildings; Ukrainian soldiers intimidated.",
+      "ch": "Kotsnews"
+     },
+     {
+      "s": "neg",
+      "url": "https://t.me/vysokygovorit/23179",
+      "t": "Ukrainian drone operations increasing in Crimea region, disrupting logistics and threatening potential amphibious assault.",
+      "ch": "Starshe Eddy"
+     }
+    ]
+   },
+   "date": "2026-06-23",
+   "total": 173,
+   "substantive": 71,
+   "headline": "",
+   "topics": {
+    "strikes_on_ukraine": 6,
+    "frontline": 17,
+    "ukraine_strikes_on_russia": 10,
+    "west_nato": 25,
+    "russia_internal": 11,
+    "criticism": 2
+   },
+   "nets": {
+    "strikes_on_ukraine": 83,
+    "frontline": 41,
+    "ukraine_strikes_on_russia": -60,
+    "west_nato": -16,
+    "russia_internal": 36,
+    "criticism": -100
+   },
+   "subtopics": {
+    "strikes_on_ukraine/deep_strikes": 2,
+    "strikes_on_ukraine/fuel_infrastructure": 1,
+    "strikes_on_ukraine/other": 3,
+    "frontline/hulyaipole": 2,
+    "frontline/kupyansk": 1,
+    "frontline/other": 14,
+    "ukraine_strikes_on_russia/crimea_energy": 1,
+    "ukraine_strikes_on_russia/drones_on_regions": 8,
+    "ukraine_strikes_on_russia/other": 1,
+    "west_nato/military_aid": 2,
+    "west_nato/rearmament": 1,
+    "west_nato/negotiations": 12,
+    "west_nato/alliance_politics": 5,
+    "west_nato/other": 5,
+    "russia_internal/ideology_society": 4,
+    "russia_internal/security_cases": 3,
+    "russia_internal/economy": 1,
+    "russia_internal/mobilisation": 1,
+    "russia_internal/other": 2,
+    "criticism/government": 2
+   },
+   "flags": 4
+  },
+  {
+   "battlefield": {
+    "pos": 19,
     "neg": 0,
     "neu": 1,
-    "net": 91,
-    "story": "Russian mobile fire groups intercept Ukrainian drones near Donetsk with anti-aircraft fire.",
+    "net": 95,
+    "story": "Russian forces advance in Konstantinovka; systematically destroy Ukrainian drone relays and antennas for air support.",
+    "story_url": "https://t.me/sashakots/62575",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/rybar/81301",
+      "t": "Russian forces liberate Ivolzhanskoe and advance near Khoten on Sumy direction after breaking Ukrainian resistance.",
+      "ch": "Rybar"
+     }
+    ]
+   },
+   "date": "2026-06-24",
+   "total": 159,
+   "substantive": 70,
+   "headline": "",
+   "topics": {
+    "strikes_on_ukraine": 12,
+    "frontline": 20,
+    "ukraine_strikes_on_russia": 9,
+    "west_nato": 14,
+    "russia_internal": 8,
+    "criticism": 7
+   },
+   "nets": {
+    "strikes_on_ukraine": 100,
+    "frontline": 95,
+    "ukraine_strikes_on_russia": -67,
+    "west_nato": -57,
+    "russia_internal": 25,
+    "criticism": -86
+   },
+   "subtopics": {
+    "strikes_on_ukraine/deep_strikes": 5,
+    "strikes_on_ukraine/fuel_infrastructure": 2,
+    "strikes_on_ukraine/other": 5,
+    "frontline/kupyansk": 4,
+    "frontline/other": 16,
+    "ukraine_strikes_on_russia/crimea_energy": 4,
+    "ukraine_strikes_on_russia/drones_on_regions": 4,
+    "ukraine_strikes_on_russia/other": 1,
+    "west_nato/military_aid": 6,
+    "west_nato/rearmament": 3,
+    "west_nato/negotiations": 2,
+    "west_nato/alliance_politics": 1,
+    "west_nato/other": 2,
+    "russia_internal/security_cases": 4,
+    "russia_internal/economy": 2,
+    "russia_internal/other": 2,
+    "criticism/army_command": 2,
+    "criticism/government": 3,
+    "criticism/regional": 1,
+    "criticism/other": 1
+   },
+   "flags": 2
+  },
+  {
+   "battlefield": {
+    "pos": 11,
+    "neg": 0,
+    "neu": 0,
+    "net": 100,
+    "story": "Russian mobile fire groups successfully intercept Ukrainian drones over Donetsk using air defense systems.",
     "story_url": "https://t.me/sashakots/62599",
     "examples": [
      {
       "s": "pos",
       "url": "https://t.me/epoddubny/27914",
-      "t": "Russian Lancet drone destroys Ukrainian tank, disrupting enemy reserve deployment and offensive plans.",
+      "t": "Russian forces destroy Ukrainian tank with Lancet drone, disrupting enemy reserve movement and offensive potential.",
       "ch": "Poddubny"
      }
     ]
@@ -1451,110 +1432,108 @@
    "substantive": 82,
    "headline": "Russia touts fuel-strike campaign as Crimea reels from Ukrainian attacks",
    "topics": {
-    "strikes_on_ukraine": 18,
+    "strikes_on_ukraine": 16,
     "frontline": 11,
-    "ukraine_strikes_on_russia": 15,
-    "west_nato": 18,
-    "russia_internal": 13,
-    "criticism": 7
+    "ukraine_strikes_on_russia": 16,
+    "west_nato": 17,
+    "russia_internal": 17,
+    "criticism": 5
    },
    "nets": {
-    "strikes_on_ukraine": 83,
-    "frontline": 91,
-    "ukraine_strikes_on_russia": -27,
-    "west_nato": -50,
-    "russia_internal": 8,
+    "strikes_on_ukraine": 88,
+    "frontline": 100,
+    "ukraine_strikes_on_russia": -50,
+    "west_nato": -47,
+    "russia_internal": -18,
     "criticism": -100
    },
    "subtopics": {
-    "strikes_on_ukraine/deep_strikes": 3,
-    "strikes_on_ukraine/fuel_infrastructure": 10,
-    "strikes_on_ukraine/other": 5,
+    "strikes_on_ukraine/deep_strikes": 1,
+    "strikes_on_ukraine/fuel_infrastructure": 9,
+    "strikes_on_ukraine/other": 6,
     "frontline/hulyaipole": 2,
     "frontline/other": 9,
     "ukraine_strikes_on_russia/crimea_energy": 1,
     "ukraine_strikes_on_russia/drones_on_regions": 8,
-    "ukraine_strikes_on_russia/other": 6,
+    "ukraine_strikes_on_russia/other": 7,
     "west_nato/military_aid": 5,
-    "west_nato/rearmament": 3,
-    "west_nato/negotiations": 5,
-    "west_nato/other": 5,
-    "russia_internal/ideology_society": 1,
-    "russia_internal/security_cases": 4,
-    "russia_internal/economy": 4,
-    "russia_internal/other": 4,
+    "west_nato/rearmament": 2,
+    "west_nato/negotiations": 4,
+    "west_nato/alliance_politics": 2,
+    "west_nato/other": 4,
+    "russia_internal/ideology_society": 4,
+    "russia_internal/security_cases": 3,
+    "russia_internal/economy": 5,
+    "russia_internal/other": 5,
     "criticism/army_command": 2,
-    "criticism/government": 3,
-    "criticism/regional": 1,
-    "criticism/other": 1
+    "criticism/government": 3
    },
    "flags": 1
   },
   {
    "battlefield": {
-    "pos": 10,
+    "pos": 12,
     "neg": 2,
-    "neu": 1,
-    "net": 62,
-    "story": "Russian forces report unfavorable dynamics on Zaporizhzhia front as Ukrainian forces advance southward.",
+    "neu": 0,
+    "net": 71,
+    "story": "Ukraine counterattacks on West-Zaporizhzhia direction, threatens Russian positions in Kamenske.",
     "story_url": "https://t.me/rybar/81348",
     "examples": [
      {
       "s": "pos",
-      "url": "https://t.me/dva_majors/95219",
-      "t": "Russian forces conduct bombing raids on Druzhkovka area behind Konstantinovka front.",
-      "ch": "Two Majors"
+      "url": "https://t.me/rybar/81346",
+      "t": "Russian forces destroy new American MAAWLR air defense system in Kharkiv region.",
+      "ch": "Rybar"
      },
      {
       "s": "neg",
       "url": "https://t.me/rybar/81344",
-      "t": "Ukrainian forces advance near Kamenske-Zaporizhzhia, occupying Primorske and pressuring Plavni.",
+      "t": "Ukrainian forces occupy Primorsky and pressure Plawi on Zaporizhzhia sector; situation deteriorating.",
       "ch": "Rybar"
      }
     ]
    },
    "date": "2026-06-26",
    "total": 157,
-   "substantive": 78,
+   "substantive": 73,
    "headline": "Rail-interdiction strike wave; Crimea declares emergency after drone barrage",
    "topics": {
-    "strikes_on_ukraine": 19,
-    "frontline": 13,
-    "ukraine_strikes_on_russia": 8,
-    "west_nato": 14,
-    "russia_internal": 20,
-    "criticism": 4
+    "strikes_on_ukraine": 17,
+    "frontline": 14,
+    "ukraine_strikes_on_russia": 9,
+    "west_nato": 12,
+    "russia_internal": 19,
+    "criticism": 2
    },
    "nets": {
-    "strikes_on_ukraine": 89,
-    "frontline": 62,
-    "ukraine_strikes_on_russia": -62,
-    "west_nato": -21,
-    "russia_internal": 5,
+    "strikes_on_ukraine": 94,
+    "frontline": 71,
+    "ukraine_strikes_on_russia": -56,
+    "west_nato": -58,
+    "russia_internal": 16,
     "criticism": -100
    },
    "subtopics": {
-    "strikes_on_ukraine/deep_strikes": 4,
-    "strikes_on_ukraine/fuel_infrastructure": 2,
-    "strikes_on_ukraine/other": 13,
+    "strikes_on_ukraine/deep_strikes": 7,
+    "strikes_on_ukraine/fuel_infrastructure": 4,
+    "strikes_on_ukraine/other": 6,
     "frontline/pokrovsk": 1,
     "frontline/hulyaipole": 2,
-    "frontline/kupyansk": 1,
+    "frontline/kupyansk": 2,
     "frontline/other": 9,
-    "ukraine_strikes_on_russia/drones_on_regions": 7,
-    "ukraine_strikes_on_russia/other": 1,
+    "ukraine_strikes_on_russia/drones_on_regions": 9,
     "west_nato/military_aid": 5,
     "west_nato/rearmament": 1,
-    "west_nato/negotiations": 3,
-    "west_nato/alliance_politics": 1,
-    "west_nato/other": 4,
-    "russia_internal/ideology_society": 5,
+    "west_nato/negotiations": 1,
+    "west_nato/alliance_politics": 2,
+    "west_nato/other": 3,
+    "russia_internal/ideology_society": 6,
     "russia_internal/security_cases": 2,
     "russia_internal/elite_politics": 1,
-    "russia_internal/other": 12,
-    "criticism/government": 4
+    "russia_internal/other": 10,
+    "criticism/government": 2
    },
-   "flags": 3
+   "flags": 2
   },
   {
    "battlefield": {
@@ -1562,53 +1541,53 @@
     "neg": 0,
     "neu": 1,
     "net": 95,
-    "story": "Russian forces maintain readiness on Kinburn Peninsula; Special Operations prepare for possible amphibious operation.",
+    "story": "Russian forces maintain readiness on Kinburn Peninsula; Ukrainian SSO units activating near Ochakov.",
     "story_url": "https://t.me/rusich_army/30111",
     "examples": [
      {
       "s": "pos",
       "url": "https://t.me/rybar/81362",
-      "t": "Russian Vostok forces advance near Novoskelevate, seize Gaichur river crossing, and disrupt Ukrainian positions in Dnipropetrovsk direction.",
+      "t": "Russian forces advance near Novoskelevatoe, force river crossings, improve tactical position in Dnipropetrovsk direction.",
       "ch": "Rybar"
      }
     ]
    },
    "date": "2026-06-27",
    "total": 137,
-   "substantive": 54,
+   "substantive": 55,
    "headline": "Novoskelvatoe seized near Pokrovsk; Rybar slams fuel-strike coordination",
    "topics": {
-    "strikes_on_ukraine": 14,
+    "strikes_on_ukraine": 15,
     "frontline": 19,
-    "ukraine_strikes_on_russia": 8,
-    "west_nato": 6,
-    "russia_internal": 5,
-    "criticism": 2
+    "ukraine_strikes_on_russia": 7,
+    "west_nato": 7,
+    "russia_internal": 6,
+    "criticism": 1
    },
    "nets": {
-    "strikes_on_ukraine": 50,
+    "strikes_on_ukraine": 67,
     "frontline": 95,
-    "ukraine_strikes_on_russia": -50,
-    "west_nato": -67,
-    "russia_internal": 0,
+    "ukraine_strikes_on_russia": -100,
+    "west_nato": -71,
+    "russia_internal": -17,
     "criticism": -100
    },
    "subtopics": {
-    "strikes_on_ukraine/deep_strikes": 5,
-    "strikes_on_ukraine/fuel_infrastructure": 8,
+    "strikes_on_ukraine/deep_strikes": 4,
+    "strikes_on_ukraine/fuel_infrastructure": 10,
     "strikes_on_ukraine/other": 1,
-    "frontline/pokrovsk": 3,
-    "frontline/hulyaipole": 2,
+    "frontline/pokrovsk": 4,
+    "frontline/hulyaipole": 1,
     "frontline/other": 14,
-    "ukraine_strikes_on_russia/drones_on_regions": 7,
+    "ukraine_strikes_on_russia/drones_on_regions": 6,
     "ukraine_strikes_on_russia/other": 1,
-    "west_nato/military_aid": 1,
+    "west_nato/military_aid": 2,
     "west_nato/rearmament": 2,
     "west_nato/negotiations": 2,
     "west_nato/other": 1,
-    "russia_internal/ideology_society": 2,
-    "russia_internal/other": 3,
-    "criticism/government": 2
+    "russia_internal/ideology_society": 5,
+    "russia_internal/mobilisation": 1,
+    "criticism/government": 1
    },
    "flags": 3
   },
@@ -1616,15 +1595,15 @@
    "battlefield": {
     "pos": 15,
     "neg": 0,
-    "neu": 5,
-    "net": 75,
-    "story": "Ukrainian claim to have taken Kinburn Spit contradicted by video evidence of Russian forces maintaining positions.",
+    "neu": 0,
+    "net": 100,
+    "story": "Ukrainian flag raised on Kinburn Spit was propaganda stunt; Russian forces maintain control.",
     "story_url": "https://t.me/rybar/81382",
     "examples": [
      {
       "s": "pos",
       "url": "https://t.me/rybar/81384",
-      "t": "Russian Vostok group captures Novoselovka in eastern Zaporizhzhia direction.",
+      "t": "Russian Vostok group captured Novoselovka in Zaporizhzhia direction with fierce Ukrainian resistance.",
       "ch": "Rybar"
      }
     ]
@@ -1634,278 +1613,277 @@
    "substantive": 65,
    "headline": "Putin talks up advances as Ukrainian drones hit refineries",
    "topics": {
-    "strikes_on_ukraine": 12,
-    "frontline": 20,
-    "ukraine_strikes_on_russia": 9,
-    "west_nato": 10,
-    "russia_internal": 8,
-    "criticism": 6
+    "strikes_on_ukraine": 10,
+    "frontline": 15,
+    "ukraine_strikes_on_russia": 12,
+    "west_nato": 13,
+    "russia_internal": 13,
+    "criticism": 2
    },
    "nets": {
-    "strikes_on_ukraine": 58,
-    "frontline": 75,
-    "ukraine_strikes_on_russia": -89,
-    "west_nato": -50,
-    "russia_internal": 75,
+    "strikes_on_ukraine": 90,
+    "frontline": 100,
+    "ukraine_strikes_on_russia": -67,
+    "west_nato": -8,
+    "russia_internal": 23,
     "criticism": -100
    },
    "subtopics": {
-    "strikes_on_ukraine/deep_strikes": 1,
-    "strikes_on_ukraine/fuel_infrastructure": 6,
-    "strikes_on_ukraine/other": 5,
+    "strikes_on_ukraine/fuel_infrastructure": 4,
+    "strikes_on_ukraine/other": 6,
     "frontline/pokrovsk": 1,
-    "frontline/hulyaipole": 5,
-    "frontline/other": 14,
-    "ukraine_strikes_on_russia/drones_on_regions": 7,
-    "ukraine_strikes_on_russia/other": 2,
-    "west_nato/military_aid": 1,
-    "west_nato/rearmament": 1,
+    "frontline/hulyaipole": 3,
+    "frontline/other": 11,
+    "ukraine_strikes_on_russia/drones_on_regions": 9,
+    "ukraine_strikes_on_russia/other": 3,
+    "west_nato/military_aid": 2,
     "west_nato/negotiations": 2,
     "west_nato/alliance_politics": 1,
-    "west_nato/other": 5,
-    "russia_internal/ideology_society": 1,
+    "west_nato/other": 8,
+    "russia_internal/ideology_society": 6,
+    "russia_internal/security_cases": 1,
     "russia_internal/elite_politics": 1,
-    "russia_internal/economy": 1,
+    "russia_internal/economy": 2,
     "russia_internal/mobilisation": 1,
-    "russia_internal/other": 4,
-    "criticism/army_command": 2,
-    "criticism/government": 4
+    "russia_internal/other": 2,
+    "criticism/army_command": 2
    },
-   "flags": 2
+   "flags": 3
   },
   {
    "battlefield": {
-    "pos": 9,
+    "pos": 13,
     "neg": 0,
-    "neu": 5,
-    "net": 64,
-    "story": "Russian Vostok group captures fourth settlement in Dnipropetrovsk direction; advances along Gaichur river.",
+    "neu": 2,
+    "net": 87,
+    "story": "Russian Vostok group captures three settlements in Dnipropetrovsk direction over three days.",
     "story_url": "https://t.me/rybar/81406",
     "examples": [
      {
       "s": "pos",
-      "url": "https://t.me/rusich_army/30130",
-      "t": "Ukrainian forces deploy autonomous surveillance cameras with AI targeting systems to coordinate drone and manned strikes.",
-      "ch": "Arkhangel Spetsnaza"
+      "url": "https://t.me/rybar/81408",
+      "t": "Russian forces capture settlements near Pokrovsk and Aleksandrovka on Dnieper direction for third consecutive day.",
+      "ch": "Rybar"
      }
     ]
    },
    "date": "2026-06-29",
    "total": 173,
-   "substantive": 77,
+   "substantive": 74,
    "headline": "Geran fuel-depot strikes surge; 209 Ukrainian drones claimed downed",
    "topics": {
-    "strikes_on_ukraine": 16,
-    "frontline": 14,
+    "strikes_on_ukraine": 14,
+    "frontline": 15,
     "ukraine_strikes_on_russia": 9,
-    "west_nato": 23,
-    "russia_internal": 11,
-    "criticism": 4
+    "west_nato": 17,
+    "russia_internal": 16,
+    "criticism": 3
    },
    "nets": {
     "strikes_on_ukraine": 100,
-    "frontline": 64,
+    "frontline": 87,
     "ukraine_strikes_on_russia": -33,
-    "west_nato": -30,
-    "russia_internal": 18,
+    "west_nato": -47,
+    "russia_internal": 6,
     "criticism": -100
    },
    "subtopics": {
-    "strikes_on_ukraine/deep_strikes": 5,
+    "strikes_on_ukraine/deep_strikes": 6,
     "strikes_on_ukraine/fuel_infrastructure": 6,
-    "strikes_on_ukraine/other": 5,
+    "strikes_on_ukraine/other": 2,
     "frontline/pokrovsk": 3,
+    "frontline/hulyaipole": 1,
     "frontline/other": 11,
-    "ukraine_strikes_on_russia/drones_on_regions": 8,
-    "ukraine_strikes_on_russia/other": 1,
-    "west_nato/military_aid": 4,
+    "ukraine_strikes_on_russia/drones_on_regions": 7,
+    "ukraine_strikes_on_russia/other": 2,
+    "west_nato/military_aid": 5,
     "west_nato/rearmament": 4,
-    "west_nato/negotiations": 4,
-    "west_nato/alliance_politics": 1,
-    "west_nato/other": 10,
-    "russia_internal/ideology_society": 2,
-    "russia_internal/security_cases": 3,
+    "west_nato/negotiations": 3,
+    "west_nato/alliance_politics": 2,
+    "west_nato/other": 3,
+    "russia_internal/ideology_society": 3,
     "russia_internal/elite_politics": 1,
-    "russia_internal/mobilisation": 4,
-    "russia_internal/other": 1,
+    "russia_internal/economy": 2,
+    "russia_internal/mobilisation": 7,
+    "russia_internal/other": 3,
     "criticism/army_command": 1,
-    "criticism/government": 3
+    "criticism/government": 2
    },
-   "flags": 4
+   "flags": 3
   },
   {
    "battlefield": {
-    "pos": 19,
+    "pos": 15,
     "neg": 0,
-    "neu": 3,
-    "net": 86,
-    "story": "Russian military summary: ongoing operations on Kinburn, Slavyansk, and East Zaporizhzhia directions.",
+    "neu": 1,
+    "net": 94,
+    "story": "Russian forces advance on Slavyansk direction and Zaporizhzhia; Ukrainian airborne landing on Kinburn threatened.",
     "story_url": "https://t.me/rybar/81426",
     "examples": [
      {
       "s": "pos",
-      "url": "https://t.me/rybar/81428",
-      "t": "Russian forces destroyed two dozen gas stations, damaged power plants; advance on multiple fronts.",
+      "url": "https://t.me/rybar/81422",
+      "t": "Russian Vostok grouping captured Lesnoye and Rovnoye, Ukrainian counterattacks attempting recovery near Vozdvizhevka.",
       "ch": "Rybar"
      }
     ]
    },
    "date": "2026-06-30",
    "total": 160,
-   "substantive": 75,
+   "substantive": 74,
    "headline": "Zaporizhzhia villages fall as Ukraine drone barrage kills infant",
    "topics": {
     "strikes_on_ukraine": 9,
-    "frontline": 22,
-    "ukraine_strikes_on_russia": 14,
+    "frontline": 16,
+    "ukraine_strikes_on_russia": 13,
     "west_nato": 20,
-    "russia_internal": 5,
-    "criticism": 5
+    "russia_internal": 12,
+    "criticism": 4
    },
    "nets": {
     "strikes_on_ukraine": 100,
-    "frontline": 86,
-    "ukraine_strikes_on_russia": -71,
-    "west_nato": -70,
-    "russia_internal": 20,
+    "frontline": 94,
+    "ukraine_strikes_on_russia": -77,
+    "west_nato": -65,
+    "russia_internal": 42,
     "criticism": -100
    },
    "subtopics": {
     "strikes_on_ukraine/deep_strikes": 1,
-    "strikes_on_ukraine/fuel_infrastructure": 6,
-    "strikes_on_ukraine/other": 2,
-    "frontline/pokrovsk": 2,
-    "frontline/hulyaipole": 7,
-    "frontline/other": 13,
+    "strikes_on_ukraine/fuel_infrastructure": 7,
+    "strikes_on_ukraine/other": 1,
+    "frontline/pokrovsk": 1,
+    "frontline/hulyaipole": 6,
+    "frontline/kupyansk": 1,
+    "frontline/other": 8,
     "ukraine_strikes_on_russia/drones_on_regions": 10,
-    "ukraine_strikes_on_russia/other": 4,
-    "west_nato/military_aid": 8,
-    "west_nato/rearmament": 5,
-    "west_nato/alliance_politics": 5,
-    "west_nato/other": 2,
-    "russia_internal/ideology_society": 2,
+    "ukraine_strikes_on_russia/other": 3,
+    "west_nato/military_aid": 11,
+    "west_nato/rearmament": 2,
+    "west_nato/alliance_politics": 6,
+    "west_nato/other": 1,
+    "russia_internal/ideology_society": 8,
     "russia_internal/security_cases": 1,
     "russia_internal/economy": 2,
-    "criticism/government": 3,
-    "criticism/other": 2
+    "russia_internal/other": 1,
+    "criticism/army_command": 1,
+    "criticism/government": 2,
+    "criticism/regional": 1
    },
-   "flags": 2
+   "flags": 3
   },
   {
    "battlefield": {
-    "pos": 22,
-    "neg": 1,
-    "neu": 6,
-    "net": 72,
-    "story": "Russian forces conduct ground operations in Chernigov, Sumy regions; police hunt deserters in liberated areas.",
+    "pos": 23,
+    "neg": 0,
+    "neu": 0,
+    "net": 100,
+    "story": "Russian forces conduct combined operations against Ukrainian military in multiple directions with documented tactical successes.",
     "story_url": "https://t.me/dva_majors/95411",
     "examples": [
      {
       "s": "pos",
-      "url": "https://t.me/rybar/81443",
-      "t": "Lieutenant Surazov led successful 2022 breakthrough attack breaking eight-year Ukrainian defenses.",
+      "url": "https://t.me/rybar/81439",
+      "t": "Russian forces conduct combined operations against Ukrainian military in multiple directions with documented tactical successes.",
       "ch": "Rybar"
-     },
-     {
-      "s": "neg",
-      "url": "https://t.me/rusich_army/30160",
-      "t": "Ukrainian commander deliberately abandoned surrounded Konstantinovka garrison to preserve Kramatorsk-Slavyansk positions.",
-      "ch": "Arkhangel Spetsnaza"
      }
     ]
    },
    "date": "2026-07-01",
    "total": 188,
-   "substantive": 74,
+   "substantive": 75,
    "headline": "Kopani and Ukrainske captured; Ukraine hits Crimea, fuel-strike campaign widens",
    "topics": {
-    "strikes_on_ukraine": 13,
-    "frontline": 29,
-    "ukraine_strikes_on_russia": 11,
-    "west_nato": 14,
+    "strikes_on_ukraine": 17,
+    "frontline": 23,
+    "ukraine_strikes_on_russia": 14,
+    "west_nato": 16,
     "russia_internal": 5,
-    "criticism": 2
+    "criticism": 0
    },
    "nets": {
-    "strikes_on_ukraine": 85,
-    "frontline": 72,
-    "ukraine_strikes_on_russia": -9,
-    "west_nato": -79,
+    "strikes_on_ukraine": 100,
+    "frontline": 100,
+    "ukraine_strikes_on_russia": -21,
+    "west_nato": -62,
     "russia_internal": -60,
-    "criticism": -100
+    "criticism": null
    },
    "subtopics": {
-    "strikes_on_ukraine/deep_strikes": 1,
-    "strikes_on_ukraine/fuel_infrastructure": 8,
-    "strikes_on_ukraine/other": 4,
-    "frontline/pokrovsk": 5,
-    "frontline/hulyaipole": 7,
-    "frontline/kupyansk": 4,
-    "frontline/other": 13,
+    "strikes_on_ukraine/deep_strikes": 4,
+    "strikes_on_ukraine/fuel_infrastructure": 7,
+    "strikes_on_ukraine/other": 6,
+    "frontline/pokrovsk": 1,
+    "frontline/hulyaipole": 4,
+    "frontline/kupyansk": 1,
+    "frontline/other": 17,
     "ukraine_strikes_on_russia/crimea_energy": 2,
-    "ukraine_strikes_on_russia/drones_on_regions": 4,
+    "ukraine_strikes_on_russia/drones_on_regions": 7,
     "ukraine_strikes_on_russia/other": 5,
-    "west_nato/military_aid": 6,
-    "west_nato/rearmament": 2,
-    "west_nato/negotiations": 2,
-    "west_nato/alliance_politics": 1,
-    "west_nato/other": 3,
+    "west_nato/military_aid": 7,
+    "west_nato/rearmament": 3,
+    "west_nato/negotiations": 3,
+    "west_nato/alliance_politics": 2,
+    "west_nato/other": 1,
     "russia_internal/security_cases": 3,
-    "russia_internal/economy": 2,
-    "criticism/government": 2
+    "russia_internal/economy": 2
    },
    "flags": 2
   },
   {
    "battlefield": {
-    "pos": 6,
+    "pos": 5,
     "neg": 0,
     "neu": 0,
     "net": 100,
-    "story": "Russian forces advance on all fronts, aiming to control Konstantinovka as springboard for further operations.",
+    "story": "Russian forces advancing on all fronts; Konstantinovka key target for further Donbas offensive operations.",
     "story_url": "https://t.me/Sladkov_plus/15715",
     "examples": [
      {
       "s": "pos",
       "url": "https://t.me/wargonzo/35224",
-      "t": "Russian forces control Kopani, advance near Iskra on Hulyaipole direction; progress in Donetsk and other sectors.",
+      "t": "Russian forces establish control of Kopani and advance in Zaporizhzhia and Donetsk sectors.",
       "ch": "WarGonzo"
      }
     ]
    },
    "date": "2026-07-02",
    "total": 126,
-   "substantive": 49,
+   "substantive": 53,
    "headline": "Massive overnight strike on Kyiv dominates; Ukraine hits Russian regions with 460 drones",
    "topics": {
-    "strikes_on_ukraine": 22,
-    "frontline": 6,
+    "strikes_on_ukraine": 21,
+    "frontline": 5,
     "ukraine_strikes_on_russia": 8,
-    "west_nato": 9,
-    "russia_internal": 2,
-    "criticism": 2
+    "west_nato": 12,
+    "russia_internal": 4,
+    "criticism": 3
    },
    "nets": {
-    "strikes_on_ukraine": 95,
+    "strikes_on_ukraine": 100,
     "frontline": 100,
-    "ukraine_strikes_on_russia": -75,
-    "west_nato": -100,
+    "ukraine_strikes_on_russia": -88,
+    "west_nato": -67,
     "russia_internal": 50,
     "criticism": -100
    },
    "subtopics": {
-    "strikes_on_ukraine/deep_strikes": 17,
+    "strikes_on_ukraine/deep_strikes": 15,
     "strikes_on_ukraine/fuel_infrastructure": 4,
-    "strikes_on_ukraine/other": 1,
+    "strikes_on_ukraine/other": 2,
+    "frontline/pokrovsk": 1,
     "frontline/hulyaipole": 1,
-    "frontline/other": 5,
-    "ukraine_strikes_on_russia/drones_on_regions": 3,
-    "ukraine_strikes_on_russia/other": 5,
-    "west_nato/military_aid": 4,
-    "west_nato/rearmament": 4,
-    "west_nato/alliance_politics": 1,
-    "russia_internal/ideology_society": 1,
+    "frontline/other": 3,
+    "ukraine_strikes_on_russia/drones_on_regions": 7,
+    "ukraine_strikes_on_russia/other": 1,
+    "west_nato/military_aid": 6,
+    "west_nato/rearmament": 2,
+    "west_nato/alliance_politics": 2,
+    "west_nato/other": 2,
+    "russia_internal/ideology_society": 2,
     "russia_internal/security_cases": 1,
+    "russia_internal/elite_politics": 1,
+    "criticism/army_command": 1,
     "criticism/government": 2
    },
    "flags": 2

@@ -1,60 +1,60 @@
 {
  "date": "2026-06-24",
  "total_posts": 159,
- "substantive_posts": 68,
+ "substantive_posts": 70,
  "sentiment_overall": {
-  "pos_pct": 50,
-  "neg_pct": 35,
-  "neu_pct": 15
+  "pos_pct": 54,
+  "neg_pct": 36,
+  "neu_pct": 10
  },
  "topics": {
   "strikes_on_ukraine": {
    "label": "Strikes on Ukraine",
-   "posts": 10,
+   "posts": 12,
    "neg": 0,
-   "neu": 2,
-   "pos": 8,
-   "net": 80
+   "neu": 0,
+   "pos": 12,
+   "net": 100
   },
   "frontline": {
    "label": "Frontline",
-   "posts": 23,
+   "posts": 20,
    "neg": 0,
    "neu": 1,
-   "pos": 22,
-   "net": 96
+   "pos": 19,
+   "net": 95
   },
   "ukraine_strikes_on_russia": {
    "label": "Ukraine strikes on Russia",
-   "posts": 10,
-   "neg": 8,
+   "posts": 9,
+   "neg": 7,
    "neu": 1,
    "pos": 1,
-   "net": -70
+   "net": -67
   },
   "west_nato": {
    "label": "West & NATO",
-   "posts": 11,
-   "neg": 8,
-   "neu": 3,
-   "pos": 0,
-   "net": -73
+   "posts": 14,
+   "neg": 9,
+   "neu": 4,
+   "pos": 1,
+   "net": -57
   },
   "russia_internal": {
    "label": "Russia internal",
    "posts": 8,
-   "neg": 2,
-   "neu": 3,
-   "pos": 3,
-   "net": 12
+   "neg": 3,
+   "neu": 0,
+   "pos": 5,
+   "net": 25
   },
   "criticism": {
    "label": "Criticism",
-   "posts": 6,
+   "posts": 7,
    "neg": 6,
-   "neu": 0,
+   "neu": 1,
    "pos": 0,
-   "net": -100
+   "net": -86
   }
  },
  "subtopics": [
@@ -62,11 +62,11 @@
    "topic": "strikes_on_ukraine",
    "subtopic": "deep_strikes",
    "label": "Deep strikes on cities & industry",
-   "posts": 4,
-   "channels": 3,
+   "posts": 5,
+   "channels": 4,
    "neg": 0,
    "neu": 0,
-   "pos": 4,
+   "pos": 5,
    "net": 100
   },
   {
@@ -84,12 +84,12 @@
    "topic": "strikes_on_ukraine",
    "subtopic": "other",
    "label": "Other strikes on Ukraine",
-   "posts": 4,
+   "posts": 5,
    "channels": 3,
    "neg": 0,
-   "neu": 2,
-   "pos": 2,
-   "net": 50
+   "neu": 0,
+   "pos": 5,
+   "net": 100
   },
   {
    "topic": "frontline",
@@ -117,53 +117,53 @@
    "topic": "frontline",
    "subtopic": "kupyansk",
    "label": "Kupyansk / Kharkiv direction",
-   "posts": 10,
-   "channels": 5,
+   "posts": 4,
+   "channels": 3,
    "neg": 0,
    "neu": 0,
-   "pos": 10,
+   "pos": 4,
    "net": 100
   },
   {
    "topic": "frontline",
    "subtopic": "other",
    "label": "Other directions",
-   "posts": 13,
+   "posts": 16,
    "channels": 7,
    "neg": 0,
    "neu": 1,
-   "pos": 12,
-   "net": 92
+   "pos": 15,
+   "net": 94
   },
   {
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "crimea_energy",
    "label": "Crimea fuel & energy crisis",
-   "posts": 5,
+   "posts": 4,
    "channels": 2,
    "neg": 4,
    "neu": 0,
-   "pos": 1,
-   "net": -60
+   "pos": 0,
+   "net": -100
   },
   {
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "drones_on_regions",
    "label": "Drones on Russian regions",
-   "posts": 3,
-   "channels": 3,
+   "posts": 4,
+   "channels": 2,
    "neg": 2,
    "neu": 1,
-   "pos": 0,
-   "net": -67
+   "pos": 1,
+   "net": -25
   },
   {
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "other",
    "label": "Other Ukrainian strikes",
-   "posts": 2,
+   "posts": 1,
    "channels": 1,
-   "neg": 2,
+   "neg": 1,
    "neu": 0,
    "pos": 0,
    "net": -100
@@ -174,32 +174,32 @@
    "label": "Military aid to Ukraine",
    "posts": 6,
    "channels": 4,
-   "neg": 5,
-   "neu": 1,
+   "neg": 6,
+   "neu": 0,
    "pos": 0,
-   "net": -83
+   "net": -100
   },
   {
    "topic": "west_nato",
    "subtopic": "rearmament",
    "label": "European rearmament",
-   "posts": 0,
-   "channels": 0,
-   "neg": 0,
-   "neu": 0,
+   "posts": 3,
+   "channels": 3,
+   "neg": 2,
+   "neu": 1,
    "pos": 0,
-   "net": null
+   "net": -67
   },
   {
    "topic": "west_nato",
    "subtopic": "negotiations",
    "label": "Negotiations & diplomacy",
    "posts": 2,
-   "channels": 2,
-   "neg": 1,
-   "neu": 1,
+   "channels": 1,
+   "neg": 0,
+   "neu": 2,
    "pos": 0,
-   "net": -50
+   "net": 0
   },
   {
    "topic": "west_nato",
@@ -218,10 +218,10 @@
    "label": "Other West & NATO",
    "posts": 2,
    "channels": 2,
-   "neg": 1,
+   "neg": 0,
    "neu": 1,
-   "pos": 0,
-   "net": -50
+   "pos": 1,
+   "net": 50
   },
   {
    "topic": "russia_internal",
@@ -241,9 +241,9 @@
    "posts": 4,
    "channels": 4,
    "neg": 2,
-   "neu": 1,
-   "pos": 1,
-   "net": -25
+   "neu": 0,
+   "pos": 2,
+   "net": 0
   },
   {
    "topic": "russia_internal",
@@ -262,40 +262,40 @@
    "label": "Economy & sanctions",
    "posts": 2,
    "channels": 2,
-   "neg": 0,
-   "neu": 1,
+   "neg": 1,
+   "neu": 0,
    "pos": 1,
-   "net": 50
+   "net": 0
   },
   {
    "topic": "russia_internal",
    "subtopic": "mobilisation",
    "label": "Mobilisation & recruitment",
-   "posts": 1,
-   "channels": 1,
+   "posts": 0,
+   "channels": 0,
    "neg": 0,
    "neu": 0,
-   "pos": 1,
-   "net": 100
+   "pos": 0,
+   "net": null
   },
   {
    "topic": "russia_internal",
    "subtopic": "other",
    "label": "Other Russia internal",
-   "posts": 1,
+   "posts": 2,
    "channels": 1,
    "neg": 0,
-   "neu": 1,
-   "pos": 0,
-   "net": 0
+   "neu": 0,
+   "pos": 2,
+   "net": 100
   },
   {
    "topic": "criticism",
    "subtopic": "army_command",
    "label": "Army command & logistics",
-   "posts": 4,
-   "channels": 4,
-   "neg": 4,
+   "posts": 2,
+   "channels": 2,
+   "neg": 2,
    "neu": 0,
    "pos": 0,
    "net": -100
@@ -304,9 +304,9 @@
    "topic": "criticism",
    "subtopic": "government",
    "label": "Government & ministries",
-   "posts": 2,
+   "posts": 3,
    "channels": 2,
-   "neg": 2,
+   "neg": 3,
    "neu": 0,
    "pos": 0,
    "net": -100
@@ -326,31 +326,31 @@
    "topic": "criticism",
    "subtopic": "regional",
    "label": "Regional authorities",
-   "posts": 0,
-   "channels": 0,
-   "neg": 0,
+   "posts": 1,
+   "channels": 1,
+   "neg": 1,
    "neu": 0,
    "pos": 0,
-   "net": null
+   "net": -100
   },
   {
    "topic": "criticism",
    "subtopic": "other",
    "label": "Other criticism",
-   "posts": 0,
-   "channels": 0,
+   "posts": 1,
+   "channels": 1,
    "neg": 0,
-   "neu": 0,
+   "neu": 1,
    "pos": 0,
-   "net": null
+   "net": 0
   }
  ],
  "channels": {
   "Two Majors": 21,
-  "Rybar": 12,
-  "Kotsnews": 12,
+  "Rybar": 14,
+  "Kotsnews": 13,
   "Poddubny": 8,
-  "WarGonzo": 7,
+  "WarGonzo": 6,
   "Arkhangel Spetsnaza": 3,
   "Sladkov+": 3,
   "Starshe Eddy": 2
@@ -361,35 +361,35 @@
    "link": "https://t.me/sashakots/62575",
    "views": 865518,
    "forwards": 672,
-   "summary_en": "Russian forces advance in Konstantinovka, destroying Ukrainian drone relay infrastructure and reconnaissance capability."
+   "summary_en": "Russian forces advance in Konstantinovka; systematically destroy Ukrainian drone relays and antennas for air support."
   },
   {
    "channel_label": "Two Majors",
    "link": "https://t.me/dva_majors/95056",
    "views": 391871,
    "forwards": 467,
-   "summary_en": "Russia strikes Sumy, Kharkiv; frontline updates from multiple directions; Sevastopol without power."
+   "summary_en": "Russia strikes Sumy, Kharkiv, Pavlograd; frontline updates on Sumy, Kursk directions and multiple battlefields."
   },
   {
    "channel_label": "Rybar",
    "link": "https://t.me/rybar/81303",
    "views": 310049,
    "forwards": 484,
-   "summary_en": "Post criticizes Russian forces for excessive restraint, notes low casualty strike publication rates in Rubikon reports."
+   "summary_en": "Russian forces overly restricted in publishing drone strikes against personnel due to moral constraints on combat footage."
   },
   {
    "channel_label": "Rybar",
    "link": "https://t.me/rybar/81301",
    "views": 213761,
    "forwards": 111,
-   "summary_en": "Russian forces liberate Ivolzhanskoe and make tactical progress on Sumy direction against Ukrainian brigades."
+   "summary_en": "Russian forces liberate Ivolzhanskoe and advance near Khoten on Sumy direction after breaking Ukrainian resistance."
   },
   {
    "channel_label": "Rybar",
    "link": "https://t.me/rybar/81306",
    "views": 212697,
    "forwards": 46,
-   "summary_en": "CIA-coordinated drone and missile attacks on Crimea and Russian refineries; US building drone training facilities."
+   "summary_en": "USA directly supports Ukrainian drone strikes on Crimea and Russian refineries; Pentagon builds Ukrainian drone training facilities."
   }
  ],
  "top_forwarded": [
@@ -398,21 +398,21 @@
    "link": "https://t.me/dva_majors/95110",
    "views": 183841,
    "forwards": 803,
-   "summary_en": "Ukraine threatens Crimea operations; Russian blogger acknowledges damage to logistics and morale despite no frontline changes."
+   "summary_en": "Zelenskyy threatens Crimea operations; Ukraine's remote strikes damage Russian logistics and reputation."
   },
   {
    "channel_label": "Kotsnews",
    "link": "https://t.me/sashakots/62575",
    "views": 865518,
    "forwards": 672,
-   "summary_en": "Russian forces advance in Konstantinovka, destroying Ukrainian drone relay infrastructure and reconnaissance capability."
+   "summary_en": "Russian forces advance in Konstantinovka; systematically destroy Ukrainian drone relays and antennas for air support."
   },
   {
    "channel_label": "Two Majors",
    "link": "https://t.me/dva_majors/95069",
    "views": 100282,
    "forwards": 541,
-   "summary_en": "Moldova and Romania conduct NATO-coordinated exercises simulating military operations on Transnistria."
+   "summary_en": "Moldova conducts NATO-backed military exercises with Romania preparing amphibious operations against Transnistria."
   }
  ],
  "flags": [
@@ -420,22 +420,15 @@
    "type": "mood_swing",
    "topic": "frontline",
    "label": "Frontline",
-   "net": 96,
-   "move": 65
+   "net": 95,
+   "move": 54
   },
   {
    "type": "mood_swing",
    "topic": "west_nato",
    "label": "West & NATO",
-   "net": -73,
-   "move": -36
-  },
-  {
-   "type": "mood_swing",
-   "topic": "russia_internal",
-   "label": "Russia internal",
-   "net": 12,
-   "move": -45
+   "net": -57,
+   "move": -41
   },
   {
    "type": "watchlist_quiet",
@@ -1215,7 +1208,7 @@
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "crimea_energy",
    "sentiment": "neg",
-   "summary_en": "Sevastopol struck by drones, city left without electricity, emergency services responding."
+   "summary_en": "Ukrainian drone attack blacks out Sevastopol; governor urges residents to conserve power and remain calm."
   },
   {
    "channel": "ngp_razvedka",
@@ -1241,9 +1234,9 @@
    "forwards": 467,
    "substantive": true,
    "topic": "strikes_on_ukraine",
-   "subtopic": "other",
-   "sentiment": "neu",
-   "summary_en": "Russia strikes Sumy, Kharkiv; frontline updates from multiple directions; Sevastopol without power."
+   "subtopic": "deep_strikes",
+   "sentiment": "pos",
+   "summary_en": "Russia strikes Sumy, Kharkiv, Pavlograd; frontline updates on Sumy, Kursk directions and multiple battlefields."
   },
   {
    "channel": "dva_majors",
@@ -1257,7 +1250,7 @@
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "crimea_energy",
    "sentiment": "neg",
-   "summary_en": "Kherson region completely or partially de-energized after Ukrainian strikes."
+   "summary_en": "Kherson region completely or partially without electricity following Ukrainian attacks."
   },
   {
    "channel": "rybar",
@@ -1269,9 +1262,9 @@
    "forwards": 77,
    "substantive": true,
    "topic": "strikes_on_ukraine",
-   "subtopic": "other",
-   "sentiment": "neu",
-   "summary_en": "Russia strikes Sumy, Kharkiv; frontline updates from multiple directions; Sevastopol without power."
+   "subtopic": "deep_strikes",
+   "sentiment": "pos",
+   "summary_en": "Russia strikes Sumy, Kharkiv, Pavlograd; frontline updates on Sumy, Kursk directions and multiple battlefields."
   },
   {
    "channel": "dva_majors",
@@ -1281,11 +1274,11 @@
    "date_utc": "2026-06-24 05:01:13",
    "views": 114615,
    "forwards": 111,
-   "substantive": false,
-   "topic": "none",
-   "subtopic": "none",
-   "sentiment": "neu",
-   "summary_en": ""
+   "substantive": true,
+   "topic": "criticism",
+   "subtopic": "regional",
+   "sentiment": "neg",
+   "summary_en": "Tyumen regional officials obstruct affordable housing project for Suvorov war veterans."
   },
   {
    "channel": "rusich_army",
@@ -1313,7 +1306,7 @@
    "topic": "frontline",
    "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "Russian forces advance on Zaporizhzhia, Donetsk, and Kharkiv fronts; Lyman liberation ongoing."
+   "summary_en": "Russian forces advance near Stepnohirsk, Hulyaipole, and expand control west of Rodinsko and near Grishino."
   },
   {
    "channel": "dva_majors",
@@ -1338,10 +1331,10 @@
    "views": 94610,
    "forwards": 289,
    "substantive": true,
-   "topic": "strikes_on_ukraine",
+   "topic": "russia_internal",
    "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "Rita-2 interceptor drones with 340+ km/h speed capable of defeating Ukrainian long-range UAVs."
+   "summary_en": "Rita-2 interceptor drones manufactured by Bars-Sarmat successfully defend Russian airspace against enemy UAVs."
   },
   {
    "channel": "rybar",
@@ -1355,7 +1348,7 @@
    "topic": "west_nato",
    "subtopic": "military_aid",
    "sentiment": "neg",
-   "summary_en": "Portuguese firm Tekever establishing military drone production in Japan to export drones to Ukraine."
+   "summary_en": "Portuguese defense drone startup Tekever plans Japan manufacturing facility; has supplied drones to Ukraine for three years."
   },
   {
    "channel": "dva_majors",
@@ -1397,7 +1390,7 @@
    "topic": "frontline",
    "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "Russian forces systematically eliminate Ukrainian fighters attempting to flee Konstantinovka."
+   "summary_en": "Southern grouping systematically destroys Ukrainian fighters attempting covert retreat from Konstantinovka."
   },
   {
    "channel": "dva_majors",
@@ -1409,9 +1402,9 @@
    "forwards": 82,
    "substantive": true,
    "topic": "ukraine_strikes_on_russia",
-   "subtopic": "crimea_energy",
-   "sentiment": "pos",
-   "summary_en": "Sevastopol repels two Ukrainian attacks, downs 70 drones, minor casualties and damage reported."
+   "subtopic": "drones_on_regions",
+   "sentiment": "neu",
+   "summary_en": "Sevastopol repels two Ukrainian attacks, shoots down 70 drones; two civilians injured, infrastructure damage reported."
   },
   {
    "channel": "dva_majors",
@@ -1423,9 +1416,9 @@
    "forwards": 96,
    "substantive": true,
    "topic": "frontline",
-   "subtopic": "kupyansk",
+   "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "Russian Severa group liberates Ivolzhanskoye in Sumy; 250+ Ukrainian soldiers killed."
+   "summary_en": "Russian Northern group captures Ivolzhanske village in Sumy region; over 250 Ukrainian soldiers killed."
   },
   {
    "channel": "dva_majors",
@@ -1453,7 +1446,7 @@
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "drones_on_regions",
    "sentiment": "neg",
-   "summary_en": "Two killed in Nizhny Novgorod region from Ukrainian drone attack; 23 UAVs intercepted."
+   "summary_en": "Two killed in Nizhny Novgorod; Ukrainian drone attack damages industrial facility and residential buildings."
   },
   {
    "channel": "dva_majors",
@@ -1481,7 +1474,7 @@
    "topic": "frontline",
    "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "Russian forces destroy enemy fortifications and conduct ongoing reconnaissance monitoring."
+   "summary_en": "Russian forces constantly monitor and destroy enemy fortifications near engagement zones with high priority."
   },
   {
    "channel": "rybar",
@@ -1491,11 +1484,11 @@
    "date_utc": "2026-06-24 07:22:07",
    "views": 192869,
    "forwards": 60,
-   "substantive": false,
-   "topic": "none",
-   "subtopic": "none",
+   "substantive": true,
+   "topic": "west_nato",
+   "subtopic": "other",
    "sentiment": "neu",
-   "summary_en": ""
+   "summary_en": "UK government wants social media platforms to boost BBC and public broadcasters to counter misinformation."
   },
   {
    "channel": "dva_majors",
@@ -1523,7 +1516,7 @@
    "topic": "west_nato",
    "subtopic": "alliance_politics",
    "sentiment": "neg",
-   "summary_en": "Moldova and Romania conduct NATO-coordinated exercises simulating military operations on Transnistria."
+   "summary_en": "Moldova conducts NATO-backed military exercises with Romania preparing amphibious operations against Transnistria."
   },
   {
    "channel": "sashakots",
@@ -1533,11 +1526,11 @@
    "date_utc": "2026-06-24 08:01:16",
    "views": 39066,
    "forwards": 29,
-   "substantive": false,
-   "topic": "none",
-   "subtopic": "none",
+   "substantive": true,
+   "topic": "west_nato",
+   "subtopic": "rearmament",
    "sentiment": "neu",
-   "summary_en": ""
+   "summary_en": "Finland faces budget deficit while raising defense spending to 3.5% GDP following NATO membership."
   },
   {
    "channel": "rybar",
@@ -1547,11 +1540,11 @@
    "date_utc": "2026-06-24 08:03:01",
    "views": 189781,
    "forwards": 60,
-   "substantive": false,
-   "topic": "none",
-   "subtopic": "none",
+   "substantive": true,
+   "topic": "west_nato",
+   "subtopic": "negotiations",
    "sentiment": "neu",
-   "summary_en": ""
+   "summary_en": "US Senate limits Trump's military authority over Iran using 1973 War Powers Act; non-binding resolution."
   },
   {
    "channel": "epoddubny",
@@ -1562,10 +1555,10 @@
    "views": 74548,
    "forwards": 72,
    "substantive": true,
-   "topic": "frontline",
+   "topic": "strikes_on_ukraine",
    "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "Rubicon center destroys Ukrainian reconnaissance drones and loitering munitions across all directions."
+   "summary_en": "Rubicon center's FPV drones destroy Ukrainian reconnaissance and barrage drones across all directions."
   },
   {
    "channel": "sashakots",
@@ -1579,7 +1572,7 @@
    "topic": "strikes_on_ukraine",
    "subtopic": "fuel_infrastructure",
    "sentiment": "pos",
-   "summary_en": "Geran strikes gas distribution station near Zaporizhzhia, targeting infrastructure supplying defense industries."
+   "summary_en": "Geran strike hits gas distribution station near Zaporizhzhia supplying Ukrainian defense industry."
   },
   {
    "channel": "dva_majors",
@@ -1589,11 +1582,11 @@
    "date_utc": "2026-06-24 08:43:15",
    "views": 110049,
    "forwards": 520,
-   "substantive": true,
-   "topic": "russia_internal",
-   "subtopic": "security_cases",
-   "sentiment": "neg",
-   "summary_en": "Ukraine conducting information operation in southern Russia with fake Rosgvard calls to spread panic."
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
   },
   {
    "channel": "sashakots",
@@ -1606,8 +1599,8 @@
    "substantive": true,
    "topic": "russia_internal",
    "subtopic": "security_cases",
-   "sentiment": "neg",
-   "summary_en": "Free Udmurtia separatist project attempting to create independent state under NATO sponsorship discovered."
+   "sentiment": "pos",
+   "summary_en": "Free Udmurtia organization exposed as NATO-backed separatist network aiming to fracture Russia."
   },
   {
    "channel": "rusich_army",
@@ -1621,7 +1614,7 @@
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "crimea_energy",
    "sentiment": "neg",
-   "summary_en": "300 Ukrainian drones attacked Russian regions; Sevastopol power plant hit, causing electricity outages."
+   "summary_en": "Ukrainian drones attack Russian regions; Crimea power station hit, electricity outage in Sevastopol."
   },
   {
    "channel": "sashakots",
@@ -1633,9 +1626,9 @@
    "forwards": 98,
    "substantive": true,
    "topic": "frontline",
-   "subtopic": "kupyansk",
+   "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "New American MAAWLR air defense system destroyed by FPV drones in Kharkiv region."
+   "summary_en": "Newest American MAAWLR air defense system destroyed by Russian forces in Kharkiv region."
   },
   {
    "channel": "wargonzo",
@@ -1649,7 +1642,7 @@
    "topic": "west_nato",
    "subtopic": "military_aid",
    "sentiment": "neg",
-   "summary_en": "NATO and Ukraine announce competition offering 250,000 euros for solutions to destroy Russian airfields."
+   "summary_en": "NATO and Ukraine announce 250,000 euro competition for technical solutions to destroy Russian airfields."
   },
   {
    "channel": "dva_majors",
@@ -1661,9 +1654,9 @@
    "forwards": 302,
    "substantive": true,
    "topic": "criticism",
-   "subtopic": "army_command",
+   "subtopic": "government",
    "sentiment": "neg",
-   "summary_en": "Two Majors criticizes illusion that time favors Russia; Ukraine executing three-part operation to force Russian surrender."
+   "summary_en": "Russian leadership's belief that time favors Russia is delusional; Ukraine executing three-part strategy to force Russian capitulation."
   },
   {
    "channel": "dva_majors",
@@ -1677,7 +1670,7 @@
    "topic": "criticism",
    "subtopic": "government",
    "sentiment": "neg",
-   "summary_en": "Blogger warns that time is precious resource; fifth year of war demands analyzing what strategies actually work."
+   "summary_en": "Time is valuable; Russia must reject failed strategies and show boldness to defeat enemies instead of waiting."
   },
   {
    "channel": "rybar",
@@ -1691,7 +1684,7 @@
    "topic": "west_nato",
    "subtopic": "negotiations",
    "sentiment": "neu",
-   "summary_en": "USA-Iran memorandum contains six contradictions risking new Middle East escalation over frozen assets."
+   "summary_en": "USA-Iran memorandum contradictions risk new Middle East escalation despite temporarily halting 110-day conflict."
   },
   {
    "channel": "wargonzo",
@@ -1701,11 +1694,11 @@
    "date_utc": "2026-06-24 09:50:10",
    "views": 36245,
    "forwards": 60,
-   "substantive": true,
-   "topic": "west_nato",
-   "subtopic": "other",
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
    "sentiment": "neu",
-   "summary_en": "Wikipedia founder Larry Sanger banned from editing after attempts to diversify sources and viewpoints."
+   "summary_en": ""
   },
   {
    "channel": "epoddubny",
@@ -1717,9 +1710,9 @@
    "forwards": 89,
    "substantive": true,
    "topic": "frontline",
-   "subtopic": "kupyansk",
+   "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "First American BRAWLR air defense system destroyed in Kharkiv region by FPV drones."
+   "summary_en": "First American BRAWLR air defense system destroyed in Kharkiv region using FPV drones."
   },
   {
    "channel": "sashakots",
@@ -1731,9 +1724,9 @@
    "forwards": 52,
    "substantive": true,
    "topic": "frontline",
-   "subtopic": "kupyansk",
+   "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "Russian army captures Ivolzhanskoe in Sumy region, advancing toward major transport routes."
+   "summary_en": "Russian forces capture Ivolzhanske settlement in Sumy region, expanding Northern grouping's bridgehead."
   },
   {
    "channel": "vysokygovorit",
@@ -1747,7 +1740,7 @@
    "topic": "russia_internal",
    "subtopic": "security_cases",
    "sentiment": "pos",
-   "summary_en": "Cybercrime dropped 31.2% in Russia; new federal law creates legal basis for cybersecurity prevention."
+   "summary_en": "Russian cybercrime dropped 31% in five months of 2026; new federal law addresses cyber threats."
   },
   {
    "channel": "sashakots",
@@ -1761,7 +1754,7 @@
    "topic": "strikes_on_ukraine",
    "subtopic": "deep_strikes",
    "sentiment": "pos",
-   "summary_en": "Geran missiles strike Lozova railway hub in Kharkiv region, destroying locomotives and infrastructure."
+   "summary_en": "Geran strikes destroy locomotives, warehouses and power lines at key Lozova railway junction in Kharkiv."
   },
   {
    "channel": "wargonzo",
@@ -1801,9 +1794,9 @@
    "forwards": 213,
    "substantive": true,
    "topic": "west_nato",
-   "subtopic": "military_aid",
+   "subtopic": "rearmament",
    "sentiment": "neg",
-   "summary_en": "USA creating two test ranges simulating Ukraine combat conditions; gearing civilian industry for weapons production."
+   "summary_en": "USA establishing two polygons to test EW systems, drones and counter-drone measures simulating Ukrainian conditions."
   },
   {
    "channel": "rybar",
@@ -1815,9 +1808,9 @@
    "forwards": 121,
    "substantive": true,
    "topic": "west_nato",
-   "subtopic": "military_aid",
-   "sentiment": "neu",
-   "summary_en": "US establishing specialized training ranges to master drone and electronic warfare tactics used in Ukraine."
+   "subtopic": "rearmament",
+   "sentiment": "neg",
+   "summary_en": "US Army creates specialized training grounds simulating Ukrainian tactics for drone and EW coordination within 4-6 weeks."
   },
   {
    "channel": "sashakots",
@@ -1831,7 +1824,7 @@
    "topic": "frontline",
    "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "Russian forces advance in Konstantinovka, destroying Ukrainian drone relay infrastructure and reconnaissance capability."
+   "summary_en": "Russian forces advance in Konstantinovka; systematically destroy Ukrainian drone relays and antennas for air support."
   },
   {
    "channel": "dva_majors",
@@ -1859,7 +1852,7 @@
    "topic": "strikes_on_ukraine",
    "subtopic": "fuel_infrastructure",
    "sentiment": "pos",
-   "summary_en": "Geran missiles strike gas preparation facility in Poltan region, destroying key infrastructure."
+   "summary_en": "Geran strikes hit Solokha gas processing facility in Poltava, confirming large fire via satellite thermal signatures."
   },
   {
    "channel": "dva_majors",
@@ -1873,7 +1866,7 @@
    "topic": "frontline",
    "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "Robotic Courier supply system demonstrates unmanned logistics delivery to frontline positions coordinated with drones."
+   "summary_en": "33rd Guards Motor Rifle Regiment drone operators demonstrate Courier robotic supply system for safe ammunition delivery."
   },
   {
    "channel": "rusich_army",
@@ -1899,9 +1892,9 @@
    "forwards": 24,
    "substantive": true,
    "topic": "frontline",
-   "subtopic": "kupyansk",
+   "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "Russian army captures Ivolzhanskoe in Sumy region, advancing 15km south of border."
+   "summary_en": "Russian forces capture Ivolzhanske settlement in Sumy region, expanding Northern grouping's strategic position."
   },
   {
    "channel": "epoddubny",
@@ -1915,7 +1908,7 @@
    "topic": "strikes_on_ukraine",
    "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "Russian forces strike railway infrastructure and locomotives in Lozova supplying Ukrainian military."
+   "summary_en": "Russian forces strike Ukrainian railway hub at Lozova, destroying infrastructure and military cargo vehicles."
   },
   {
    "channel": "dva_majors",
@@ -1955,9 +1948,9 @@
    "forwards": 160,
    "substantive": true,
    "topic": "criticism",
-   "subtopic": "army_command",
+   "subtopic": "government",
    "sentiment": "neg",
-   "summary_en": "Blogger defends drone forces and Defense Minister Belousov against criticism from Western agents."
+   "summary_en": "Defense minister Belousov falsely criticized for incompetence; drone forces actually operational with active recruitment."
   },
   {
    "channel": "wargonzo",
@@ -2027,7 +2020,7 @@
    "topic": "frontline",
    "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "33rd Guards motorized rifle regiment destroys enemy bunkers and strongpoints using FPV-drones."
+   "summary_en": "Russian FPV drones destroy Ukrainian bunkers and strongpoints near Dobropoye, enabling further advances."
   },
   {
    "channel": "rusich_army",
@@ -2041,7 +2034,7 @@
    "topic": "west_nato",
    "subtopic": "military_aid",
    "sentiment": "neg",
-   "summary_en": "US creates specialized training sites replicating Ukrainian conditions to counter Russian drone production capacity."
+   "summary_en": "US establishes specialized training polygons mimicking Ukraine combat conditions to counter Russian drone superiority."
   },
   {
    "channel": "epoddubny",
@@ -2055,7 +2048,7 @@
    "topic": "strikes_on_ukraine",
    "subtopic": "deep_strikes",
    "sentiment": "pos",
-   "summary_en": "Russian aircraft strike command posts and positions in Donbas with FAB-250 and FAB-1500 bombs."
+   "summary_en": "Russian guided bombs strike Ukrainian drone command posts near Belenkoe and Vysokoivanovka, killing ~50 combatants."
   },
   {
    "channel": "rybar",
@@ -2069,7 +2062,7 @@
    "topic": "frontline",
    "subtopic": "kupyansk",
    "sentiment": "pos",
-   "summary_en": "Russian forces liberate Ivolzhanskoe and make tactical progress on Sumy direction against Ukrainian brigades."
+   "summary_en": "Russian forces liberate Ivolzhanskoe and advance near Khoten on Sumy direction after breaking Ukrainian resistance."
   },
   {
    "channel": "sashakots",
@@ -2080,10 +2073,10 @@
    "views": 31360,
    "forwards": 23,
    "substantive": true,
-   "topic": "frontline",
+   "topic": "strikes_on_ukraine",
    "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "Rubikon Center FPV-drones destroy Ukrainian reconnaissance and loitering munitions across all directions."
+   "summary_en": "Rubikon center drone operators destroy multiple Ukrainian reconnaissance and attack drones across all fronts."
   },
   {
    "channel": "wargonzo",
@@ -2095,9 +2088,9 @@
    "forwards": 74,
    "substantive": true,
    "topic": "ukraine_strikes_on_russia",
-   "subtopic": "other",
+   "subtopic": "drones_on_regions",
    "sentiment": "neg",
-   "summary_en": "Ukrainian drone strike on residential building in Horlivka kills three civilians, injures others."
+   "summary_en": "Ukrainian drone strikes apartment building in Horloka, killing three civilians and injuring others."
   },
   {
    "channel": "sashakots",
@@ -2111,7 +2104,7 @@
    "topic": "strikes_on_ukraine",
    "subtopic": "deep_strikes",
    "sentiment": "pos",
-   "summary_en": "Russian aircraft deliver precise FAB-1500 strikes on Ukrainian command posts and drone units in Donbas."
+   "summary_en": "Russian guided bombs destroy Ukrainian drone control centers and brigades near Belenkoe and Vysokoivanovka."
   },
   {
    "channel": "dva_majors",
@@ -2122,10 +2115,10 @@
    "views": 104814,
    "forwards": 216,
    "substantive": true,
-   "topic": "strikes_on_ukraine",
-   "subtopic": "deep_strikes",
-   "sentiment": "pos",
-   "summary_en": "Post threatens strikes on Kyiv infrastructure, notes foreign military-industrial representatives and heat forecast."
+   "topic": "west_nato",
+   "subtopic": "military_aid",
+   "sentiment": "neg",
+   "summary_en": "Foreign military-industrial company representatives and hostile intelligence coordinators operate in Kyiv testing weapons on Russia."
   },
   {
    "channel": "dva_majors",
@@ -2139,7 +2132,7 @@
    "topic": "frontline",
    "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "26th motorized rifle regiment reports destroying enemy personnel and strongpoints in Kramatorsk-Druzhkivka direction."
+   "summary_en": "Russian 26th motorized rifle regiment inflicts casualties on Ukrainian forces and destroys enemy strongpoints."
   },
   {
    "channel": "rybar",
@@ -2153,7 +2146,7 @@
    "topic": "west_nato",
    "subtopic": "military_aid",
    "sentiment": "neg",
-   "summary_en": "US intelligence actively plans and supports Ukrainian strikes on Russian refineries, reports Financial Times."
+   "summary_en": "US CIA actively participates in planning Ukrainian drone strikes on Russian refineries and energy infrastructure."
   },
   {
    "channel": "vysokygovorit",
@@ -2206,10 +2199,10 @@
    "views": 35242,
    "forwards": 33,
    "substantive": true,
-   "topic": "west_nato",
-   "subtopic": "negotiations",
+   "topic": "russia_internal",
+   "subtopic": "security_cases",
    "sentiment": "neg",
-   "summary_en": "Ukrainian threats against Belarus over alleged relay equipment supporting Russia may trigger military provocations."
+   "summary_en": "Zelenskyy threatens Belarus and mentions Kastus Kalinovskiy regiment, escalating Ukraine-Belarus tensions."
   },
   {
    "channel": "rybar",
@@ -2223,7 +2216,7 @@
    "topic": "criticism",
    "subtopic": "army_command",
    "sentiment": "neg",
-   "summary_en": "Post criticizes Russian forces for excessive restraint, notes low casualty strike publication rates in Rubikon reports."
+   "summary_en": "Russian forces overly restricted in publishing drone strikes against personnel due to moral constraints on combat footage."
   },
   {
    "channel": "sashakots",
@@ -2235,9 +2228,9 @@
    "forwards": 107,
    "substantive": true,
    "topic": "criticism",
-   "subtopic": "government",
-   "sentiment": "neg",
-   "summary_en": "Blogger mocks repeated Ukrainian predictions about Crimean Bridge collapse as recurring propaganda without evidence."
+   "subtopic": "other",
+   "sentiment": "neu",
+   "summary_en": "Ukrainian experts repeatedly falsely predicted Crimean Bridge collapse since 2016; predictions consistently failed."
   },
   {
    "channel": "rusich_army",
@@ -2320,8 +2313,8 @@
    "substantive": true,
    "topic": "russia_internal",
    "subtopic": "security_cases",
-   "sentiment": "neu",
-   "summary_en": "Russian Muslim religious council member arrested for alleged terrorist organization links."
+   "sentiment": "neg",
+   "summary_en": "Russian security services arrest Islamic organization member on terrorism charges."
   },
   {
    "channel": "dva_majors",
@@ -2332,10 +2325,10 @@
    "views": 120983,
    "forwards": 41,
    "substantive": true,
-   "topic": "frontline",
+   "topic": "strikes_on_ukraine",
    "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "Russian UAV operators destroy Ukrainian drone operator positions on Velikoburluk direction."
+   "summary_en": "Russian drone operators strike Ukrainian UAV operator base and destroy infrastructure."
   },
   {
    "channel": "sashakots",
@@ -2349,7 +2342,7 @@
    "topic": "russia_internal",
    "subtopic": "economy",
    "sentiment": "pos",
-   "summary_en": "Russia achieves import substitution with domestic aircraft Superjet, IL-114-300, MS-21 despite Western sanctions."
+   "summary_en": "Russia achieves import-substitution in civilian aviation despite Western sanctions and embargoes."
   },
   {
    "channel": "dva_majors",
@@ -2362,8 +2355,8 @@
    "substantive": true,
    "topic": "russia_internal",
    "subtopic": "other",
-   "sentiment": "neu",
-   "summary_en": "Russian Transport Ministry restricts IMO access to vessel tracking data to prevent targeting."
+   "sentiment": "pos",
+   "summary_en": "Russian Transport Ministry restricts maritime data sharing with IMO to prevent targeting of ships."
   },
   {
    "channel": "wargonzo",
@@ -2377,7 +2370,7 @@
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "other",
    "sentiment": "neg",
-   "summary_en": "Ukraine outsources military recruitment to private firms, offering foreign mercenaries up to $11,000 monthly."
+   "summary_en": "Ukraine contracts private firms to recruit foreign mercenaries for military at high wages."
   },
   {
    "channel": "sashakots",
@@ -2388,10 +2381,10 @@
    "views": 47484,
    "forwards": 225,
    "substantive": true,
-   "topic": "frontline",
+   "topic": "strikes_on_ukraine",
    "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "Russian Tsentr forces destroy Ukrainian supply vehicles with multiple bombs at Dobropoilya."
+   "summary_en": "Russian forces deploy multiple FAB bombs against Ukrainian supply transport and infrastructure."
   },
   {
    "channel": "ngp_razvedka",
@@ -2419,7 +2412,7 @@
    "topic": "criticism",
    "subtopic": "army_command",
    "sentiment": "neg",
-   "summary_en": "Russian forces avoid publicizing anti-personnel drone strikes due to international pressure concerns."
+   "summary_en": "Russian military self-restricts drone strikes on personnel due to restraint policies."
   },
   {
    "channel": "Sladkov_plus",
@@ -2433,7 +2426,7 @@
    "topic": "frontline",
    "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "Russian forces continue advancing using drone warfare to disable Ukrainian infrastructure despite enemy activity."
+   "summary_en": "Russian forces maintain offensive momentum across frontline with intensive drone strikes."
   },
   {
    "channel": "Sladkov_plus",
@@ -2444,10 +2437,10 @@
    "views": 85114,
    "forwards": 139,
    "substantive": true,
-   "topic": "russia_internal",
-   "subtopic": "mobilisation",
+   "topic": "frontline",
+   "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "Russia creates seventy new drone warfare brigades in first half 2026, develops interceptor drone units."
+   "summary_en": "Russia deploys one million drones monthly and establishes new drone warfare military branch."
   },
   {
    "channel": "sashakots",
@@ -2475,7 +2468,7 @@
    "topic": "frontline",
    "subtopic": "kupyansk",
    "sentiment": "pos",
-   "summary_en": "Russian forces capture Ivolzhanske village in Sumy region, expanding defensive perimeter."
+   "summary_en": "Russian forces capture Ivolzhanskoe village and expand security perimeter along Kursk border."
   },
   {
    "channel": "rusich_army",
@@ -2502,8 +2495,8 @@
    "substantive": true,
    "topic": "russia_internal",
    "subtopic": "economy",
-   "sentiment": "neu",
-   "summary_en": "Kazakhstan's fuel export restrictions limit potential petroleum sales to Russia despite supply needs."
+   "sentiment": "neg",
+   "summary_en": "Russia faces constraints importing fuel from Kazakhstan due to export restrictions and repairs."
   },
   {
    "channel": "wargonzo",
@@ -2557,9 +2550,9 @@
    "forwards": 48,
    "substantive": true,
    "topic": "frontline",
-   "subtopic": "kupyansk",
+   "subtopic": "other",
    "sentiment": "pos",
-   "summary_en": "Russian forces exploit fractured Ukrainian defenses in Kharkiv region due to troop shortages."
+   "summary_en": "Ukrainian defenses fragmented; General Staff unable to reinforce weakened secondary frontline sectors."
   },
   {
    "channel": "dva_majors",
@@ -2572,8 +2565,8 @@
    "substantive": true,
    "topic": "west_nato",
    "subtopic": "other",
-   "sentiment": "neg",
-   "summary_en": "Zelensky claims Belarus stopped relaying missile targeting data, Russia questions credibility sarcastically."
+   "sentiment": "pos",
+   "summary_en": "Zelensky claims Belarusian retransmission equipment targeting Ukraine has ceased operations."
   },
   {
    "channel": "dva_majors",
@@ -2586,8 +2579,8 @@
    "substantive": true,
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "drones_on_regions",
-   "sentiment": "neu",
-   "summary_en": "Russian air defense shoots down 245 Ukrainian combat drones over multiple regions and Crimea."
+   "sentiment": "pos",
+   "summary_en": "Russian air defense destroys 245 Ukrainian drones over multiple Russian regions daily."
   },
   {
    "channel": "ngp_razvedka",
@@ -2615,7 +2608,7 @@
    "topic": "frontline",
    "subtopic": "kupyansk",
    "sentiment": "pos",
-   "summary_en": "Russian forces advancing near Kazachy Lopan in Kharkiv direction with FAB strikes and drone support."
+   "summary_en": "Russian forces advance near Kazachia Lopan in Kharkiv direction with drone support."
   },
   {
    "channel": "dva_majors",
@@ -2629,7 +2622,7 @@
    "topic": "ukraine_strikes_on_russia",
    "subtopic": "crimea_energy",
    "sentiment": "neg",
-   "summary_en": "Ukraine threatens Crimea operations; Russian blogger acknowledges damage to logistics and morale despite no frontline changes."
+   "summary_en": "Zelenskyy threatens Crimea operations; Ukraine's remote strikes damage Russian logistics and reputation."
   },
   {
    "channel": "rybar",
@@ -2640,10 +2633,10 @@
    "views": 212697,
    "forwards": 46,
    "substantive": true,
-   "topic": "ukraine_strikes_on_russia",
-   "subtopic": "drones_on_regions",
+   "topic": "west_nato",
+   "subtopic": "military_aid",
    "sentiment": "neg",
-   "summary_en": "CIA-coordinated drone and missile attacks on Crimea and Russian refineries; US building drone training facilities."
+   "summary_en": "USA directly supports Ukrainian drone strikes on Crimea and Russian refineries; Pentagon builds Ukrainian drone training facilities."
   },
   {
    "channel": "rybar",
@@ -2657,7 +2650,7 @@
    "topic": "frontline",
    "subtopic": "kupyansk",
    "sentiment": "pos",
-   "summary_en": "Russian forces liberate Ivolzhanskoye on Sumy direction, breaking Ukrainian 71st Brigade resistance."
+   "summary_en": "Russian forces liberate Ivolzhanskoe on Sumy direction; 71st Ukrainian brigade resists broken."
   },
   {
    "channel": "rybar",
@@ -2671,7 +2664,7 @@
    "topic": "frontline",
    "subtopic": "other",
    "sentiment": "neu",
-   "summary_en": "Russian forces advance on multiple fronts; Ukrainian drones strike Crimea and central Russia causing infrastructure damage."
+   "summary_en": "Russian forces advance on northern and Sumy directions; Ukrainian drones strike Crimea energy infrastructure and central Russia."
   }
  ]
 }
