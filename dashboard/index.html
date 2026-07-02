@@ -646,9 +646,14 @@ function renderBattlefield() {
   document.getElementById("bfstories").innerHTML = recent.map(x => {
     const bf = x.battlefield;
     const net = bf.net === null || bf.net === undefined ? "—" : (bf.net > 0 ? "+" : "") + bf.net;
+    const story = bf.story
+      ? (bf.story_url ? `<a href="${esc(bf.story_url)}" target="_blank">${esc(bf.story)} ↗</a>` : esc(bf.story))
+      : "no substantive frontline posts";
+    const extras = (bf.examples || []).map(e =>
+      `<a href="${esc(e.url)}" target="_blank" style="white-space:nowrap; margin-left:10px; font-size:11.5px; color:${e.s === "pos" ? C.pos : C.neg}; font-weight:bold" data-tip="${esc((e.s === "pos" ? "Positive" : "Negative") + " example — " + e.ch + ": " + e.t)}">${e.s === "pos" ? "▲ upbeat post" : "▼ frustrated post"} ↗</a>`).join("");
     return `<div class="bf-row"><span class="d">${fmtShort(x.date)}</span>
       <span class="n" style="color:${netColor(bf.net)}">${net}</span>
-      <span class="s">${esc(bf.story || "no substantive frontline posts")}</span></div>`;
+      <span class="s">${story}${extras}</span></div>`;
   }).join("");
 }
 

@@ -6,7 +6,22 @@
     "neg": 2,
     "neu": 1,
     "net": 58,
-    "story": "Russian forces advancing toward Siversky Donets river, controlling Tatyanivka and Pryshib after two months combat."
+    "story": "Russian forces advancing toward Siversky Donets river, controlling Tatyanivka and Pryshib after two months combat.",
+    "story_url": "https://t.me/rybar/80762",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/rusich_army/29814",
+      "t": "Russian drone killed Ukrainian vehicle crew who failed to observe approaching target despite having three guns and multiple observers.",
+      "ch": "Arkhangel Spetsnaza"
+     },
+     {
+      "s": "neg",
+      "url": "https://t.me/wargonzo/34581",
+      "t": "Unit 'Arbat' recovers fallen soldiers under drone attacks; pledges never to abandon comrades dead or alive.",
+      "ch": "WarGonzo"
+     }
+    ]
    },
    "date": "2026-06-02",
    "total": 204,
@@ -58,7 +73,16 @@
     "neg": 0,
     "neu": 2,
     "net": 87,
-    "story": "Russian brigade destroyed Ukrainian drone launcher mounted on truck container; analysis of mobile BLA tactics."
+    "story": "Russian brigade destroyed Ukrainian drone launcher mounted on truck container; analysis of mobile BLA tactics.",
+    "story_url": "https://t.me/rybar/80792",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/rybar/80802",
+      "t": "Russian forces advance through Konstantinovka, controlling industrial zones and expanding territory across city.",
+      "ch": "Rybar"
+     }
+    ]
    },
    "date": "2026-06-03",
    "total": 162,
@@ -109,7 +133,16 @@
     "neg": 0,
     "neu": 2,
     "net": 86,
-    "story": "Russian forces advance in Kharkiv direction, capturing multiple settlements along Volchya river."
+    "story": "Russian forces advance in Kharkiv direction, capturing multiple settlements along Volchya river.",
+    "story_url": "https://t.me/rybar/80809",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/vysokygovorit/23074",
+      "t": "Russian reconnaissance neutralized Ukrainian heavy drone operators near Kharkiv-Belgorod border.",
+      "ch": "Starshe Eddy"
+     }
+    ]
    },
    "date": "2026-06-04",
    "total": 115,
@@ -161,7 +194,22 @@
     "neg": 2,
     "neu": 3,
     "net": 36,
-    "story": "Ukrainian forced conscription rackets escalate; military academy cadets secretly sent to frontlines; manpower shortages reported."
+    "story": "Ukrainian forced conscription rackets escalate; military academy cadets secretly sent to frontlines; manpower shortages reported.",
+    "story_url": "https://t.me/Sladkov_plus/15590",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/dva_majors/94078",
+      "t": "Russian 58th Army drones and airforce strike enemy temporary positions and reconnaissance stations.",
+      "ch": "Two Majors"
+     },
+     {
+      "s": "neg",
+      "url": "https://t.me/ngp_razvedka/25503",
+      "t": "Military analyst dismisses peace negotiations, expects limited Ukrainian offensive operations in Zaporizhzhia and Kharkiv regions.",
+      "ch": "NgP raZVedka"
+     }
+    ]
    },
    "date": "2026-06-05",
    "total": 146,
@@ -208,7 +256,16 @@
     "neg": 0,
     "neu": 4,
     "net": 80,
-    "story": "Russian Geran drones struck two Ukrainian naval patrol boats off Odessa coast in Black Sea."
+    "story": "Russian Geran drones struck two Ukrainian naval patrol boats off Odessa coast in Black Sea.",
+    "story_url": "https://t.me/rybar/80861",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/sashakots/62197",
+      "t": "Black Sea Fleet drones sink two Ukrainian speedboats with special operations forces aboard in coordinated attacks.",
+      "ch": "Kotsnews"
+     }
+    ]
    },
    "date": "2026-06-06",
    "total": 112,
@@ -258,7 +315,16 @@
     "neg": 0,
     "neu": 2,
     "net": 80,
-    "story": "Special operations unit destroyed enemy firing position; one soldier wounded but evacuated after blocking enemy position."
+    "story": "Special operations unit destroyed enemy firing position; one soldier wounded but evacuated after blocking enemy position.",
+    "story_url": "https://t.me/rusich_army/29872",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/sashakots/62213",
+      "t": "Russian forces encircle 150-200 Ukrainian troops in central Konstantinovka after cutting main supply routes.",
+      "ch": "Kotsnews"
+     }
+    ]
    },
    "date": "2026-06-07",
    "total": 132,
@@ -306,7 +372,22 @@
     "neg": 1,
     "neu": 1,
     "net": 67,
-    "story": "Russian forces advance through Konstantinovka, pushing Ukrainian forces north and cutting supply lines."
+    "story": "Russian forces advance through Konstantinovka, pushing Ukrainian forces north and cutting supply lines.",
+    "story_url": "https://t.me/rybar/80906",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/Sladkov_plus/15603",
+      "t": "Russian forces liberate Shevchenko, advance toward Kazachia Lopan; 1km progress in Kharkiv direction.",
+      "ch": "Sladkov+"
+     },
+     {
+      "s": "neg",
+      "url": "https://t.me/wargonzo/34702",
+      "t": "Captured Russian soldier chooses death over captivity; interview describes trauma and sacrifice.",
+      "ch": "WarGonzo"
+     }
+    ]
    },
    "date": "2026-06-08",
    "total": 142,
@@ -356,7 +437,22 @@
     "neg": 1,
     "neu": 4,
     "net": 50,
-    "story": "Russian forces advance near Volchansk, securing new positions and improving tactical situation on Burluk direction."
+    "story": "Russian forces advance near Volchansk, securing new positions and improving tactical situation on Burluk direction.",
+    "story_url": "https://t.me/rybar/80936",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/rybar/80934",
+      "t": "Russian forces advance in Konstantinovka city, capturing chemical plant and multiple neighborhoods.",
+      "ch": "Rybar"
+     },
+     {
+      "s": "neg",
+      "url": "https://t.me/sashakots/62239",
+      "t": "Ukrainian forces in Konstantinovka face encirclement and deteriorating defensive positions from Russian troops.",
+      "ch": "Kotsnews"
+     }
+    ]
    },
    "date": "2026-06-09",
    "total": 122,
@@ -407,7 +503,22 @@
     "neg": 1,
     "neu": 2,
     "net": 67,
-    "story": "Russian forces captured villages in Kharkiv-Sumy border area, approaching Kazachya Lopan."
+    "story": "Russian forces captured villages in Kharkiv-Sumy border area, approaching Kazachya Lopan.",
+    "story_url": "https://t.me/rybar/80944",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/dva_majors/94372",
+      "t": "Russian drones detect Ukrainian infantry near Primorskoe; incendiary drops eliminate position.",
+      "ch": "Two Majors"
+     },
+     {
+      "s": "neg",
+      "url": "https://t.me/wargonzo/34743",
+      "t": "Ukraine deploys AI-equipped American drones targeting indiscriminately; Russian forces destroy 87+ enemy positions.",
+      "ch": "WarGonzo"
+     }
+    ]
    },
    "date": "2026-06-10",
    "total": 190,
@@ -456,7 +567,22 @@
     "neg": 1,
     "neu": 6,
     "net": 65,
-    "story": "Russian forces liberate Okhrimovka, advance in Konstantinovka and Roskoshnoye, destroy Ukrainian infrastructure."
+    "story": "Russian forces liberate Okhrimovka, advance in Konstantinovka and Roskoshnoye, destroy Ukrainian infrastructure.",
+    "story_url": "https://t.me/rybar/81004",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/rybar/81002",
+      "t": "Russian forces advance in Konstantinovka, liberate Roskoshnoye, complete encirclement.",
+      "ch": "Rybar"
+     },
+     {
+      "s": "neg",
+      "url": "https://t.me/rybar/81003",
+      "t": "Ukrainian forces expand presence near Stepnogorsk despite Russian efforts, situation deteriorating.",
+      "ch": "Rybar"
+     }
+    ]
    },
    "date": "2026-06-11",
    "total": 179,
@@ -507,7 +633,22 @@
     "neg": 2,
     "neu": 2,
     "net": 45,
-    "story": "Russian forces advancing north and northwest of Novoandriyivka; consolidated control and developing toward Mirne."
+    "story": "Russian forces advancing north and northwest of Novoandriyivka; consolidated control and developing toward Mirne.",
+    "story_url": "https://t.me/rusich_army/29934",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/dva_majors/94434",
+      "t": "Russian soldiers improvise UAZ pickup for ammunition transport and casualty evacuation with better air observation.",
+      "ch": "Two Majors"
+     },
+     {
+      "s": "neg",
+      "url": "https://t.me/rusich_army/29929",
+      "t": "Ukrainian training shows soldiers using rifles against FPV drones; risky tactics likely result in vehicle destruction.",
+      "ch": "Arkhangel Spetsnaza"
+     }
+    ]
    },
    "date": "2026-06-12",
    "total": 115,
@@ -555,7 +696,22 @@
     "neg": 1,
     "neu": 2,
     "net": 60,
-    "story": "Russian forces strike crossing at Mayaky; Ukrainian drones attack Crimea energy infrastructure daily."
+    "story": "Russian forces strike crossing at Mayaky; Ukrainian drones attack Crimea energy infrastructure daily.",
+    "story_url": "https://t.me/rybar/81050",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/rybar/81046",
+      "t": "Russian forces continue offensive in Konstantinovka, advancing through urban terrain despite Ukrainian resistance.",
+      "ch": "Rybar"
+     },
+     {
+      "s": "neg",
+      "url": "https://t.me/ngp_razvedka/25555",
+      "t": "Ukraine prepares offensive on Zaporizhzhia direction with reconnaissance, drone deployment, attempting Crimea corridor blockade.",
+      "ch": "NgP raZVedka"
+     }
+    ]
    },
    "date": "2026-06-13",
    "total": 110,
@@ -604,7 +760,16 @@
     "neg": 0,
     "neu": 2,
     "net": 86,
-    "story": "Ukrainian infiltration groups advance in Dnipropetrovsk direction near Berezove village."
+    "story": "Ukrainian infiltration groups advance in Dnipropetrovsk direction near Berezove village.",
+    "story_url": "https://t.me/rybar/81072",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/rusich_army/29958",
+      "t": "Drone warfare in tunnels effectively eliminates enemy escape routes through coordinated coordinated tactical operations.",
+      "ch": "Arkhangel Spetsnaza"
+     }
+    ]
    },
    "date": "2026-06-14",
    "total": 165,
@@ -654,7 +819,16 @@
     "neg": 0,
     "neu": 4,
     "net": 75,
-    "story": "Russian forces continue clearing southwestern Konstantinovka with difficult fighting on flanks and eastern approaches."
+    "story": "Russian forces continue clearing southwestern Konstantinovka with difficult fighting on flanks and eastern approaches.",
+    "story_url": "https://t.me/rybar/81089",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/rybar/81090",
+      "t": "Russian forces advance in border regions near Kursk, forming ten-kilometer salient toward Ukrainian defensive positions.",
+      "ch": "Rybar"
+     }
+    ]
    },
    "date": "2026-06-15",
    "total": 186,
@@ -704,7 +878,22 @@
     "neg": 1,
     "neu": 5,
     "net": 56,
-    "story": "Russian forces advance in Slavyansk direction with tactical successes near Mala Piskunovka."
+    "story": "Russian forces advance in Slavyansk direction with tactical successes near Mala Piskunovka.",
+    "story_url": "https://t.me/rybar/81114",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/rybar/81109",
+      "t": "Russian forces methodically expand control on Burluky direction, seizing lightly-held forests and widening tactical gaps.",
+      "ch": "Rybar"
+     },
+     {
+      "s": "neg",
+      "url": "https://t.me/ngp_razvedka/25600",
+      "t": "Analysis predicts Ukraine will launch combined assault on Crimea Bridge before major offensive operations.",
+      "ch": "NgP raZVedka"
+     }
+    ]
    },
    "date": "2026-06-16",
    "total": 141,
@@ -753,7 +942,16 @@
     "neg": 0,
     "neu": 4,
     "net": 79,
-    "story": "Russian forces strike Zaporizhzhia and Odesa; defensive battles in Sumy region with supply issues for Ukrainian forces."
+    "story": "Russian forces strike Zaporizhzhia and Odesa; defensive battles in Sumy region with supply issues for Ukrainian forces.",
+    "story_url": "https://t.me/dva_majors/94661",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/rybar/81146",
+      "t": "Russian forces advance in Konstantinovka, clearing Gora microdistrict and expanding presence on northeast outskirts.",
+      "ch": "Rybar"
+     }
+    ]
    },
    "date": "2026-06-17",
    "total": 149,
@@ -803,7 +1001,22 @@
     "neg": 1,
     "neu": 5,
     "net": 61,
-    "story": "Ka-52 pilot Denis Chernavavin destroyed 17 vehicles in Zaporizhzhia; hero of Russia with 500+ combat sorties."
+    "story": "Ka-52 pilot Denis Chernavavin destroyed 17 vehicles in Zaporizhzhia; hero of Russia with 500+ combat sorties.",
+    "story_url": "https://t.me/rybar/81155",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/rybar/81171",
+      "t": "Russian forces complete clearance of Rai-Aleksandrovka after months of fighting.",
+      "ch": "Rybar"
+     },
+     {
+      "s": "neg",
+      "url": "https://t.me/sashakots/62427",
+      "t": "Body exchange: Russia transferred 522 bodies, received 33; author notes disparate proportions ignored by Ukrainian media.",
+      "ch": "Kotsnews"
+     }
+    ]
    },
    "date": "2026-06-18",
    "total": 190,
@@ -854,7 +1067,16 @@
     "neg": 0,
     "neu": 3,
     "net": 79,
-    "story": "Morning briefing: Russian forces conduct offensive operations across multiple front directions."
+    "story": "Morning briefing: Russian forces conduct offensive operations across multiple front directions.",
+    "story_url": "https://t.me/dva_majors/94747",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/rybar/81199",
+      "t": "Russian forces continue advancing in Konstantinovka urban area despite pockets of Ukrainian resistance.",
+      "ch": "Rybar"
+     }
+    ]
    },
    "date": "2026-06-19",
    "total": 179,
@@ -902,7 +1124,16 @@
     "neg": 0,
     "neu": 4,
     "net": 76,
-    "story": "Russian forces advance toward Slavyansk; summary of war chronicle including logistics strikes and sanctions issues."
+    "story": "Russian forces advance toward Slavyansk; summary of war chronicle including logistics strikes and sanctions issues.",
+    "story_url": "https://t.me/rybar/81222",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/rybar/81218",
+      "t": "88th motorized brigade liberates Yurkivka, breakthrough on southern flank of Slavyansk-Kramatorsk defensive line.",
+      "ch": "Rybar"
+     }
+    ]
    },
    "date": "2026-06-20",
    "total": 152,
@@ -951,7 +1182,22 @@
     "neg": 1,
     "neu": 2,
     "net": 79,
-    "story": "Russian naval drone operators destroyed Ukrainian attack drones before reaching targets in Konstantinovsky direction."
+    "story": "Russian naval drone operators destroyed Ukrainian attack drones before reaching targets in Konstantinovsky direction.",
+    "story_url": "https://t.me/dva_majors/94918",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/rusich_army/30046",
+      "t": "Russian forces tracked and destroyed Ukrainian transport vehicle.",
+      "ch": "Arkhangel Spetsnaza"
+     },
+     {
+      "s": "neg",
+      "url": "https://t.me/sashakots/62488",
+      "t": "Medic Mikhail Torgashev posthumously awarded Hero of Russia for shielding wounded soldiers from FPV drone strike.",
+      "ch": "Kotsnews"
+     }
+    ]
    },
    "date": "2026-06-21",
    "total": 145,
@@ -1002,7 +1248,16 @@
     "neg": 0,
     "neu": 2,
     "net": 90,
-    "story": "Russian forces expand control through small group operations in Sumy-Kharkiv border area."
+    "story": "Russian forces expand control through small group operations in Sumy-Kharkiv border area.",
+    "story_url": "https://t.me/rybar/81251",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/rybar/81258",
+      "t": "Russian forces advance in Konstantinovka, capturing hospital complex and Gruzkaya balka area.",
+      "ch": "Rybar"
+     }
+    ]
    },
    "date": "2026-06-22",
    "total": 185,
@@ -1054,7 +1309,22 @@
     "neg": 3,
     "neu": 5,
     "net": 31,
-    "story": "Enemy drone activity over Crimea and Kinburn threatens Russian logistics and indicates realistic amphibious landing scenario."
+    "story": "Enemy drone activity over Crimea and Kinburn threatens Russian logistics and indicates realistic amphibious landing scenario.",
+    "story_url": "https://t.me/rusich_army/30067",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/sashakots/62546",
+      "t": "Russian forces advance in Red Liman, clearing 52 buildings; Ukrainian soldiers intimidated by commanders.",
+      "ch": "Kotsnews"
+     },
+     {
+      "s": "neg",
+      "url": "https://t.me/vysokygovorit/23179",
+      "t": "Enemy drone activity over Crimea and Kinburn threatens Russian logistics and indicates realistic amphibious landing scenario.",
+      "ch": "Starshe Eddy"
+     }
+    ]
    },
    "date": "2026-06-23",
    "total": 173,
@@ -1106,7 +1376,16 @@
     "neg": 0,
     "neu": 1,
     "net": 96,
-    "story": "Russian forces advance in Konstantinovka, destroying Ukrainian drone relay infrastructure and reconnaissance capability."
+    "story": "Russian forces advance in Konstantinovka, destroying Ukrainian drone relay infrastructure and reconnaissance capability.",
+    "story_url": "https://t.me/sashakots/62575",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/rybar/81301",
+      "t": "Russian forces liberate Ivolzhanskoe and make tactical progress on Sumy direction against Ukrainian brigades.",
+      "ch": "Rybar"
+     }
+    ]
    },
    "date": "2026-06-24",
    "total": 159,
@@ -1156,7 +1435,16 @@
     "neg": 0,
     "neu": 1,
     "net": 91,
-    "story": "Russian mobile fire groups intercept Ukrainian drones near Donetsk with anti-aircraft fire."
+    "story": "Russian mobile fire groups intercept Ukrainian drones near Donetsk with anti-aircraft fire.",
+    "story_url": "https://t.me/sashakots/62599",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/epoddubny/27914",
+      "t": "Russian Lancet drone destroys Ukrainian tank, disrupting enemy reserve deployment and offensive plans.",
+      "ch": "Poddubny"
+     }
+    ]
    },
    "date": "2026-06-25",
    "total": 164,
@@ -1208,7 +1496,22 @@
     "neg": 2,
     "neu": 1,
     "net": 62,
-    "story": "Russian forces report unfavorable dynamics on Zaporizhzhia front as Ukrainian forces advance southward."
+    "story": "Russian forces report unfavorable dynamics on Zaporizhzhia front as Ukrainian forces advance southward.",
+    "story_url": "https://t.me/rybar/81348",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/dva_majors/95219",
+      "t": "Russian forces conduct bombing raids on Druzhkovka area behind Konstantinovka front.",
+      "ch": "Two Majors"
+     },
+     {
+      "s": "neg",
+      "url": "https://t.me/rybar/81344",
+      "t": "Ukrainian forces advance near Kamenske-Zaporizhzhia, occupying Primorske and pressuring Plavni.",
+      "ch": "Rybar"
+     }
+    ]
    },
    "date": "2026-06-26",
    "total": 157,
@@ -1259,7 +1562,16 @@
     "neg": 0,
     "neu": 1,
     "net": 95,
-    "story": "Russian forces maintain readiness on Kinburn Peninsula; Special Operations prepare for possible amphibious operation."
+    "story": "Russian forces maintain readiness on Kinburn Peninsula; Special Operations prepare for possible amphibious operation.",
+    "story_url": "https://t.me/rusich_army/30111",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/rybar/81362",
+      "t": "Russian Vostok forces advance near Novoskelevate, seize Gaichur river crossing, and disrupt Ukrainian positions in Dnipropetrovsk direction.",
+      "ch": "Rybar"
+     }
+    ]
    },
    "date": "2026-06-27",
    "total": 137,
@@ -1306,7 +1618,16 @@
     "neg": 0,
     "neu": 5,
     "net": 75,
-    "story": "Ukrainian claim to have taken Kinburn Spit contradicted by video evidence of Russian forces maintaining positions."
+    "story": "Ukrainian claim to have taken Kinburn Spit contradicted by video evidence of Russian forces maintaining positions.",
+    "story_url": "https://t.me/rybar/81382",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/rybar/81384",
+      "t": "Russian Vostok group captures Novoselovka in eastern Zaporizhzhia direction.",
+      "ch": "Rybar"
+     }
+    ]
    },
    "date": "2026-06-28",
    "total": 143,
@@ -1358,7 +1679,16 @@
     "neg": 0,
     "neu": 5,
     "net": 64,
-    "story": "Russian Vostok group captures fourth settlement in Dnipropetrovsk direction; advances along Gaichur river."
+    "story": "Russian Vostok group captures fourth settlement in Dnipropetrovsk direction; advances along Gaichur river.",
+    "story_url": "https://t.me/rybar/81406",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/rusich_army/30130",
+      "t": "Ukrainian forces deploy autonomous surveillance cameras with AI targeting systems to coordinate drone and manned strikes.",
+      "ch": "Arkhangel Spetsnaza"
+     }
+    ]
    },
    "date": "2026-06-29",
    "total": 173,
@@ -1409,7 +1739,16 @@
     "neg": 0,
     "neu": 3,
     "net": 86,
-    "story": "Russian military summary: ongoing operations on Kinburn, Slavyansk, and East Zaporizhzhia directions."
+    "story": "Russian military summary: ongoing operations on Kinburn, Slavyansk, and East Zaporizhzhia directions.",
+    "story_url": "https://t.me/rybar/81426",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/rybar/81428",
+      "t": "Russian forces destroyed two dozen gas stations, damaged power plants; advance on multiple fronts.",
+      "ch": "Rybar"
+     }
+    ]
    },
    "date": "2026-06-30",
    "total": 160,
@@ -1458,7 +1797,22 @@
     "neg": 1,
     "neu": 6,
     "net": 72,
-    "story": "Russian forces conduct ground operations in Chernigov, Sumy regions; police hunt deserters in liberated areas."
+    "story": "Russian forces conduct ground operations in Chernigov, Sumy regions; police hunt deserters in liberated areas.",
+    "story_url": "https://t.me/dva_majors/95411",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/rybar/81443",
+      "t": "Lieutenant Surazov led successful 2022 breakthrough attack breaking eight-year Ukrainian defenses.",
+      "ch": "Rybar"
+     },
+     {
+      "s": "neg",
+      "url": "https://t.me/rusich_army/30160",
+      "t": "Ukrainian commander deliberately abandoned surrounded Konstantinovka garrison to preserve Kramatorsk-Slavyansk positions.",
+      "ch": "Arkhangel Spetsnaza"
+     }
+    ]
    },
    "date": "2026-07-01",
    "total": 188,
@@ -1508,7 +1862,16 @@
     "neg": 0,
     "neu": 0,
     "net": 100,
-    "story": "Russian forces advance on all fronts, aiming to control Konstantinovka as springboard for further operations."
+    "story": "Russian forces advance on all fronts, aiming to control Konstantinovka as springboard for further operations.",
+    "story_url": "https://t.me/Sladkov_plus/15715",
+    "examples": [
+     {
+      "s": "pos",
+      "url": "https://t.me/wargonzo/35224",
+      "t": "Russian forces control Kopani, advance near Iskra on Hulyaipole direction; progress in Donetsk and other sectors.",
+      "ch": "WarGonzo"
+     }
+    ]
    },
    "date": "2026-07-02",
    "total": 126,

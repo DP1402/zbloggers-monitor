@@ -406,14 +406,30 @@ def save_day(day: str, agg: dict, flags: list[dict], classified: list[dict],
 
 
 def battlefield_block(d: dict) -> dict:
-    """Frontline sentiment counts + the day's main battlefield story
-    (the most-viewed substantive frontline post's one-line summary)."""
+    """Frontline sentiment counts + the day's main battlefield story with links.
+
+    story/story_url: the most-viewed substantive frontline post.
+    examples: the most-viewed positive and negative frontline posts (clickable
+    evidence for each side of the mood), excluding the story post itself.
+    """
     t = d["topics"].get("frontline", {})
-    fl = [p for p in d.get("posts", [])
-          if p.get("topic") == "frontline" and p.get("substantive")]
-    story = max(fl, key=lambda p: p.get("views") or 0)["summary_en"] if fl else ""
+    fl = sorted([p for p in d.get("posts", [])
+                 if p.get("topic") == "frontline" and p.get("substantive")],
+                key=lambda p: -(p.get("views") or 0))
+    story, story_url = "", ""
+    examples = []
+    if fl:
+        story, story_url = fl[0]["summary_en"], fl[0]["link"]
+        for want in ("pos", "neg"):
+            ex = next((p for p in fl if p["sentiment"] == want
+                       and p["link"] != story_url), None)
+            if ex:
+                examples.append({"s": want, "url": ex["link"],
+                                 "t": ex["summary_en"],
+                                 "ch": ex.get("channel_label", ex.get("channel", ""))})
     return {"pos": t.get("pos", 0), "neg": t.get("neg", 0), "neu": t.get("neu", 0),
-            "net": t.get("net"), "story": story}
+            "net": t.get("net"), "story": story, "story_url": story_url,
+            "examples": examples}
 
 
 def rebuild_index():
