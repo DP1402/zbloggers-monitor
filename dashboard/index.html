@@ -5,21 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ZBloggers Monitor — Daily Brief</title>
 <style>
-  /* Eurasia Group chart style: Arial, white surfaces, EG brand palette */
+  /* Eurasia Group chart style: Arial, white surfaces, EG brand palette, black text */
   :root {
-    --navy: #00205B;      /* EG 281C — primary ink & topic 1 */
-    --blue: #1D4F91;      /* EG 7686C — links, accents */
-    --ltblue: #00A3E0;    /* EG 299C — topic 2 */
-    --ochre: #D19000;     /* EG 7550C — topic 3 */
-    --teal: #005A70;      /* EG 7470C — topic 4 */
-    --violet: #7D55C7;    /* EG 2665C — topic 5 */
-    --orange: #FF6900;    /* EG 1505C — topic 6 Criticism */
-    --grey: #8D9092;      /* EG 53% black — topic 7, muted text */
-    --neg: #BA0C2F;       /* EG 200C — negative */
-    --neu: #FFCD00;       /* EG 116C — neutral */
-    --pos: #658D18;       /* EG 370C — positive */
-    --ink: #1a1a1a;
-    --ink-2: #595959;
+    --navy: #00205B;      /* EG 281C — topic: Strikes on Ukraine */
+    --blue: #1D4F91;      /* EG 7686C — links */
+    --ltblue: #00A3E0;    /* EG 299C — topic: Frontline */
+    --ochre: #D19000;     /* EG 7550C — topic: Ukraine strikes on Russia */
+    --teal: #005A70;      /* EG 7470C — topic: West & NATO */
+    --violet: #7D55C7;    /* EG 2665C — topic: Russia internal */
+    --orange: #FF6900;    /* EG 1505C — topic: Criticism */
+    --neg: #BA0C2F;       /* EG 200C */
+    --neu: #FFCD00;       /* EG 116C */
+    --pos: #658D18;       /* EG 370C */
+    --ink: #000000;
     --line: #d9d9d9;
     --gridline: #ececec;
     --page: #f4f4f4;
@@ -34,18 +32,16 @@
   .wrap { max-width: 1200px; margin: 0 auto; padding: 24px 20px 60px; }
 
   .mock-banner { background: var(--wash); border: 1px dashed var(--blue); padding: 8px 14px;
-    font-size: 12.5px; color: var(--ink-2); margin-bottom: 20px; }
+    font-size: 12.5px; margin-bottom: 20px; }
 
   header.top { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 16px; }
   header.top h1 { font-size: 22px; font-weight: bold; margin: 0; color: var(--navy); }
-  .date-label { font-size: 14px; color: var(--ink-2); }
-  .subtitle { color: var(--ink-2); font-style: italic; font-size: 14px; margin: 2px 0 8px; }
-  .caveat { display: inline-block; font-size: 12px; color: var(--ink-2);
-    border: 1px solid var(--line); padding: 3px 12px; margin-bottom: 16px; background: var(--card); }
+  .date-label { font-size: 14px; }
+  .subtitle { font-style: italic; font-size: 14px; margin: 2px 0 16px; }
 
   .tabs { display: flex; gap: 2px; border-bottom: 2px solid var(--navy); margin-bottom: 20px; }
   .tabs button { appearance: none; background: none; border: none; font: inherit; font-size: 13.5px;
-    font-weight: bold; color: var(--ink-2); padding: 8px 16px; cursor: pointer; }
+    font-weight: bold; color: var(--ink); padding: 8px 16px; cursor: pointer; }
   .tabs button:hover { color: var(--navy); background: var(--wash); }
   .tabs button.active { color: #fff; background: var(--navy); }
   .tabpage { display: none; }
@@ -53,136 +49,134 @@
 
   .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 20px; }
   .tile { background: var(--card); border: 1px solid var(--line); padding: 13px 16px 11px; }
-  .tile .label { font-size: 11px; color: var(--grey); text-transform: uppercase; letter-spacing: 0.4px; }
+  .tile .label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.4px; }
   .tile .value { font-size: 28px; font-weight: bold; margin-top: 2px; color: var(--navy); }
-  .tile .note { font-size: 11.5px; color: var(--ink-2); margin-top: 2px; }
+  .tile .note { font-size: 11.5px; margin-top: 2px; }
 
   .cols { display: grid; grid-template-columns: 1.6fr 1fr; gap: 18px; align-items: start; }
   @media (max-width: 900px) { .cols { grid-template-columns: 1fr; } }
 
   section.card { background: var(--card); border: 1px solid var(--line); padding: 18px 20px; margin-bottom: 18px; }
-  section.card h2 { font-size: 16px; font-weight: bold; margin: 0 0 2px; color: var(--ink); }
-  section.card .h-sub { font-size: 13px; font-style: italic; color: var(--ink-2); margin-bottom: 13px; }
-  .source { font-size: 11px; color: var(--grey); margin-top: 12px; }
+  section.card h2 { font-size: 16px; font-weight: bold; margin: 0 0 2px; }
+  section.card .h-sub { font-size: 13px; font-style: italic; margin-bottom: 13px; }
+  .source { font-size: 11px; margin-top: 12px; }
 
-  /* tags */
   .tag { font-size: 10.5px; padding: 2px 8px; font-weight: bold; white-space: nowrap; }
   .tag.new { color: #fff; background: var(--neg); }
   .tag.rising { color: #fff; background: var(--ochre); }
   .tag.mood { color: #fff; background: var(--violet); }
-  .tag.quiet { color: var(--ink-2); background: #ececec; }
+  .tag.quiet { color: var(--ink); background: #ececec; }
   .tag.multi { color: #fff; background: var(--pos); }
-  .tag.single { color: var(--ink-2); background: #ececec; }
+  .tag.single { color: var(--ink); background: #ececec; }
 
   .flag { display: flex; gap: 12px; padding: 10px 0; border-top: 1px solid var(--gridline); font-size: 13px; }
   .flag:first-of-type { border-top: none; }
   .flag .ftag { flex: none; align-self: flex-start; margin-top: 2px; }
-  .flag p { margin: 0; color: var(--ink-2); }
-  .flag strong { color: var(--ink); }
+  .flag p { margin: 0; }
 
-  .brief-lead { font-size: 13.5px; color: var(--ink-2); margin: 0 0 12px; }
+  .brief-lead { font-size: 13.5px; margin: 0 0 12px; }
   .dev { padding: 10px 0; border-top: 1px solid var(--gridline); }
   .dev:first-of-type { border-top: none; }
-  .dev h3 { font-size: 13.5px; font-weight: bold; margin: 0 0 3px; color: var(--ink); }
-  .dev p { margin: 0 0 6px; font-size: 13px; color: var(--ink-2); }
+  .dev h3 { font-size: 13.5px; font-weight: bold; margin: 0 0 3px; }
+  .dev p { margin: 0 0 6px; font-size: 13px; }
   .srcs { font-size: 12px; }
   .srcs a { margin-right: 10px; white-space: nowrap; }
   .srcs .tag { margin-right: 8px; }
 
-  /* topic mix bar */
   .mixbar { display: flex; height: 20px; overflow: hidden; gap: 2px; margin: 10px 0 12px; }
   .mixbar div { height: 100%; }
-  .mixlegend { display: grid; grid-template-columns: 1fr; gap: 4px; font-size: 12.5px; color: var(--ink-2); }
+  .mixlegend { display: grid; grid-template-columns: 1fr; gap: 4px; font-size: 12.5px; }
   .mixlegend .row { display: flex; align-items: center; gap: 7px; }
   .swatch { width: 10px; height: 10px; flex: none; }
-  .mixlegend .n { margin-left: auto; color: var(--ink); font-variant-numeric: tabular-nums; }
+  .mixlegend .n { margin-left: auto; font-variant-numeric: tabular-nums; }
 
-  /* horizontal bars */
   .barrow { display: grid; grid-template-columns: 110px 1fr 34px; align-items: center; gap: 10px; padding: 3px 0; }
-  .barrow .name { font-size: 12px; color: var(--ink-2); text-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .barrow .name { font-size: 12px; text-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .bartrack { position: relative; height: 15px; }
   .bartrack .fill { position: absolute; left: 0; top: 0; bottom: 0; background: var(--navy); }
   .barrow .val { font-size: 12px; font-variant-numeric: tabular-nums; }
   .axisline { border-left: 2px solid var(--line); }
 
+  /* popular posts */
+  .pop-row { display: flex; gap: 10px; padding: 9px 0; border-top: 1px solid var(--gridline); font-size: 12.5px; align-items: baseline; }
+  .pop-row:first-of-type { border-top: none; }
+  .pop-row .rank { flex: none; font-weight: bold; color: var(--navy); width: 16px; }
+  .pop-row .body { flex: 1; }
+  .pop-row .t { display: block; }
+  .pop-row .meta { font-size: 11.5px; }
+  .pop-row .stats { flex: none; text-align: right; font-size: 11.5px; font-variant-numeric: tabular-nums; }
+  .pop-row .stats b { display: block; font-size: 13px; }
+
   .arch-row { display: flex; align-items: baseline; gap: 12px; padding: 8px 2px; border-top: 1px solid var(--gridline); font-size: 13px; }
   .arch-row:first-of-type { border-top: none; }
   .arch-row .d { font-weight: bold; min-width: 90px; }
-  .arch-row .t { color: var(--ink-2); flex: 1; }
-  .arch-row .cnt { color: var(--grey); font-size: 12px; font-variant-numeric: tabular-nums; }
+  .arch-row .t { flex: 1; }
+  .arch-row .cnt { font-size: 12px; font-variant-numeric: tabular-nums; }
   .search { width: 100%; padding: 8px 12px; border: 1px solid var(--line); background: var(--page);
-    color: var(--grey); font-size: 13px; margin-bottom: 10px; font-family: inherit; }
+    color: var(--ink); font-size: 13px; margin-bottom: 10px; font-family: inherit; }
 
-  /* stacked columns */
-  .stack-wrap { display: flex; align-items: flex-end; gap: 14px; height: 210px; padding: 6px 4px 0; border-bottom: 2px solid var(--line); }
-  .stack-col { flex: 1; display: flex; flex-direction: column; justify-content: flex-end; gap: 2px; }
-  .stack-col .seg { min-height: 2px; }
-  .stack-total { text-align: center; font-size: 11px; color: var(--grey); margin-bottom: 4px; font-variant-numeric: tabular-nums; }
-  .stack-days { display: flex; gap: 14px; padding: 5px 4px 0; }
-  .stack-days span { flex: 1; text-align: center; font-size: 11px; color: var(--grey); }
-  .chart-legend { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: 13px; font-size: 12px; color: var(--ink-2); }
+  .chart-legend { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: 13px; font-size: 12px; }
   .chart-legend .row { display: flex; align-items: center; gap: 7px; }
 
-  /* mood summary */
   .mood-line { display: flex; gap: 12px; padding: 9px 0; border-top: 1px solid var(--gridline); font-size: 13px; align-items: baseline; }
   .mood-line:first-of-type { border-top: none; }
   .mood-line .arrow { flex: none; width: 20px; text-align: center; font-weight: bold; }
-  .mood-line p { margin: 0; color: var(--ink-2); }
-  .mood-line strong { color: var(--ink); }
-  .up { color: var(--pos); } .down { color: var(--neg); } .flat { color: var(--grey); }
+  .mood-line p { margin: 0; }
+  .up { color: var(--pos); } .down { color: var(--neg); } .flat { color: var(--ink); }
 
-  /* sentiment split bars */
   .sentrow { display: grid; grid-template-columns: 175px 1fr 52px; align-items: center; gap: 10px; padding: 5px 0; }
-  .sentrow .name { font-size: 12.5px; color: var(--ink-2); text-align: right; }
+  .sentrow .name { font-size: 12.5px; text-align: right; }
   .senttrack { display: flex; height: 18px; gap: 1px; }
   .senttrack div { height: 100%; }
   .sentrow .net { font-size: 12px; font-weight: bold; text-align: right; font-variant-numeric: tabular-nums; }
 
-  /* sparkline grid */
   .spark-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
   .spark-tile { border: 1px solid var(--gridline); padding: 10px 12px 8px; }
   .spark-tile .t-head { display: flex; align-items: center; gap: 8px; font-size: 12.5px; font-weight: bold; }
   .spark-tile .m-val { margin-left: auto; font-size: 14px; font-weight: bold; font-variant-numeric: tabular-nums; }
-  .spark-tile .m-word { font-size: 11.5px; color: var(--ink-2); font-style: italic; margin: 0 0 4px 18px; }
+  .spark-tile .m-word { font-size: 11.5px; font-style: italic; margin: 0 0 4px 18px; }
+
+  /* explorer controls */
+  .controls { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 12px; }
+  .controls select { font: inherit; font-size: 13px; padding: 5px 8px; border: 1px solid var(--line); background: #fff; color: var(--ink); }
+  .rangebtn { appearance: none; font: inherit; font-size: 12px; font-weight: bold; padding: 5px 12px;
+    border: 1px solid var(--line); background: #fff; color: var(--ink); cursor: pointer; }
+  .rangebtn.active { background: var(--navy); color: #fff; border-color: var(--navy); }
 
   table.subtopics { width: 100%; border-collapse: collapse; font-size: 12.5px; }
-  table.subtopics th { text-align: left; font-size: 11px; color: var(--grey); text-transform: uppercase;
+  table.subtopics th { text-align: left; font-size: 11px; text-transform: uppercase;
     letter-spacing: 0.4px; padding: 6px 8px; border-bottom: 2px solid var(--navy); }
-  table.subtopics td { padding: 6px 8px; border-bottom: 1px solid var(--gridline); color: var(--ink-2); }
-  table.subtopics td.num { text-align: right; font-variant-numeric: tabular-nums; color: var(--ink); }
-  table.subtopics tr.group td { font-weight: bold; color: var(--ink); padding-top: 13px; }
+  table.subtopics td { padding: 6px 8px; border-bottom: 1px solid var(--gridline); }
+  table.subtopics td.num { text-align: right; font-variant-numeric: tabular-nums; }
+  table.subtopics tr.group td { font-weight: bold; padding-top: 13px; }
   table.subtopics tr.group td .swatch { display: inline-block; margin-right: 7px; }
   .minisplit { display: flex; height: 12px; gap: 1px; width: 110px; margin: 0 auto; }
   .minisplit div { height: 100%; }
 
-  /* channels & methodology */
   .chan-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); gap: 14px; margin-bottom: 18px; }
   .chan { background: var(--card); border: 1px solid var(--line); padding: 15px 17px; }
   .chan h3 { font-size: 14px; font-weight: bold; margin: 0 0 2px; color: var(--navy); }
-  .chan .meta { font-size: 11.5px; color: var(--grey); margin-bottom: 7px; }
-  .chan p { font-size: 12.5px; color: var(--ink-2); margin: 0 0 6px; }
-  .chan .read { font-size: 12px; color: var(--ink-2); border-top: 1px solid var(--gridline); padding-top: 6px; }
-  .chan .read strong { color: var(--ink); }
-  .method p { font-size: 13px; color: var(--ink-2); margin: 0 0 10px; }
-  .method strong { color: var(--ink); }
+  .chan .meta { font-size: 11.5px; margin-bottom: 7px; }
+  .chan p { font-size: 12.5px; margin: 0 0 6px; }
+  .chan .read { font-size: 12px; border-top: 1px solid var(--gridline); padding-top: 6px; }
+  .method p { font-size: 13px; margin: 0 0 10px; }
 
-  footer { color: var(--grey); font-size: 11px; margin-top: 8px; }
+  footer { font-size: 11px; margin-top: 8px; }
 
-  #tip { position: fixed; pointer-events: none; z-index: 10; display: none; background: var(--ink);
+  #tip { position: fixed; pointer-events: none; z-index: 10; display: none; background: #000;
     color: #fff; font-size: 12px; padding: 6px 10px; max-width: 280px; }
 </style>
 </head>
 <body>
 <div class="wrap">
 
-  <div class="mock-banner">🔧 <strong>MOCKUP v3 · Eurasia Group style</strong> — built from real posts pulled 1–2 July 2026; source links open the actual Telegram posts. Counts and sentiment shares are illustrative.</div>
+  <div class="mock-banner">🔧 <strong>MOCKUP v4 · Eurasia Group style</strong> — built from real posts pulled 1–2 July 2026; source links and engagement numbers are real. Counts, sentiment shares and history are illustrative.</div>
 
   <header class="top">
     <h1>ZBloggers Monitor</h1>
     <span class="date-label">Daily brief · Wednesday 2 July 2026 · 06:00 UTC</span>
   </header>
-  <p class="subtitle">What 10 major pro-Russian military Telegram channels are saying — collected, filtered and translated automatically</p>
-  <div class="caveat">⚠️ Source channels are propaganda outlets. Claims are <strong>signals to investigate, not facts</strong>.</div>
+  <p class="subtitle">What 10 major pro-Kremlin military Telegram channels are saying — collected, filtered and translated automatically</p>
 
   <nav class="tabs">
     <button class="active" data-tab="brief">Daily brief</button>
@@ -273,6 +267,17 @@
         </section>
 
         <section class="card">
+          <h2>Most popular posts</h2>
+          <div class="h-sub">by views, last 24 h — real engagement data from the Telegram API</div>
+          <div class="pop-row"><span class="rank">1</span><div class="body"><span class="t"><a href="https://t.me/rybar/81455" target="_blank">Daily digest: fuel-campaign roundup ↗</a></span><span class="meta">Rybar</span></div><div class="stats"><b>167K</b>views · 19 forwards</div></div>
+          <div class="pop-row"><span class="rank">2</span><div class="body"><span class="t"><a href="https://t.me/rybar/81451" target="_blank">SVO chronicle: 7 petrol stations hit ↗</a></span><span class="meta">Rybar</span></div><div class="stats"><b>112K</b>views · 58 forwards</div></div>
+          <div class="pop-row"><span class="rank">3</span><div class="body"><span class="t"><a href="https://t.me/rybar/81458" target="_blank">"Europe's brand collapse" essay ↗</a></span><span class="meta">Rybar</span></div><div class="stats"><b>88K</b>views · 116 forwards</div></div>
+          <div class="pop-row"><span class="rank">4</span><div class="body"><span class="t"><a href="https://t.me/rybar/81456" target="_blank">Morning svodka: strike on Kyiv ↗</a></span><span class="meta">Rybar</span></div><div class="stats"><b>81K</b>views · 49 forwards</div></div>
+          <div class="pop-row"><span class="rank">5</span><div class="body"><span class="t"><a href="https://t.me/sashakots/62763" target="_blank">Strike anatomy: the full lineup ↗</a></span><span class="meta">Kotsnews · <strong>most forwarded (405)</strong></span></div><div class="stats"><b>29K</b>views · 405 forwards</div></div>
+          <div class="source">Source: Telegram; Eurasia Group analysis</div>
+        </section>
+
+        <section class="card">
           <h2>Posts by channel</h2>
           <div class="h-sub">substantive posts, last 24 h</div>
           <div class="axisline" id="barchart"></div>
@@ -301,10 +306,9 @@
       <div class="mood-line"><span class="arrow up">▲</span><p><strong>Strikes on Ukraine — strongly positive and rising</strong> (net +78, up 20 pts on the week). Triumphant coverage of the Kyiv strike and the fuel campaign.</p></div>
       <div class="mood-line"><span class="arrow flat">▬</span><p><strong>Frontline — positive, steady</strong> (net +41). Confident but measured; no frustration with the pace of advances.</p></div>
       <div class="mood-line"><span class="arrow down">▼</span><p><strong>Ukraine strikes on Russia — negative and worsening</strong> (net −57, down 27 pts). Crimea's fuel and power situation is the sore spot.</p></div>
-      <div class="mood-line"><span class="arrow down">▼</span><p><strong>West &amp; NATO — negative, deteriorating</strong> (net −34). Rearmament anxiety building ahead of the Ankara summit; negotiations coverage sharply negative (see flag).</p></div>
-      <div class="mood-line"><span class="arrow flat">▬</span><p><strong>Russia internal — neutral</strong> (net −11). Routine coverage; mobilisation entirely absent.</p></div>
+      <div class="mood-line"><span class="arrow down">▼</span><p><strong>West &amp; NATO — negative, deteriorating</strong> (net −37). Rearmament anxiety building ahead of the Ankara summit; negotiations coverage sharply negative (see flag).</p></div>
+      <div class="mood-line"><span class="arrow flat">▬</span><p><strong>Russia internal — neutral</strong> (net 0). Routine coverage plus ideology essays; mobilisation entirely absent.</p></div>
       <div class="mood-line"><span class="arrow flat">▬</span><p><strong>Criticism — low volume, steady</strong> (4 posts/day, aimed at army logistics). No criticism of political leadership — that remains a key tripwire to watch.</p></div>
-      <div class="mood-line"><span class="arrow flat">▬</span><p><strong>Narratives &amp; ideology — mixed</strong> (net 0). Ideology essays offset by irritated polemics over the talks.</p></div>
     </section>
 
     <section class="card">
@@ -329,10 +333,23 @@
 
     <section class="card">
       <h2>Topic mix over time</h2>
-      <div class="h-sub">substantive posts per day by topic, last 7 days — watch for a topic suddenly growing</div>
-      <div id="stackchart"></div>
-      <div class="chart-legend" id="stacklegend"></div>
+      <div class="h-sub">substantive posts per day by topic, last 7 days — a line pulling away from the pack = a story taking over</div>
+      <div id="topiclines"></div>
+      <div class="chart-legend" id="topiclegend"></div>
       <div class="source">Source: Telegram; Eurasia Group analysis</div>
+    </section>
+
+    <section class="card">
+      <h2>Subtopic explorer</h2>
+      <div class="h-sub">Pick any subtopic and time range to see how its coverage has moved — e.g. strike mentions over the past three months.</div>
+      <div class="controls">
+        <select id="subselect"></select>
+        <button class="rangebtn" data-days="7">7 days</button>
+        <button class="rangebtn active" data-days="30">30 days</button>
+        <button class="rangebtn" data-days="90">90 days</button>
+      </div>
+      <div id="explorer"></div>
+      <div class="source">Source: Telegram; Eurasia Group analysis. Mockup shows simulated history; the live version draws on the full archive.</div>
     </section>
 
     <section class="card">
@@ -388,13 +405,14 @@
     <section class="card method">
       <h2>Methodology</h2>
       <div class="h-sub">How the daily brief is produced</div>
-      <p><strong>1. Collection.</strong> Every morning at 06:00 UTC the system pulls the previous 24 hours of posts from all 10 channels via the Telegram API. Raw posts (original Russian) are archived permanently before any processing.</p>
+      <p><strong>Sources &amp; bias.</strong> ⚠️ All monitored channels are pro-Kremlin propaganda outlets. Claims are signals to investigate, not facts. Sentiment reflects the bloggers' mood, not battlefield reality; channel-relayed "Ukrainian sources" are selectively quoted.</p>
+      <p><strong>1. Collection.</strong> Every morning at 06:00 UTC the system pulls the previous 24 hours of posts from all 10 channels via the Telegram API, including views and forward counts. Raw posts (original Russian) are archived permanently before any processing.</p>
       <p><strong>2. Filtering.</strong> Ads, fundraisers, merchandise, memes and personal notes are removed. Typically ~40% of posts survive as "substantive".</p>
       <p><strong>3. Classification.</strong> Claude (Anthropic's AI model) translates each post and assigns one topic and one subtopic. The <strong>Criticism</strong> topic captures posts whose main point is complaint or blame, with subcategories for the target: army command &amp; logistics, government &amp; ministries, Putin personally, regional authorities.</p>
       <p><strong>4. Sentiment.</strong> Each post is classified <strong>negative, neutral or positive</strong> — the blogger's own mood about the subject, from Russia's perspective (e.g. a post celebrating a strike = positive; a post complaining about drone attacks on Crimea = negative). Topic-level scores are simple shares of posts; <strong>net balance = % positive − % negative</strong>. Criticism posts are negative by definition, so that topic is tracked by volume and target instead.</p>
       <p><strong>5. Flags.</strong> A story is flagged <strong>NEW</strong> when a theme absent from the previous 14 days appears in ≥2 channels; <strong>MOOD SWING</strong> when a topic's net balance moves ≥15 points day-on-day; and a standing <strong>watchlist</strong> (mobilisation rumours, criticism of Putin, nuclear signalling, Belarus entry) is checked every day.</p>
       <p><strong>6. Corroboration tags.</strong> ✓ = claim repeated independently by 2+ channels; ◌ = single source. Repetition across propaganda channels is not verification — it measures how hard a message is being pushed.</p>
-      <p><strong>Limitations.</strong> All source material is biased; sentiment reflects the bloggers' mood, not battlefield reality; channel-relayed "Ukrainian sources" are selectively quoted; counts depend on Telegram API availability.</p>
+      <p><strong>Limitations.</strong> Counts depend on Telegram API availability; engagement figures (views/forwards) are Telegram's own and can be inflated.</p>
     </section>
   </div>
 
@@ -419,9 +437,9 @@
     ["West & NATO", "#005A70"],
     ["Russia internal", "#7D55C7"],
     ["Criticism", "#FF6900"],
-    ["Narratives & ideology", "#8D9092"],
   ];
-  const TODAY = [31, 22, 7, 12, 7, 4, 6]; // posts today, sums to 89
+  const TODAY = [31, 22, 7, 14, 11, 4]; // sums to 89
+  const COLORS = { neg: "#BA0C2F", neu: "#FFCD00", pos: "#658D18" };
 
   // topic mix bar + legend
   const mixbar = document.getElementById("mixbar"), mixleg = document.getElementById("mixlegend");
@@ -447,12 +465,11 @@
     bc.appendChild(r);
   }
 
-  // ---- sentiment by topic (100% split bars) ----
-  const SENT = [ // [topicIdx, neg%, neu%, pos%]  — Criticism handled separately
-    [0, 3, 16, 81], [1, 9, 41, 50], [2, 57, 43, 0], [3, 42, 50, 8], [4, 22, 67, 11], [6, 25, 50, 25],
+  // ---- sentiment by topic ----
+  const SENT = [ // [topicIdx, neg%, neu%, pos%]
+    [0, 3, 16, 81], [1, 9, 41, 50], [2, 57, 43, 0], [3, 45, 47, 8], [4, 20, 60, 20],
   ];
   const sb = document.getElementById("sentbars");
-  const COLORS = { neg: "#BA0C2F", neu: "#FFCD00", pos: "#658D18" };
   for (const [ti, ne, nu, po] of SENT) {
     const net = po - ne;
     const row = document.createElement("div"); row.className = "sentrow";
@@ -462,22 +479,21 @@
         <div style="flex:${nu}; background:${COLORS.neu}" data-tip="${TOPICS[ti][0]}: ${nu}% of posts neutral"></div>
         <div style="flex:${po}; background:${COLORS.pos}" data-tip="${TOPICS[ti][0]}: ${po}% of posts positive"></div>
       </div>
-      <span class="net" style="color:${net > 9 ? COLORS.pos : net < -9 ? COLORS.neg : "#8D9092"}">${net > 0 ? "+" : ""}${net}</span>`;
+      <span class="net" style="color:${net > 9 ? COLORS.pos : net < -9 ? COLORS.neg : "#000"}">${net > 0 ? "+" : ""}${net}</span>`;
     sb.appendChild(row);
   }
   const cr = document.createElement("div"); cr.className = "sentrow";
-  cr.innerHTML = `<span class="name">Criticism</span><div style="font-size:12px; color:#8D9092; font-style:italic">tracked by volume &amp; target — 4 posts today, aimed at army logistics</div><span class="net" style="color:#8D9092">n/a</span>`;
+  cr.innerHTML = `<span class="name">Criticism</span><div style="font-size:12px; font-style:italic">tracked by volume &amp; target — 4 posts today, aimed at army logistics</div><span class="net">n/a</span>`;
   sb.appendChild(cr);
 
-  // ---- net mood balance sparklines (7-day) ----
+  // ---- net mood balance sparklines ----
   const DAYS = ["26 Jun","27 Jun","28 Jun","29 Jun","30 Jun","1 Jul","2 Jul"];
   const MOODS = [
     [0, [58,62,55,60,65,72,78]],
     [1, [30,36,28,30,36,44,41]],
     [2, [-30,-35,-42,-38,-48,-44,-57]],
-    [3, [-20,-24,-26,-30,-28,-32,-34]],
-    [4, [-2,-6,-10,-6,-12,-9,-11]],
-    [6, [4,8,4,10,6,12,0]],
+    [3, [-22,-26,-28,-32,-30,-34,-37]],
+    [4, [2,-2,-6,-2,-8,-4,0]],
   ];
   const word = s => s >= 60 ? "strongly positive" : s >= 25 ? "positive" : s >= 10 ? "mildly positive" : s > -10 ? "mixed" : s > -25 ? "mildly negative" : s > -60 ? "negative" : "strongly negative";
   const mg = document.getElementById("moodgrid");
@@ -486,7 +502,7 @@
     const cur = vals[vals.length - 1];
     const pts = vals.map((v, i) => `${i * 36 + 4},${34 - v * 0.28}`).join(" ");
     const t = document.createElement("div"); t.className = "spark-tile";
-    t.innerHTML = `<div class="t-head"><span class="swatch" style="background:${c}"></span>${name}<span class="m-val" style="color:${cur > 9 ? COLORS.pos : cur < -9 ? COLORS.neg : "#8D9092"}">${cur > 0 ? "+" : ""}${cur}</span></div>
+    t.innerHTML = `<div class="t-head"><span class="swatch" style="background:${c}"></span>${name}<span class="m-val" style="color:${cur > 9 ? COLORS.pos : cur < -9 ? COLORS.neg : "#000"}">${cur > 0 ? "+" : ""}${cur}</span></div>
       <div class="m-word">${word(cur)}</div>
       <svg width="230" height="68" viewBox="0 0 230 68" data-tip="${name}, net balance: ${vals.map((v,i)=>DAYS[i]+" "+(v>0?"+":"")+v).join(", ")}">
         <line x1="4" y1="34" x2="226" y2="34" stroke="#d9d9d9" stroke-width="1" stroke-dasharray="3 3"/>
@@ -498,7 +514,7 @@
   const cvol = document.createElement("div"); cvol.className = "spark-tile";
   const CVALS = [3,3,4,4,3,4,4];
   const cpts = CVALS.map((v, i) => `${i * 36 + 4},${60 - v * 12}`).join(" ");
-  cvol.innerHTML = `<div class="t-head"><span class="swatch" style="background:#FF6900"></span>Criticism (volume)<span class="m-val" style="color:#1a1a1a">4</span></div>
+  cvol.innerHTML = `<div class="t-head"><span class="swatch" style="background:#FF6900"></span>Criticism (volume)<span class="m-val">4</span></div>
     <div class="m-word">posts per day — spikes matter more than the level</div>
     <svg width="230" height="68" viewBox="0 0 230 68" data-tip="Criticism posts/day: ${CVALS.map((v,i)=>DAYS[i]+" "+v).join(", ")}">
       <line x1="4" y1="60" x2="226" y2="60" stroke="#d9d9d9" stroke-width="1"/>
@@ -507,58 +523,134 @@
     </svg>`;
   mg.appendChild(cvol);
 
-  // ---- stacked columns: topic mix over 7 days ----
-  const MIX = [
-    [18,20,8,10,6,3,5],
-    [20,18,10,12,6,3,5],
-    [12,16,8,9,7,4,5],
-    [22,20,10,14,8,4,6],
-    [20,18,12,12,7,3,6],
-    [30,22,9,16,8,4,7],
-    [31,22,7,12,7,4,6],
-  ];
-  const totals = MIX.map(d => d.reduce((a,b) => a+b, 0));
-  const tMax = Math.max(...totals);
-  const sc = document.getElementById("stackchart");
-  const wrapEl = document.createElement("div"); wrapEl.className = "stack-wrap";
-  MIX.forEach((day, di) => {
-    const col = document.createElement("div"); col.className = "stack-col";
-    col.style.height = (totals[di] / tMax * 100) + "%";
-    const tot = document.createElement("div"); tot.className = "stack-total"; tot.textContent = totals[di];
-    col.appendChild(tot);
-    for (let ti = TOPICS.length - 1; ti >= 0; ti--) {
-      const seg = document.createElement("div"); seg.className = "seg";
-      seg.style.flex = day[ti];
-      seg.style.background = TOPICS[ti][1];
-      seg.dataset.tip = `${DAYS[di]} — ${TOPICS[ti][0]}: ${day[ti]} posts (of ${totals[di]})`;
-      col.appendChild(seg);
+  // ---- generic multi-line SVG chart ----
+  function lineChart(el, series, xlabels, opts = {}) {
+    el.innerHTML = "";
+    const W = opts.width || 680, H = opts.height || 240;
+    const L = 34, R = 12, T = 12, B = 26;
+    const iw = W - L - R, ih = H - T - B;
+    const yMax = opts.yMax || Math.max(5, ...series.flatMap(s => s.values)) * 1.15;
+    const step = yMax > 60 ? 20 : yMax > 25 ? 10 : 5;
+    const n = xlabels.length;
+    const x = i => L + (n === 1 ? iw / 2 : i / (n - 1) * iw);
+    const y = v => T + ih - (v / yMax) * ih;
+    let svg = `<svg width="100%" viewBox="0 0 ${W} ${H}" style="max-width:${W}px; display:block">`;
+    for (let v = 0; v <= yMax; v += step) {
+      svg += `<line x1="${L}" y1="${y(v)}" x2="${W - R}" y2="${y(v)}" stroke="#ececec" stroke-width="1"/>
+              <text x="${L - 6}" y="${y(v) + 3.5}" font-size="10" fill="#000" text-anchor="end">${v}</text>`;
     }
-    wrapEl.appendChild(col);
-  });
-  sc.appendChild(wrapEl);
-  const dayRow = document.createElement("div"); dayRow.className = "stack-days";
-  DAYS.forEach(d => { const s = document.createElement("span"); s.textContent = d; dayRow.appendChild(s); });
-  sc.appendChild(dayRow);
-  const leg = document.getElementById("stacklegend");
+    svg += `<line x1="${L}" y1="${y(0)}" x2="${W - R}" y2="${y(0)}" stroke="#d9d9d9" stroke-width="1.5"/>`;
+    const lblEvery = Math.max(1, Math.ceil(n / 10));
+    xlabels.forEach((lb, i) => {
+      if (i % lblEvery === 0 || i === n - 1)
+        svg += `<text x="${x(i)}" y="${H - 8}" font-size="10" fill="#000" text-anchor="middle">${lb}</text>`;
+    });
+    for (const s of series) {
+      const pts = s.values.map((v, i) => `${x(i)},${y(v)}`).join(" ");
+      svg += `<polyline points="${pts}" fill="none" stroke="${s.color}" stroke-width="2"/>`;
+      const last = s.values[s.values.length - 1];
+      svg += `<circle cx="${x(n - 1)}" cy="${y(last)}" r="3.5" fill="${s.color}"/>`;
+      s.values.forEach((v, i) => {
+        svg += `<circle cx="${x(i)}" cy="${y(v)}" r="9" fill="transparent" data-tip="${xlabels[i]} — ${s.name}: ${v} posts"/>`;
+      });
+    }
+    svg += `</svg>`;
+    el.innerHTML = svg;
+  }
+
+  // ---- topic mix over time (line chart) ----
+  const MIX = [ // per topic, 7 days
+    [18,20,12,22,20,30,31],
+    [20,18,16,20,18,22,22],
+    [8,10,8,10,12,9,7],
+    [12,14,11,16,14,19,14],
+    [9,9,10,12,11,12,11],
+    [3,3,4,4,3,4,4],
+  ];
+  lineChart(document.getElementById("topiclines"),
+    TOPICS.map(([n, c], i) => ({ name: n, color: c, values: MIX[i] })), DAYS, { yMax: 35 });
+  const tl = document.getElementById("topiclegend");
   TOPICS.forEach(([n, c]) => {
     const r = document.createElement("div"); r.className = "row";
     r.innerHTML = `<span class="swatch" style="background:${c}"></span>${n}`;
-    leg.appendChild(r);
+    tl.appendChild(r);
   });
 
+  // ---- subtopic explorer ----
+  const SUBTOPICS = [ // name, topicIdx, series params {base, amp, phase} + overrides
+    ["Deep strikes on cities & industry", 0, { base: 10, amp: 7, phase: 0 }],
+    ["Fuel-infrastructure campaign", 0, { flat: 0, tail: [4, 9, 13] }],
+    ["Pokrovsk direction", 1, { base: 7, amp: 3, phase: 2 }],
+    ["Hulyaipole direction", 1, { base: 4, amp: 3, phase: 4 }],
+    ["Kupyansk direction", 1, { base: 4, amp: 2, phase: 1 }],
+    ["Crimea fuel & energy crisis", 2, { base: 2, amp: 3, phase: 3 }],
+    ["Drones on Russian regions", 2, { base: 3, amp: 2, phase: 5 }],
+    ["Military aid to Ukraine", 3, { base: 4, amp: 3, phase: 2 }],
+    ["European rearmament", 3, { base: 3, amp: 2, phase: 6 }],
+    ["Negotiations & diplomacy", 3, { base: 2, amp: 4, phase: 1 }],
+    ["Security & treason cases", 4, { base: 3, amp: 2, phase: 3 }],
+    ["Economy & sanctions", 4, { base: 2, amp: 2, phase: 5 }],
+    ["Mobilisation & recruitment", 4, { flat: 0 }],
+    ["Criticism: army command & logistics", 5, { base: 2, amp: 2, phase: 4 }],
+    ["Criticism: Putin personally", 5, { flat: 0 }],
+  ];
+  // deterministic pseudo-noise so the mockup is stable
+  const noise = (i, seed) => { const t = Math.sin(i * 12.9898 + seed * 78.233) * 43758.5453; return t - Math.floor(t); };
+  const genSeries = (p, days) => {
+    const out = [];
+    for (let i = 0; i < days; i++) {
+      if ("flat" in p) {
+        const tail = p.tail || [];
+        const fromEnd = days - 1 - i;
+        out.push(fromEnd < tail.length ? tail[tail.length - 1 - fromEnd] : p.flat);
+      } else {
+        const wave = Math.sin(i / 6 + p.phase) * p.amp * 0.5;
+        out.push(Math.max(0, Math.round(p.base + wave + noise(i, p.phase) * p.amp - p.amp / 2)));
+      }
+    }
+    return out;
+  };
+  const dateLabels = days => {
+    const out = [], end = new Date(2026, 6, 2);
+    for (let i = days - 1; i >= 0; i--) {
+      const d = new Date(end); d.setDate(end.getDate() - i);
+      out.push(d.toLocaleDateString("en-GB", { day: "numeric", month: "short" }));
+    }
+    return out;
+  };
+  const sel = document.getElementById("subselect");
+  SUBTOPICS.forEach(([n], i) => {
+    const o = document.createElement("option"); o.value = i; o.textContent = n;
+    sel.appendChild(o);
+  });
+  sel.value = 0;
+  let expDays = 30;
+  function drawExplorer() {
+    const [name, ti, p] = SUBTOPICS[+sel.value];
+    lineChart(document.getElementById("explorer"),
+      [{ name, color: TOPICS[ti][1], values: genSeries(p, expDays) }], dateLabels(expDays));
+  }
+  sel.addEventListener("change", drawExplorer);
+  document.querySelectorAll(".rangebtn").forEach(b => b.addEventListener("click", () => {
+    document.querySelectorAll(".rangebtn").forEach(x => x.classList.remove("active"));
+    b.classList.add("active");
+    expDays = +b.dataset.days;
+    drawExplorer();
+  }));
+  drawExplorer();
+
   // ---- subtopic table ----
-  const SUB = [ // topicIdx → rows: [name, posts, delta, [neg,neu,pos] or null, badge]
+  const SUB = [
     { g: 0, rows: [["Deep strikes on cities & industry", 18, "+6", [2,13,85], ""], ["Fuel-infrastructure campaign", 13, "+9", [5,25,70], "NEW"]] },
     { g: 1, rows: [["Pokrovsk direction", 8, "+1", [8,42,50], ""], ["Hulyaipole direction", 6, "+2", [5,35,60], ""], ["Kupyansk direction", 4, "−1", [15,55,30], ""], ["Other directions", 4, "0", [10,50,40], ""]] },
     { g: 2, rows: [["Crimea fuel & energy crisis", 4, "+1", [70,30,0], ""], ["Drones on Russian regions", 3, "−1", [45,55,0], ""]] },
-    { g: 3, rows: [["Military aid to Ukraine", 5, "+2", [50,42,8], ""], ["European rearmament", 4, "+1", [40,50,10], ""], ["Negotiations & diplomacy", 2, "−1", [55,40,5], "MOOD ▼"], ["Alliance politics", 1, "0", [20,70,10], ""]] },
-    { g: 4, rows: [["Security & treason cases", 3, "+1", [10,80,10], ""], ["Elite politics", 2, "0", [15,70,15], ""], ["Economy & sanctions", 2, "0", [35,55,10], ""], ["Mobilisation & recruitment", 0, "0", null, "WATCHLIST"]] },
+    { g: 3, rows: [["Military aid to Ukraine", 5, "+2", [50,42,8], ""], ["European rearmament", 4, "+1", [40,50,10], ""], ["Negotiations & diplomacy", 4, "+1", [55,40,5], "MOOD ▼"], ["Alliance politics", 1, "0", [20,70,10], ""]] },
+    { g: 4, rows: [["Ideology & society essays", 4, "+1", [15,55,30], ""], ["Security & treason cases", 3, "+1", [10,80,10], ""], ["Elite politics", 2, "0", [15,70,15], ""], ["Economy & sanctions", 2, "0", [35,55,10], ""], ["Mobilisation & recruitment", 0, "0", null, "WATCHLIST"]] },
     { g: 5, rows: [["Army command & logistics", 2, "+1", null, ""], ["Government & ministries", 1, "0", null, ""], ["Putin personally", 0, "0", null, "WATCHLIST"], ["Regional authorities", 1, "+1", null, ""]] },
-    { g: 6, rows: [["Civilisational / ideology essays", 4, "+1", [15,55,30], ""], ["Internal polemics (talks)", 2, "+1", [60,35,5], "RISING"]] },
   ];
   const st = document.getElementById("subtable");
   const split = s => {
-    if (!s) return `<span style="color:#8D9092">—</span>`;
+    if (!s) return `<span>—</span>`;
     const [ne, nu, po] = s;
     return `<div class="minisplit" data-tip="Negative ${ne}% · Neutral ${nu}% · Positive ${po}%">
       <div style="flex:${ne}; background:${COLORS.neg}"></div><div style="flex:${nu}; background:${COLORS.neu}"></div><div style="flex:${po}; background:${COLORS.pos}"></div></div>`;
@@ -570,9 +662,9 @@
     st.appendChild(gr);
     rows.forEach(([n, p, d, s, badge]) => {
       const tr = document.createElement("tr");
-      const badgeHtml = badge === "NEW" ? ` <span class="tag new">NEW</span>` : badge === "RISING" ? ` <span class="tag rising">RISING</span>` : badge === "MOOD ▼" ? ` <span class="tag mood">MOOD ▼</span>` : badge === "WATCHLIST" ? ` <span class="tag quiet">WATCHLIST</span>` : "";
+      const badgeHtml = badge === "NEW" ? ` <span class="tag new">NEW</span>` : badge === "MOOD ▼" ? ` <span class="tag mood">MOOD ▼</span>` : badge === "WATCHLIST" ? ` <span class="tag quiet">WATCHLIST</span>` : "";
       const net = s ? s[2] - s[0] : null;
-      tr.innerHTML = `<td style="padding-left:26px">${n}${badgeHtml}</td><td class="num">${p}</td><td class="num" style="color:#8D9092">${d}</td><td>${split(s)}</td><td class="num" style="color:${net === null ? "#8D9092" : net > 9 ? COLORS.pos : net < -9 ? COLORS.neg : "#8D9092"}">${net === null ? "—" : (net > 0 ? "+" : "") + net}</td>`;
+      tr.innerHTML = `<td style="padding-left:26px">${n}${badgeHtml}</td><td class="num">${p}</td><td class="num">${d}</td><td>${split(s)}</td><td class="num" style="color:${net === null ? "#000" : net > 9 ? COLORS.pos : net < -9 ? COLORS.neg : "#000"}">${net === null ? "—" : (net > 0 ? "+" : "") + net}</td>`;
       st.appendChild(tr);
     });
   });
