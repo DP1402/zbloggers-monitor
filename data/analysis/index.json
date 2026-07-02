@@ -1,6 +1,13 @@
 {
  "days": [
   {
+   "battlefield": {
+    "pos": 9,
+    "neg": 2,
+    "neu": 1,
+    "net": 58,
+    "story": "Russian forces advancing toward Siversky Donets river, controlling Tatyanivka and Pryshib after two months combat."
+   },
    "date": "2026-06-02",
    "total": 204,
    "substantive": 86,
@@ -46,6 +53,13 @@
    "flags": 1
   },
   {
+   "battlefield": {
+    "pos": 13,
+    "neg": 0,
+    "neu": 2,
+    "net": 87,
+    "story": "Russian brigade destroyed Ukrainian drone launcher mounted on truck container; analysis of mobile BLA tactics."
+   },
    "date": "2026-06-03",
    "total": 162,
    "substantive": 84,
@@ -90,6 +104,13 @@
    "flags": 3
   },
   {
+   "battlefield": {
+    "pos": 12,
+    "neg": 0,
+    "neu": 2,
+    "net": 86,
+    "story": "Russian forces advance in Kharkiv direction, capturing multiple settlements along Volchya river."
+   },
    "date": "2026-06-04",
    "total": 115,
    "substantive": 71,
@@ -135,6 +156,13 @@
    "flags": 5
   },
   {
+   "battlefield": {
+    "pos": 6,
+    "neg": 2,
+    "neu": 3,
+    "net": 36,
+    "story": "Ukrainian forced conscription rackets escalate; military academy cadets secretly sent to frontlines; manpower shortages reported."
+   },
    "date": "2026-06-05",
    "total": 146,
    "substantive": 70,
@@ -175,6 +203,13 @@
    "flags": 5
   },
   {
+   "battlefield": {
+    "pos": 16,
+    "neg": 0,
+    "neu": 4,
+    "net": 80,
+    "story": "Russian Geran drones struck two Ukrainian naval patrol boats off Odessa coast in Black Sea."
+   },
    "date": "2026-06-06",
    "total": 112,
    "substantive": 65,
@@ -218,6 +253,13 @@
    "flags": 3
   },
   {
+   "battlefield": {
+    "pos": 8,
+    "neg": 0,
+    "neu": 2,
+    "net": 80,
+    "story": "Special operations unit destroyed enemy firing position; one soldier wounded but evacuated after blocking enemy position."
+   },
    "date": "2026-06-07",
    "total": 132,
    "substantive": 57,
@@ -259,6 +301,13 @@
    "flags": 2
   },
   {
+   "battlefield": {
+    "pos": 7,
+    "neg": 1,
+    "neu": 1,
+    "net": 67,
+    "story": "Russian forces advance through Konstantinovka, pushing Ukrainian forces north and cutting supply lines."
+   },
    "date": "2026-06-08",
    "total": 142,
    "substantive": 62,
@@ -302,6 +351,13 @@
    "flags": 1
   },
   {
+   "battlefield": {
+    "pos": 7,
+    "neg": 1,
+    "neu": 4,
+    "net": 50,
+    "story": "Russian forces advance near Volchansk, securing new positions and improving tactical situation on Burluk direction."
+   },
    "date": "2026-06-09",
    "total": 122,
    "substantive": 58,
@@ -346,6 +402,13 @@
    "flags": 0
   },
   {
+   "battlefield": {
+    "pos": 9,
+    "neg": 1,
+    "neu": 2,
+    "net": 67,
+    "story": "Russian forces captured villages in Kharkiv-Sumy border area, approaching Kazachya Lopan."
+   },
    "date": "2026-06-10",
    "total": 190,
    "substantive": 77,
@@ -388,6 +451,13 @@
    "flags": 2
   },
   {
+   "battlefield": {
+    "pos": 16,
+    "neg": 1,
+    "neu": 6,
+    "net": 65,
+    "story": "Russian forces liberate Okhrimovka, advance in Konstantinovka and Roskoshnoye, destroy Ukrainian infrastructure."
+   },
    "date": "2026-06-11",
    "total": 179,
    "substantive": 79,
@@ -432,6 +502,13 @@
    "flags": 4
   },
   {
+   "battlefield": {
+    "pos": 7,
+    "neg": 2,
+    "neu": 2,
+    "net": 45,
+    "story": "Russian forces advancing north and northwest of Novoandriyivka; consolidated control and developing toward Mirne."
+   },
    "date": "2026-06-12",
    "total": 115,
    "substantive": 56,
@@ -473,6 +550,13 @@
    "flags": 2
   },
   {
+   "battlefield": {
+    "pos": 7,
+    "neg": 1,
+    "neu": 2,
+    "net": 60,
+    "story": "Russian forces strike crossing at Mayaky; Ukrainian drones attack Crimea energy infrastructure daily."
+   },
    "date": "2026-06-13",
    "total": 110,
    "substantive": 61,
@@ -515,6 +599,13 @@
    "flags": 3
   },
   {
+   "battlefield": {
+    "pos": 12,
+    "neg": 0,
+    "neu": 2,
+    "net": 86,
+    "story": "Ukrainian infiltration groups advance in Dnipropetrovsk direction near Berezove village."
+   },
    "date": "2026-06-14",
    "total": 165,
    "substantive": 72,
@@ -558,6 +649,13 @@
    "flags": 3
   },
   {
+   "battlefield": {
+    "pos": 12,
+    "neg": 0,
+    "neu": 4,
+    "net": 75,
+    "story": "Russian forces continue clearing southwestern Konstantinovka with difficult fighting on flanks and eastern approaches."
+   },
    "date": "2026-06-15",
    "total": 186,
    "substantive": 78,
@@ -601,6 +699,13 @@
    "flags": 2
   },
   {
+   "battlefield": {
+    "pos": 10,
+    "neg": 1,
+    "neu": 5,
+    "net": 56,
+    "story": "Russian forces advance in Slavyansk direction with tactical successes near Mala Piskunovka."
+   },
    "date": "2026-06-16",
    "total": 141,
    "substantive": 71,
@@ -643,6 +748,13 @@
    "flags": 2
   },
   {
+   "battlefield": {
+    "pos": 15,
+    "neg": 0,
+    "neu": 4,
+    "net": 79,
+    "story": "Russian forces strike Zaporizhzhia and Odesa; defensive battles in Sumy region with supply issues for Ukrainian forces."
+   },
    "date": "2026-06-17",
    "total": 149,
    "substantive": 80,
@@ -686,6 +798,13 @@
    "flags": 1
   },
   {
+   "battlefield": {
+    "pos": 12,
+    "neg": 1,
+    "neu": 5,
+    "net": 61,
+    "story": "Ka-52 pilot Denis Chernavavin destroyed 17 vehicles in Zaporizhzhia; hero of Russia with 500+ combat sorties."
+   },
    "date": "2026-06-18",
    "total": 190,
    "substantive": 103,
@@ -730,6 +849,13 @@
    "flags": 1
   },
   {
+   "battlefield": {
+    "pos": 11,
+    "neg": 0,
+    "neu": 3,
+    "net": 79,
+    "story": "Morning briefing: Russian forces conduct offensive operations across multiple front directions."
+   },
    "date": "2026-06-19",
    "total": 179,
    "substantive": 81,
@@ -771,6 +897,13 @@
    "flags": 2
   },
   {
+   "battlefield": {
+    "pos": 13,
+    "neg": 0,
+    "neu": 4,
+    "net": 76,
+    "story": "Russian forces advance toward Slavyansk; summary of war chronicle including logistics strikes and sanctions issues."
+   },
    "date": "2026-06-20",
    "total": 152,
    "substantive": 66,
@@ -813,6 +946,13 @@
    "flags": 2
   },
   {
+   "battlefield": {
+    "pos": 16,
+    "neg": 1,
+    "neu": 2,
+    "net": 79,
+    "story": "Russian naval drone operators destroyed Ukrainian attack drones before reaching targets in Konstantinovsky direction."
+   },
    "date": "2026-06-21",
    "total": 145,
    "substantive": 80,
@@ -857,6 +997,13 @@
    "flags": 1
   },
   {
+   "battlefield": {
+    "pos": 19,
+    "neg": 0,
+    "neu": 2,
+    "net": 90,
+    "story": "Russian forces expand control through small group operations in Sumy-Kharkiv border area."
+   },
    "date": "2026-06-22",
    "total": 185,
    "substantive": 87,
@@ -902,6 +1049,13 @@
    "flags": 3
   },
   {
+   "battlefield": {
+    "pos": 8,
+    "neg": 3,
+    "neu": 5,
+    "net": 31,
+    "story": "Enemy drone activity over Crimea and Kinburn threatens Russian logistics and indicates realistic amphibious landing scenario."
+   },
    "date": "2026-06-23",
    "total": 173,
    "substantive": 79,
@@ -947,6 +1101,13 @@
    "flags": 5
   },
   {
+   "battlefield": {
+    "pos": 22,
+    "neg": 0,
+    "neu": 1,
+    "net": 96,
+    "story": "Russian forces advance in Konstantinovka, destroying Ukrainian drone relay infrastructure and reconnaissance capability."
+   },
    "date": "2026-06-24",
    "total": 159,
    "substantive": 68,
@@ -990,6 +1151,13 @@
    "flags": 3
   },
   {
+   "battlefield": {
+    "pos": 10,
+    "neg": 0,
+    "neu": 1,
+    "net": 91,
+    "story": "Russian mobile fire groups intercept Ukrainian drones near Donetsk with anti-aircraft fire."
+   },
    "date": "2026-06-25",
    "total": 164,
    "substantive": 82,
@@ -1035,6 +1203,13 @@
    "flags": 1
   },
   {
+   "battlefield": {
+    "pos": 10,
+    "neg": 2,
+    "neu": 1,
+    "net": 62,
+    "story": "Russian forces report unfavorable dynamics on Zaporizhzhia front as Ukrainian forces advance southward."
+   },
    "date": "2026-06-26",
    "total": 157,
    "substantive": 78,
@@ -1079,6 +1254,13 @@
    "flags": 3
   },
   {
+   "battlefield": {
+    "pos": 18,
+    "neg": 0,
+    "neu": 1,
+    "net": 95,
+    "story": "Russian forces maintain readiness on Kinburn Peninsula; Special Operations prepare for possible amphibious operation."
+   },
    "date": "2026-06-27",
    "total": 137,
    "substantive": 54,
@@ -1119,6 +1301,13 @@
    "flags": 3
   },
   {
+   "battlefield": {
+    "pos": 15,
+    "neg": 0,
+    "neu": 5,
+    "net": 75,
+    "story": "Ukrainian claim to have taken Kinburn Spit contradicted by video evidence of Russian forces maintaining positions."
+   },
    "date": "2026-06-28",
    "total": 143,
    "substantive": 65,
@@ -1164,6 +1353,13 @@
    "flags": 2
   },
   {
+   "battlefield": {
+    "pos": 9,
+    "neg": 0,
+    "neu": 5,
+    "net": 64,
+    "story": "Russian Vostok group captures fourth settlement in Dnipropetrovsk direction; advances along Gaichur river."
+   },
    "date": "2026-06-29",
    "total": 173,
    "substantive": 77,
@@ -1208,6 +1404,13 @@
    "flags": 4
   },
   {
+   "battlefield": {
+    "pos": 19,
+    "neg": 0,
+    "neu": 3,
+    "net": 86,
+    "story": "Russian military summary: ongoing operations on Kinburn, Slavyansk, and East Zaporizhzhia directions."
+   },
    "date": "2026-06-30",
    "total": 160,
    "substantive": 75,
@@ -1250,6 +1453,13 @@
    "flags": 2
   },
   {
+   "battlefield": {
+    "pos": 22,
+    "neg": 1,
+    "neu": 6,
+    "net": 72,
+    "story": "Russian forces conduct ground operations in Chernigov, Sumy regions; police hunt deserters in liberated areas."
+   },
    "date": "2026-07-01",
    "total": 188,
    "substantive": 74,
@@ -1293,6 +1503,13 @@
    "flags": 2
   },
   {
+   "battlefield": {
+    "pos": 6,
+    "neg": 0,
+    "neu": 0,
+    "net": 100,
+    "story": "Russian forces advance on all fronts, aiming to control Konstantinovka as springboard for further operations."
+   },
    "date": "2026-07-02",
    "total": 126,
    "substantive": 49,

@@ -405,11 +405,23 @@ def save_day(day: str, agg: dict, flags: list[dict], classified: list[dict],
         json.dumps(doc, ensure_ascii=False, indent=1), encoding="utf-8")
 
 
+def battlefield_block(d: dict) -> dict:
+    """Frontline sentiment counts + the day's main battlefield story
+    (the most-viewed substantive frontline post's one-line summary)."""
+    t = d["topics"].get("frontline", {})
+    fl = [p for p in d.get("posts", [])
+          if p.get("topic") == "frontline" and p.get("substantive")]
+    story = max(fl, key=lambda p: p.get("views") or 0)["summary_en"] if fl else ""
+    return {"pos": t.get("pos", 0), "neg": t.get("neg", 0), "neu": t.get("neu", 0),
+            "net": t.get("net"), "story": story}
+
+
 def rebuild_index():
     days = []
     for path in sorted(DAYS_DIR.glob("*.json")):
         d = json.loads(path.read_text(encoding="utf-8"))
         days.append({
+            "battlefield": battlefield_block(d),
             "date": d["date"],
             "total": d["total_posts"],
             "substantive": d["substantive_posts"],

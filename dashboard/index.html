@@ -103,6 +103,12 @@
   .chart-legend { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: 13px; font-size: 12px; }
   .chart-legend .row { display: flex; align-items: center; gap: 7px; }
 
+  .bf-row { display: flex; align-items: baseline; gap: 10px; padding: 7px 2px; border-top: 1px solid var(--gridline); font-size: 12.5px; }
+  .bf-row:first-of-type { border-top: none; }
+  .bf-row .d { font-weight: bold; min-width: 58px; }
+  .bf-row .n { font-weight: bold; min-width: 42px; text-align: right; font-variant-numeric: tabular-nums; }
+  .bf-row .s { flex: 1; }
+
   .mood-line { display: flex; gap: 12px; padding: 9px 0; border-top: 1px solid var(--gridline); font-size: 13px; align-items: baseline; }
   .mood-line:first-of-type { border-top: none; }
   .mood-line .arrow { flex: none; width: 20px; text-align: center; font-weight: bold; }
@@ -224,6 +230,25 @@
       <div class="h-sub">Net balance = share of positive posts minus share of negative posts on each topic.</div>
       <div id="moodsummary"></div>
     </section>
+    <section class="card">
+      <h2>Battlefield tracker</h2>
+      <div class="h-sub">How the bloggers feel about Russia's frontline progress, day by day: positive posts up (green), negative down (red). Hover any day for that day's main battlefield story.</div>
+      <div class="controls">
+        <button class="rangebtn bf" data-days="14">14 days</button>
+        <button class="rangebtn bf active" data-days="30">30 days</button>
+        <button class="rangebtn bf" data-days="90">90 days</button>
+      </div>
+      <div id="bfchart"></div>
+      <div class="chart-legend" style="margin-top: 10px">
+        <div class="row"><span class="swatch" style="background:var(--pos)"></span>Positive posts (gains look good)</div>
+        <div class="row"><span class="swatch" style="background:var(--neg)"></span>Negative posts (going badly)</div>
+        <div class="row"><span class="swatch" style="background:#00205B; height:2px; width:14px"></span>Net balance (%)</div>
+      </div>
+      <h2 style="margin-top: 18px; font-size: 14px">Main battlefield story by day</h2>
+      <div id="bfstories"></div>
+      <div class="source">Source: Telegram; Eurasia Group analysis. Story = the day's most-viewed frontline post.</div>
+    </section>
+
     <section class="card">
       <h2>Sentiment by topic</h2>
       <div class="h-sub">Each substantive post is classified negative / neutral / positive (the bloggers' own mood). Bars show shares of posts.</div>
@@ -563,10 +588,80 @@ function renderTrendsForDay() {
   document.getElementById("subtable").innerHTML = th;
 }
 
+// ---- battlefield tracker ----
+let bfDays = 30;
+
+function renderBattlefield() {
+  const days = INDEX.days.filter(x => x.battlefield).slice(-bfDays);
+  if (!days.length) { document.getElementById("bfchart").innerHTML = ""; return; }
+
+  const W = 680, H = 260, L = 34, R = 40, T = 12, B = 26;
+  const iw = W - L - R, ih = H - T - B;
+  const maxPos = Math.max(3, ...days.map(x => x.battlefield.pos));
+  const maxNeg = Math.max(3, ...days.map(x => x.battlefield.neg));
+  const span = maxPos + maxNeg;
+  const y0 = T + (maxPos / span) * ih;                 // zero line
+  const yPos = v => (v / span) * ih;                   // bar heights
+  const n = days.length;
+  const slot = iw / n, bw = Math.max(3, Math.min(18, slot - 2));
+  const step = span > 30 ? 10 : 5;
+
+  let svg = `<svg width="100%" viewBox="0 0 ${W} ${H}" style="max-width:${W}px; display:block">`;
+  for (let v = -Math.floor(maxNeg / step) * step; v <= maxPos; v += step) {
+    const y = y0 - yPos(v);
+    svg += `<line x1="${L}" y1="${y}" x2="${W - R}" y2="${y}" stroke="#ececec"/>
+            <text x="${L - 6}" y="${y + 3.5}" font-size="10" fill="#000" text-anchor="end">${Math.abs(v)}</text>`;
+  }
+  svg += `<line x1="${L}" y1="${y0}" x2="${W - R}" y2="${y0}" stroke="#8D9092" stroke-width="1.5"/>`;
+  const lblEvery = Math.max(1, Math.ceil(n / 10));
+  days.forEach((x, i) => {
+    const cx = L + i * slot + slot / 2;
+    const bf = x.battlefield;
+    const tipTxt = `${fmtShort(x.date)} — ${bf.pos} positive / ${bf.neg} negative` +
+      (bf.net === null ? "" : ` (net ${bf.net > 0 ? "+" : ""}${bf.net})`) +
+      (bf.story ? `. Main story: ${bf.story}` : "");
+    if (bf.pos) svg += `<rect x="${cx - bw / 2}" y="${y0 - yPos(bf.pos)}" width="${bw}" height="${yPos(bf.pos)}" fill="${C.pos}"/>`;
+    if (bf.neg) svg += `<rect x="${cx - bw / 2}" y="${y0 + 1}" width="${bw}" height="${yPos(bf.neg)}" fill="${C.neg}"/>`;
+    svg += `<rect x="${L + i * slot}" y="${T}" width="${slot}" height="${ih}" fill="transparent" data-tip="${esc(tipTxt)}"/>`;
+    if (i % lblEvery === 0 || i === n - 1)
+      svg += `<text x="${cx}" y="${H - 8}" font-size="10" fill="#000" text-anchor="middle">${fmtShort(x.date)}</text>`;
+  });
+  // net-balance line on its own right-hand scale (−100..+100)
+  const yNet = v => T + ih - ((v + 100) / 200) * ih;
+  let pts = "", started = false;
+  days.forEach((x, i) => {
+    if (x.battlefield.net !== null && x.battlefield.net !== undefined) {
+      pts += (started ? " " : "") + `${L + i * slot + slot / 2},${yNet(x.battlefield.net)}`;
+      started = true;
+    }
+  });
+  svg += `<polyline points="${pts}" fill="none" stroke="#00205B" stroke-width="2" opacity="0.85"/>`;
+  [[100, "+100"], [0, "0"], [-100, "−100"]].forEach(([v, lb]) => {
+    svg += `<text x="${W - R + 4}" y="${yNet(v) + 3.5}" font-size="10" fill="#00205B">${lb}</text>`;
+  });
+  svg += `</svg>`;
+  document.getElementById("bfchart").innerHTML = svg;
+
+  const recent = [...days].reverse().slice(0, 10);
+  document.getElementById("bfstories").innerHTML = recent.map(x => {
+    const bf = x.battlefield;
+    const net = bf.net === null || bf.net === undefined ? "—" : (bf.net > 0 ? "+" : "") + bf.net;
+    return `<div class="bf-row"><span class="d">${fmtShort(x.date)}</span>
+      <span class="n" style="color:${netColor(bf.net)}">${net}</span>
+      <span class="s">${esc(bf.story || "no substantive frontline posts")}</span></div>`;
+  }).join("");
+}
+
+document.querySelectorAll(".rangebtn.bf").forEach(b => b.addEventListener("click", () => {
+  document.querySelectorAll(".rangebtn.bf").forEach(x => x.classList.remove("active"));
+  b.classList.add("active"); bfDays = +b.dataset.days; renderBattlefield();
+}));
+
 // ---- index-driven charts ----
 let tmDays = 30, exDays = 30;
 
 function renderIndexCharts() {
+  renderBattlefield();
   const days = INDEX.days;
   const slice = n => days.slice(-n);
   const labels = arr => arr.map(x => fmtShort(x.date));
