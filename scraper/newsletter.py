@@ -117,11 +117,54 @@ To subscribe or unsubscribe, reply to this email.</p></div>""")
     return subject, plain, html
 
 
+def write_feed():
+    """Publish the last 14 briefs as an RSS feed (feed.xml at the repo root).
+
+    Power Automate (Microsoft 365) watches this feed and emails each new item
+    from the analyst's work address — no passwords needed anywhere.
+    """
+    import email.utils
+
+    days = json.loads(INDEX_PATH.read_text(encoding="utf-8"))["days"]
+    with_briefs = [d["date"] for d in days if d.get("headline")][-14:]
+    items = []
+    for day in reversed(with_briefs):
+        doc = json.loads((DAYS_DIR / f"{day}.json").read_text(encoding="utf-8"))
+        subject, _plain, html = compose(day, doc)
+        import datetime as _dt
+        pub = email.utils.format_datetime(
+            _dt.datetime.fromisoformat(day + "T06:00:00+00:00"))
+        items.append(f"""  <item>
+    <title>{subject.replace("&", "&amp;").replace("<", "&lt;")}</title>
+    <link>{DASHBOARD_URL}</link>
+    <guid isPermaLink="false">zbloggers-{day}</guid>
+    <pubDate>{pub}</pubDate>
+    <description><![CDATA[{html}]]></description>
+  </item>""")
+    feed = f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>ZBloggers Monitor — Daily Brief</title>
+  <link>{DASHBOARD_URL}</link>
+  <description>Daily read on 10 pro-Kremlin military Telegram channels</description>
+{chr(10).join(items)}
+</channel>
+</rss>
+"""
+    (ROOT / "feed.xml").write_text(feed, encoding="utf-8")
+    print(f"feed.xml written ({len(items)} items, latest {with_briefs[-1]})")
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--date", help="day to send (YYYY-MM-DD); default latest with a brief")
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--feed", action="store_true", help="write feed.xml instead of sending")
     args = parser.parse_args()
+
+    if args.feed:
+        write_feed()
+        return 0
 
     day = args.date or latest_day_with_brief()
     if not day:

@@ -34,7 +34,10 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python scraper/analyze.py
 
-      - name: Send newsletter
+      - name: Publish newsletter feed
+        run: python scraper/newsletter.py --feed
+
+      - name: Send newsletter (optional email fallback)
         env:
           EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
           EMAIL_APP_PASSWORD: ${{ secrets.EMAIL_APP_PASSWORD }}
