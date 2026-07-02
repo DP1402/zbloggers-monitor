@@ -1252,44 +1252,45 @@
   {
    "date": "2026-07-01",
    "total": 188,
-   "substantive": 73,
-   "headline": "Kopani and Ukrainske fall; fuel-strike campaign widens amid Crimea blackouts",
+   "substantive": 74,
+   "headline": "Kopani and Ukrainske captured; Ukraine hits Crimea, fuel-strike campaign widens",
    "topics": {
     "strikes_on_ukraine": 13,
-    "frontline": 26,
-    "ukraine_strikes_on_russia": 13,
-    "west_nato": 15,
-    "russia_internal": 6,
-    "criticism": 0
+    "frontline": 29,
+    "ukraine_strikes_on_russia": 11,
+    "west_nato": 14,
+    "russia_internal": 5,
+    "criticism": 2
    },
    "nets": {
     "strikes_on_ukraine": 85,
-    "frontline": 96,
-    "ukraine_strikes_on_russia": -8,
-    "west_nato": -47,
-    "russia_internal": -67,
-    "criticism": null
+    "frontline": 72,
+    "ukraine_strikes_on_russia": -9,
+    "west_nato": -79,
+    "russia_internal": -60,
+    "criticism": -100
    },
    "subtopics": {
-    "strikes_on_ukraine/deep_strikes": 5,
-    "strikes_on_ukraine/fuel_infrastructure": 6,
-    "strikes_on_ukraine/other": 2,
-    "frontline/pokrovsk": 2,
+    "strikes_on_ukraine/deep_strikes": 1,
+    "strikes_on_ukraine/fuel_infrastructure": 8,
+    "strikes_on_ukraine/other": 4,
+    "frontline/pokrovsk": 5,
     "frontline/hulyaipole": 7,
     "frontline/kupyansk": 4,
     "frontline/other": 13,
     "ukraine_strikes_on_russia/crimea_energy": 2,
-    "ukraine_strikes_on_russia/drones_on_regions": 6,
+    "ukraine_strikes_on_russia/drones_on_regions": 4,
     "ukraine_strikes_on_russia/other": 5,
-    "west_nato/military_aid": 8,
-    "west_nato/rearmament": 1,
-    "west_nato/negotiations": 3,
-    "west_nato/alliance_politics": 2,
-    "west_nato/other": 1,
-    "russia_internal/security_cases": 4,
-    "russia_internal/economy": 2
+    "west_nato/military_aid": 6,
+    "west_nato/rearmament": 2,
+    "west_nato/negotiations": 2,
+    "west_nato/alliance_politics": 1,
+    "west_nato/other": 3,
+    "russia_internal/security_cases": 3,
+    "russia_internal/economy": 2,
+    "criticism/government": 2
    },
-   "flags": 0
+   "flags": 2
   }
  ]
 }
