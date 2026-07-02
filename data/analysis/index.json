@@ -1291,6 +1291,44 @@
     "criticism/government": 2
    },
    "flags": 2
+  },
+  {
+   "date": "2026-07-02",
+   "total": 126,
+   "substantive": 49,
+   "headline": "Massive overnight strike on Kyiv dominates; Ukraine hits Russian regions with 460 drones",
+   "topics": {
+    "strikes_on_ukraine": 22,
+    "frontline": 6,
+    "ukraine_strikes_on_russia": 8,
+    "west_nato": 9,
+    "russia_internal": 2,
+    "criticism": 2
+   },
+   "nets": {
+    "strikes_on_ukraine": 95,
+    "frontline": 100,
+    "ukraine_strikes_on_russia": -75,
+    "west_nato": -100,
+    "russia_internal": 50,
+    "criticism": -100
+   },
+   "subtopics": {
+    "strikes_on_ukraine/deep_strikes": 17,
+    "strikes_on_ukraine/fuel_infrastructure": 4,
+    "strikes_on_ukraine/other": 1,
+    "frontline/hulyaipole": 1,
+    "frontline/other": 5,
+    "ukraine_strikes_on_russia/drones_on_regions": 3,
+    "ukraine_strikes_on_russia/other": 5,
+    "west_nato/military_aid": 4,
+    "west_nato/rearmament": 4,
+    "west_nato/alliance_politics": 1,
+    "russia_internal/ideology_society": 1,
+    "russia_internal/security_cases": 1,
+    "criticism/government": 2
+   },
+   "flags": 2
   }
  ]
 }

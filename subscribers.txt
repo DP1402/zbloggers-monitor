@@ -1,0 +1,2 @@
+# Newsletter recipients — one email address per line. Lines starting with # are ignored.
+dashapo2000@gmail.com

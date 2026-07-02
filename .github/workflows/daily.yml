@@ -34,6 +34,12 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python scraper/analyze.py
 
+      - name: Send newsletter
+        env:
+          EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
+          EMAIL_APP_PASSWORD: ${{ secrets.EMAIL_APP_PASSWORD }}
+        run: python scraper/newsletter.py
+
       - name: Commit and push results
         run: |
           git config user.name "zbloggers-bot"
