@@ -3022,51 +3022,45 @@
      "neg": 0,
      "neu": 0,
      "net": 100,
-     "story": "Russian forces systematically capture remaining Konstantinovka neighborhoods; expected full control by July 2026.",
+     "story": "Russian forces continue systematically advancing through Konstantinovka after year-long urban battle.",
      "story_url": "https://t.me/rybar/81475",
      "examples": [
       {
        "s": "pos",
        "url": "https://t.me/rybar/81474",
-       "t": "Russian forces advance east of Oskol river near Kupyansk, taking territory and inflicting heavy Ukrainian losses.",
+       "t": "Russian forces advance on Kupyansk direction, capturing positions near Kuchyrovka and Kursk after disrupting enemy logistics.",
        "ch": "Rybar"
       }
      ]
     },
     "strikes_on_ukraine": {
-     "pos": 30,
+     "pos": 33,
      "neg": 0,
-     "neu": 1,
-     "net": 97,
-     "story": "Russian missiles and drones strike Kyiv, Zaporizhzhia, Kharkiv; 327 Ukrainian drones intercepted overnight.",
+     "neu": 0,
+     "net": 100,
+     "story": "Russia conducted massive strike on Kyiv and other cities with missiles and drones; fires and destruction reported.",
      "story_url": "https://t.me/dva_majors/95486",
      "examples": [
       {
        "s": "pos",
        "url": "https://t.me/rybar/81461",
-       "t": "Russia conducted combined strike on Ukrainian military-industrial targets including drone/missile producers and fuel infrastructure in Kyiv.",
+       "t": "Russia conducted combined strike on Ukraine with cruise missiles and Zircon hitting military industry and fuel infrastructure in Kyiv.",
        "ch": "Rybar"
       }
      ]
     },
     "ukraine_strikes_on_russia": {
-     "pos": 1,
-     "neg": 11,
+     "pos": 0,
+     "neg": 12,
      "neu": 0,
-     "net": -83,
-     "story": "Ukrainian drones strike Kstovo oil refinery in Nizhny Novgorod region causing fire.",
+     "net": -100,
+     "story": "Ukraine reportedly struck oil refinery in Kstovo, Nizhny Novgorod region.",
      "story_url": "https://t.me/dva_majors/95488",
      "examples": [
       {
-       "s": "pos",
-       "url": "https://t.me/ngp_razvedka/25753",
-       "t": "Ukraine experiencing electricity shortages during anomalous heat wave.",
-       "ch": "NgP raZVedka"
-      },
-      {
        "s": "neg",
        "url": "https://t.me/dva_majors/95493",
-       "t": "Ukraine launched 327 drones over Russian regions and Crimea overnight; air defense engaged.",
+       "t": "Ukraine conducted 327 drone strikes across multiple Russian regions overnight.",
        "ch": "Two Majors"
       }
      ]
@@ -3074,43 +3068,43 @@
    },
    "date": "2026-07-02",
    "total": 207,
-   "substantive": 84,
-   "headline": "Massive strike on Kyiv dominates; Ukraine's 327-drone salvo hits back",
+   "substantive": 86,
+   "headline": "Massive Russian strike on Kyiv; Ukraine hits Kstovo refinery",
    "topics": {
-    "strikes_on_ukraine": 31,
+    "strikes_on_ukraine": 33,
     "frontline": 13,
     "ukraine_strikes_on_russia": 12,
-    "west_nato": 17,
+    "west_nato": 14,
     "russia_internal": 7,
-    "criticism": 4
+    "criticism": 7
    },
    "nets": {
-    "strikes_on_ukraine": 97,
+    "strikes_on_ukraine": 100,
     "frontline": 100,
-    "ukraine_strikes_on_russia": -83,
-    "west_nato": -88,
-    "russia_internal": 29,
+    "ukraine_strikes_on_russia": -100,
+    "west_nato": -93,
+    "russia_internal": 71,
     "criticism": -100
    },
    "subtopics": {
-    "strikes_on_ukraine/deep_strikes": 25,
+    "strikes_on_ukraine/deep_strikes": 23,
     "strikes_on_ukraine/fuel_infrastructure": 6,
-    "frontline/hulyaipole": 3,
-    "frontline/kupyansk": 5,
-    "frontline/other": 5,
-    "ukraine_strikes_on_russia/crimea_energy": 1,
-    "ukraine_strikes_on_russia/drones_on_regions": 5,
+    "strikes_on_ukraine/other": 4,
+    "frontline/hulyaipole": 2,
+    "frontline/kupyansk": 1,
+    "frontline/other": 10,
+    "ukraine_strikes_on_russia/drones_on_regions": 6,
     "ukraine_strikes_on_russia/other": 6,
-    "west_nato/military_aid": 8,
+    "west_nato/military_aid": 7,
     "west_nato/rearmament": 3,
     "west_nato/alliance_politics": 2,
-    "west_nato/other": 4,
-    "russia_internal/ideology_society": 4,
+    "west_nato/other": 2,
+    "russia_internal/ideology_society": 5,
     "russia_internal/security_cases": 1,
-    "russia_internal/mobilisation": 1,
     "russia_internal/other": 1,
-    "criticism/government": 3,
-    "criticism/other": 1
+    "criticism/army_command": 1,
+    "criticism/government": 4,
+    "criticism/other": 2
    },
    "flags": 3
   }
