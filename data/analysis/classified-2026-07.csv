@@ -187,129 +187,210 @@
 2026-07-01 23:48:42,ngp_razvedka,25741,https://t.me/ngp_razvedka/25741,True,strikes_on_ukraine,deep_strikes,pos,Ukrainian capital air defense degraded; Russia needs cheaper ballistic missile alternatives like Iranian models.,10360,33
 2026-07-01 23:50:28,ngp_razvedka,25743,https://t.me/ngp_razvedka/25743,False,none,none,neu,,10333,36
 2026-07-01 23:50:28,ngp_razvedka,25742,https://t.me/ngp_razvedka/25742,False,none,none,neu,,10398,36
-2026-07-02 00:09:50,ngp_razvedka,25744,https://t.me/ngp_razvedka/25744,True,strikes_on_ukraine,other,pos,Russian Iskander missiles overwhelm Ukrainian air defenses due to high costs of intercepting them.,10727,26
-2026-07-02 01:27:52,ngp_razvedka,25745,https://t.me/ngp_razvedka/25745,True,strikes_on_ukraine,fuel_infrastructure,pos,Russian strikes create fuel supply difficulties in Kharkiv.,10790,50
-2026-07-02 01:34:19,ngp_razvedka,25746,https://t.me/ngp_razvedka/25746,True,strikes_on_ukraine,deep_strikes,pos,"Large fire in Kyiv from Russian strikes, likely at military or logistics facilities.",11839,52
-2026-07-02 03:54:07,dva_majors,95485,https://t.me/dva_majors/95485,False,none,none,neu,,79413,32
-2026-07-02 03:56:00,dva_majors,95486,https://t.me/dva_majors/95486,True,strikes_on_ukraine,deep_strikes,pos,Russian massive overnight strike on Kyiv with missiles and drones causes fires and damage.,252162,382
-2026-07-02 04:07:36,dva_majors,95487,https://t.me/dva_majors/95487,True,strikes_on_ukraine,deep_strikes,pos,Russian Defense Ministry reports massive strike on Ukrainian military industry and energy infrastructure.,87050,124
-2026-07-02 04:16:03,dva_majors,95488,https://t.me/dva_majors/95488,True,ukraine_strikes_on_russia,drones_on_regions,neg,Ukrainian drones strike Russian oil refinery in Nizhny Novgorod region.,87149,286
-2026-07-02 04:18:23,dva_majors,95492,https://t.me/dva_majors/95492,False,none,none,neu,,88417,213
-2026-07-02 04:18:23,dva_majors,95491,https://t.me/dva_majors/95491,False,none,none,neu,,93263,214
-2026-07-02 04:18:23,dva_majors,95490,https://t.me/dva_majors/95490,False,none,none,neu,,89169,221
-2026-07-02 04:18:23,dva_majors,95489,https://t.me/dva_majors/95489,False,none,none,neu,,88225,214
-2026-07-02 04:51:24,rybar,81456,https://t.me/rybar/81456,True,strikes_on_ukraine,deep_strikes,pos,Russian massive overnight strike on Kyiv with missiles and drones causes fires and damage.,100325,51
-2026-07-02 05:01:01,rusich_army,30162,https://t.me/rusich_army/30162,False,none,none,neu,,86758,9
-2026-07-02 05:04:20,dva_majors,95493,https://t.me/dva_majors/95493,True,ukraine_strikes_on_russia,drones_on_regions,neu,Russian air defense intercepts 327 Ukrainian drones over multiple Russian regions overnight.,78620,50
-2026-07-02 05:08:02,wargonzo,35231,https://t.me/wargonzo/35231,False,none,none,neu,,25387,45
-2026-07-02 05:08:02,wargonzo,35230,https://t.me/wargonzo/35230,False,none,none,neu,,25644,42
-2026-07-02 05:08:02,wargonzo,35229,https://t.me/wargonzo/35229,False,none,none,neu,,23516,42
-2026-07-02 05:08:02,wargonzo,35228,https://t.me/wargonzo/35228,False,none,none,neu,,23391,42
-2026-07-02 05:08:02,wargonzo,35227,https://t.me/wargonzo/35227,False,none,none,neu,,23546,42
-2026-07-02 05:08:02,wargonzo,35226,https://t.me/wargonzo/35226,False,none,none,neu,,23252,42
-2026-07-02 05:08:02,wargonzo,35225,https://t.me/wargonzo/35225,False,none,none,neu,,22410,42
-2026-07-02 05:08:02,wargonzo,35224,https://t.me/wargonzo/35224,True,frontline,hulyaipole,pos,Russian forces establish control of Kopani and advance in Zaporizhzhia and Donetsk sectors.,25530,43
-2026-07-02 05:28:08,vysokygovorit,23237,https://t.me/vysokygovorit/23237,False,none,none,neu,,77234,30
-2026-07-02 05:33:27,sashakots,62771,https://t.me/sashakots/62771,False,none,none,neu,,37432,406
-2026-07-02 05:33:27,sashakots,62770,https://t.me/sashakots/62770,False,none,none,neu,,38142,407
-2026-07-02 05:33:27,sashakots,62769,https://t.me/sashakots/62769,False,none,none,neu,,34882,407
-2026-07-02 05:33:27,sashakots,62768,https://t.me/sashakots/62768,False,none,none,neu,,35011,407
-2026-07-02 05:33:27,sashakots,62767,https://t.me/sashakots/62767,False,none,none,neu,,34305,407
-2026-07-02 05:33:27,sashakots,62766,https://t.me/sashakots/62766,False,none,none,neu,,34551,407
-2026-07-02 05:33:27,sashakots,62765,https://t.me/sashakots/62765,False,none,none,neu,,34363,407
-2026-07-02 05:33:27,sashakots,62764,https://t.me/sashakots/62764,False,none,none,neu,,34251,408
-2026-07-02 05:33:27,sashakots,62763,https://t.me/sashakots/62763,True,strikes_on_ukraine,deep_strikes,pos,"Combined Russian strike on Ukraine uses X-101, Kalibr, Iskander, Zircon and Geran drones against Kyiv.",32296,411
-2026-07-02 05:58:17,epoddubny,27989,https://t.me/epoddubny/27989,False,none,none,neu,,23384,14
-2026-07-02 06:01:59,rusich_army,30163,https://t.me/rusich_army/30163,False,none,none,neu,,84171,5
-2026-07-02 06:05:16,ngp_razvedka,25751,https://t.me/ngp_razvedka/25751,False,none,none,neu,,9162,41
-2026-07-02 06:05:16,ngp_razvedka,25750,https://t.me/ngp_razvedka/25750,False,none,none,neu,,9169,41
-2026-07-02 06:05:16,ngp_razvedka,25749,https://t.me/ngp_razvedka/25749,False,none,none,neu,,9165,41
-2026-07-02 06:05:16,ngp_razvedka,25748,https://t.me/ngp_razvedka/25748,False,none,none,neu,,8980,40
-2026-07-02 06:05:16,ngp_razvedka,25747,https://t.me/ngp_razvedka/25747,False,none,none,neu,,9079,40
-2026-07-02 06:17:06,dva_majors,95494,https://t.me/dva_majors/95494,True,strikes_on_ukraine,fuel_infrastructure,pos,Russian strikes target Ukrainian fuel infrastructure and gas stations systematically.,56615,0
-2026-07-02 06:17:56,dva_majors,95495,https://t.me/dva_majors/95495,False,none,none,neu,,68909,16
-2026-07-02 06:33:00,dva_majors,95496,https://t.me/dva_majors/95496,True,strikes_on_ukraine,other,pos,Russia launches 74 missiles and 496 drones of various types against Ukraine.,67022,57
-2026-07-02 06:35:10,rybar,81458,https://t.me/rybar/81458,True,west_nato,rearmament,neg,European identity and economies collapse under EU standardization and Chinese competition.,109800,132
-2026-07-02 06:49:22,sashakots,62772,https://t.me/sashakots/62772,True,west_nato,other,pos,Volkswagen and European auto industry face severe crisis with plant closures and mass layoffs.,29303,30
-2026-07-02 06:50:09,dva_majors,95497,https://t.me/dva_majors/95497,False,none,none,neu,,64876,1
-2026-07-02 07:00:00,vysokygovorit,23238,https://t.me/vysokygovorit/23238,False,none,none,neu,,38276,13
-2026-07-02 07:03:33,rusich_army,30165,https://t.me/rusich_army/30165,True,strikes_on_ukraine,deep_strikes,pos,"Russian strike hits Kyiv logistics centers, drone warehouses, and military industry facilities.",91650,93
-2026-07-02 07:04:26,dva_majors,95498,https://t.me/dva_majors/95498,False,none,none,neu,,63781,1
-2026-07-02 07:11:52,sashakots,62773,https://t.me/sashakots/62773,True,strikes_on_ukraine,deep_strikes,pos,Russian strike on Kyiv destroyed key Ukrainian military-industrial facilities including missile and drone production centers.,29998,296
-2026-07-02 07:14:28,epoddubny,27991,https://t.me/epoddubny/27991,False,none,none,neu,,35241,197
-2026-07-02 07:14:28,epoddubny,27990,https://t.me/epoddubny/27990,True,strikes_on_ukraine,deep_strikes,pos,"Russian strikes hit major Ukrainian defense plants producing long-range missiles, drones, and radar systems in Kyiv.",33894,199
-2026-07-02 07:22:36,wargonzo,35241,https://t.me/wargonzo/35241,False,none,none,neu,,25856,68
-2026-07-02 07:22:36,wargonzo,35240,https://t.me/wargonzo/35240,False,none,none,neu,,25476,66
-2026-07-02 07:22:36,wargonzo,35239,https://t.me/wargonzo/35239,False,none,none,neu,,23959,67
-2026-07-02 07:22:36,wargonzo,35238,https://t.me/wargonzo/35238,False,none,none,neu,,23769,66
-2026-07-02 07:22:36,wargonzo,35237,https://t.me/wargonzo/35237,True,strikes_on_ukraine,deep_strikes,pos,"Russia conducted massive combined strike on Kyiv, Kharkiv, Dnipropetrovsk using various missiles and over 100 drones.",23113,67
-2026-07-02 07:35:10,dva_majors,95499,https://t.me/dva_majors/95499,True,west_nato,military_aid,neg,Britain tested long-range missiles for Ukraine with ranges up to 1200km in Brakestop project final competition.,81023,342
-2026-07-02 07:43:02,rybar,81459,https://t.me/rybar/81459,True,west_nato,military_aid,neg,"Ukraine requested €6.6 billion from EU Peace Fund for military aid, but EU members responded coolly to the proposal.",92445,41
-2026-07-02 07:52:09,ngp_razvedka,25752,https://t.me/ngp_razvedka/25752,True,criticism,army_command,neg,Russian air defense claims questioned for inconsistencies between destroyed weapons and number of targets damaged.,8059,41
-2026-07-02 08:00:00,vysokygovorit,23239,https://t.me/vysokygovorit/23239,True,west_nato,military_aid,neg,Europe rearming to deter Russia but arsenals insufficient for sustained conflict; West maintaining Ukraine support.,47050,130
-2026-07-02 08:00:57,epoddubny,27992,https://t.me/epoddubny/27992,True,strikes_on_ukraine,deep_strikes,pos,Russian drone destroyed gas distribution station in Pavlohrad disrupting regional infrastructure and industrial production.,20330,32
-2026-07-02 08:46:36,ngp_razvedka,25753,https://t.me/ngp_razvedka/25753,True,strikes_on_ukraine,fuel_infrastructure,pos,"Ukraine experiencing power shortages amid record heat, indicating degraded electrical infrastructure.",7068,17
-2026-07-02 08:47:18,wargonzo,35242,https://t.me/wargonzo/35242,True,ukraine_strikes_on_russia,other,neg,"Drones with paint and mock bomb attacked Russian embassy in Stockholm, Russia blames Swedish authorities.",18661,20
-2026-07-02 08:48:49,epoddubny,27995,https://t.me/epoddubny/27995,False,none,none,neu,,20564,46
-2026-07-02 08:48:49,epoddubny,27994,https://t.me/epoddubny/27994,False,none,none,neu,,20563,46
-2026-07-02 08:48:49,epoddubny,27993,https://t.me/epoddubny/27993,True,strikes_on_ukraine,deep_strikes,pos,"Russian strike hit Kyiv radio factory producing missile and drone components, causing major fire.",19759,46
-2026-07-02 08:52:13,ngp_razvedka,25754,https://t.me/ngp_razvedka/25754,True,criticism,government,neg,Skeptical commentary on Ukrainian claims of disabling Belarusian retransmitters and achieving war victories.,7160,46
-2026-07-02 09:00:01,rusich_army,30166,https://t.me/rusich_army/30166,True,ukraine_strikes_on_russia,drones_on_regions,neg,Russia shot down 327 drones and hit Kstovo refinery; drones targeting Leningrad region and multiple regions.,79370,70
-2026-07-02 09:05:00,rybar,81460,https://t.me/rybar/81460,True,west_nato,rearmament,neg,NATO summit in Ankara to approve defense contracts worth tens of billions and increase defense spending to 5% GDP.,88463,38
-2026-07-02 09:23:37,Sladkov_plus,15715,https://t.me/Sladkov_plus/15715,True,frontline,other,pos,Russian forces advancing on all fronts; Konstantinovka key target for further Donbas offensive operations.,26256,17
-2026-07-02 09:25:06,Sladkov_plus,15716,https://t.me/Sladkov_plus/15716,True,strikes_on_ukraine,deep_strikes,pos,Comprehensive Russian strike on Ukrainian military-industrial complex and airfields across multiple regions.,25547,50
-2026-07-02 09:27:14,Sladkov_plus,15718,https://t.me/Sladkov_plus/15718,True,strikes_on_ukraine,deep_strikes,pos,Russian Iskander and Kh-101 strikes caused major fires at logistics terminals north of Kyiv.,27150,61
-2026-07-02 09:34:19,dva_majors,95500,https://t.me/dva_majors/95500,True,russia_internal,security_cases,neu,Russian court charged 23-year-old with treason and terrorism for allegedly preparing railway infrastructure attack.,52424,39
-2026-07-02 09:46:53,dva_majors,95503,https://t.me/dva_majors/95503,False,none,none,neu,,52271,1
-2026-07-02 09:46:53,dva_majors,95502,https://t.me/dva_majors/95502,False,none,none,neu,,52313,1
-2026-07-02 09:46:53,dva_majors,95501,https://t.me/dva_majors/95501,False,none,none,neu,,50060,1
-2026-07-02 09:52:39,epoddubny,27997,https://t.me/epoddubny/27997,True,west_nato,alliance_politics,neg,Lithuania's defense ministry proposed constitutional changes to allow stationing weapons of mass destruction on territory.,21838,27
-2026-07-02 09:53:33,dva_majors,95504,https://t.me/dva_majors/95504,True,russia_internal,elite_politics,neu,Peskov statement: Gerasimov reported results of Russian strikes on Kyiv; Russia will intensify pressure on Ukraine.,54299,70
-2026-07-02 10:07:06,ngp_razvedka,25755,https://t.me/ngp_razvedka/25755,True,criticism,government,neg,Defense of continued Russian military operations against claims of flawed strategy and questionable war direction.,5687,19
-2026-07-02 10:28:04,rybar,81465,https://t.me/rybar/81465,False,none,none,neu,,78301,64
-2026-07-02 10:28:04,rybar,81464,https://t.me/rybar/81464,False,none,none,neu,,78303,64
-2026-07-02 10:28:04,rybar,81463,https://t.me/rybar/81463,False,none,none,neu,,76591,65
-2026-07-02 10:28:04,rybar,81462,https://t.me/rybar/81462,False,none,none,neu,,76712,64
-2026-07-02 10:28:04,rybar,81461,https://t.me/rybar/81461,True,strikes_on_ukraine,deep_strikes,pos,"Russian combined strike using cruise missiles, Tsirkon and other weapons hit Kyiv military-industrial and fuel targets.",75407,65
-2026-07-02 10:29:58,dva_majors,95514,https://t.me/dva_majors/95514,False,none,none,neu,,48318,35
-2026-07-02 10:29:58,dva_majors,95513,https://t.me/dva_majors/95513,False,none,none,neu,,47309,35
-2026-07-02 10:29:58,dva_majors,95512,https://t.me/dva_majors/95512,False,none,none,neu,,48313,35
-2026-07-02 10:29:58,dva_majors,95511,https://t.me/dva_majors/95511,False,none,none,neu,,48315,35
-2026-07-02 10:29:58,dva_majors,95510,https://t.me/dva_majors/95510,False,none,none,neu,,48316,35
-2026-07-02 10:29:58,dva_majors,95509,https://t.me/dva_majors/95509,False,none,none,neu,,47289,35
-2026-07-02 10:29:58,dva_majors,95508,https://t.me/dva_majors/95508,False,none,none,neu,,46286,35
-2026-07-02 10:29:58,dva_majors,95507,https://t.me/dva_majors/95507,False,none,none,neu,,47283,35
-2026-07-02 10:29:58,dva_majors,95506,https://t.me/dva_majors/95506,False,none,none,neu,,44210,35
-2026-07-02 10:29:58,dva_majors,95505,https://t.me/dva_majors/95505,False,none,none,neu,,44184,35
-2026-07-02 10:34:00,wargonzo,35243,https://t.me/wargonzo/35243,True,russia_internal,ideology_society,pos,Drone operator from Akhmat discusses evolution of warfare technology and targeting effectiveness.,13822,10
-2026-07-02 10:54:54,epoddubny,27998,https://t.me/epoddubny/27998,False,none,none,neu,,14499,4
-2026-07-02 11:03:01,rusich_army,30168,https://t.me/rusich_army/30168,False,none,none,neu,,18131,8
-2026-07-02 11:03:01,rusich_army,30167,https://t.me/rusich_army/30167,False,none,none,neu,,54467,9
-2026-07-02 11:19:07,dva_majors,95515,https://t.me/dva_majors/95515,False,none,none,neu,,46468,104
-2026-07-02 11:19:41,rybar,81466,https://t.me/rybar/81466,False,none,none,neu,,30517,2
-2026-07-02 11:21:03,dva_majors,95517,https://t.me/dva_majors/95517,False,none,none,neu,,44589,281
-2026-07-02 11:21:03,dva_majors,95516,https://t.me/dva_majors/95516,True,strikes_on_ukraine,fuel_infrastructure,pos,"Russian strikes on Ukrainian gas stations cause fuel shortages in Sumy, Kharkiv, Dnipropetrovsk.",45621,282
-2026-07-02 11:44:00,rybar,81467,https://t.me/rybar/81467,True,west_nato,military_aid,neg,US expanding fuel infrastructure bases in Asia-Pacific to support potential conflict with China.,25295,16
-2026-07-02 11:51:50,dva_majors,95520,https://t.me/dva_majors/95520,False,none,none,neu,,38287,38
-2026-07-02 11:51:50,dva_majors,95519,https://t.me/dva_majors/95519,False,none,none,neu,,38253,38
-2026-07-02 11:51:50,dva_majors,95518,https://t.me/dva_majors/95518,True,west_nato,other,pos,Drones attacked Russian embassy in Sweden with paint container and mock explosive device.,38283,38
-2026-07-02 11:59:39,dva_majors,95521,https://t.me/dva_majors/95521,True,ukraine_strikes_on_russia,drones_on_regions,neg,"Ukrainian drones attacked civilian Minsk-Anapa bus at Russian-Belarusian border, injuring two people.",37252,247
-2026-07-02 12:01:00,rusich_army,30172,https://t.me/rusich_army/30172,False,none,none,neu,,13199,13
-2026-07-02 12:01:00,rusich_army,30171,https://t.me/rusich_army/30171,False,none,none,neu,,13178,13
-2026-07-02 12:01:00,rusich_army,30170,https://t.me/rusich_army/30170,False,none,none,neu,,13116,13
-2026-07-02 12:01:00,rusich_army,30169,https://t.me/rusich_army/30169,False,none,none,neu,,28776,13
-2026-07-02 12:02:00,wargonzo,35244,https://t.me/wargonzo/35244,True,west_nato,alliance_politics,neg,Lithuania considers constitutional changes allowing nuclear weapons deployment amid NATO alliance concerns.,8733,14
-2026-07-02 12:11:13,sashakots,62774,https://t.me/sashakots/62774,True,west_nato,military_aid,neg,European rearmament insufficient for potential Russia conflict; Ukraine overarmed to prolong resistance.,8457,23
-2026-07-02 12:31:22,rusich_army,30173,https://t.me/rusich_army/30173,False,none,none,neu,,25393,7
-2026-07-02 12:37:01,epoddubny,27999,https://t.me/epoddubny/27999,True,ukraine_strikes_on_russia,drones_on_regions,neg,"Ukrainian drones attacked civilian bus at border, two people injured.",7432,48
-2026-07-02 12:37:44,sashakots,62775,https://t.me/sashakots/62775,True,strikes_on_ukraine,deep_strikes,pos,Russian strikes on Kyiv caused blackouts across five regions and water supply disruptions.,7146,73
-2026-07-02 12:45:23,rusich_army,30174,https://t.me/rusich_army/30174,False,none,none,neu,,15828,2
-2026-07-02 12:51:36,dva_majors,95522,https://t.me/dva_majors/95522,True,ukraine_strikes_on_russia,drones_on_regions,neg,Ukrainian drone attack on civilian tourist bus at Belarus border injured two drivers.,14478,35
-2026-07-02 13:00:55,sashakots,62776,https://t.me/sashakots/62776,True,frontline,other,pos,Russian Southern grouping liberated village of Piskunovka in Donetsk People's Republic.,2363,4
-2026-07-02 13:03:00,wargonzo,35245,https://t.me/wargonzo/35245,True,russia_internal,ideology_society,pos,Akhmat special forces commander discusses capturing and studying enemy drones to counter them.,2112,4
-2026-07-02 13:03:16,rusich_army,30175,https://t.me/rusich_army/30175,True,frontline,other,pos,Russian drone operator engaged and destroyed group of Ukrainian soldiers in forest area.,6149,1
-2026-07-02 13:04:54,ngp_razvedka,25758,https://t.me/ngp_razvedka/25758,False,none,none,neu,,845,12
-2026-07-02 13:04:54,ngp_razvedka,25757,https://t.me/ngp_razvedka/25757,False,none,none,neu,,841,12
-2026-07-02 13:04:54,ngp_razvedka,25756,https://t.me/ngp_razvedka/25756,True,ukraine_strikes_on_russia,drones_on_regions,neg,Russian intelligence acknowledges error in drone strike location targeting.,866,12
-2026-07-02 13:07:32,epoddubny,28000,https://t.me/epoddubny/28000,True,west_nato,military_aid,neg,European rearmament insufficient for Russia conflict; Ukraine overarmed to extend resistance period.,1206,2
-2026-07-02 13:10:22,dva_majors,95523,https://t.me/dva_majors/95523,True,frontline,pokrovsk,pos,Konstantinovka identified as main concentration of Russian Army efforts in Donetsk direction.,1042,2
+2026-07-02 00:09:50,ngp_razvedka,25744,https://t.me/ngp_razvedka/25744,True,strikes_on_ukraine,fuel_infrastructure,pos,Russian strikes on Ukrainian air defense are economically unsustainable for Ukraine despite Western systems.,12442,27
+2026-07-02 01:27:52,ngp_razvedka,25745,https://t.me/ngp_razvedka/25745,True,strikes_on_ukraine,fuel_infrastructure,pos,Fuel supply difficulties expected in Kharkiv following Russian strikes.,12513,51
+2026-07-02 01:34:19,ngp_razvedka,25746,https://t.me/ngp_razvedka/25746,True,strikes_on_ukraine,deep_strikes,pos,"Large fire reported in Kyiv from Russian strikes, claimed to be industrial facility.",13751,56
+2026-07-02 03:54:07,dva_majors,95485,https://t.me/dva_majors/95485,False,none,none,neu,,93452,45
+2026-07-02 03:56:00,dva_majors,95486,https://t.me/dva_majors/95486,True,strikes_on_ukraine,deep_strikes,pos,"Russian missiles and drones strike Kyiv, Zaporizhzhia, Kharkiv; 327 Ukrainian drones intercepted overnight.",318744,411
+2026-07-02 04:07:36,dva_majors,95487,https://t.me/dva_majors/95487,True,strikes_on_ukraine,deep_strikes,pos,Russian Ministry confirms massive strike on Kyiv military industry and energy infrastructure in response.,99186,145
+2026-07-02 04:16:03,dva_majors,95488,https://t.me/dva_majors/95488,True,ukraine_strikes_on_russia,drones_on_regions,neg,Ukrainian drones strike Kstovo oil refinery in Nizhny Novgorod region causing fire.,99556,304
+2026-07-02 04:18:23,dva_majors,95492,https://t.me/dva_majors/95492,False,none,none,neu,,100987,230
+2026-07-02 04:18:23,dva_majors,95491,https://t.me/dva_majors/95491,False,none,none,neu,,106474,234
+2026-07-02 04:18:23,dva_majors,95490,https://t.me/dva_majors/95490,False,none,none,neu,,102362,241
+2026-07-02 04:18:23,dva_majors,95489,https://t.me/dva_majors/95489,True,strikes_on_ukraine,deep_strikes,pos,Russian strikes on Kyiv showing destruction and fires in city.,101004,232
+2026-07-02 04:51:24,rybar,81456,https://t.me/rybar/81456,True,strikes_on_ukraine,deep_strikes,pos,"Russian strikes on Kyiv, Zaporizhzhia, Kharkiv with fires; Ukrainian air defense struggling.",139110,63
+2026-07-02 05:01:01,rusich_army,30162,https://t.me/rusich_army/30162,False,none,none,neu,,96864,9
+2026-07-02 05:04:20,dva_majors,95493,https://t.me/dva_majors/95493,True,ukraine_strikes_on_russia,drones_on_regions,neg,Ukraine launched 327 drones over Russian regions and Crimea overnight; air defense engaged.,95963,62
+2026-07-02 05:08:02,wargonzo,35231,https://t.me/wargonzo/35231,False,none,none,neu,,33826,61
+2026-07-02 05:08:02,wargonzo,35230,https://t.me/wargonzo/35230,False,none,none,neu,,34375,48
+2026-07-02 05:08:02,wargonzo,35229,https://t.me/wargonzo/35229,False,none,none,neu,,32689,48
+2026-07-02 05:08:02,wargonzo,35228,https://t.me/wargonzo/35228,False,none,none,neu,,30970,48
+2026-07-02 05:08:02,wargonzo,35227,https://t.me/wargonzo/35227,False,none,none,neu,,31561,58
+2026-07-02 05:08:02,wargonzo,35226,https://t.me/wargonzo/35226,False,none,none,neu,,31714,48
+2026-07-02 05:08:02,wargonzo,35225,https://t.me/wargonzo/35225,False,none,none,neu,,29982,58
+2026-07-02 05:08:02,wargonzo,35224,https://t.me/wargonzo/35224,True,frontline,hulyaipole,pos,Russian forces advance capturing Kopani and engaging battles near Iskra on Hulyaipole direction.,32175,59
+2026-07-02 05:28:08,vysokygovorit,23237,https://t.me/vysokygovorit/23237,False,none,none,neu,,97264,34
+2026-07-02 05:33:27,sashakots,62771,https://t.me/sashakots/62771,False,none,none,neu,,49814,462
+2026-07-02 05:33:27,sashakots,62770,https://t.me/sashakots/62770,False,none,none,neu,,53513,461
+2026-07-02 05:33:27,sashakots,62769,https://t.me/sashakots/62769,False,none,none,neu,,49412,461
+2026-07-02 05:33:27,sashakots,62768,https://t.me/sashakots/62768,False,none,none,neu,,47780,461
+2026-07-02 05:33:27,sashakots,62767,https://t.me/sashakots/62767,False,none,none,neu,,45820,461
+2026-07-02 05:33:27,sashakots,62766,https://t.me/sashakots/62766,False,none,none,neu,,46710,461
+2026-07-02 05:33:27,sashakots,62765,https://t.me/sashakots/62765,False,none,none,neu,,46644,462
+2026-07-02 05:33:27,sashakots,62764,https://t.me/sashakots/62764,False,none,none,neu,,46075,462
+2026-07-02 05:33:27,sashakots,62763,https://t.me/sashakots/62763,True,strikes_on_ukraine,deep_strikes,pos,Detailed analysis of Russian combined strike on Kyiv using multiple missile and drone types.,43094,465
+2026-07-02 05:58:17,epoddubny,27989,https://t.me/epoddubny/27989,False,none,none,neu,,31673,15
+2026-07-02 06:01:59,rusich_army,30163,https://t.me/rusich_army/30163,False,none,none,neu,,94370,6
+2026-07-02 06:05:16,ngp_razvedka,25751,https://t.me/ngp_razvedka/25751,False,none,none,neu,,12519,46
+2026-07-02 06:05:16,ngp_razvedka,25750,https://t.me/ngp_razvedka/25750,False,none,none,neu,,12533,46
+2026-07-02 06:05:16,ngp_razvedka,25749,https://t.me/ngp_razvedka/25749,False,none,none,neu,,12724,46
+2026-07-02 06:05:16,ngp_razvedka,25748,https://t.me/ngp_razvedka/25748,False,none,none,neu,,12381,45
+2026-07-02 06:05:16,ngp_razvedka,25747,https://t.me/ngp_razvedka/25747,False,none,none,neu,,12352,46
+2026-07-02 06:17:06,dva_majors,95494,https://t.me/dva_majors/95494,False,none,none,neu,,75028,0
+2026-07-02 06:17:56,dva_majors,95495,https://t.me/dva_majors/95495,False,none,none,neu,,87129,18
+2026-07-02 06:33:00,dva_majors,95496,https://t.me/dva_majors/95496,True,strikes_on_ukraine,deep_strikes,pos,Russia launched 74 missiles and 496 drones of various types against Ukraine.,85024,81
+2026-07-02 06:35:10,rybar,81458,https://t.me/rybar/81458,False,none,none,neu,,154444,159
+2026-07-02 06:49:22,sashakots,62772,https://t.me/sashakots/62772,False,none,none,neu,,43988,36
+2026-07-02 06:50:09,dva_majors,95497,https://t.me/dva_majors/95497,False,none,none,neu,,84805,1
+2026-07-02 07:00:00,vysokygovorit,23238,https://t.me/vysokygovorit/23238,False,none,none,neu,,59138,21
+2026-07-02 07:03:33,rusich_army,30165,https://t.me/rusich_army/30165,True,strikes_on_ukraine,deep_strikes,pos,"Russian strikes hit Kyiv logistics centers, drone storage facilities, and military installations across districts.",110508,103
+2026-07-02 07:04:26,dva_majors,95498,https://t.me/dva_majors/95498,False,none,none,neu,,82564,1
+2026-07-02 07:11:52,sashakots,62773,https://t.me/sashakots/62773,True,strikes_on_ukraine,deep_strikes,pos,Russian strike on Kyiv hit multiple Ukrainian military-industrial targets including missile and drone production facilities.,41282,339
+2026-07-02 07:14:28,epoddubny,27991,https://t.me/epoddubny/27991,False,none,none,neu,,53320,237
+2026-07-02 07:14:28,epoddubny,27990,https://t.me/epoddubny/27990,True,strikes_on_ukraine,deep_strikes,pos,"Russian strike destroyed key Ukrainian military-industrial enterprises in Kyiv producing missiles, drones, and electronic systems.",52470,241
+2026-07-02 07:22:36,wargonzo,35241,https://t.me/wargonzo/35241,False,none,none,neu,,39700,86
+2026-07-02 07:22:36,wargonzo,35240,https://t.me/wargonzo/35240,False,none,none,neu,,40336,84
+2026-07-02 07:22:36,wargonzo,35239,https://t.me/wargonzo/35239,False,none,none,neu,,38816,86
+2026-07-02 07:22:36,wargonzo,35238,https://t.me/wargonzo/35238,False,none,none,neu,,36377,84
+2026-07-02 07:22:36,wargonzo,35237,https://t.me/wargonzo/35237,True,strikes_on_ukraine,deep_strikes,pos,"Russia conducted massive missile-drone strike on Kyiv, Kharkiv, Dnipropetrovsk with ~60 rockets and 100+ drones targeting military industry and energy.",35058,85
+2026-07-02 07:35:10,dva_majors,95499,https://t.me/dva_majors/95499,True,west_nato,military_aid,neg,Britain tested long-range missiles (500-1200km range) for potential supply to Ukraine under Brakestop project.,133065,489
+2026-07-02 07:43:02,rybar,81459,https://t.me/rybar/81459,True,west_nato,military_aid,neg,"Ukraine requested €6.6 billion from EU Peace Fund for military aid, but EU members cooled to the idea.",153040,43
+2026-07-02 07:52:09,ngp_razvedka,25752,https://t.me/ngp_razvedka/25752,True,criticism,government,neg,"Post questions Ukrainian air defense claims, suggesting inflated casualty figures and false victory reporting.",12195,51
+2026-07-02 08:00:00,vysokygovorit,23239,https://t.me/vysokygovorit/23239,True,west_nato,rearmament,neg,"Europe rearming Ukraine because aware of own arsenal insufficiency for war with Russia, unsustainable strategy.",105499,246
+2026-07-02 08:00:57,epoddubny,27992,https://t.me/epoddubny/27992,True,strikes_on_ukraine,fuel_infrastructure,pos,Russian drone destroyed gas distribution station in Pavlograd disrupting civilian and industrial gas supply.,28850,39
+2026-07-02 08:46:36,ngp_razvedka,25753,https://t.me/ngp_razvedka/25753,True,ukraine_strikes_on_russia,other,pos,Ukraine experiencing electricity shortages during anomalous heat wave.,11641,19
+2026-07-02 08:47:18,wargonzo,35242,https://t.me/wargonzo/35242,True,west_nato,other,neg,"Drones attacked Russian embassy in Stockholm with paint and mock bombs, pattern of harassment escalating.",27431,23
+2026-07-02 08:48:49,epoddubny,27995,https://t.me/epoddubny/27995,False,none,none,neu,,30597,52
+2026-07-02 08:48:49,epoddubny,27994,https://t.me/epoddubny/27994,False,none,none,neu,,30652,52
+2026-07-02 08:48:49,epoddubny,27993,https://t.me/epoddubny/27993,True,strikes_on_ukraine,deep_strikes,pos,Russian strike hit Kyiv Radio Plant destroying production of missile and drone components with large fire.,28485,52
+2026-07-02 08:52:13,ngp_razvedka,25754,https://t.me/ngp_razvedka/25754,True,criticism,government,neg,"Post mocks Ukrainian claims about disabling Belarus relays, questions credibility of announced military victories.",12038,58
+2026-07-02 09:00:01,rusich_army,30166,https://t.me/rusich_army/30166,True,ukraine_strikes_on_russia,drones_on_regions,neg,Ukraine conducted extensive drone attacks on Russian regions; 460 drones shot down; new attack corridor toward St. Petersburg emerging.,93439,88
+2026-07-02 09:05:00,rybar,81460,https://t.me/rybar/81460,True,west_nato,rearmament,neg,NATO summit July 7-8 will announce defense contracts worth tens of billions; target 5% GDP defense spending by 2035.,161127,52
+2026-07-02 09:23:37,Sladkov_plus,15715,https://t.me/Sladkov_plus/15715,True,frontline,other,pos,"Russian forces advancing on all fronts, controlling Konstantinovka critical for operations toward Druzhkivka and Kramatorsk.",55914,27
+2026-07-02 09:25:06,Sladkov_plus,15716,https://t.me/Sladkov_plus/15716,True,strikes_on_ukraine,deep_strikes,pos,"Russia struck military-industrial enterprises in Kyiv and airfields across Dnipropetrovsk, Poltava, Cherkasy, Chernihiv regions.",59206,79
+2026-07-02 09:27:14,Sladkov_plus,15718,https://t.me/Sladkov_plus/15718,True,strikes_on_ukraine,deep_strikes,pos,Russian Iskander and Kh-101 missiles hit ammunition depots and industrial zones north of Kyiv causing major fires.,64410,96
+2026-07-02 09:34:19,dva_majors,95500,https://t.me/dva_majors/95500,True,russia_internal,security_cases,pos,"23-year-old Russian charged with treason, terrorism involvement for Ukrainian-directed sabotage of railway infrastructure in Komi.",80071,67
+2026-07-02 09:46:53,dva_majors,95503,https://t.me/dva_majors/95503,False,none,none,neu,,78616,2
+2026-07-02 09:46:53,dva_majors,95502,https://t.me/dva_majors/95502,False,none,none,neu,,81068,2
+2026-07-02 09:46:53,dva_majors,95501,https://t.me/dva_majors/95501,False,none,none,neu,,77816,2
+2026-07-02 09:52:39,epoddubny,27997,https://t.me/epoddubny/27997,True,west_nato,rearmament,neg,Lithuania's defense minister supports constitutional change to allow WMD deployment on Lithuanian territory for NATO.,45499,36
+2026-07-02 09:53:33,dva_majors,95504,https://t.me/dva_majors/95504,True,strikes_on_ukraine,deep_strikes,pos,Peskov reports massive Russian retaliatory strike on military targets in Kyiv and other Ukrainian cities.,81237,91
+2026-07-02 10:07:06,ngp_razvedka,25755,https://t.me/ngp_razvedka/25755,True,criticism,other,neg,"Post defends strategy of continued war operations against defeatist attitudes, argues Western leverage over Ukraine is complete.",16602,31
+2026-07-02 10:28:04,rybar,81465,https://t.me/rybar/81465,False,none,none,neu,,150126,101
+2026-07-02 10:28:04,rybar,81464,https://t.me/rybar/81464,False,none,none,neu,,153733,101
+2026-07-02 10:28:04,rybar,81463,https://t.me/rybar/81463,False,none,none,neu,,151715,102
+2026-07-02 10:28:04,rybar,81462,https://t.me/rybar/81462,False,none,none,neu,,149394,101
+2026-07-02 10:28:04,rybar,81461,https://t.me/rybar/81461,True,strikes_on_ukraine,deep_strikes,pos,Russia conducted combined strike on Ukrainian military-industrial targets including drone/missile producers and fuel infrastructure in Kyiv.,145541,102
+2026-07-02 10:29:58,dva_majors,95514,https://t.me/dva_majors/95514,False,none,none,neu,,86447,79
+2026-07-02 10:29:58,dva_majors,95513,https://t.me/dva_majors/95513,False,none,none,neu,,88459,78
+2026-07-02 10:29:58,dva_majors,95512,https://t.me/dva_majors/95512,False,none,none,neu,,90632,80
+2026-07-02 10:29:58,dva_majors,95511,https://t.me/dva_majors/95511,False,none,none,neu,,87346,79
+2026-07-02 10:29:58,dva_majors,95510,https://t.me/dva_majors/95510,False,none,none,neu,,86149,81
+2026-07-02 10:29:58,dva_majors,95509,https://t.me/dva_majors/95509,False,none,none,neu,,83142,82
+2026-07-02 10:29:58,dva_majors,95508,https://t.me/dva_majors/95508,False,none,none,neu,,79079,83
+2026-07-02 10:29:58,dva_majors,95507,https://t.me/dva_majors/95507,False,none,none,neu,,79296,79
+2026-07-02 10:29:58,dva_majors,95506,https://t.me/dva_majors/95506,False,none,none,neu,,77203,80
+2026-07-02 10:29:58,dva_majors,95505,https://t.me/dva_majors/95505,False,none,none,neu,,77965,79
+2026-07-02 10:34:00,wargonzo,35243,https://t.me/wargonzo/35243,True,russia_internal,ideology_society,pos,Ukrainian drone operator turned into tech specialist; sees concrete tactical results from operations daily.,25866,13
+2026-07-02 10:54:54,epoddubny,27998,https://t.me/epoddubny/27998,False,none,none,neu,,29549,6
+2026-07-02 11:03:01,rusich_army,30168,https://t.me/rusich_army/30168,False,none,none,neu,,36276,30
+2026-07-02 11:03:01,rusich_army,30167,https://t.me/rusich_army/30167,False,none,none,neu,,73479,30
+2026-07-02 11:19:07,dva_majors,95515,https://t.me/dva_majors/95515,False,none,none,neu,,98499,162
+2026-07-02 11:19:41,rybar,81466,https://t.me/rybar/81466,False,none,none,neu,,143791,16
+2026-07-02 11:21:03,dva_majors,95517,https://t.me/dva_majors/95517,False,none,none,neu,,88628,371
+2026-07-02 11:21:03,dva_majors,95516,https://t.me/dva_majors/95516,True,strikes_on_ukraine,fuel_infrastructure,pos,"Russian strikes on Ukrainian fuel infrastructure cause shortages in Sumy, Kharkiv, Dnipropetrovsk.",87975,371
+2026-07-02 11:44:00,rybar,81467,https://t.me/rybar/81467,True,west_nato,military_aid,neg,US expands fuel infrastructure hubs in Asia-Pacific region to prepare logistics for potential China conflict.,142095,34
+2026-07-02 11:51:50,dva_majors,95520,https://t.me/dva_majors/95520,False,none,none,neu,,83523,80
+2026-07-02 11:51:50,dva_majors,95519,https://t.me/dva_majors/95519,False,none,none,neu,,89252,80
+2026-07-02 11:51:50,dva_majors,95518,https://t.me/dva_majors/95518,True,ukraine_strikes_on_russia,other,neg,Drones attacked Russian embassy in Sweden with paint container and fake explosive device.,81989,80
+2026-07-02 11:59:39,dva_majors,95521,https://t.me/dva_majors/95521,True,ukraine_strikes_on_russia,other,neg,"Ukrainian drones attacked passenger bus Minsk-Anapa at border checkpoint, injuring two drivers.",89954,398
+2026-07-02 12:01:00,rusich_army,30172,https://t.me/rusich_army/30172,False,none,none,neu,,36119,29
+2026-07-02 12:01:00,rusich_army,30171,https://t.me/rusich_army/30171,False,none,none,neu,,36475,29
+2026-07-02 12:01:00,rusich_army,30170,https://t.me/rusich_army/30170,False,none,none,neu,,37118,29
+2026-07-02 12:01:00,rusich_army,30169,https://t.me/rusich_army/30169,False,none,none,neu,,75268,29
+2026-07-02 12:02:00,wargonzo,35244,https://t.me/wargonzo/35244,True,west_nato,alliance_politics,neg,Lithuania considers removing constitutional ban on nuclear weapons deployment amid NATO discussions.,24124,25
+2026-07-02 12:11:13,sashakots,62774,https://t.me/sashakots/62774,True,west_nato,military_aid,neg,Europe rearming slowly to extend Ukrainian resistance but lacks weapons stockpiles for own defense.,21714,56
+2026-07-02 12:31:22,rusich_army,30173,https://t.me/rusich_army/30173,False,none,none,neu,,75436,16
+2026-07-02 12:37:01,epoddubny,27999,https://t.me/epoddubny/27999,True,ukraine_strikes_on_russia,other,neg,"Ukrainian drones attacked Minsk-Anapa passenger bus at Russian-Belarusian border, injuring two drivers.",28051,82
+2026-07-02 12:37:44,sashakots,62775,https://t.me/sashakots/62775,True,strikes_on_ukraine,deep_strikes,pos,Russian strikes on Kyiv knocked out electricity across five Ukrainian regions; power cuts up to 8 hours daily.,25598,169
+2026-07-02 12:45:23,rusich_army,30174,https://t.me/rusich_army/30174,False,none,none,neu,,82414,12
+2026-07-02 12:51:36,dva_majors,95522,https://t.me/dva_majors/95522,True,ukraine_strikes_on_russia,other,neg,"Ukrainian drones attacked civilian bus Minsk-Anapa at Bryansk border, injuring two drivers.",84928,108
+2026-07-02 13:00:55,sashakots,62776,https://t.me/sashakots/62776,True,frontline,kupyansk,pos,Russian forces captured Piskunovka village in Donetsk People's Republic near Slavyansk.,102890,105
+2026-07-02 13:03:00,wargonzo,35245,https://t.me/wargonzo/35245,True,russia_internal,ideology_society,pos,Akhmat special forces unit hunts enemy drones to study and defeat Ukrainian reconnaissance technology.,23545,10
+2026-07-02 13:03:16,rusich_army,30175,https://t.me/rusich_army/30175,True,frontline,other,pos,Russian drone operator struck Ukrainian military personnel in forest; hunt ongoing.,76097,13
+2026-07-02 13:04:54,ngp_razvedka,25758,https://t.me/ngp_razvedka/25758,False,none,none,neu,,12140,79
+2026-07-02 13:04:54,ngp_razvedka,25757,https://t.me/ngp_razvedka/25757,False,none,none,neu,,12134,80
+2026-07-02 13:04:54,ngp_razvedka,25756,https://t.me/ngp_razvedka/25756,True,strikes_on_ukraine,fuel_infrastructure,pos,Russian reconnaissance identifies Ukrainian fuel depot locations for future targeting.,12140,80
+2026-07-02 13:07:32,epoddubny,28000,https://t.me/epoddubny/28000,True,west_nato,military_aid,neg,Europe rearming slowly to extend Ukrainian resistance but lacks weapons stockpiles for own defense.,21807,28
+2026-07-02 13:10:22,dva_majors,95523,https://t.me/dva_majors/95523,True,frontline,kupyansk,pos,Konstantinovka identified as main Russian offensive effort direction; historical context provided.,90074,113
+2026-07-02 13:17:01,epoddubny,28001,https://t.me/epoddubny/28001,True,west_nato,military_aid,neg,"Britain discontinues Storm Shadow production, develops cheaper missiles for Ukraine supplies instead.",27546,53
+2026-07-02 13:30:18,rybar,81468,https://t.me/rybar/81468,True,west_nato,other,neu,"US export controls on AI technology face technical loopholes, ally frustration, Chinese alternatives.",151081,62
+2026-07-02 13:32:35,dva_majors,95524,https://t.me/dva_majors/95524,True,frontline,kupyansk,pos,Russian forces advance toward Slavyansk-Kramatorsk agglomeration after Piskunovka capture confirmed.,85989,75
+2026-07-02 13:39:42,vysokygovorit,23241,https://t.me/vysokygovorit/23241,True,frontline,kupyansk,pos,Russian forces liberated Piskunovka village near Slavyansk in Donetsk People's Republic.,52897,32
+2026-07-02 13:49:22,sashakots,62779,https://t.me/sashakots/62779,False,none,none,neu,,29779,222
+2026-07-02 13:49:22,sashakots,62778,https://t.me/sashakots/62778,False,none,none,neu,,30753,222
+2026-07-02 13:49:22,sashakots,62777,https://t.me/sashakots/62777,True,strikes_on_ukraine,deep_strikes,pos,"Russian strike hit BookChef publisher warehouse in Kyiv, destroying thousands of books on Ukrainian nationalism.",28258,223
+2026-07-02 14:07:51,rybar,81469,https://t.me/rybar/81469,False,none,none,neu,,137181,15
+2026-07-02 14:12:50,dva_majors,95525,https://t.me/dva_majors/95525,True,ukraine_strikes_on_russia,drones_on_regions,neg,Ukrainian drone attacks on Kherson region killed one civilian and wounded three others across multiple settlements.,83449,34
+2026-07-02 14:15:12,wargonzo,35246,https://t.me/wargonzo/35246,False,none,none,neu,,23894,3
+2026-07-02 14:38:09,epoddubny,28002,https://t.me/epoddubny/28002,True,strikes_on_ukraine,deep_strikes,pos,"Russian strike damaged Atlon Avia, key Ukrainian drone and loitering munitions manufacturer in Kyiv.",94136,148
+2026-07-02 14:45:56,sashakots,62780,https://t.me/sashakots/62780,True,strikes_on_ukraine,deep_strikes,pos,"Russian strike damaged Atlon Avia, key Ukrainian drone and loitering munitions manufacturer in Kyiv.",22612,35
+2026-07-02 14:57:08,dva_majors,95526,https://t.me/dva_majors/95526,False,none,none,neu,,76344,59
+2026-07-02 15:01:01,rusich_army,30176,https://t.me/rusich_army/30176,True,west_nato,military_aid,neg,US B-2A stealth bombers tested new LRASM anti-ship missiles during Valiant Shield 26 exercises in Pacific.,65955,14
+2026-07-02 15:01:55,dva_majors,95527,https://t.me/dva_majors/95527,False,none,none,neu,,75789,71
+2026-07-02 15:03:53,ngp_razvedka,25759,https://t.me/ngp_razvedka/25759,False,none,none,neu,,12747,64
+2026-07-02 15:05:00,wargonzo,35247,https://t.me/wargonzo/35247,False,none,none,neu,,22930,11
+2026-07-02 15:08:08,rybar,81470,https://t.me/rybar/81470,True,west_nato,alliance_politics,neu,"EU Commission head visits Armenia, discusses deepening EU-Armenia cooperation and economic support amid Russian relations strain.",132867,32
+2026-07-02 15:19:18,sashakots,62781,https://t.me/sashakots/62781,True,west_nato,other,neg,"French court released Russian tanker Tagor after fine, charged with violating EU sanctions on Russian oil trade.",30751,91
+2026-07-02 15:33:00,dva_majors,95537,https://t.me/dva_majors/95537,False,none,none,neu,,74354,68
+2026-07-02 15:33:00,dva_majors,95536,https://t.me/dva_majors/95536,False,none,none,neu,,77953,69
+2026-07-02 15:33:00,dva_majors,95535,https://t.me/dva_majors/95535,False,none,none,neu,,76009,68
+2026-07-02 15:33:00,dva_majors,95534,https://t.me/dva_majors/95534,False,none,none,neu,,75714,69
+2026-07-02 15:33:00,dva_majors,95533,https://t.me/dva_majors/95533,False,none,none,neu,,75626,80
+2026-07-02 15:33:00,dva_majors,95532,https://t.me/dva_majors/95532,False,none,none,neu,,73579,68
+2026-07-02 15:33:00,dva_majors,95531,https://t.me/dva_majors/95531,False,none,none,neu,,72208,69
+2026-07-02 15:33:00,dva_majors,95530,https://t.me/dva_majors/95530,False,none,none,neu,,72545,69
+2026-07-02 15:33:00,dva_majors,95529,https://t.me/dva_majors/95529,False,none,none,neu,,70332,74
+2026-07-02 15:33:00,dva_majors,95528,https://t.me/dva_majors/95528,False,none,none,neu,,69451,69
+2026-07-02 15:35:13,dva_majors,95538,https://t.me/dva_majors/95538,True,strikes_on_ukraine,fuel_infrastructure,pos,Russian forces destroyed approximately 70 Ukrainian fuel stations targeting logistics routes to the frontline.,77897,180
+2026-07-02 15:41:46,vysokygovorit,23242,https://t.me/vysokygovorit/23242,False,none,none,neu,,58420,284
+2026-07-02 15:44:33,sashakots,62784,https://t.me/sashakots/62784,False,none,none,neu,,28791,42
+2026-07-02 15:44:33,sashakots,62783,https://t.me/sashakots/62783,False,none,none,neu,,28823,42
+2026-07-02 15:44:33,sashakots,62782,https://t.me/sashakots/62782,True,strikes_on_ukraine,deep_strikes,pos,"Russian drone operators conduct medium-range strikes against Ukrainian rear logistics, ammunition, and command infrastructure.",25174,44
+2026-07-02 15:45:11,dva_majors,95539,https://t.me/dva_majors/95539,True,russia_internal,mobilisation,neg,Belarusian official warns citizens to avoid travel due to Ukrainian attacks; implies mobilization pressure on Belarus.,74537,230
+2026-07-02 15:47:39,epoddubny,28003,https://t.me/epoddubny/28003,True,frontline,other,pos,"Russian Southern grouping captured Piskunovka settlement in Donetsk, advancing along Seversky Donets line.",23139,23
+2026-07-02 15:58:56,vysokygovorit,23243,https://t.me/vysokygovorit/23243,False,none,none,neu,,60030,134
+2026-07-02 16:01:58,dva_majors,95540,https://t.me/dva_majors/95540,True,criticism,government,neg,Ukrainian officials deny attacking Belarusian civilian bus; post criticizes alleged Ukrainian disinformation campaign.,73431,45
+2026-07-02 16:17:44,rybar,81471,https://t.me/rybar/81471,True,frontline,other,pos,"Russian forces liberated Piskunovka near Slavyansk, with Ukrainian holdout positions still present in surrounding chalk deposits.",128733,98
+2026-07-02 16:31:55,wargonzo,35248,https://t.me/wargonzo/35248,False,none,none,neu,,22403,6
+2026-07-02 16:34:58,dva_majors,95541,https://t.me/dva_majors/95541,False,none,none,neu,,69767,16
+2026-07-02 16:35:53,vysokygovorit,23244,https://t.me/vysokygovorit/23244,False,none,none,neu,,60178,208
+2026-07-02 16:37:55,dva_majors,95542,https://t.me/dva_majors/95542,False,none,none,neu,,74392,15
+2026-07-02 16:38:46,dva_majors,95543,https://t.me/dva_majors/95543,True,ukraine_strikes_on_russia,crimea_energy,neg,Crimea's northern regions face energy crisis from Ukrainian drone attacks; officials mobilizing counter-measures.,76577,85
+2026-07-02 16:41:50,rybar,81472,https://t.me/rybar/81472,True,strikes_on_ukraine,deep_strikes,neu,Russian bi-weekly strike pattern on Kyiv predictable; Ukrainian forces pre-position defenses in advance.,128589,88
+2026-07-02 16:46:26,epoddubny,28004,https://t.me/epoddubny/28004,True,frontline,hulyaipole,pos,"Russian FPV drones destroy ~100 Ukrainian heavy drones on Dobropole direction, degrading enemy firepower.",30189,28
+2026-07-02 16:50:15,dva_majors,95544,https://t.me/dva_majors/95544,False,none,none,neu,,77629,219
+2026-07-02 16:59:01,sashakots,62787,https://t.me/sashakots/62787,False,none,none,neu,,31879,55
+2026-07-02 16:59:01,sashakots,62786,https://t.me/sashakots/62786,False,none,none,neu,,31902,55
+2026-07-02 16:59:01,sashakots,62785,https://t.me/sashakots/62785,False,none,none,neu,,28128,56
+2026-07-02 17:01:01,rusich_army,30177,https://t.me/rusich_army/30177,False,none,none,neu,,62695,7
+2026-07-02 17:03:20,dva_majors,95548,https://t.me/dva_majors/95548,False,none,none,neu,,94522,241
+2026-07-02 17:03:20,dva_majors,95547,https://t.me/dva_majors/95547,False,none,none,neu,,94815,241
+2026-07-02 17:03:20,dva_majors,95546,https://t.me/dva_majors/95546,False,none,none,neu,,93102,241
+2026-07-02 17:03:20,dva_majors,95545,https://t.me/dva_majors/95545,True,ukraine_strikes_on_russia,drones_on_regions,neg,Ukrainian drones destroy 20+ trucks in Donetsk; poor Russian vehicle dispersal increases convoy losses.,80942,244
+2026-07-02 17:04:48,wargonzo,35249,https://t.me/wargonzo/35249,True,russia_internal,ideology_society,pos,Documentary on Russian FPV drone operators shows system discipline and morale from successful target kills.,28536,17
+2026-07-02 17:17:00,rybar,81473,https://t.me/rybar/81473,True,west_nato,other,neg,Online course teaching Russian decolonization features convicted extremists and Western academics promoting separatism.,128670,55
+2026-07-02 17:26:53,rusich_army,30178,https://t.me/rusich_army/30178,False,none,none,neu,,62606,1
+2026-07-02 17:29:01,rybar,81474,https://t.me/rybar/81474,True,frontline,kupyansk,pos,"Russian forces advance east of Oskol river near Kupyansk, taking territory and inflicting heavy Ukrainian losses.",134372,125
+2026-07-02 17:56:42,sashakots,62788,https://t.me/sashakots/62788,False,none,none,neu,,32232,23
+2026-07-02 18:01:13,dva_majors,95549,https://t.me/dva_majors/95549,True,frontline,hulyaipole,pos,"Russian FPV drone operators destroy Ukrainian vehicles near Kamyshevakha, disrupting logistics to Orekhov.",91728,37
+2026-07-02 18:24:29,rusich_army,30179,https://t.me/rusich_army/30179,True,strikes_on_ukraine,deep_strikes,pos,"Russian strikes hit Antonov aerospace plant producing Ukrainian long-range drones, causing damage pending satellite confirmation.",65011,9
+2026-07-02 18:30:01,rusich_army,30180,https://t.me/rusich_army/30180,False,none,none,neu,,65870,17
+2026-07-02 18:50:26,rybar,81475,https://t.me/rybar/81475,True,frontline,other,pos,Russian forces systematically capture remaining Konstantinovka neighborhoods; expected full control by July 2026.,146601,144
+2026-07-02 19:22:02,wargonzo,35251,https://t.me/wargonzo/35251,False,none,none,neu,,26375,12
+2026-07-02 19:22:02,wargonzo,35250,https://t.me/wargonzo/35250,True,russia_internal,ideology_society,neu,Historical narrative of 1993 Abkhaz-Georgian war operation illustrating humanitarianism amid military conflict.,23159,14
+2026-07-02 19:46:16,rybar,81476,https://t.me/rybar/81476,True,west_nato,military_aid,neg,NATO summit in Ankara to sign defense contracts worth tens of billions; Trump advancing AI dominance strategy.,121292,17
+2026-07-02 19:50:34,rybar,81477,https://t.me/rybar/81477,True,strikes_on_ukraine,deep_strikes,pos,"Russian night strike hits Kyiv military factories, logistics hub and institutions; significant fires reported across city.",123602,112
+2026-07-02 20:03:32,sashakots,62870,https://t.me/sashakots/62870,False,none,none,neu,,75572,40
+2026-07-02 20:05:15,vysokygovorit,23245,https://t.me/vysokygovorit/23245,False,none,none,neu,,52218,13
+2026-07-02 20:05:44,vysokygovorit,23246,https://t.me/vysokygovorit/23246,False,none,none,neu,,54845,17
+2026-07-02 20:20:41,rybar,81478,https://t.me/rybar/81478,False,none,none,neu,,161791,13
+2026-07-02 21:09:28,Sladkov_plus,15719,https://t.me/Sladkov_plus/15719,True,russia_internal,other,neg,Implied criticism that damage to Kapotnya refinery has not prompted Russian strategic thinking changes.,45072,103
+2026-07-02 21:10:21,rybar,81482,https://t.me/rybar/81482,False,none,none,neu,,107500,70
+2026-07-02 21:10:21,rybar,81481,https://t.me/rybar/81481,False,none,none,neu,,103980,69
+2026-07-02 21:10:21,rybar,81480,https://t.me/rybar/81480,False,none,none,neu,,103738,69
+2026-07-02 21:10:21,rybar,81479,https://t.me/rybar/81479,True,strikes_on_ukraine,deep_strikes,pos,"Russian combined strike hits Kyiv military-industrial complex, energy infrastructure; parts of city lose power.",101928,69
+2026-07-02 21:10:22,rybar,81484,https://t.me/rybar/81484,False,none,none,neu,,107318,69
+2026-07-02 21:10:22,rybar,81483,https://t.me/rybar/81483,False,none,none,neu,,107711,69
+2026-07-02 21:32:07,dva_majors,95550,https://t.me/dva_majors/95550,True,ukraine_strikes_on_russia,other,neg,"Ukrainian drones damaged fire station at Zaporizhzhia NPP, reducing emergency response capability.",79943,108
+2026-07-02 21:36:57,dva_majors,95551,https://t.me/dva_majors/95551,False,none,none,neu,,84994,77
