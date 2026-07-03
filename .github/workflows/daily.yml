@@ -2,11 +2,20 @@ name: Daily collection and analysis
 
 on:
   schedule:
-    - cron: "30 5 * * *"   # 05:30 UTC every day
+    # GitHub delays scheduled runs unpredictably (often by hours on busy
+    # minutes like :00/:30), so: run early at an off-peak minute, with a
+    # backup slot two hours later. The guard step makes the backup a no-op
+    # when the first run already landed.
+    - cron: "47 4 * * *"   # 04:47 UTC — primary
+    - cron: "47 6 * * *"   # 06:47 UTC — backup if the primary was delayed/skipped
   workflow_dispatch: {}     # allows manual "Run workflow" button
 
 permissions:
   contents: write
+
+concurrency:
+  group: daily
+  cancel-in-progress: false
 
 jobs:
   daily:
@@ -15,14 +24,26 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Skip if today's update already landed (backup-run guard)
+        id: guard
+        if: github.event_name == 'schedule'
+        run: |
+          if git log -1 --pretty=%s | grep -q "Daily data update $(date -u +%F)"; then
+            echo "done=true" >> "$GITHUB_OUTPUT"
+            echo "Today's update is already committed — nothing to do."
+          fi
+
       - uses: actions/setup-python@v5
+        if: steps.guard.outputs.done != 'true'
         with:
           python-version: "3.12"
 
       - name: Install dependencies
+        if: steps.guard.outputs.done != 'true'
         run: pip install -r requirements.txt
 
       - name: Collect posts
+        if: steps.guard.outputs.done != 'true'
         env:
           TELEGRAM_API_ID: ${{ secrets.TELEGRAM_API_ID }}
           TELEGRAM_API_HASH: ${{ secrets.TELEGRAM_API_HASH }}
@@ -30,23 +51,27 @@ jobs:
         run: python scraper/collect.py --days 1.5
 
       - name: Analyze yesterday and write the brief
+        if: steps.guard.outputs.done != 'true'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python scraper/analyze.py
 
       - name: Publish newsletter feed
+        if: steps.guard.outputs.done != 'true'
         run: python scraper/newsletter.py --feed
 
       - name: Send newsletter (optional email fallback)
+        if: steps.guard.outputs.done != 'true'
         env:
           EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
           EMAIL_APP_PASSWORD: ${{ secrets.EMAIL_APP_PASSWORD }}
         run: python scraper/newsletter.py
 
       - name: Commit and push results
+        if: steps.guard.outputs.done != 'true'
         run: |
           git config user.name "zbloggers-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data
+          git add data feed.xml
           git diff --cached --quiet || git commit -m "Daily data update $(date -u +%F)"
           git push

@@ -6,7 +6,7 @@ Daily monitoring of 10 major pro-Kremlin military Telegram channels for OSINT an
 
 ## How it works
 
-Every morning at 05:30 UTC a GitHub Actions run:
+Every morning at 04:47 UTC (with a 06:47 UTC backup slot in case GitHub delays the first run) a GitHub Actions run:
 1. **Collects** the previous day's posts from all channels via the Telegram API → `data/posts/YYYY-MM.csv`
 2. **Classifies** every post with Claude (Haiku): substantive or noise, topic, subtopic, sentiment, one-line English summary
 3. **Flags** new stories (subtopic unseen in 14 days, now in 2+ channels), mood swings (net sentiment moves ≥25 pts), and a standing watchlist (mobilisation rumours, criticism of Putin)
