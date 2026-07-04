@@ -3107,6 +3107,107 @@
     "criticism/other": 2
    },
    "flags": 3
+  },
+  {
+   "trackers": {
+    "frontline": {
+     "pos": 27,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russian troops capture Aleksandrovka on Dnipropetrovsk direction along Volchya river line.",
+     "story_url": "https://t.me/rybar/81496",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81501",
+       "t": "Russian forces complete Konstantinovka assault; logistical infrastructure degradation ongoing.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 11,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russia strikes Ukrainian postal logistics hubs and distribution centers across depth of territory.",
+     "story_url": "https://t.me/rybar/81488",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81493",
+       "t": "Ukrainian drones strike market in Tokamak, killing 5 civilians and wounding 18.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 7,
+     "neg": 7,
+     "neu": 0,
+     "net": 0,
+     "story": "Ukraine launches drone attacks on Crimea, Tula, Russian regions; attacks bus in Bryansk.",
+     "story_url": "https://t.me/dva_majors/95553",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/95555",
+       "t": "Russian air defense destroys 155 Ukrainian drones over multiple regions overnight.",
+       "ch": "Two Majors"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/81485",
+       "t": "Ukraine launches drone waves at Crimea, strikes bus in Bryansk; heavy fighting on Sumy direction.",
+       "ch": "Rybar"
+      }
+     ]
+    }
+   },
+   "date": "2026-07-03",
+   "total": 183,
+   "substantive": 92,
+   "headline": "Russia claims Konstantinovka fall after 260 days; fuel-strike drumbeat",
+   "topics": {
+    "strikes_on_ukraine": 11,
+    "frontline": 27,
+    "ukraine_strikes_on_russia": 14,
+    "west_nato": 17,
+    "russia_internal": 20,
+    "criticism": 3
+   },
+   "nets": {
+    "strikes_on_ukraine": 100,
+    "frontline": 100,
+    "ukraine_strikes_on_russia": 0,
+    "west_nato": -47,
+    "russia_internal": 0,
+    "criticism": -100
+   },
+   "subtopics": {
+    "strikes_on_ukraine/fuel_infrastructure": 4,
+    "strikes_on_ukraine/other": 7,
+    "frontline/pokrovsk": 4,
+    "frontline/hulyaipole": 1,
+    "frontline/kupyansk": 1,
+    "frontline/other": 21,
+    "ukraine_strikes_on_russia/drones_on_regions": 9,
+    "ukraine_strikes_on_russia/other": 5,
+    "west_nato/military_aid": 6,
+    "west_nato/rearmament": 3,
+    "west_nato/negotiations": 2,
+    "west_nato/alliance_politics": 2,
+    "west_nato/other": 4,
+    "russia_internal/ideology_society": 6,
+    "russia_internal/security_cases": 3,
+    "russia_internal/elite_politics": 4,
+    "russia_internal/economy": 3,
+    "russia_internal/mobilisation": 3,
+    "russia_internal/other": 1,
+    "criticism/government": 3
+   },
+   "flags": 4
   }
  ]
 }
