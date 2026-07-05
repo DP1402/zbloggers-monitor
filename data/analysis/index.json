@@ -3208,6 +3208,105 @@
     "criticism/government": 3
    },
    "flags": 4
+  },
+  {
+   "trackers": {
+    "frontline": {
+     "pos": 23,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Konstantinovka liberation reported; Ukrainian drones attack Russian regions; infrastructure damage in Belgorod.",
+     "story_url": "https://t.me/dva_majors/95608",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81506",
+       "t": "Konstantinovka liberation announced; Ukrainian drones attack Russian regions; infrastructure damage in Belgorod.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 4,
+     "neg": 0,
+     "neu": 1,
+     "net": 80,
+     "story": "Russian strikes hit Ukrainian logistics and rail infrastructure; Ukraine conducts massive missile attack on Belgorod and Crimea power grid.",
+     "story_url": "https://t.me/rybar/81523",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/vysokygovorit/23251",
+       "t": "Russia destroyed Ukraine's largest poultry farm; targeting agricultural exports funding drone purchases against Russia.",
+       "ch": "Starshe Eddy"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 1,
+     "neg": 13,
+     "neu": 0,
+     "net": -86,
+     "story": "Forecast predicts Ukraine will escalate strikes on Crimea with increased forces and sabotage operations despite Russian defensive reinforcement.",
+     "story_url": "https://t.me/dva_majors/95642",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/sashakots/62909",
+       "t": "Russian aviation destroys Ukrainian heavy drone control point in Sumy region, eliminating operators terrorizing Belgorod.",
+       "ch": "Kotsnews"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/dva_majors/95641",
+       "t": "Crimea faces fuel crisis amid Ukrainian drone strikes on fuel infrastructure; population logistics complicated, refueling halted officially.",
+       "ch": "Two Majors"
+      }
+     ]
+    }
+   },
+   "date": "2026-07-04",
+   "total": 137,
+   "substantive": 66,
+   "headline": "Konstantinovka falls; Ukrainian drones hammer St. Petersburg, Crimea",
+   "topics": {
+    "strikes_on_ukraine": 5,
+    "frontline": 23,
+    "ukraine_strikes_on_russia": 14,
+    "west_nato": 8,
+    "russia_internal": 12,
+    "criticism": 4
+   },
+   "nets": {
+    "strikes_on_ukraine": 80,
+    "frontline": 100,
+    "ukraine_strikes_on_russia": -86,
+    "west_nato": -88,
+    "russia_internal": -8,
+    "criticism": -100
+   },
+   "subtopics": {
+    "strikes_on_ukraine/deep_strikes": 2,
+    "strikes_on_ukraine/fuel_infrastructure": 2,
+    "strikes_on_ukraine/other": 1,
+    "frontline/hulyaipole": 1,
+    "frontline/kupyansk": 5,
+    "frontline/other": 17,
+    "ukraine_strikes_on_russia/drones_on_regions": 7,
+    "ukraine_strikes_on_russia/other": 7,
+    "west_nato/military_aid": 4,
+    "west_nato/alliance_politics": 3,
+    "west_nato/other": 1,
+    "russia_internal/ideology_society": 1,
+    "russia_internal/security_cases": 4,
+    "russia_internal/economy": 2,
+    "russia_internal/mobilisation": 1,
+    "russia_internal/other": 4,
+    "criticism/government": 3,
+    "criticism/other": 1
+   },
+   "flags": 2
   }
  ]
 }
