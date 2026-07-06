@@ -3307,6 +3307,105 @@
     "criticism/other": 1
    },
    "flags": 2
+  },
+  {
+   "trackers": {
+    "frontline": {
+     "pos": 14,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russian forces complete liberation of Konstantinovka after months of intense urban combat.",
+     "story_url": "https://t.me/rybar/81527",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81528",
+       "t": "Russia proposes humanitarian ceasefire in Konstantinovka for body exchange, signaling territorial control.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 20,
+     "neg": 2,
+     "neu": 0,
+     "net": 82,
+     "story": "Russia intensifies strikes on Ukrainian fuel infrastructure and transport corridors amid logistics crisis.",
+     "story_url": "https://t.me/dva_majors/95648",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/95669",
+       "t": "Russian fuel station bombing campaign effective but strikes often hit non-critical equipment instead of fuel storage tanks.",
+       "ch": "Two Majors"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/81535",
+       "t": "Ukrainian campaign targeting Russian fuel infrastructure weakens Russian economic base and amplifies negative information operations.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 0,
+     "neg": 3,
+     "neu": 0,
+     "net": -100,
+     "story": "Enemy creates serious energy supply problems for Crimea and Sevastopol overnight.",
+     "story_url": "https://t.me/dva_majors/95691",
+     "examples": [
+      {
+       "s": "neg",
+       "url": "https://t.me/dva_majors/95649",
+       "t": "Ukraine attacks Rostov region with drones and missiles; damage reported to civilian infrastructure.",
+       "ch": "Two Majors"
+      }
+     ]
+    }
+   },
+   "date": "2026-07-05",
+   "total": 147,
+   "substantive": 62,
+   "headline": "Russia claims Konstantinovka; ramps fuel-infrastructure strike campaign",
+   "topics": {
+    "strikes_on_ukraine": 22,
+    "frontline": 14,
+    "ukraine_strikes_on_russia": 3,
+    "west_nato": 13,
+    "russia_internal": 7,
+    "criticism": 3
+   },
+   "nets": {
+    "strikes_on_ukraine": 82,
+    "frontline": 100,
+    "ukraine_strikes_on_russia": -100,
+    "west_nato": -62,
+    "russia_internal": 29,
+    "criticism": -100
+   },
+   "subtopics": {
+    "strikes_on_ukraine/deep_strikes": 3,
+    "strikes_on_ukraine/fuel_infrastructure": 13,
+    "strikes_on_ukraine/other": 6,
+    "frontline/pokrovsk": 3,
+    "frontline/hulyaipole": 1,
+    "frontline/kupyansk": 1,
+    "frontline/other": 9,
+    "ukraine_strikes_on_russia/crimea_energy": 1,
+    "ukraine_strikes_on_russia/drones_on_regions": 2,
+    "west_nato/military_aid": 5,
+    "west_nato/rearmament": 2,
+    "west_nato/negotiations": 1,
+    "west_nato/alliance_politics": 3,
+    "west_nato/other": 2,
+    "russia_internal/ideology_society": 3,
+    "russia_internal/security_cases": 2,
+    "russia_internal/other": 2,
+    "criticism/government": 3
+   },
+   "flags": 2
   }
  ]
 }
