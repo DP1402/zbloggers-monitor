@@ -3406,6 +3406,102 @@
     "criticism/government": 3
    },
    "flags": 2
+  },
+  {
+   "trackers": {
+    "frontline": {
+     "pos": 16,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russian forces near Volchansk captured new positions, eliminated Ukrainian pockets, and straightened frontline.",
+     "story_url": "https://t.me/rybar/81568",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81569",
+       "t": "Russian forces captured Kondratovka and Andreevka in Sumy region despite Ukrainian counterattacks.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 18,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russian forces conducted combined strike on Kyiv targeting military industry and fuel-energy infrastructure.",
+     "story_url": "https://t.me/rybar/81554",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81566",
+       "t": "Russian forces struck Azerbaijani SOCAR fuel station in Ukraine; Azerbaijan protests what it views as deliberate targeting.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 4,
+     "neg": 17,
+     "neu": 0,
+     "net": -62,
+     "story": "Ukraine struck Crimea, Sevastopol, Kherson, Zaporizhzhia energy infrastructure and Russian regions; Moscow, Yaroslavl, Leningrad areas under drone attacks.",
+     "story_url": "https://t.me/dva_majors/95693",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81570",
+       "t": "Ukrainian strike on Vizar defense plant caused secondary explosions but no nuclear contamination.",
+       "ch": "Rybar"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/dva_majors/95713",
+       "t": "Ukrainian drones breach Crimea air defense, damage energy and logistics infrastructure despite some key systems operational.",
+       "ch": "Two Majors"
+      }
+     ]
+    }
+   },
+   "date": "2026-07-06",
+   "total": 219,
+   "substantive": 77,
+   "headline": "Russia claims Konstantinovka, hits Kyiv; Ukraine drones reach Omsk",
+   "topics": {
+    "strikes_on_ukraine": 18,
+    "frontline": 16,
+    "ukraine_strikes_on_russia": 21,
+    "west_nato": 9,
+    "russia_internal": 10,
+    "criticism": 3
+   },
+   "nets": {
+    "strikes_on_ukraine": 100,
+    "frontline": 100,
+    "ukraine_strikes_on_russia": -62,
+    "west_nato": -33,
+    "russia_internal": 0,
+    "criticism": -100
+   },
+   "subtopics": {
+    "strikes_on_ukraine/deep_strikes": 13,
+    "strikes_on_ukraine/fuel_infrastructure": 4,
+    "strikes_on_ukraine/other": 1,
+    "frontline/kupyansk": 2,
+    "frontline/other": 14,
+    "ukraine_strikes_on_russia/crimea_energy": 2,
+    "ukraine_strikes_on_russia/drones_on_regions": 13,
+    "ukraine_strikes_on_russia/other": 6,
+    "west_nato/military_aid": 5,
+    "west_nato/negotiations": 2,
+    "west_nato/alliance_politics": 2,
+    "russia_internal/ideology_society": 4,
+    "russia_internal/security_cases": 4,
+    "russia_internal/elite_politics": 2,
+    "criticism/government": 3
+   },
+   "flags": 3
   }
  ]
 }
