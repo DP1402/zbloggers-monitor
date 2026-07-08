@@ -3502,6 +3502,105 @@
     "criticism/government": 3
    },
    "flags": 3
+  },
+  {
+   "trackers": {
+    "frontline": {
+     "pos": 9,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russian forces liberate village Petro-Ivanovka in Kupyansk district, forcing Ukrainian forces to relocate reserves under pressure.",
+     "story_url": "https://t.me/rybar/81589",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/95758",
+       "t": "Russian forces captured Petro-Ivanovka in Kharkiv region; forced Ukrainian reserves from other directions to reinforce.",
+       "ch": "Two Majors"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 8,
+     "neg": 0,
+     "neu": 1,
+     "net": 89,
+     "story": "Russian forces destroy Ukrainian fuel stations, trucks and drone storage; Ukraine retaliates with drone attacks on Crimean energy infrastructure and Russian regions.",
+     "story_url": "https://t.me/rybar/81590",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/95749",
+       "t": "Russian forces struck infrastructure targets in Dnipropetrovsk, Zaporizhzhia, and Kryvyi Rih.",
+       "ch": "Two Majors"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 4,
+     "neg": 16,
+     "neu": 0,
+     "net": -60,
+     "story": "Ukraine launched 430+ drones at Moscow region; Russian air defense claimed interception of majority and downing 36 near capital.",
+     "story_url": "https://t.me/dva_majors/95748",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/epoddubny/28087",
+       "t": "Russian strikes destroy Ukrainian locomotives, trucks carrying drones, and cargo transport, disrupting supply logistics.",
+       "ch": "Poddubny"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/81581",
+       "t": "Ukraine's drones reached Tyumen and Ukhta in June; Russian air defense shot down record thousands; over 1100 civilians harmed.",
+       "ch": "Rybar"
+      }
+     ]
+    }
+   },
+   "date": "2026-07-07",
+   "total": 150,
+   "substantive": 63,
+   "headline": "Massive Ukrainian drone strike on Moscow; Black Sea Fleet failures spark criticism",
+   "topics": {
+    "strikes_on_ukraine": 9,
+    "frontline": 9,
+    "ukraine_strikes_on_russia": 20,
+    "west_nato": 11,
+    "russia_internal": 7,
+    "criticism": 7
+   },
+   "nets": {
+    "strikes_on_ukraine": 89,
+    "frontline": 100,
+    "ukraine_strikes_on_russia": -60,
+    "west_nato": -36,
+    "russia_internal": 29,
+    "criticism": -100
+   },
+   "subtopics": {
+    "strikes_on_ukraine/deep_strikes": 4,
+    "strikes_on_ukraine/fuel_infrastructure": 2,
+    "strikes_on_ukraine/other": 3,
+    "frontline/hulyaipole": 1,
+    "frontline/kupyansk": 5,
+    "frontline/other": 3,
+    "ukraine_strikes_on_russia/crimea_energy": 2,
+    "ukraine_strikes_on_russia/drones_on_regions": 11,
+    "ukraine_strikes_on_russia/other": 7,
+    "west_nato/military_aid": 3,
+    "west_nato/rearmament": 2,
+    "west_nato/negotiations": 1,
+    "west_nato/alliance_politics": 4,
+    "west_nato/other": 1,
+    "russia_internal/ideology_society": 5,
+    "russia_internal/other": 2,
+    "criticism/army_command": 4,
+    "criticism/government": 3
+   },
+   "flags": 1
   }
  ]
 }
