@@ -3601,6 +3601,111 @@
     "criticism/government": 3
    },
    "flags": 1
+  },
+  {
+   "trackers": {
+    "frontline": {
+     "pos": 11,
+     "neg": 0,
+     "neu": 1,
+     "net": 92,
+     "story": "Russian forces struck Kyiv causing fires and power cuts; continued drone attacks on Russian regions; fighting ongoing on Sumy direction.",
+     "story_url": "https://t.me/rybar/81601",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81614",
+       "t": "Russian South grouping advancing toward Slavyansk; captured Malinovka, expanding bridgehead west of Seversky Donets-Donbass canal toward Tikhonivka.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 11,
+     "neg": 1,
+     "neu": 0,
+     "net": 83,
+     "story": "Russian forces conducted night strike on Kyiv causing fires and power disruptions; Ukraine launched drones on Russian regions, hitting fuel infrastructure.",
+     "story_url": "https://t.me/dva_majors/95781",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81621",
+       "t": "US assists Ukraine striking Russian refineries; Russians call for protecting infrastructure and destroying enemy economy.",
+       "ch": "Rybar"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/dva_majors/95818",
+       "t": "Russian analyst questions why Odesa ports operating freely during Crimean fuel crisis; over 50 vessel visits July 1-3 supply ВСУ.",
+       "ch": "Two Majors"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 1,
+     "neg": 14,
+     "neu": 0,
+     "net": -87,
+     "story": "Ukrainian energy infrastructure being protected with concrete barriers and drone nets; Russian energy infrastructure lacks similar effective defensive measures.",
+     "story_url": "https://t.me/dva_majors/95830",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/epoddubny/28102",
+       "t": "Russian drone specialists destroy group of Ukrainian unmanned naval vessels in Black Sea with footage verification.",
+       "ch": "Poddubny"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/81612",
+       "t": "Putin held meeting on fuel-energy complex; Ukrainian strikes damaged refineries, fuel situation difficult despite repair rescheduling.",
+       "ch": "Rybar"
+      }
+     ]
+    }
+   },
+   "date": "2026-07-08",
+   "total": 158,
+   "substantive": 84,
+   "headline": "Trump backs Ukrainian refinery strikes; NATO summit rattles Kremlin bloggers",
+   "topics": {
+    "strikes_on_ukraine": 12,
+    "frontline": 12,
+    "ukraine_strikes_on_russia": 15,
+    "west_nato": 31,
+    "russia_internal": 13,
+    "criticism": 1
+   },
+   "nets": {
+    "strikes_on_ukraine": 83,
+    "frontline": 92,
+    "ukraine_strikes_on_russia": -87,
+    "west_nato": -71,
+    "russia_internal": 46,
+    "criticism": -100
+   },
+   "subtopics": {
+    "strikes_on_ukraine/deep_strikes": 9,
+    "strikes_on_ukraine/other": 3,
+    "frontline/pokrovsk": 2,
+    "frontline/hulyaipole": 1,
+    "frontline/other": 9,
+    "ukraine_strikes_on_russia/crimea_energy": 3,
+    "ukraine_strikes_on_russia/drones_on_regions": 10,
+    "ukraine_strikes_on_russia/other": 2,
+    "west_nato/military_aid": 10,
+    "west_nato/rearmament": 3,
+    "west_nato/negotiations": 3,
+    "west_nato/alliance_politics": 9,
+    "west_nato/other": 6,
+    "russia_internal/ideology_society": 7,
+    "russia_internal/security_cases": 2,
+    "russia_internal/economy": 2,
+    "russia_internal/other": 2,
+    "criticism/government": 1
+   },
+   "flags": 2
   }
  ]
 }
