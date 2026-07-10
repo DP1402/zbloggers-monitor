@@ -3706,6 +3706,112 @@
     "criticism/government": 1
    },
    "flags": 2
+  },
+  {
+   "trackers": {
+    "frontline": {
+     "pos": 15,
+     "neg": 2,
+     "neu": 0,
+     "net": 76,
+     "story": "Russian forces advance in Kharkiv region, capture multiple settlements, expand control toward Pokrovsk.",
+     "story_url": "https://t.me/rybar/81628",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/epoddubny/28115",
+       "t": "Russian FPV drone operators rescue family with child trapped in Konstantinovka, guide them to safety.",
+       "ch": "Poddubny"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/vysokygovorit/23295",
+       "t": "Ukrainian forces develop air-dropped logistics for assault groups using drones, improving tactical effectiveness.",
+       "ch": "Starshe Eddy"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 8,
+     "neg": 1,
+     "neu": 0,
+     "net": 78,
+     "story": "Russian strikes on Zaporizhzhia, Odesa, Dnipropetrovsk; Russian advances on Sumy direction.",
+     "story_url": "https://t.me/dva_majors/95834",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81633",
+       "t": "Strategic analysis of disrupting Ukrainian logistics and supply in Black Sea to weaken military capability.",
+       "ch": "Rybar"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/dva_majors/95846",
+       "t": "Ukrainian drones strike Russian shadow fleet tankers in Azov Sea for 96 hours, destroying 35 vessels.",
+       "ch": "Two Majors"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 0,
+     "neg": 8,
+     "neu": 0,
+     "net": -100,
+     "story": "NATO summit signals intensified Western pressure on Russia via Ukraine; Ukraine tests new FP-9 ballistic missile against Russian targets.",
+     "story_url": "https://t.me/rybar/81637",
+     "examples": [
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/81642",
+       "t": "Ukrainian Flamingo cruise missile production expanded with European support, increased output to 90 units.",
+       "ch": "Rybar"
+      }
+     ]
+    }
+   },
+   "date": "2026-07-09",
+   "total": 152,
+   "substantive": 64,
+   "headline": "Azov tanker losses and Moscow assassination-plot bust dominate",
+   "topics": {
+    "strikes_on_ukraine": 9,
+    "frontline": 17,
+    "ukraine_strikes_on_russia": 8,
+    "west_nato": 16,
+    "russia_internal": 13,
+    "criticism": 1
+   },
+   "nets": {
+    "strikes_on_ukraine": 78,
+    "frontline": 76,
+    "ukraine_strikes_on_russia": -100,
+    "west_nato": -44,
+    "russia_internal": 77,
+    "criticism": -100
+   },
+   "subtopics": {
+    "strikes_on_ukraine/fuel_infrastructure": 2,
+    "strikes_on_ukraine/other": 7,
+    "frontline/hulyaipole": 1,
+    "frontline/kupyansk": 1,
+    "frontline/other": 15,
+    "ukraine_strikes_on_russia/drones_on_regions": 3,
+    "ukraine_strikes_on_russia/other": 5,
+    "west_nato/military_aid": 3,
+    "west_nato/rearmament": 1,
+    "west_nato/negotiations": 3,
+    "west_nato/alliance_politics": 1,
+    "west_nato/other": 8,
+    "russia_internal/ideology_society": 1,
+    "russia_internal/security_cases": 8,
+    "russia_internal/elite_politics": 1,
+    "russia_internal/economy": 1,
+    "russia_internal/mobilisation": 1,
+    "russia_internal/other": 1,
+    "criticism/regional": 1
+   },
+   "flags": 2
   }
  ]
 }
