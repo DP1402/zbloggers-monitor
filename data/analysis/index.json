@@ -3812,6 +3812,108 @@
     "criticism/regional": 1
    },
    "flags": 2
+  },
+  {
+   "trackers": {
+    "frontline": {
+     "pos": 11,
+     "neg": 1,
+     "neu": 1,
+     "net": 77,
+     "story": "Intense small-unit combat near Donetsk with drone duels; difficult terrain and Ukrainian aerial reconnaissance hamper Russian advances.",
+     "story_url": "https://t.me/rybar/81675",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81673",
+       "t": "Russian forces consolidate positions in Konstantinovka after liberation, clearing and evacuating civilians from city.",
+       "ch": "Rybar"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/81664",
+       "t": "Ukrainian forces recapture Ivanovka and push back Russian positions near Novopavlovka after prolonged fighting.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 8,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russian forces strike Ukrainian fuel infrastructure; Ukraine attacks Russian refineries and military targets.",
+     "story_url": "https://t.me/dva_majors/95886",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81654",
+       "t": "Russian strikes on Ukrainian fuel infrastructure; Ukraine attacks Russian refineries with continued mutual drone warfare.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 1,
+     "neg": 7,
+     "neu": 0,
+     "net": -75,
+     "story": "Ukraine conducts large drone attack on Rostov region; Russia intercepts ~35 drones but fires occur at fuel storage.",
+     "story_url": "https://t.me/dva_majors/95889",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/ngp_razvedka/25881",
+       "t": "Russian analyst disputes Ukrainian claims of 49 destroyed tankers as propaganda; drone damage to ships difficult to verify.",
+       "ch": "NgP raZVedka"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/dva_majors/95887",
+       "t": "Ukraine claims successful drone strikes on port terminal and defense plant in Rostov region.",
+       "ch": "Two Majors"
+      }
+     ]
+    }
+   },
+   "date": "2026-07-10",
+   "total": 140,
+   "substantive": 59,
+   "headline": "Azov tanker campaign rattles Kremlin bloggers; FSB touts Rostov drone-plot bust",
+   "topics": {
+    "strikes_on_ukraine": 8,
+    "frontline": 13,
+    "ukraine_strikes_on_russia": 8,
+    "west_nato": 11,
+    "russia_internal": 13,
+    "criticism": 6
+   },
+   "nets": {
+    "strikes_on_ukraine": 100,
+    "frontline": 77,
+    "ukraine_strikes_on_russia": -75,
+    "west_nato": -18,
+    "russia_internal": 38,
+    "criticism": -100
+   },
+   "subtopics": {
+    "strikes_on_ukraine/deep_strikes": 1,
+    "strikes_on_ukraine/fuel_infrastructure": 6,
+    "strikes_on_ukraine/other": 1,
+    "frontline/pokrovsk": 2,
+    "frontline/hulyaipole": 4,
+    "frontline/other": 7,
+    "ukraine_strikes_on_russia/drones_on_regions": 6,
+    "ukraine_strikes_on_russia/other": 2,
+    "west_nato/military_aid": 5,
+    "west_nato/negotiations": 1,
+    "west_nato/other": 5,
+    "russia_internal/ideology_society": 7,
+    "russia_internal/security_cases": 5,
+    "russia_internal/other": 1,
+    "criticism/government": 6
+   },
+   "flags": 3
   }
  ]
 }
