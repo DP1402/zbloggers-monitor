@@ -3914,6 +3914,97 @@
     "criticism/government": 6
    },
    "flags": 3
+  },
+  {
+   "trackers": {
+    "frontline": {
+     "pos": 9,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russian forces advance westward across Seversky Donets canal, approaching Kramatovsk.",
+     "story_url": "https://t.me/rybar/81697",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81699",
+       "t": "Russian forces liberate Bachevsk in Sumy region, improve border positions.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 14,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russia uses S-400 ground-to-ground missiles first time against Kiev; strikes energy infrastructure in multiple districts.",
+     "story_url": "https://t.me/rybar/81688",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/sashakots/63034",
+       "t": "Russian Geran drones disable power substations in Shostka and Mena; targets industrial production areas systematically.",
+       "ch": "Kotsnews"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 0,
+     "neg": 12,
+     "neu": 0,
+     "net": -100,
+     "story": "Ukraine drones attack Taganrog shipping and Russian regions; Russia strikes Kyiv with missiles on non-residential buildings.",
+     "story_url": "https://t.me/dva_majors/95952",
+     "examples": [
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/81698",
+       "t": "Ukraine expands systematic drone attacks on Russian ports and infrastructure in Azov Sea region.",
+       "ch": "Rybar"
+      }
+     ]
+    }
+   },
+   "date": "2026-07-11",
+   "total": 150,
+   "substantive": 59,
+   "headline": "Russia claims Bachevsk capture; Ukraine's Azov shipping strikes rattle bloggers",
+   "topics": {
+    "strikes_on_ukraine": 14,
+    "frontline": 9,
+    "ukraine_strikes_on_russia": 12,
+    "west_nato": 13,
+    "russia_internal": 10,
+    "criticism": 1
+   },
+   "nets": {
+    "strikes_on_ukraine": 100,
+    "frontline": 100,
+    "ukraine_strikes_on_russia": -100,
+    "west_nato": -54,
+    "russia_internal": 20,
+    "criticism": -100
+   },
+   "subtopics": {
+    "strikes_on_ukraine/deep_strikes": 10,
+    "strikes_on_ukraine/fuel_infrastructure": 4,
+    "frontline/pokrovsk": 2,
+    "frontline/hulyaipole": 2,
+    "frontline/kupyansk": 3,
+    "frontline/other": 2,
+    "ukraine_strikes_on_russia/drones_on_regions": 8,
+    "ukraine_strikes_on_russia/other": 4,
+    "west_nato/military_aid": 5,
+    "west_nato/rearmament": 2,
+    "west_nato/negotiations": 1,
+    "west_nato/alliance_politics": 2,
+    "west_nato/other": 3,
+    "russia_internal/ideology_society": 5,
+    "russia_internal/other": 5,
+    "criticism/army_command": 1
+   },
+   "flags": 2
   }
  ]
 }
