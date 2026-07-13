@@ -4005,6 +4005,101 @@
     "criticism/army_command": 1
    },
    "flags": 2
+  },
+  {
+   "trackers": {
+    "frontline": {
+     "pos": 8,
+     "neg": 0,
+     "neu": 1,
+     "net": 89,
+     "story": "Russian FPV drone destroys Ukrainian armored vehicle with fiber-optic tether near Velykobourluk.",
+     "story_url": "https://t.me/dva_majors/96004",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/96005",
+       "t": "Russian forces destroy Ukrainian Baba-Yaga reconnaissance drones used for strikes and resupply missions.",
+       "ch": "Two Majors"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 10,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russian forces launched 404 S-400 cruise missiles against Ukraine; territorial advances including Bachevsk near Kramatorsk.",
+     "story_url": "https://t.me/rybar/81720",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81721",
+       "t": "Russian strikes hit fuel stations, ports, and infrastructure; Ukrainian attacks on tanker fleet in Azov Sea.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 2,
+     "neg": 6,
+     "neu": 0,
+     "net": -50,
+     "story": "Ukrainian air defense failed to intercept Russian ballistic missiles on multiple dates due to Patriot ammunition shortage.",
+     "story_url": "https://t.me/rybar/81719",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/96043",
+       "t": "Ukrainian forces attacked intercity bus in Luhansk region, injuring two civilians.",
+       "ch": "Two Majors"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/dva_majors/96001",
+       "t": "Ukraine expands drone campaign against Russian ships and ports across Azov Sea similar to Black Sea operations.",
+       "ch": "Two Majors"
+      }
+     ]
+    }
+   },
+   "date": "2026-07-12",
+   "total": 132,
+   "substantive": 50,
+   "headline": "Russia hits Odesa ports; Kremlin bloggers admit negotiating weakness",
+   "topics": {
+    "strikes_on_ukraine": 10,
+    "frontline": 9,
+    "ukraine_strikes_on_russia": 8,
+    "west_nato": 18,
+    "russia_internal": 5,
+    "criticism": 0
+   },
+   "nets": {
+    "strikes_on_ukraine": 100,
+    "frontline": 89,
+    "ukraine_strikes_on_russia": -50,
+    "west_nato": -28,
+    "russia_internal": -60,
+    "criticism": null
+   },
+   "subtopics": {
+    "strikes_on_ukraine/deep_strikes": 7,
+    "strikes_on_ukraine/other": 3,
+    "frontline/kupyansk": 1,
+    "frontline/other": 8,
+    "ukraine_strikes_on_russia/drones_on_regions": 6,
+    "ukraine_strikes_on_russia/other": 2,
+    "west_nato/military_aid": 6,
+    "west_nato/rearmament": 1,
+    "west_nato/negotiations": 1,
+    "west_nato/alliance_politics": 2,
+    "west_nato/other": 8,
+    "russia_internal/ideology_society": 1,
+    "russia_internal/elite_politics": 3,
+    "russia_internal/economy": 1
+   },
+   "flags": 3
   }
  ]
 }
