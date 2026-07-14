@@ -4100,6 +4100,106 @@
     "russia_internal/economy": 1
    },
    "flags": 3
+  },
+  {
+   "trackers": {
+    "frontline": {
+     "pos": 7,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russian aviation strikes enemy concentrations in Kherson direction with FAB-3000.",
+     "story_url": "https://t.me/dva_majors/96101",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/96081",
+       "t": "Russian drone unit destroys Ukrainian Baaba-Yaga drone and strikes personnel, vehicles on Kramatorsk-Druzkovka direction.",
+       "ch": "Two Majors"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 9,
+     "neg": 1,
+     "neu": 0,
+     "net": 80,
+     "story": "Analyst questions Russian strike claims on Odesa ports, notes lack of visible damage and effectiveness of drone weapons against ships.",
+     "story_url": "https://t.me/rybar/81728",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81734",
+       "t": "Russian drone strikes damage Chornomorsk port including ferries, container ship, dock over two days.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 2,
+     "neg": 10,
+     "neu": 0,
+     "net": -67,
+     "story": "Ukraine launched 300+ drones at Moscow; Russia claims 89 destroyed but suffered casualties and infrastructure damage.",
+     "story_url": "https://t.me/dva_majors/96062",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/wargonzo/35537",
+       "t": "Ukrainian strikes kill woman in Starobilsk market; ten LNR municipalities attacked.",
+       "ch": "WarGonzo"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/dva_majors/96078",
+       "t": "Ukrainian drones intensified attacks on Azov Sea targets and Crimea Bridge; coordinated multi-echelon assault from different launch points.",
+       "ch": "Two Majors"
+      }
+     ]
+    }
+   },
+   "date": "2026-07-13",
+   "total": 154,
+   "substantive": 67,
+   "headline": "FSB touts foiled airbase drone plot as Moscow hit by mass strike",
+   "topics": {
+    "strikes_on_ukraine": 10,
+    "frontline": 7,
+    "ukraine_strikes_on_russia": 12,
+    "west_nato": 20,
+    "russia_internal": 16,
+    "criticism": 2
+   },
+   "nets": {
+    "strikes_on_ukraine": 80,
+    "frontline": 100,
+    "ukraine_strikes_on_russia": -67,
+    "west_nato": -50,
+    "russia_internal": 75,
+    "criticism": -100
+   },
+   "subtopics": {
+    "strikes_on_ukraine/deep_strikes": 2,
+    "strikes_on_ukraine/fuel_infrastructure": 1,
+    "strikes_on_ukraine/other": 7,
+    "frontline/pokrovsk": 1,
+    "frontline/hulyaipole": 3,
+    "frontline/other": 3,
+    "ukraine_strikes_on_russia/drones_on_regions": 8,
+    "ukraine_strikes_on_russia/other": 4,
+    "west_nato/military_aid": 5,
+    "west_nato/negotiations": 1,
+    "west_nato/alliance_politics": 3,
+    "west_nato/other": 11,
+    "russia_internal/ideology_society": 1,
+    "russia_internal/security_cases": 11,
+    "russia_internal/elite_politics": 1,
+    "russia_internal/economy": 2,
+    "russia_internal/mobilisation": 1,
+    "criticism/army_command": 1,
+    "criticism/government": 1
+   },
+   "flags": 1
   }
  ]
 }
