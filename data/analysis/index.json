@@ -4200,6 +4200,105 @@
     "criticism/government": 1
    },
    "flags": 1
+  },
+  {
+   "trackers": {
+    "frontline": {
+     "pos": 7,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russian FAB bomb strike on village Gusinskaya in Kupyansk district.",
+     "story_url": "https://t.me/dva_majors/96120",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/96113",
+       "t": "Russian drone operators of 33rd Guards motorized rifle regiment destroy Ukrainian drone control point.",
+       "ch": "Two Majors"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 20,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russian strikes hit Kyiv and multiple Ukrainian cities; drones damaged ports in Odesa region.",
+     "story_url": "https://t.me/dva_majors/96106",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81741",
+       "t": "Russian night strikes hit Kyiv and multiple cities; drones targeted Odesa ports and damaged shipping.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 1,
+     "neg": 5,
+     "neu": 0,
+     "net": -67,
+     "story": "Ukrainian attack damages major Russian Gazprom Neftekhem Salawat refinery complex.",
+     "story_url": "https://t.me/dva_majors/96107",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/Sladkov_plus/15785",
+       "t": "2022 Polish tractors incident confirmed as Ukrainian missile strike; Russian forces retaliated.",
+       "ch": "Sladkov+"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/dva_majors/96110",
+       "t": "Ukrainian drone attack on Salawat industrial zone caused fires; no casualties reported.",
+       "ch": "Two Majors"
+      }
+     ]
+    }
+   },
+   "date": "2026-07-14",
+   "total": 169,
+   "substantive": 72,
+   "headline": "Izumrud sinking sparks fleet criticism; Odesa ports hammered",
+   "topics": {
+    "strikes_on_ukraine": 20,
+    "frontline": 7,
+    "ukraine_strikes_on_russia": 6,
+    "west_nato": 21,
+    "russia_internal": 12,
+    "criticism": 6
+   },
+   "nets": {
+    "strikes_on_ukraine": 100,
+    "frontline": 100,
+    "ukraine_strikes_on_russia": -67,
+    "west_nato": -19,
+    "russia_internal": 17,
+    "criticism": -100
+   },
+   "subtopics": {
+    "strikes_on_ukraine/deep_strikes": 8,
+    "strikes_on_ukraine/fuel_infrastructure": 6,
+    "strikes_on_ukraine/other": 6,
+    "frontline/hulyaipole": 2,
+    "frontline/kupyansk": 2,
+    "frontline/other": 3,
+    "ukraine_strikes_on_russia/drones_on_regions": 3,
+    "ukraine_strikes_on_russia/other": 3,
+    "west_nato/military_aid": 10,
+    "west_nato/alliance_politics": 5,
+    "west_nato/other": 6,
+    "russia_internal/ideology_society": 2,
+    "russia_internal/security_cases": 7,
+    "russia_internal/economy": 1,
+    "russia_internal/mobilisation": 1,
+    "russia_internal/other": 1,
+    "criticism/army_command": 4,
+    "criticism/government": 2
+   },
+   "flags": 2
   }
  ]
 }
