@@ -4299,6 +4299,103 @@
     "criticism/government": 2
    },
    "flags": 2
+  },
+  {
+   "trackers": {
+    "frontline": {
+     "pos": 10,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russian forces systematically destroy Ukrainian vehicles and armor east of Slavyansk-Kramatorsk agglomeration.",
+     "story_url": "https://t.me/rybar/81764",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81776",
+       "t": "Russian North grouping advancing on Sumy direction through forests; expanding control zone and drone strike capabilities.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 19,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russian strikes on Black Sea ports are justified; collateral damage to neutral Romania acceptable.",
+     "story_url": "https://t.me/vysokygovorit/23329",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/96156",
+       "t": "Russian strikes hit Odesa and Chornomorsk ports, destroying fuel infrastructure, drone production facilities, and four vessels.",
+       "ch": "Two Majors"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 5,
+     "neg": 4,
+     "neu": 0,
+     "net": 11,
+     "story": "Ukrainian forces damaged Russian border ship Izumrud in Gelendzhik; Russian air defense engaged in multiple regions.",
+     "story_url": "https://t.me/dva_majors/96153",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/epoddubny/28208",
+       "t": "Russian forces destroyed Ukrainian ammunition depots, drone launch sites, and equipment on Zaporizhzhia direction.",
+       "ch": "Poddubny"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/81763",
+       "t": "Ukrainian forces destroyed Russian border ship Izumrud; Russian air defense active across multiple regions.",
+       "ch": "Rybar"
+      }
+     ]
+    }
+   },
+   "date": "2026-07-15",
+   "total": 148,
+   "substantive": 71,
+   "headline": "Fifth night of Black Sea port strikes; Crimea blackouts",
+   "topics": {
+    "strikes_on_ukraine": 19,
+    "frontline": 10,
+    "ukraine_strikes_on_russia": 9,
+    "west_nato": 20,
+    "russia_internal": 12,
+    "criticism": 1
+   },
+   "nets": {
+    "strikes_on_ukraine": 100,
+    "frontline": 100,
+    "ukraine_strikes_on_russia": 11,
+    "west_nato": -55,
+    "russia_internal": 0,
+    "criticism": -100
+   },
+   "subtopics": {
+    "strikes_on_ukraine/deep_strikes": 8,
+    "strikes_on_ukraine/fuel_infrastructure": 1,
+    "strikes_on_ukraine/other": 10,
+    "frontline/pokrovsk": 1,
+    "frontline/other": 9,
+    "ukraine_strikes_on_russia/drones_on_regions": 4,
+    "ukraine_strikes_on_russia/other": 5,
+    "west_nato/military_aid": 10,
+    "west_nato/rearmament": 2,
+    "west_nato/negotiations": 2,
+    "west_nato/other": 6,
+    "russia_internal/ideology_society": 3,
+    "russia_internal/security_cases": 6,
+    "russia_internal/economy": 2,
+    "russia_internal/other": 1,
+    "criticism/regional": 1
+   },
+   "flags": 2
   }
  ]
 }
