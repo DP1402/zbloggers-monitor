@@ -4396,6 +4396,103 @@
     "criticism/regional": 1
    },
    "flags": 2
+  },
+  {
+   "trackers": {
+    "frontline": {
+     "pos": 4,
+     "neg": 0,
+     "neu": 2,
+     "net": 67,
+     "story": "Russian forces conduct strikes on Kyiv and engage in fighting on Sumy direction.",
+     "story_url": "https://t.me/dva_majors/96204",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/96227",
+       "t": "Russian drone operators destroyed Ukrainian enemy fire points and armored vehicles in Velykoburl direction operations.",
+       "ch": "Two Majors"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 14,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russian strikes hit Kyiv drone production facilities RAPID and Kyiv-1, destroying unmanned aircraft assembly and storage.",
+     "story_url": "https://t.me/rybar/81792",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81800",
+       "t": "Ukrainian Defense Minister Fedorov resigned; Russia strikes drone assembly facilities in Kyiv; Chinese components sustain Ukrainian drone production.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 3,
+     "neg": 5,
+     "neu": 0,
+     "net": -25,
+     "story": "GUR officer Zhikovich recruited Islamists for terror attacks in Russia; all were prevented by FSB.",
+     "story_url": "https://t.me/rybar/81787",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/epoddubny/28219",
+       "t": "FSB thwarted GUR officer Zhikovich's plans for bombings including Crimea Bridge, explosions in southern Russia.",
+       "ch": "Poddubny"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/dva_majors/96218",
+       "t": "Ukrainian drones expand strikes south of Kerch Strait targeting Russian Black Sea vessels; 55% AIS reduction reported.",
+       "ch": "Two Majors"
+      }
+     ]
+    }
+   },
+   "date": "2026-07-16",
+   "total": 143,
+   "substantive": 66,
+   "headline": "Kyiv drone plants struck; Ukraine fires Defense Minister Fedorov",
+   "topics": {
+    "strikes_on_ukraine": 14,
+    "frontline": 6,
+    "ukraine_strikes_on_russia": 8,
+    "west_nato": 16,
+    "russia_internal": 8,
+    "criticism": 14
+   },
+   "nets": {
+    "strikes_on_ukraine": 100,
+    "frontline": 67,
+    "ukraine_strikes_on_russia": -25,
+    "west_nato": -44,
+    "russia_internal": -38,
+    "criticism": -71
+   },
+   "subtopics": {
+    "strikes_on_ukraine/deep_strikes": 6,
+    "strikes_on_ukraine/other": 8,
+    "frontline/hulyaipole": 1,
+    "frontline/kupyansk": 3,
+    "frontline/other": 2,
+    "ukraine_strikes_on_russia/drones_on_regions": 3,
+    "ukraine_strikes_on_russia/other": 5,
+    "west_nato/military_aid": 4,
+    "west_nato/negotiations": 3,
+    "west_nato/alliance_politics": 2,
+    "west_nato/other": 7,
+    "russia_internal/security_cases": 2,
+    "russia_internal/economy": 1,
+    "russia_internal/mobilisation": 2,
+    "russia_internal/other": 3,
+    "criticism/government": 14
+   },
+   "flags": 5
   }
  ]
 }
