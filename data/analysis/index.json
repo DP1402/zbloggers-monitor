@@ -4493,6 +4493,92 @@
     "criticism/government": 14
    },
    "flags": 5
+  },
+  {
+   "trackers": {
+    "frontline": {
+     "pos": 8,
+     "neg": 0,
+     "neu": 2,
+     "net": 80,
+     "story": "Russian strikes on Ukrainian regions; Ukrainian drone attacks on ships and Crimea infrastructure; Ukrainian MLRS strike kills civilians in Bryansk; fighting on Sumy direction.",
+     "story_url": "https://t.me/dva_majors/96252",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81828",
+       "t": "Russian forces advance near Konstantinovka, capture positions around Chasiv Yar and consolidate tactical gains.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 8,
+     "neg": 0,
+     "neu": 2,
+     "net": 80,
+     "story": "Ukrainian grain exports grew despite Russian strikes on port infrastructure capacity.",
+     "story_url": "https://t.me/rybar/81818",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/96254",
+       "t": "Russian strikes damage Odesa and Chornomorsk ports, drone assembly facilities, and military storage.",
+       "ch": "Two Majors"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 1,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Ukrainian Geran-2 drone strikes cargo ship in Black Sea delivering military supplies to Ukraine.",
+     "story_url": "https://t.me/sashakots/63186",
+     "examples": []
+    }
+   },
+   "date": "2026-07-17",
+   "total": 136,
+   "substantive": 55,
+   "headline": "Seventh night of port strikes; Graham sanctions bill gains momentum",
+   "topics": {
+    "strikes_on_ukraine": 10,
+    "frontline": 10,
+    "ukraine_strikes_on_russia": 1,
+    "west_nato": 19,
+    "russia_internal": 9,
+    "criticism": 6
+   },
+   "nets": {
+    "strikes_on_ukraine": 80,
+    "frontline": 80,
+    "ukraine_strikes_on_russia": 100,
+    "west_nato": -63,
+    "russia_internal": 0,
+    "criticism": -100
+   },
+   "subtopics": {
+    "strikes_on_ukraine/deep_strikes": 4,
+    "strikes_on_ukraine/fuel_infrastructure": 1,
+    "strikes_on_ukraine/other": 5,
+    "frontline/hulyaipole": 2,
+    "frontline/kupyansk": 6,
+    "frontline/other": 2,
+    "ukraine_strikes_on_russia/drones_on_regions": 1,
+    "west_nato/military_aid": 4,
+    "west_nato/rearmament": 3,
+    "west_nato/negotiations": 1,
+    "west_nato/alliance_politics": 5,
+    "west_nato/other": 6,
+    "russia_internal/ideology_society": 4,
+    "russia_internal/security_cases": 3,
+    "russia_internal/economy": 1,
+    "russia_internal/mobilisation": 1,
+    "criticism/army_command": 2,
+    "criticism/government": 4
+   },
+   "flags": 2
   }
  ]
 }
