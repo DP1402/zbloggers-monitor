@@ -1,0 +1,1969 @@
+{
+ "date": "2026-07-18",
+ "total_posts": 95,
+ "substantive_posts": 49,
+ "sentiment_overall": {
+  "pos_pct": 49,
+  "neg_pct": 41,
+  "neu_pct": 10
+ },
+ "topics": {
+  "strikes_on_ukraine": {
+   "label": "Strikes on Ukraine",
+   "posts": 11,
+   "neg": 0,
+   "neu": 0,
+   "pos": 11,
+   "net": 100
+  },
+  "frontline": {
+   "label": "Frontline",
+   "posts": 4,
+   "neg": 0,
+   "neu": 0,
+   "pos": 4,
+   "net": 100
+  },
+  "ukraine_strikes_on_russia": {
+   "label": "Ukraine strikes on Russia",
+   "posts": 19,
+   "neg": 16,
+   "neu": 0,
+   "pos": 3,
+   "net": -68
+  },
+  "west_nato": {
+   "label": "West & NATO",
+   "posts": 7,
+   "neg": 2,
+   "neu": 2,
+   "pos": 3,
+   "net": 14
+  },
+  "russia_internal": {
+   "label": "Russia internal",
+   "posts": 6,
+   "neg": 0,
+   "neu": 3,
+   "pos": 3,
+   "net": 50
+  },
+  "criticism": {
+   "label": "Criticism",
+   "posts": 2,
+   "neg": 2,
+   "neu": 0,
+   "pos": 0,
+   "net": -100
+  }
+ },
+ "subtopics": [
+  {
+   "topic": "strikes_on_ukraine",
+   "subtopic": "deep_strikes",
+   "label": "Deep strikes on cities & industry",
+   "posts": 6,
+   "channels": 1,
+   "neg": 0,
+   "neu": 0,
+   "pos": 6,
+   "net": 100
+  },
+  {
+   "topic": "strikes_on_ukraine",
+   "subtopic": "fuel_infrastructure",
+   "label": "Fuel-infrastructure campaign",
+   "posts": 0,
+   "channels": 0,
+   "neg": 0,
+   "neu": 0,
+   "pos": 0,
+   "net": null
+  },
+  {
+   "topic": "strikes_on_ukraine",
+   "subtopic": "other",
+   "label": "Other strikes on Ukraine",
+   "posts": 5,
+   "channels": 3,
+   "neg": 0,
+   "neu": 0,
+   "pos": 5,
+   "net": 100
+  },
+  {
+   "topic": "frontline",
+   "subtopic": "pokrovsk",
+   "label": "Pokrovsk direction",
+   "posts": 0,
+   "channels": 0,
+   "neg": 0,
+   "neu": 0,
+   "pos": 0,
+   "net": null
+  },
+  {
+   "topic": "frontline",
+   "subtopic": "hulyaipole",
+   "label": "Hulyaipole / Zaporizhzhia direction",
+   "posts": 1,
+   "channels": 1,
+   "neg": 0,
+   "neu": 0,
+   "pos": 1,
+   "net": 100
+  },
+  {
+   "topic": "frontline",
+   "subtopic": "kupyansk",
+   "label": "Kupyansk / Kharkiv direction",
+   "posts": 1,
+   "channels": 1,
+   "neg": 0,
+   "neu": 0,
+   "pos": 1,
+   "net": 100
+  },
+  {
+   "topic": "frontline",
+   "subtopic": "other",
+   "label": "Other directions",
+   "posts": 2,
+   "channels": 2,
+   "neg": 0,
+   "neu": 0,
+   "pos": 2,
+   "net": 100
+  },
+  {
+   "topic": "ukraine_strikes_on_russia",
+   "subtopic": "crimea_energy",
+   "label": "Crimea fuel & energy crisis",
+   "posts": 0,
+   "channels": 0,
+   "neg": 0,
+   "neu": 0,
+   "pos": 0,
+   "net": null
+  },
+  {
+   "topic": "ukraine_strikes_on_russia",
+   "subtopic": "drones_on_regions",
+   "label": "Drones on Russian regions",
+   "posts": 13,
+   "channels": 5,
+   "neg": 12,
+   "neu": 0,
+   "pos": 1,
+   "net": -85
+  },
+  {
+   "topic": "ukraine_strikes_on_russia",
+   "subtopic": "other",
+   "label": "Other Ukrainian strikes",
+   "posts": 6,
+   "channels": 4,
+   "neg": 4,
+   "neu": 0,
+   "pos": 2,
+   "net": -33
+  },
+  {
+   "topic": "west_nato",
+   "subtopic": "military_aid",
+   "label": "Military aid to Ukraine",
+   "posts": 2,
+   "channels": 2,
+   "neg": 1,
+   "neu": 1,
+   "pos": 0,
+   "net": -50
+  },
+  {
+   "topic": "west_nato",
+   "subtopic": "rearmament",
+   "label": "European rearmament",
+   "posts": 0,
+   "channels": 0,
+   "neg": 0,
+   "neu": 0,
+   "pos": 0,
+   "net": null
+  },
+  {
+   "topic": "west_nato",
+   "subtopic": "negotiations",
+   "label": "Negotiations & diplomacy",
+   "posts": 1,
+   "channels": 1,
+   "neg": 0,
+   "neu": 1,
+   "pos": 0,
+   "net": 0
+  },
+  {
+   "topic": "west_nato",
+   "subtopic": "alliance_politics",
+   "label": "Alliance politics",
+   "posts": 1,
+   "channels": 1,
+   "neg": 1,
+   "neu": 0,
+   "pos": 0,
+   "net": -100
+  },
+  {
+   "topic": "west_nato",
+   "subtopic": "other",
+   "label": "Other West & NATO",
+   "posts": 3,
+   "channels": 3,
+   "neg": 0,
+   "neu": 0,
+   "pos": 3,
+   "net": 100
+  },
+  {
+   "topic": "russia_internal",
+   "subtopic": "ideology_society",
+   "label": "Ideology & society essays",
+   "posts": 2,
+   "channels": 2,
+   "neg": 0,
+   "neu": 2,
+   "pos": 0,
+   "net": 0
+  },
+  {
+   "topic": "russia_internal",
+   "subtopic": "security_cases",
+   "label": "Security & treason cases",
+   "posts": 3,
+   "channels": 3,
+   "neg": 0,
+   "neu": 0,
+   "pos": 3,
+   "net": 100
+  },
+  {
+   "topic": "russia_internal",
+   "subtopic": "elite_politics",
+   "label": "Elite politics",
+   "posts": 1,
+   "channels": 1,
+   "neg": 0,
+   "neu": 1,
+   "pos": 0,
+   "net": 0
+  },
+  {
+   "topic": "russia_internal",
+   "subtopic": "economy",
+   "label": "Economy & sanctions",
+   "posts": 0,
+   "channels": 0,
+   "neg": 0,
+   "neu": 0,
+   "pos": 0,
+   "net": null
+  },
+  {
+   "topic": "russia_internal",
+   "subtopic": "mobilisation",
+   "label": "Mobilisation & recruitment",
+   "posts": 0,
+   "channels": 0,
+   "neg": 0,
+   "neu": 0,
+   "pos": 0,
+   "net": null
+  },
+  {
+   "topic": "russia_internal",
+   "subtopic": "other",
+   "label": "Other Russia internal",
+   "posts": 0,
+   "channels": 0,
+   "neg": 0,
+   "neu": 0,
+   "pos": 0,
+   "net": null
+  },
+  {
+   "topic": "criticism",
+   "subtopic": "army_command",
+   "label": "Army command & logistics",
+   "posts": 0,
+   "channels": 0,
+   "neg": 0,
+   "neu": 0,
+   "pos": 0,
+   "net": null
+  },
+  {
+   "topic": "criticism",
+   "subtopic": "government",
+   "label": "Government & ministries",
+   "posts": 2,
+   "channels": 2,
+   "neg": 2,
+   "neu": 0,
+   "pos": 0,
+   "net": -100
+  },
+  {
+   "topic": "criticism",
+   "subtopic": "putin",
+   "label": "Putin personally",
+   "posts": 0,
+   "channels": 0,
+   "neg": 0,
+   "neu": 0,
+   "pos": 0,
+   "net": null
+  },
+  {
+   "topic": "criticism",
+   "subtopic": "regional",
+   "label": "Regional authorities",
+   "posts": 0,
+   "channels": 0,
+   "neg": 0,
+   "neu": 0,
+   "pos": 0,
+   "net": null
+  },
+  {
+   "topic": "criticism",
+   "subtopic": "other",
+   "label": "Other criticism",
+   "posts": 0,
+   "channels": 0,
+   "neg": 0,
+   "neu": 0,
+   "pos": 0,
+   "net": null
+  }
+ ],
+ "channels": {
+  "Two Majors": 11,
+  "NgP raZVedka": 11,
+  "Rybar": 7,
+  "Kotsnews": 7,
+  "Poddubny": 6,
+  "WarGonzo": 5,
+  "Starshe Eddy": 2
+ },
+ "top_viewed": [
+  {
+   "channel_label": "Two Majors",
+   "link": "https://t.me/dva_majors/96300",
+   "views": 295562,
+   "forwards": 302,
+   "summary_en": "Ukraine launches 370+ drones at Moscow region; 7 killed, 24+ wounded in Wildberries warehouse attack."
+  },
+  {
+   "channel_label": "Rybar",
+   "link": "https://t.me/rybar/81838",
+   "views": 158812,
+   "forwards": 428,
+   "summary_en": "Russian bureaucratic procedures slow response while Ukraine strikes fuel, ports, and civilian logistics without hesitation; contrasts methodologies."
+  },
+  {
+   "channel_label": "Rybar",
+   "link": "https://t.me/rybar/81836",
+   "views": 157567,
+   "forwards": 547,
+   "summary_en": "Wildberries warehouses attacked; 7 killed in Tambov, 37 wounded in Moscow region; drones target civilian infrastructure systematically."
+  },
+  {
+   "channel_label": "Rybar",
+   "link": "https://t.me/rybar/81832",
+   "views": 155640,
+   "forwards": 33,
+   "summary_en": "Northern Russian group liberates 50th settlement in Sumy and Kharkiv regions, expanding border security zone."
+  },
+  {
+   "channel_label": "Rybar",
+   "link": "https://t.me/rybar/81835",
+   "views": 152648,
+   "forwards": 60,
+   "summary_en": "Serbia signs energy partnership memorandum with USA, establishing strategic dialogue on energy, investment, and regional security."
+  }
+ ],
+ "top_forwarded": [
+  {
+   "channel_label": "Kotsnews",
+   "link": "https://t.me/sashakots/63197",
+   "views": 85045,
+   "forwards": 1549,
+   "summary_en": "Ukraine deliberately targets civilian Wildberries warehouses with cluster munitions, killing 7, wounding 25 in Tambov region."
+  },
+  {
+   "channel_label": "Rybar",
+   "link": "https://t.me/rybar/81836",
+   "views": 157567,
+   "forwards": 547,
+   "summary_en": "Wildberries warehouses attacked; 7 killed in Tambov, 37 wounded in Moscow region; drones target civilian infrastructure systematically."
+  },
+  {
+   "channel_label": "Two Majors",
+   "link": "https://t.me/dva_majors/96309",
+   "views": 128712,
+   "forwards": 517,
+   "summary_en": "Ukraine strikes Wildberries warehouses in Tambov and Moscow region, disrupting Russian logistics and e-commerce."
+  }
+ ],
+ "flags": [
+  {
+   "type": "mood_swing",
+   "topic": "ukraine_strikes_on_russia",
+   "label": "Ukraine strikes on Russia",
+   "net": -68,
+   "move": -168
+  },
+  {
+   "type": "mood_swing",
+   "topic": "west_nato",
+   "label": "West & NATO",
+   "net": 14,
+   "move": 77
+  },
+  {
+   "type": "mood_swing",
+   "topic": "russia_internal",
+   "label": "Russia internal",
+   "net": 50,
+   "move": 50
+  },
+  {
+   "type": "watchlist_quiet",
+   "items": [
+    "Mobilisation rumours",
+    "Criticism of Putin"
+   ]
+  }
+ ],
+ "brief": {
+  "headline": "Ukraine's Wildberries drone strikes rattle channels; Kyiv hit in return",
+  "lead": "A large Ukrainian drone barrage on Wildberries logistics warehouses in Tambov and Moscow regions dominated the day, driving sentiment on strikes-inside-Russia sharply negative even as channels touted record-scale Russian missile strikes on Kyiv. The rare mix of anger, defensiveness, and self-criticism over economic vulnerability set the tone.",
+  "developments": [
+   {
+    "title": "Ukrainian drones hit Wildberries warehouses; 7 killed",
+    "body": "Multiple channels reported a 370+ drone attack on the Moscow region and Tambov, with Wildberries logistics centers hit; claimed tolls range from 7 killed and 24-48 wounded (Rybar/WarGonzo) with some citing 61 injured. Channels allege deliberate targeting of civilian workers with cluster munitions — an unconfirmed framing.",
+    "corroboration": "multi",
+    "sources": [
+     {
+      "label": "Two Majors",
+      "url": "https://t.me/dva_majors/96300"
+     },
+     {
+      "label": "Rybar",
+      "url": "https://t.me/rybar/81836"
+     },
+     {
+      "label": "Kotsnews",
+      "url": "https://t.me/sashakots/63197"
+     },
+     {
+      "label": "WarGonzo",
+      "url": "https://t.me/wargonzo/35626"
+     },
+     {
+      "label": "Poddubny",
+      "url": "https://t.me/epoddubny/28241"
+     }
+    ]
+   },
+   {
+    "title": "Channels claim record-scale missile strike on Kyiv",
+    "body": "NgP raZVedka posted a series of escalating figures — 16, 23, 30, 33, and 37 missiles — framing the barrage as a record single strike overwhelming Ukrainian air defenses and hitting metro stations and a Wildberries facility. Figures are inconsistent, unconfirmed, and single-sourced.",
+    "corroboration": "single",
+    "sources": [
+     {
+      "label": "NgP raZVedka",
+      "url": "https://t.me/ngp_razvedka/25941"
+     },
+     {
+      "label": "NgP raZVedka",
+      "url": "https://t.me/ngp_razvedka/25937"
+     },
+     {
+      "label": "NgP raZVedka",
+      "url": "https://t.me/ngp_razvedka/25938"
+     }
+    ]
+   },
+   {
+    "title": "Russia claims sustained strikes on Ukrainian ports",
+    "body": "Two Majors, Poddubny, and Kotsnews claimed Russian Geran drones and missiles damaged three cargo ships at Odesa/Yuzhny and hit fuel infrastructure and a Neptune-2 launcher near Chornomorsk and Snake Island; Kotsnews cited 19 group strikes on ports July 11-17. Claims unconfirmed.",
+    "corroboration": "multi",
+    "sources": [
+     {
+      "label": "Two Majors",
+      "url": "https://t.me/dva_majors/96302"
+     },
+     {
+      "label": "Poddubny",
+      "url": "https://t.me/epoddubny/28238"
+     },
+     {
+      "label": "Kotsnews",
+      "url": "https://t.me/sashakots/63199"
+     }
+    ]
+   },
+   {
+    "title": "Air-defense capacity debate surfaces amid attacks",
+    "body": "Two Majors and Kotsnews both cited 1,892 drones intercepted over Russia in one week — Kotsnews framed it as proof of effective PVO, while Two Majors questioned air-defense capacity against concentrated attacks, an unusually candid split.",
+    "corroboration": "multi",
+    "sources": [
+     {
+      "label": "Two Majors",
+      "url": "https://t.me/dva_majors/96310"
+     },
+     {
+      "label": "Kotsnews",
+      "url": "https://t.me/sashakots/63200"
+     }
+    ]
+   },
+   {
+    "title": "FSB claims arrest of two Crimean women as SBU recruits",
+    "body": "Kotsnews, Starshe Eddy, and Poddubny relayed an FSB report that two Crimean women were recruited by Ukraine's SBU for sabotage and intelligence-gathering. Single official source repeated across channels.",
+    "corroboration": "multi",
+    "sources": [
+     {
+      "label": "Kotsnews",
+      "url": "https://t.me/sashakots/63204"
+     },
+     {
+      "label": "Starshe Eddy",
+      "url": "https://t.me/vysokygovorit/23346"
+     },
+     {
+      "label": "Poddubny",
+      "url": "https://t.me/epoddubny/28247"
+     }
+    ]
+   },
+   {
+    "title": "Rybar claims 50th settlement taken in border zone",
+    "body": "Rybar said the Northern grouping 'liberated' its 50th settlement across Sumy and Kharkiv regions, framing it as expanding the border security zone. Unconfirmed; no independent corroboration among channels.",
+    "corroboration": "single",
+    "sources": [
+     {
+      "label": "Rybar",
+      "url": "https://t.me/rybar/81832"
+     }
+    ]
+   }
+  ],
+  "narrative_watch": [
+   {
+    "tag": "RISING",
+    "title": "Ukraine 'deliberately targets civilians and economy'",
+    "body": "Channels frame the Wildberries warehouse strikes as intentional attacks on civilian workers and economically significant objects, alleging cluster munitions to underscore malice.",
+    "url": "https://t.me/sashakots/63197"
+   },
+   {
+    "tag": "NEW",
+    "title": "Self-criticism: Russian business shirks the war",
+    "body": "NgP raZVedka and Rybar argue Wildberries strikes expose big Russian businesses that avoid supporting the war, and contrast bureaucratic slowness with Ukraine's decisiveness.",
+    "url": "https://t.me/ngp_razvedka/25924"
+   },
+   {
+    "tag": "STEADY",
+    "title": "Kyiv strikes framed as justified retaliation",
+    "body": "NgP raZVedka casts massed strikes on Kyiv as consequences Ukraine 'suffers' for hitting Russian civilian infrastructure, normalizing tit-for-tat escalation.",
+    "url": "https://t.me/ngp_razvedka/25938"
+   }
+  ],
+  "mood_lines": [
+   {
+    "topic": "Ukraine strikes on Russia",
+    "arrow": "down",
+    "text": "Sharply negative (net -68, swing -168) after Wildberries warehouse attacks and mounting civilian casualty claims dominated the feed."
+   },
+   {
+    "topic": "Strikes on Ukraine",
+    "arrow": "up",
+    "text": "Uniformly celebratory: record-scale Kyiv missile claims and sustained port strikes framed as effective retaliation and logistics degradation."
+   },
+   {
+    "topic": "West & NATO",
+    "arrow": "up",
+    "text": "Mixed but improved (swing +77): schadenfreude over Trump, EU LNG purchases, and Georgian hostility to Ukraine offset alarm at Black Sea recon."
+   },
+   {
+    "topic": "Russia internal",
+    "arrow": "up",
+    "text": "Positive on FSB counterintelligence arrests and Belousov's collegium; society debate on comfort versus war effort adds neutral texture."
+   },
+   {
+    "topic": "Frontline",
+    "arrow": "flat",
+    "text": "Steadily positive claims of advances in Sumy, Kharkiv, Zaporizhzhia and drone strikes on logistics near Red Liman; no reversals reported."
+   },
+   {
+    "topic": "Criticism",
+    "arrow": "down",
+    "text": "Fully negative: bureaucratic slowness and large businesses avoiding war support singled out following the warehouse strikes."
+   }
+  ],
+  "flag_texts": [
+   {
+    "type": "mood_swing",
+    "title": "Strikes-on-Russia sentiment collapses (-168)",
+    "body": "The Wildberries warehouse attacks drove net sentiment to -68 with 16 of 19 posts negative, a 168-point swing reflecting genuine alarm and anger over economic and civilian targeting."
+   },
+   {
+    "type": "mood_swing",
+    "title": "West & NATO mood turns positive (+77)",
+    "body": "Sentiment rose to net +14 on posts mocking Trump, highlighting continued EU LNG purchases from Yamal, and noting Georgian public hostility to Ukraine."
+   },
+   {
+    "type": "mood_swing",
+    "title": "Russia-internal sentiment up (+50)",
+    "body": "FSB arrests of two alleged SBU-recruited Crimean women and coverage of Belousov's collegium meeting pushed internal sentiment to net +50."
+   },
+   {
+    "type": "watchlist_quiet",
+    "title": "Watchlist items quiet",
+    "body": "No posts on 'Mobilisation rumours' or 'Criticism of Putin' today; the day's criticism focused on bureaucracy and war-shirking businesses rather than leadership."
+   }
+  ]
+ },
+ "posts": [
+  {
+   "channel": "wargonzo",
+   "channel_label": "WarGonzo",
+   "message_id": "35625",
+   "link": "https://t.me/wargonzo/35625",
+   "date_utc": "2026-07-18 07:10:14",
+   "views": 30006,
+   "forwards": 41,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "wargonzo",
+   "channel_label": "WarGonzo",
+   "message_id": "35624",
+   "link": "https://t.me/wargonzo/35624",
+   "date_utc": "2026-07-18 07:10:14",
+   "views": 30517,
+   "forwards": 41,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "wargonzo",
+   "channel_label": "WarGonzo",
+   "message_id": "35623",
+   "link": "https://t.me/wargonzo/35623",
+   "date_utc": "2026-07-18 07:10:14",
+   "views": 30368,
+   "forwards": 41,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "wargonzo",
+   "channel_label": "WarGonzo",
+   "message_id": "35622",
+   "link": "https://t.me/wargonzo/35622",
+   "date_utc": "2026-07-18 07:10:14",
+   "views": 26954,
+   "forwards": 41,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "wargonzo",
+   "channel_label": "WarGonzo",
+   "message_id": "35621",
+   "link": "https://t.me/wargonzo/35621",
+   "date_utc": "2026-07-18 07:10:14",
+   "views": 27693,
+   "forwards": 45,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "wargonzo",
+   "channel_label": "WarGonzo",
+   "message_id": "35620",
+   "link": "https://t.me/wargonzo/35620",
+   "date_utc": "2026-07-18 07:10:14",
+   "views": 27164,
+   "forwards": 41,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "wargonzo",
+   "channel_label": "WarGonzo",
+   "message_id": "35627",
+   "link": "https://t.me/wargonzo/35627",
+   "date_utc": "2026-07-18 08:21:09",
+   "views": 33180,
+   "forwards": 233,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "epoddubny",
+   "channel_label": "Poddubny",
+   "message_id": "28239",
+   "link": "https://t.me/epoddubny/28239",
+   "date_utc": "2026-07-18 09:43:52",
+   "views": 29438,
+   "forwards": 47,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "epoddubny",
+   "channel_label": "Poddubny",
+   "message_id": "28240",
+   "link": "https://t.me/epoddubny/28240",
+   "date_utc": "2026-07-18 09:43:53",
+   "views": 29359,
+   "forwards": 46,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "rybar",
+   "channel_label": "Rybar",
+   "message_id": "81837",
+   "link": "https://t.me/rybar/81837",
+   "date_utc": "2026-07-18 10:27:07",
+   "views": 157056,
+   "forwards": 533,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "epoddubny",
+   "channel_label": "Poddubny",
+   "message_id": "28245",
+   "link": "https://t.me/epoddubny/28245",
+   "date_utc": "2026-07-18 10:52:10",
+   "views": 27910,
+   "forwards": 55,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "epoddubny",
+   "channel_label": "Poddubny",
+   "message_id": "28244",
+   "link": "https://t.me/epoddubny/28244",
+   "date_utc": "2026-07-18 10:52:10",
+   "views": 28099,
+   "forwards": 55,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "epoddubny",
+   "channel_label": "Poddubny",
+   "message_id": "28243",
+   "link": "https://t.me/epoddubny/28243",
+   "date_utc": "2026-07-18 10:52:10",
+   "views": 27982,
+   "forwards": 55,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "sashakots",
+   "channel_label": "Kotsnews",
+   "message_id": "63203",
+   "link": "https://t.me/sashakots/63203",
+   "date_utc": "2026-07-18 12:13:44",
+   "views": 25060,
+   "forwards": 62,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "sashakots",
+   "channel_label": "Kotsnews",
+   "message_id": "63202",
+   "link": "https://t.me/sashakots/63202",
+   "date_utc": "2026-07-18 12:13:44",
+   "views": 25130,
+   "forwards": 61,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "rybar",
+   "channel_label": "Rybar",
+   "message_id": "81844",
+   "link": "https://t.me/rybar/81844",
+   "date_utc": "2026-07-18 16:09:27",
+   "views": 137332,
+   "forwards": 61,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "rybar",
+   "channel_label": "Rybar",
+   "message_id": "81843",
+   "link": "https://t.me/rybar/81843",
+   "date_utc": "2026-07-18 16:09:27",
+   "views": 137763,
+   "forwards": 61,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "rybar",
+   "channel_label": "Rybar",
+   "message_id": "81842",
+   "link": "https://t.me/rybar/81842",
+   "date_utc": "2026-07-18 16:09:27",
+   "views": 136868,
+   "forwards": 61,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "sashakots",
+   "channel_label": "Kotsnews",
+   "message_id": "63208",
+   "link": "https://t.me/sashakots/63208",
+   "date_utc": "2026-07-18 17:48:13",
+   "views": 25410,
+   "forwards": 16,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "dva_majors",
+   "channel_label": "Two Majors",
+   "message_id": "96316",
+   "link": "https://t.me/dva_majors/96316",
+   "date_utc": "2026-07-18 18:04:38",
+   "views": 83284,
+   "forwards": 66,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "dva_majors",
+   "channel_label": "Two Majors",
+   "message_id": "96315",
+   "link": "https://t.me/dva_majors/96315",
+   "date_utc": "2026-07-18 18:04:38",
+   "views": 81746,
+   "forwards": 66,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "dva_majors",
+   "channel_label": "Two Majors",
+   "message_id": "96314",
+   "link": "https://t.me/dva_majors/96314",
+   "date_utc": "2026-07-18 18:04:38",
+   "views": 79348,
+   "forwards": 66,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "dva_majors",
+   "channel_label": "Two Majors",
+   "message_id": "96313",
+   "link": "https://t.me/dva_majors/96313",
+   "date_utc": "2026-07-18 18:04:38",
+   "views": 78251,
+   "forwards": 66,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "dva_majors",
+   "channel_label": "Two Majors",
+   "message_id": "96300",
+   "link": "https://t.me/dva_majors/96300",
+   "date_utc": "2026-07-18 03:57:46",
+   "views": 295562,
+   "forwards": 302,
+   "substantive": true,
+   "topic": "ukraine_strikes_on_russia",
+   "subtopic": "drones_on_regions",
+   "sentiment": "neg",
+   "summary_en": "Ukraine launches 370+ drones at Moscow region; 7 killed, 24+ wounded in Wildberries warehouse attack."
+  },
+  {
+   "channel": "dva_majors",
+   "channel_label": "Two Majors",
+   "message_id": "96301",
+   "link": "https://t.me/dva_majors/96301",
+   "date_utc": "2026-07-18 04:04:16",
+   "views": 108199,
+   "forwards": 488,
+   "substantive": true,
+   "topic": "ukraine_strikes_on_russia",
+   "subtopic": "drones_on_regions",
+   "sentiment": "neg",
+   "summary_en": "Wildberries logistics centers attacked; enemy targets economically significant civilian objects to harm Russian economy."
+  },
+  {
+   "channel": "dva_majors",
+   "channel_label": "Two Majors",
+   "message_id": "96302",
+   "link": "https://t.me/dva_majors/96302",
+   "date_utc": "2026-07-18 05:47:48",
+   "views": 105159,
+   "forwards": 148,
+   "substantive": true,
+   "topic": "strikes_on_ukraine",
+   "subtopic": "other",
+   "sentiment": "pos",
+   "summary_en": "Russian forces strike Ukrainian ports; fuel infrastructure and military supply ships damaged in Odessa and Chornomorsk."
+  },
+  {
+   "channel": "wargonzo",
+   "channel_label": "WarGonzo",
+   "message_id": "35618",
+   "link": "https://t.me/wargonzo/35618",
+   "date_utc": "2026-07-18 06:02:01",
+   "views": 28626,
+   "forwards": 20,
+   "substantive": true,
+   "topic": "russia_internal",
+   "subtopic": "elite_politics",
+   "sentiment": "neu",
+   "summary_en": "Defense Minister Belusov holds collegium meeting assessing first-half performance and future military organization tasks."
+  },
+  {
+   "channel": "dva_majors",
+   "channel_label": "Two Majors",
+   "message_id": "96303",
+   "link": "https://t.me/dva_majors/96303",
+   "date_utc": "2026-07-18 06:17:28",
+   "views": 79922,
+   "forwards": 282,
+   "substantive": true,
+   "topic": "west_nato",
+   "subtopic": "military_aid",
+   "sentiment": "neg",
+   "summary_en": "NATO increases reconnaissance over Black Sea and Crimea; six aircraft simultaneously survey region after July 10."
+  },
+  {
+   "channel": "rybar",
+   "channel_label": "Rybar",
+   "message_id": "81832",
+   "link": "https://t.me/rybar/81832",
+   "date_utc": "2026-07-18 06:33:01",
+   "views": 155640,
+   "forwards": 33,
+   "substantive": true,
+   "topic": "frontline",
+   "subtopic": "kupyansk",
+   "sentiment": "pos",
+   "summary_en": "Northern Russian group liberates 50th settlement in Sumy and Kharkiv regions, expanding border security zone."
+  },
+  {
+   "channel": "dva_majors",
+   "channel_label": "Two Majors",
+   "message_id": "96304",
+   "link": "https://t.me/dva_majors/96304",
+   "date_utc": "2026-07-18 07:02:09",
+   "views": 89241,
+   "forwards": 0,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "rybar",
+   "channel_label": "Rybar",
+   "message_id": "81833",
+   "link": "https://t.me/rybar/81833",
+   "date_utc": "2026-07-18 07:09:00",
+   "views": 141122,
+   "forwards": 38,
+   "substantive": true,
+   "topic": "ukraine_strikes_on_russia",
+   "subtopic": "drones_on_regions",
+   "sentiment": "neg",
+   "summary_en": "Ukraine launches 370+ drones at Moscow region; 7 killed in Wildberries attack, 6 drones shot down in Leningrad region."
+  },
+  {
+   "channel": "wargonzo",
+   "channel_label": "WarGonzo",
+   "message_id": "35619",
+   "link": "https://t.me/wargonzo/35619",
+   "date_utc": "2026-07-18 07:10:14",
+   "views": 25497,
+   "forwards": 41,
+   "substantive": true,
+   "topic": "frontline",
+   "subtopic": "hulyaipole",
+   "sentiment": "pos",
+   "summary_en": "Russian forces advance on multiple fronts in Zaporizhzhia direction; heavy fighting near Novoselova, Kosovtsevo, and other settlements."
+  },
+  {
+   "channel": "sashakots",
+   "channel_label": "Kotsnews",
+   "message_id": "63197",
+   "link": "https://t.me/sashakots/63197",
+   "date_utc": "2026-07-18 07:14:52",
+   "views": 85045,
+   "forwards": 1549,
+   "substantive": true,
+   "topic": "ukraine_strikes_on_russia",
+   "subtopic": "drones_on_regions",
+   "sentiment": "neg",
+   "summary_en": "Ukraine deliberately targets civilian Wildberries warehouses with cluster munitions, killing 7, wounding 25 in Tambov region."
+  },
+  {
+   "channel": "rybar",
+   "channel_label": "Rybar",
+   "message_id": "81834",
+   "link": "https://t.me/rybar/81834",
+   "date_utc": "2026-07-18 07:34:22",
+   "views": 152486,
+   "forwards": 53,
+   "substantive": true,
+   "topic": "west_nato",
+   "subtopic": "military_aid",
+   "sentiment": "neu",
+   "summary_en": "Mali's military uses Turkish and Russian drones including Bayraktar, Akıncı, Orion, Lancet for dominance in Sahel conflict."
+  },
+  {
+   "channel": "dva_majors",
+   "channel_label": "Two Majors",
+   "message_id": "96305",
+   "link": "https://t.me/dva_majors/96305",
+   "date_utc": "2026-07-18 08:04:52",
+   "views": 95973,
+   "forwards": 46,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "dva_majors",
+   "channel_label": "Two Majors",
+   "message_id": "96306",
+   "link": "https://t.me/dva_majors/96306",
+   "date_utc": "2026-07-18 08:20:10",
+   "views": 104549,
+   "forwards": 197,
+   "substantive": true,
+   "topic": "strikes_on_ukraine",
+   "subtopic": "other",
+   "sentiment": "pos",
+   "summary_en": "Russia systematically attacks Ukrainian ports forcing rerouting through Danube ports; alternative NATO logistics routes discussed."
+  },
+  {
+   "channel": "wargonzo",
+   "channel_label": "WarGonzo",
+   "message_id": "35626",
+   "link": "https://t.me/wargonzo/35626",
+   "date_utc": "2026-07-18 08:21:09",
+   "views": 33342,
+   "forwards": 247,
+   "substantive": true,
+   "topic": "ukraine_strikes_on_russia",
+   "subtopic": "drones_on_regions",
+   "sentiment": "neg",
+   "summary_en": "Ukraine attacks Wildberries warehouses in Tambov and Moscow regions, killing 7 and wounding 48; also hits oil depot in Noginsk."
+  },
+  {
+   "channel": "sashakots",
+   "channel_label": "Kotsnews",
+   "message_id": "63198",
+   "link": "https://t.me/sashakots/63198",
+   "date_utc": "2026-07-18 08:22:37",
+   "views": 25336,
+   "forwards": 17,
+   "substantive": true,
+   "topic": "west_nato",
+   "subtopic": "negotiations",
+   "sentiment": "neu",
+   "summary_en": "American Conservative analyzes Western military aid failures and Trump's negotiation approach to Ukraine conflict resolution."
+  },
+  {
+   "channel": "sashakots",
+   "channel_label": "Kotsnews",
+   "message_id": "63199",
+   "link": "https://t.me/sashakots/63199",
+   "date_utc": "2026-07-18 08:59:09",
+   "views": 25380,
+   "forwards": 93,
+   "substantive": true,
+   "topic": "strikes_on_ukraine",
+   "subtopic": "other",
+   "sentiment": "pos",
+   "summary_en": "Russian Geran-4 drones strike three cargo ships in Mykolaiv port; 19 group strikes hit Ukrainian ports July 11-17."
+  },
+  {
+   "channel": "rybar",
+   "channel_label": "Rybar",
+   "message_id": "81835",
+   "link": "https://t.me/rybar/81835",
+   "date_utc": "2026-07-18 09:02:02",
+   "views": 152648,
+   "forwards": 60,
+   "substantive": true,
+   "topic": "west_nato",
+   "subtopic": "alliance_politics",
+   "sentiment": "neg",
+   "summary_en": "Serbia signs energy partnership memorandum with USA, establishing strategic dialogue on energy, investment, and regional security."
+  },
+  {
+   "channel": "ngp_razvedka",
+   "channel_label": "NgP raZVedka",
+   "message_id": "25924",
+   "link": "https://t.me/ngp_razvedka/25924",
+   "date_utc": "2026-07-18 09:41:54",
+   "views": 13598,
+   "forwards": 179,
+   "substantive": true,
+   "topic": "criticism",
+   "subtopic": "government",
+   "sentiment": "neg",
+   "summary_en": "Ukrainian drone attacks on Wildberries are opening shot at large Russian businesses avoiding military support during war."
+  },
+  {
+   "channel": "epoddubny",
+   "channel_label": "Poddubny",
+   "message_id": "28238",
+   "link": "https://t.me/epoddubny/28238",
+   "date_utc": "2026-07-18 09:43:52",
+   "views": 28097,
+   "forwards": 47,
+   "substantive": true,
+   "topic": "strikes_on_ukraine",
+   "subtopic": "other",
+   "sentiment": "pos",
+   "summary_en": "Russian forces destroy fuel infrastructure, cargo ships, and Neptune-2 launcher in Odessa, Chornomorsk, and near Snake Island."
+  },
+  {
+   "channel": "wargonzo",
+   "channel_label": "WarGonzo",
+   "message_id": "35628",
+   "link": "https://t.me/wargonzo/35628",
+   "date_utc": "2026-07-18 10:16:53",
+   "views": 29431,
+   "forwards": 52,
+   "substantive": true,
+   "topic": "ukraine_strikes_on_russia",
+   "subtopic": "drones_on_regions",
+   "sentiment": "neg",
+   "summary_en": "One killed, 37 wounded in Ukrainian drone attack on Moscow region; debris from downed drone hits kindergarten but no child casualties."
+  },
+  {
+   "channel": "rybar",
+   "channel_label": "Rybar",
+   "message_id": "81836",
+   "link": "https://t.me/rybar/81836",
+   "date_utc": "2026-07-18 10:27:07",
+   "views": 157567,
+   "forwards": 547,
+   "substantive": true,
+   "topic": "ukraine_strikes_on_russia",
+   "subtopic": "drones_on_regions",
+   "sentiment": "neg",
+   "summary_en": "Wildberries warehouses attacked; 7 killed in Tambov, 37 wounded in Moscow region; drones target civilian infrastructure systematically."
+  },
+  {
+   "channel": "epoddubny",
+   "channel_label": "Poddubny",
+   "message_id": "28241",
+   "link": "https://t.me/epoddubny/28241",
+   "date_utc": "2026-07-18 10:35:13",
+   "views": 26540,
+   "forwards": 88,
+   "substantive": true,
+   "topic": "ukraine_strikes_on_russia",
+   "subtopic": "drones_on_regions",
+   "sentiment": "neg",
+   "summary_en": "Ukraine deliberately targets Wildberries workers with cluster-equipped drones; 7 killed, 25 wounded in Tambov warehouse."
+  },
+  {
+   "channel": "epoddubny",
+   "channel_label": "Poddubny",
+   "message_id": "28242",
+   "link": "https://t.me/epoddubny/28242",
+   "date_utc": "2026-07-18 10:52:10",
+   "views": 26935,
+   "forwards": 57,
+   "substantive": true,
+   "topic": "strikes_on_ukraine",
+   "subtopic": "other",
+   "sentiment": "pos",
+   "summary_en": "Russian Geran drones destroy locomotives in Krivy Rih and Zaporizhzhia, degrading Ukrainian military logistics capabilities."
+  },
+  {
+   "channel": "rybar",
+   "channel_label": "Rybar",
+   "message_id": "81838",
+   "link": "https://t.me/rybar/81838",
+   "date_utc": "2026-07-18 11:28:02",
+   "views": 158812,
+   "forwards": 428,
+   "substantive": true,
+   "topic": "criticism",
+   "subtopic": "government",
+   "sentiment": "neg",
+   "summary_en": "Russian bureaucratic procedures slow response while Ukraine strikes fuel, ports, and civilian logistics without hesitation; contrasts methodologies."
+  },
+  {
+   "channel": "sashakots",
+   "channel_label": "Kotsnews",
+   "message_id": "63200",
+   "link": "https://t.me/sashakots/63200",
+   "date_utc": "2026-07-18 11:56:52",
+   "views": 22655,
+   "forwards": 113,
+   "substantive": true,
+   "topic": "ukraine_strikes_on_russia",
+   "subtopic": "drones_on_regions",
+   "sentiment": "pos",
+   "summary_en": "Russian air defense destroys 1,892 drones weekly; only handful reach Moscow; demonstrates effective PVO performance."
+  },
+  {
+   "channel": "dva_majors",
+   "channel_label": "Two Majors",
+   "message_id": "96307",
+   "link": "https://t.me/dva_majors/96307",
+   "date_utc": "2026-07-18 12:09:58",
+   "views": 104998,
+   "forwards": 46,
+   "substantive": true,
+   "topic": "frontline",
+   "subtopic": "other",
+   "sentiment": "pos",
+   "summary_en": "Russian drone units destroy Ukrainian defensive positions and strongpoints systematically."
+  },
+  {
+   "channel": "sashakots",
+   "channel_label": "Kotsnews",
+   "message_id": "63201",
+   "link": "https://t.me/sashakots/63201",
+   "date_utc": "2026-07-18 12:13:44",
+   "views": 22569,
+   "forwards": 63,
+   "substantive": true,
+   "topic": "ukraine_strikes_on_russia",
+   "subtopic": "other",
+   "sentiment": "neg",
+   "summary_en": "Ukraine strikes Russian railway infrastructure, locomotives, and power substations across multiple regions."
+  },
+  {
+   "channel": "wargonzo",
+   "channel_label": "WarGonzo",
+   "message_id": "35629",
+   "link": "https://t.me/wargonzo/35629",
+   "date_utc": "2026-07-18 12:38:58",
+   "views": 29303,
+   "forwards": 33,
+   "substantive": true,
+   "topic": "russia_internal",
+   "subtopic": "ideology_society",
+   "sentiment": "neu",
+   "summary_en": "Marine brigade training combines combat experience with analysis of enemy technology for realistic preparation."
+  },
+  {
+   "channel": "dva_majors",
+   "channel_label": "Two Majors",
+   "message_id": "96308",
+   "link": "https://t.me/dva_majors/96308",
+   "date_utc": "2026-07-18 12:40:32",
+   "views": 94146,
+   "forwards": 28,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "epoddubny",
+   "channel_label": "Poddubny",
+   "message_id": "28246",
+   "link": "https://t.me/epoddubny/28246",
+   "date_utc": "2026-07-18 12:42:00",
+   "views": 27626,
+   "forwards": 27,
+   "substantive": true,
+   "topic": "frontline",
+   "subtopic": "other",
+   "sentiment": "pos",
+   "summary_en": "Russian drones disrupt Ukrainian logistics near Red Liman, targeting river crossings and supply routes."
+  },
+  {
+   "channel": "rybar",
+   "channel_label": "Rybar",
+   "message_id": "81839",
+   "link": "https://t.me/rybar/81839",
+   "date_utc": "2026-07-18 12:46:57",
+   "views": 144743,
+   "forwards": 29,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "ngp_razvedka",
+   "channel_label": "NgP raZVedka",
+   "message_id": "25925",
+   "link": "https://t.me/ngp_razvedka/25925",
+   "date_utc": "2026-07-18 12:47:03",
+   "views": 23610,
+   "forwards": 173,
+   "substantive": true,
+   "topic": "ukraine_strikes_on_russia",
+   "subtopic": "other",
+   "sentiment": "neg",
+   "summary_en": "Ukraine drone strikes pig farm in Bryansk region; commentator notes Ukrainians also target their own assets."
+  },
+  {
+   "channel": "vysokygovorit",
+   "channel_label": "Starshe Eddy",
+   "message_id": "23345",
+   "link": "https://t.me/vysokygovorit/23345",
+   "date_utc": "2026-07-18 13:17:37",
+   "views": 63617,
+   "forwards": 87,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "sashakots",
+   "channel_label": "Kotsnews",
+   "message_id": "63204",
+   "link": "https://t.me/sashakots/63204",
+   "date_utc": "2026-07-18 13:22:24",
+   "views": 124503,
+   "forwards": 129,
+   "substantive": true,
+   "topic": "russia_internal",
+   "subtopic": "security_cases",
+   "sentiment": "pos",
+   "summary_en": "FSB arrests two Crimean women recruited by Ukrainian SBU for sabotage and intelligence gathering."
+  },
+  {
+   "channel": "dva_majors",
+   "channel_label": "Two Majors",
+   "message_id": "96309",
+   "link": "https://t.me/dva_majors/96309",
+   "date_utc": "2026-07-18 13:45:41",
+   "views": 128712,
+   "forwards": 517,
+   "substantive": true,
+   "topic": "ukraine_strikes_on_russia",
+   "subtopic": "other",
+   "sentiment": "neg",
+   "summary_en": "Ukraine strikes Wildberries warehouses in Tambov and Moscow region, disrupting Russian logistics and e-commerce."
+  },
+  {
+   "channel": "rybar",
+   "channel_label": "Rybar",
+   "message_id": "81840",
+   "link": "https://t.me/rybar/81840",
+   "date_utc": "2026-07-18 14:18:50",
+   "views": 142024,
+   "forwards": 24,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "wargonzo",
+   "channel_label": "WarGonzo",
+   "message_id": "35630",
+   "link": "https://t.me/wargonzo/35630",
+   "date_utc": "2026-07-18 14:31:02",
+   "views": 31326,
+   "forwards": 17,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "dva_majors",
+   "channel_label": "Two Majors",
+   "message_id": "96310",
+   "link": "https://t.me/dva_majors/96310",
+   "date_utc": "2026-07-18 14:34:37",
+   "views": 100067,
+   "forwards": 276,
+   "substantive": true,
+   "topic": "ukraine_strikes_on_russia",
+   "subtopic": "drones_on_regions",
+   "sentiment": "neg",
+   "summary_en": "Moscow intercepts 1,892 Ukrainian drones in one week; analysis questions air defense capacity against concentrated attacks."
+  },
+  {
+   "channel": "ngp_razvedka",
+   "channel_label": "NgP raZVedka",
+   "message_id": "25926",
+   "link": "https://t.me/ngp_razvedka/25926",
+   "date_utc": "2026-07-18 14:47:06",
+   "views": 11587,
+   "forwards": 74,
+   "substantive": true,
+   "topic": "ukraine_strikes_on_russia",
+   "subtopic": "other",
+   "sentiment": "neg",
+   "summary_en": "Unknown drone operators strike truck parking lot in Chernihov; commentator claims retaliation for Ukrainian attacks."
+  },
+  {
+   "channel": "epoddubny",
+   "channel_label": "Poddubny",
+   "message_id": "28247",
+   "link": "https://t.me/epoddubny/28247",
+   "date_utc": "2026-07-18 14:56:17",
+   "views": 24314,
+   "forwards": 31,
+   "substantive": true,
+   "topic": "russia_internal",
+   "subtopic": "security_cases",
+   "sentiment": "pos",
+   "summary_en": "FSB arrests two Crimean women recruited by Ukrainian SBU for sabotage and intelligence gathering operations."
+  },
+  {
+   "channel": "vysokygovorit",
+   "channel_label": "Starshe Eddy",
+   "message_id": "23346",
+   "link": "https://t.me/vysokygovorit/23346",
+   "date_utc": "2026-07-18 15:00:36",
+   "views": 59709,
+   "forwards": 55,
+   "substantive": true,
+   "topic": "russia_internal",
+   "subtopic": "security_cases",
+   "sentiment": "pos",
+   "summary_en": "FSB arrests two Crimean women recruited by Ukrainian SBU for sabotage and intelligence gathering operations."
+  },
+  {
+   "channel": "epoddubny",
+   "channel_label": "Poddubny",
+   "message_id": "28248",
+   "link": "https://t.me/epoddubny/28248",
+   "date_utc": "2026-07-18 15:22:13",
+   "views": 47799,
+   "forwards": 74,
+   "substantive": true,
+   "topic": "ukraine_strikes_on_russia",
+   "subtopic": "other",
+   "sentiment": "pos",
+   "summary_en": "Russian drones systematically strike Ukrainian port ships; three cargo vessels damaged at Odesa and Yuzhny ports."
+  },
+  {
+   "channel": "ngp_razvedka",
+   "channel_label": "NgP raZVedka",
+   "message_id": "25927",
+   "link": "https://t.me/ngp_razvedka/25927",
+   "date_utc": "2026-07-18 15:54:47",
+   "views": 11359,
+   "forwards": 47,
+   "substantive": true,
+   "topic": "russia_internal",
+   "subtopic": "ideology_society",
+   "sentiment": "neu",
+   "summary_en": "Debate over civilian comfort versus war effort: balancing business survival with national security requirements."
+  },
+  {
+   "channel": "rybar",
+   "channel_label": "Rybar",
+   "message_id": "81841",
+   "link": "https://t.me/rybar/81841",
+   "date_utc": "2026-07-18 16:09:27",
+   "views": 131807,
+   "forwards": 60,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "sashakots",
+   "channel_label": "Kotsnews",
+   "message_id": "63205",
+   "link": "https://t.me/sashakots/63205",
+   "date_utc": "2026-07-18 16:16:19",
+   "views": 19422,
+   "forwards": 26,
+   "substantive": true,
+   "topic": "ukraine_strikes_on_russia",
+   "subtopic": "other",
+   "sentiment": "pos",
+   "summary_en": "Russian drones systematically strike Ukrainian port ships; three cargo vessels damaged at Odesa and Yuzhny ports."
+  },
+  {
+   "channel": "sashakots",
+   "channel_label": "Kotsnews",
+   "message_id": "63206",
+   "link": "https://t.me/sashakots/63206",
+   "date_utc": "2026-07-18 16:59:01",
+   "views": 22996,
+   "forwards": 55,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "sashakots",
+   "channel_label": "Kotsnews",
+   "message_id": "63207",
+   "link": "https://t.me/sashakots/63207",
+   "date_utc": "2026-07-18 17:31:53",
+   "views": 25750,
+   "forwards": 8,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "dva_majors",
+   "channel_label": "Two Majors",
+   "message_id": "96311",
+   "link": "https://t.me/dva_majors/96311",
+   "date_utc": "2026-07-18 17:52:04",
+   "views": 80672,
+   "forwards": 104,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "dva_majors",
+   "channel_label": "Two Majors",
+   "message_id": "96312",
+   "link": "https://t.me/dva_majors/96312",
+   "date_utc": "2026-07-18 18:04:38",
+   "views": 76201,
+   "forwards": 66,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "dva_majors",
+   "channel_label": "Two Majors",
+   "message_id": "96317",
+   "link": "https://t.me/dva_majors/96317",
+   "date_utc": "2026-07-18 18:12:32",
+   "views": 86362,
+   "forwards": 58,
+   "substantive": true,
+   "topic": "ukraine_strikes_on_russia",
+   "subtopic": "drones_on_regions",
+   "sentiment": "neg",
+   "summary_en": "Ukrainian drone strikes bus in Belgorod region; one killed, four wounded including child."
+  },
+  {
+   "channel": "rybar",
+   "channel_label": "Rybar",
+   "message_id": "81845",
+   "link": "https://t.me/rybar/81845",
+   "date_utc": "2026-07-18 19:01:23",
+   "views": 128879,
+   "forwards": 25,
+   "substantive": true,
+   "topic": "west_nato",
+   "subtopic": "other",
+   "sentiment": "pos",
+   "summary_en": "EU maintains $44/barrel oil price cap while European countries continue mass purchases of Russian LNG from Yamal."
+  },
+  {
+   "channel": "dva_majors",
+   "channel_label": "Two Majors",
+   "message_id": "96318",
+   "link": "https://t.me/dva_majors/96318",
+   "date_utc": "2026-07-18 19:10:31",
+   "views": 83454,
+   "forwards": 60,
+   "substantive": true,
+   "topic": "ukraine_strikes_on_russia",
+   "subtopic": "drones_on_regions",
+   "sentiment": "neg",
+   "summary_en": "Russia claims 123 Ukrainian drones intercepted over Russian regions during daylight hours."
+  },
+  {
+   "channel": "dva_majors",
+   "channel_label": "Two Majors",
+   "message_id": "96319",
+   "link": "https://t.me/dva_majors/96319",
+   "date_utc": "2026-07-18 19:50:02",
+   "views": 85741,
+   "forwards": 2,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "dva_majors",
+   "channel_label": "Two Majors",
+   "message_id": "96320",
+   "link": "https://t.me/dva_majors/96320",
+   "date_utc": "2026-07-18 19:50:21",
+   "views": 90987,
+   "forwards": 102,
+   "substantive": true,
+   "topic": "ukraine_strikes_on_russia",
+   "subtopic": "drones_on_regions",
+   "sentiment": "neg",
+   "summary_en": "Ukrainian drones attacked Moscow region; 61 people injured, nine in critical condition."
+  },
+  {
+   "channel": "dva_majors",
+   "channel_label": "Two Majors",
+   "message_id": "96321",
+   "link": "https://t.me/dva_majors/96321",
+   "date_utc": "2026-07-18 20:02:55",
+   "views": 96294,
+   "forwards": 148,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "vysokygovorit",
+   "channel_label": "Starshe Eddy",
+   "message_id": "23347",
+   "link": "https://t.me/vysokygovorit/23347",
+   "date_utc": "2026-07-18 20:43:14",
+   "views": 53642,
+   "forwards": 120,
+   "substantive": true,
+   "topic": "west_nato",
+   "subtopic": "other",
+   "sentiment": "pos",
+   "summary_en": "Iranian ballistic missiles hit US base in Middle East; Trump's policy failures evident to US allies."
+  },
+  {
+   "channel": "ngp_razvedka",
+   "channel_label": "NgP raZVedka",
+   "message_id": "25928",
+   "link": "https://t.me/ngp_razvedka/25928",
+   "date_utc": "2026-07-18 21:54:17",
+   "views": 9791,
+   "forwards": 105,
+   "substantive": true,
+   "topic": "west_nato",
+   "subtopic": "other",
+   "sentiment": "pos",
+   "summary_en": "Georgia's population hostility toward Ukraine persists despite government change; selective application of outrage."
+  },
+  {
+   "channel": "rybar",
+   "channel_label": "Rybar",
+   "message_id": "81846",
+   "link": "https://t.me/rybar/81846",
+   "date_utc": "2026-07-18 22:12:44",
+   "views": 69706,
+   "forwards": 26,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "ngp_razvedka",
+   "channel_label": "NgP raZVedka",
+   "message_id": "25929",
+   "link": "https://t.me/ngp_razvedka/25929",
+   "date_utc": "2026-07-18 22:27:10",
+   "views": 8956,
+   "forwards": 31,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "ngp_razvedka",
+   "channel_label": "NgP raZVedka",
+   "message_id": "25930",
+   "link": "https://t.me/ngp_razvedka/25930",
+   "date_utc": "2026-07-18 22:33:18",
+   "views": 9444,
+   "forwards": 139,
+   "substantive": true,
+   "topic": "strikes_on_ukraine",
+   "subtopic": "deep_strikes",
+   "sentiment": "pos",
+   "summary_en": "Sixteen missiles struck Kyiv targeting Wildberries warehouse facility."
+  },
+  {
+   "channel": "ngp_razvedka",
+   "channel_label": "NgP raZVedka",
+   "message_id": "25931",
+   "link": "https://t.me/ngp_razvedka/25931",
+   "date_utc": "2026-07-18 22:36:38",
+   "views": 11045,
+   "forwards": 37,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "ngp_razvedka",
+   "channel_label": "NgP raZVedka",
+   "message_id": "25932",
+   "link": "https://t.me/ngp_razvedka/25932",
+   "date_utc": "2026-07-18 22:37:18",
+   "views": 8859,
+   "forwards": 59,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "ngp_razvedka",
+   "channel_label": "NgP raZVedka",
+   "message_id": "25933",
+   "link": "https://t.me/ngp_razvedka/25933",
+   "date_utc": "2026-07-18 22:40:12",
+   "views": 9252,
+   "forwards": 69,
+   "substantive": true,
+   "topic": "strikes_on_ukraine",
+   "subtopic": "deep_strikes",
+   "sentiment": "pos",
+   "summary_en": "Twenty-three missiles entered Kyiv; Ukrainian air defense unable to prevent impacts."
+  },
+  {
+   "channel": "ngp_razvedka",
+   "channel_label": "NgP raZVedka",
+   "message_id": "25934",
+   "link": "https://t.me/ngp_razvedka/25934",
+   "date_utc": "2026-07-18 22:41:59",
+   "views": 8751,
+   "forwards": 41,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "ngp_razvedka",
+   "channel_label": "NgP raZVedka",
+   "message_id": "25935",
+   "link": "https://t.me/ngp_razvedka/25935",
+   "date_utc": "2026-07-18 22:46:01",
+   "views": 9457,
+   "forwards": 237,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "ngp_razvedka",
+   "channel_label": "NgP raZVedka",
+   "message_id": "25936",
+   "link": "https://t.me/ngp_razvedka/25936",
+   "date_utc": "2026-07-18 22:50:13",
+   "views": 8755,
+   "forwards": 66,
+   "substantive": true,
+   "topic": "strikes_on_ukraine",
+   "subtopic": "deep_strikes",
+   "sentiment": "pos",
+   "summary_en": "Thirty missiles struck Kyiv; new record for single strike on Ukrainian capital."
+  },
+  {
+   "channel": "ngp_razvedka",
+   "channel_label": "NgP raZVedka",
+   "message_id": "25937",
+   "link": "https://t.me/ngp_razvedka/25937",
+   "date_utc": "2026-07-18 22:58:22",
+   "views": 8669,
+   "forwards": 66,
+   "substantive": true,
+   "topic": "strikes_on_ukraine",
+   "subtopic": "deep_strikes",
+   "sentiment": "pos",
+   "summary_en": "Thirty-three missiles struck Kyiv in record-breaking concentrated attack on Ukrainian capital."
+  },
+  {
+   "channel": "ngp_razvedka",
+   "channel_label": "NgP raZVedka",
+   "message_id": "25938",
+   "link": "https://t.me/ngp_razvedka/25938",
+   "date_utc": "2026-07-18 23:00:51",
+   "views": 9248,
+   "forwards": 71,
+   "substantive": true,
+   "topic": "strikes_on_ukraine",
+   "subtopic": "deep_strikes",
+   "sentiment": "pos",
+   "summary_en": "Kyiv metro stations targeted; Ukraine suffers consequences for striking Russian civilian infrastructure."
+  },
+  {
+   "channel": "ngp_razvedka",
+   "channel_label": "NgP raZVedka",
+   "message_id": "25939",
+   "link": "https://t.me/ngp_razvedka/25939",
+   "date_utc": "2026-07-18 23:06:02",
+   "views": 9637,
+   "forwards": 68,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "ngp_razvedka",
+   "channel_label": "NgP raZVedka",
+   "message_id": "25940",
+   "link": "https://t.me/ngp_razvedka/25940",
+   "date_utc": "2026-07-18 23:08:12",
+   "views": 10078,
+   "forwards": 81,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  },
+  {
+   "channel": "ngp_razvedka",
+   "channel_label": "NgP raZVedka",
+   "message_id": "25941",
+   "link": "https://t.me/ngp_razvedka/25941",
+   "date_utc": "2026-07-18 23:13:25",
+   "views": 10328,
+   "forwards": 90,
+   "substantive": true,
+   "topic": "strikes_on_ukraine",
+   "subtopic": "deep_strikes",
+   "sentiment": "pos",
+   "summary_en": "Thirty-seven missiles in massed rocket strike on Kyiv overwhelms Ukrainian air defenses."
+  },
+  {
+   "channel": "ngp_razvedka",
+   "channel_label": "NgP raZVedka",
+   "message_id": "25942",
+   "link": "https://t.me/ngp_razvedka/25942",
+   "date_utc": "2026-07-18 23:43:00",
+   "views": 9517,
+   "forwards": 32,
+   "substantive": false,
+   "topic": "none",
+   "subtopic": "none",
+   "sentiment": "neu",
+   "summary_en": ""
+  }
+ ]
+}

@@ -4579,6 +4579,102 @@
     "criticism/government": 4
    },
    "flags": 2
+  },
+  {
+   "trackers": {
+    "frontline": {
+     "pos": 4,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Northern Russian group liberates 50th settlement in Sumy and Kharkiv regions, expanding border security zone.",
+     "story_url": "https://t.me/rybar/81832",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/96307",
+       "t": "Russian drone units destroy Ukrainian defensive positions and strongpoints systematically.",
+       "ch": "Two Majors"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 11,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russian forces strike Ukrainian ports; fuel infrastructure and military supply ships damaged in Odessa and Chornomorsk.",
+     "story_url": "https://t.me/dva_majors/96302",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/96306",
+       "t": "Russia systematically attacks Ukrainian ports forcing rerouting through Danube ports; alternative NATO logistics routes discussed.",
+       "ch": "Two Majors"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 3,
+     "neg": 16,
+     "neu": 0,
+     "net": -68,
+     "story": "Ukraine launches 370+ drones at Moscow region; 7 killed, 24+ wounded in Wildberries warehouse attack.",
+     "story_url": "https://t.me/dva_majors/96300",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/epoddubny/28248",
+       "t": "Russian drones systematically strike Ukrainian port ships; three cargo vessels damaged at Odesa and Yuzhny ports.",
+       "ch": "Poddubny"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/81836",
+       "t": "Wildberries warehouses attacked; 7 killed in Tambov, 37 wounded in Moscow region; drones target civilian infrastructure systematically.",
+       "ch": "Rybar"
+      }
+     ]
+    }
+   },
+   "date": "2026-07-18",
+   "total": 95,
+   "substantive": 49,
+   "headline": "Ukraine's Wildberries drone strikes rattle channels; Kyiv hit in return",
+   "topics": {
+    "strikes_on_ukraine": 11,
+    "frontline": 4,
+    "ukraine_strikes_on_russia": 19,
+    "west_nato": 7,
+    "russia_internal": 6,
+    "criticism": 2
+   },
+   "nets": {
+    "strikes_on_ukraine": 100,
+    "frontline": 100,
+    "ukraine_strikes_on_russia": -68,
+    "west_nato": 14,
+    "russia_internal": 50,
+    "criticism": -100
+   },
+   "subtopics": {
+    "strikes_on_ukraine/deep_strikes": 6,
+    "strikes_on_ukraine/other": 5,
+    "frontline/hulyaipole": 1,
+    "frontline/kupyansk": 1,
+    "frontline/other": 2,
+    "ukraine_strikes_on_russia/drones_on_regions": 13,
+    "ukraine_strikes_on_russia/other": 6,
+    "west_nato/military_aid": 2,
+    "west_nato/negotiations": 1,
+    "west_nato/alliance_politics": 1,
+    "west_nato/other": 3,
+    "russia_internal/ideology_society": 2,
+    "russia_internal/security_cases": 3,
+    "russia_internal/elite_politics": 1,
+    "criticism/government": 2
+   },
+   "flags": 3
   }
  ]
 }
