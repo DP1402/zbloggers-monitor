@@ -4675,6 +4675,101 @@
     "criticism/government": 2
    },
    "flags": 3
+  },
+  {
+   "trackers": {
+    "frontline": {
+     "pos": 8,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russian forces control Oskol crossing points; Ukrainian supply severely restricted; Russian forces advance systematically.",
+     "story_url": "https://t.me/Sladkov_plus/15792",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/sashakots/63214",
+       "t": "Russian forces captured Volnoe village in Dnipropetrovsk; destroyed enemy platoon, vehicles and heavy drones.",
+       "ch": "Kotsnews"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 30,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russian escalation campaign targets Ukrainian ports, energy, and maritime infrastructure; political authorization obtained.",
+     "story_url": "https://t.me/dva_majors/96323",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81849",
+       "t": "Combined strike on Kyiv destroyed missile control system factories and logistics warehouses for military supplies.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 2,
+     "neg": 5,
+     "neu": 0,
+     "net": -43,
+     "story": "Iran launches ballistic missiles at US base in Jordan, killing two Americans; first combat losses in renewed Middle East conflict.",
+     "story_url": "https://t.me/rybar/81854",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/sashakots/63218",
+       "t": "Vega unit drone operators destroy MTLB, vehicles, ammunition depot and eleven Ukrainian drones near Dobropillia.",
+       "ch": "Kotsnews"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/dva_majors/96351",
+       "t": "Ukrainian drone attacks on Wildberries warehouses disable 7% of company capacity; restoration costs 20-35.8 billion rubles.",
+       "ch": "Two Majors"
+      }
+     ]
+    }
+   },
+   "date": "2026-07-19",
+   "total": 119,
+   "substantive": 59,
+   "headline": "Record missile barrage on Kyiv; escalation campaign targets ports",
+   "topics": {
+    "strikes_on_ukraine": 30,
+    "frontline": 8,
+    "ukraine_strikes_on_russia": 7,
+    "west_nato": 5,
+    "russia_internal": 9,
+    "criticism": 0
+   },
+   "nets": {
+    "strikes_on_ukraine": 100,
+    "frontline": 100,
+    "ukraine_strikes_on_russia": -43,
+    "west_nato": -40,
+    "russia_internal": 67,
+    "criticism": null
+   },
+   "subtopics": {
+    "strikes_on_ukraine/deep_strikes": 17,
+    "strikes_on_ukraine/fuel_infrastructure": 2,
+    "strikes_on_ukraine/other": 11,
+    "frontline/pokrovsk": 2,
+    "frontline/hulyaipole": 2,
+    "frontline/kupyansk": 1,
+    "frontline/other": 3,
+    "ukraine_strikes_on_russia/drones_on_regions": 6,
+    "ukraine_strikes_on_russia/other": 1,
+    "west_nato/military_aid": 1,
+    "west_nato/alliance_politics": 1,
+    "west_nato/other": 3,
+    "russia_internal/ideology_society": 8,
+    "russia_internal/other": 1
+   },
+   "flags": 2
   }
  ]
 }
