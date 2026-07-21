@@ -4770,6 +4770,111 @@
     "russia_internal/other": 1
    },
    "flags": 2
+  },
+  {
+   "trackers": {
+    "frontline": {
+     "pos": 4,
+     "neg": 2,
+     "neu": 0,
+     "net": 33,
+     "story": "Russian claims of controlling Novorossiya highway disputed; Ukrainian drone effectiveness remains despite official statements.",
+     "story_url": "https://t.me/rybar/81875",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/96371",
+       "t": "Russian 26th motorized rifle regiment destroyed Ukrainian heavy drones at night.",
+       "ch": "Two Majors"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/81876",
+       "t": "Novorossiya highway remains dangerous despite claims of safety; Ukrainian drone attacks continue causing civilian casualties.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 12,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russia strikes Kiev with record-large attack on military manufacturing plants, exploiting Ukrainian air defense shortage.",
+     "story_url": "https://t.me/rybar/81864",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/96361",
+       "t": "Russia conducts record strike on Kiev, hitting missile production facilities amid Ukrainian air defense gaps.",
+       "ch": "Two Majors"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 4,
+     "neg": 19,
+     "neu": 0,
+     "net": -65,
+     "story": "Ukraine strikes Russian regions; 400+ drones attack Moscow area, causing fires and casualties.",
+     "story_url": "https://t.me/dva_majors/96356",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81868",
+       "t": "Ukraine accidentally confirmed Russian strike hit Vyriy FPV drone factory in Sumy.",
+       "ch": "Rybar"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/81873",
+       "t": "Over 400 Ukrainian drones attacked Moscow region; Russian air defense intercepted 381 drones.",
+       "ch": "Rybar"
+      }
+     ]
+    }
+   },
+   "date": "2026-07-20",
+   "total": 142,
+   "substantive": 70,
+   "headline": "400+ drones hit Moscow; Belgorod bus strike kills five",
+   "topics": {
+    "strikes_on_ukraine": 12,
+    "frontline": 6,
+    "ukraine_strikes_on_russia": 23,
+    "west_nato": 15,
+    "russia_internal": 8,
+    "criticism": 6
+   },
+   "nets": {
+    "strikes_on_ukraine": 100,
+    "frontline": 33,
+    "ukraine_strikes_on_russia": -65,
+    "west_nato": -47,
+    "russia_internal": 25,
+    "criticism": -100
+   },
+   "subtopics": {
+    "strikes_on_ukraine/deep_strikes": 2,
+    "strikes_on_ukraine/fuel_infrastructure": 3,
+    "strikes_on_ukraine/other": 7,
+    "frontline/hulyaipole": 1,
+    "frontline/other": 5,
+    "ukraine_strikes_on_russia/drones_on_regions": 22,
+    "ukraine_strikes_on_russia/other": 1,
+    "west_nato/military_aid": 2,
+    "west_nato/rearmament": 2,
+    "west_nato/negotiations": 1,
+    "west_nato/alliance_politics": 2,
+    "west_nato/other": 8,
+    "russia_internal/ideology_society": 3,
+    "russia_internal/security_cases": 1,
+    "russia_internal/other": 4,
+    "criticism/army_command": 1,
+    "criticism/government": 4,
+    "criticism/regional": 1
+   },
+   "flags": 2
   }
  ]
 }
