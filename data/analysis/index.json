@@ -4875,6 +4875,106 @@
     "criticism/regional": 1
    },
    "flags": 2
+  },
+  {
+   "trackers": {
+    "frontline": {
+     "pos": 8,
+     "neg": 0,
+     "neu": 1,
+     "net": 89,
+     "story": "Russian forces continue offensive near Konstantinovka, consolidating gains and adjusting frontline.",
+     "story_url": "https://t.me/rybar/81893",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/96413",
+       "t": "Russian drone operators destroy Ukrainian heavy drone at launch site near Dobropohe.",
+       "ch": "Two Majors"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 18,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russia strikes Ukrainian ports, fuel infrastructure, and logistics; Ukraine shoots down 161 drones overnight.",
+     "story_url": "https://t.me/dva_majors/96397",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81885",
+       "t": "Russia strikes Ukrainian ports, fuel infrastructure, and logistics; Ukraine shoots down 161 drones overnight.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 1,
+     "neg": 6,
+     "neu": 1,
+     "net": -62,
+     "story": "Ukraine launched almost 3,000 drones against Russian regions last week despite production strikes.",
+     "story_url": "https://t.me/rybar/81891",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/sashakots/63252",
+       "t": "Russian drone unit destroys Ukrainian reconnaissance and attack drones in Donetsk area.",
+       "ch": "Kotsnews"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/dva_majors/96410",
+       "t": "Ukraine attacked Belgorod region 153 times in one day, killing 9 and wounding 77 civilians.",
+       "ch": "Two Majors"
+      }
+     ]
+    }
+   },
+   "date": "2026-07-21",
+   "total": 126,
+   "substantive": 70,
+   "headline": "Odesa port strikes surge; FSB claims foiled Ural terror plot",
+   "topics": {
+    "strikes_on_ukraine": 18,
+    "frontline": 9,
+    "ukraine_strikes_on_russia": 8,
+    "west_nato": 11,
+    "russia_internal": 20,
+    "criticism": 4
+   },
+   "nets": {
+    "strikes_on_ukraine": 100,
+    "frontline": 89,
+    "ukraine_strikes_on_russia": -62,
+    "west_nato": -27,
+    "russia_internal": 40,
+    "criticism": -100
+   },
+   "subtopics": {
+    "strikes_on_ukraine/deep_strikes": 10,
+    "strikes_on_ukraine/fuel_infrastructure": 1,
+    "strikes_on_ukraine/other": 7,
+    "frontline/hulyaipole": 1,
+    "frontline/kupyansk": 3,
+    "frontline/other": 5,
+    "ukraine_strikes_on_russia/drones_on_regions": 5,
+    "ukraine_strikes_on_russia/other": 3,
+    "west_nato/military_aid": 4,
+    "west_nato/negotiations": 1,
+    "west_nato/alliance_politics": 4,
+    "west_nato/other": 2,
+    "russia_internal/ideology_society": 1,
+    "russia_internal/security_cases": 6,
+    "russia_internal/economy": 3,
+    "russia_internal/mobilisation": 2,
+    "russia_internal/other": 8,
+    "criticism/army_command": 1,
+    "criticism/government": 3
+   },
+   "flags": 2
   }
  ]
 }
