@@ -4975,6 +4975,97 @@
     "criticism/government": 3
    },
    "flags": 2
+  },
+  {
+   "trackers": {
+    "frontline": {
+     "pos": 7,
+     "neg": 0,
+     "neu": 2,
+     "net": 78,
+     "story": "Russian troops advance near Belyy Kolodets on Burlyuk direction, encircling Ukrainian positions.",
+     "story_url": "https://t.me/rybar/81916",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/96434",
+       "t": "Russian FPV drone operator destroyed two enemy quads and personnel in coordinated strike on Velikoburluk direction.",
+       "ch": "Two Majors"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 16,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Maersk halts operations in Odesa ports due to Russian strikes on portside infrastructure, disrupting Ukrainian exports.",
+     "story_url": "https://t.me/rybar/81911",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/vysokygovorit/23364",
+       "t": "Russian analyst advocates targeting Ukrainian grain terminals, silos and logistics centres to disrupt military financing.",
+       "ch": "Starshe Eddy"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 0,
+     "neg": 13,
+     "neu": 0,
+     "net": -100,
+     "story": "Ukrainian drones attack Russian regions; warehouses, residential buildings hit in Krasnodar and Stavropol; 123 drones claimed destroyed.",
+     "story_url": "https://t.me/dva_majors/96424",
+     "examples": [
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/81909",
+       "t": "Ukrainian forces struck Wildberries warehouses in Krasnodar and Nevinnomyssk; logistics halted, billions in damages mounting.",
+       "ch": "Rybar"
+      }
+     ]
+    }
+   },
+   "date": "2026-07-22",
+   "total": 147,
+   "substantive": 78,
+   "headline": "Russia touts Odesa port strangulation; Ukrainian drones hit Yalta, Krasnodar",
+   "topics": {
+    "strikes_on_ukraine": 16,
+    "frontline": 9,
+    "ukraine_strikes_on_russia": 13,
+    "west_nato": 16,
+    "russia_internal": 20,
+    "criticism": 4
+   },
+   "nets": {
+    "strikes_on_ukraine": 100,
+    "frontline": 78,
+    "ukraine_strikes_on_russia": -100,
+    "west_nato": -25,
+    "russia_internal": 20,
+    "criticism": -100
+   },
+   "subtopics": {
+    "strikes_on_ukraine/fuel_infrastructure": 4,
+    "strikes_on_ukraine/other": 12,
+    "frontline/hulyaipole": 1,
+    "frontline/kupyansk": 1,
+    "frontline/other": 7,
+    "ukraine_strikes_on_russia/drones_on_regions": 11,
+    "ukraine_strikes_on_russia/other": 2,
+    "west_nato/military_aid": 3,
+    "west_nato/negotiations": 1,
+    "west_nato/alliance_politics": 3,
+    "west_nato/other": 9,
+    "russia_internal/ideology_society": 8,
+    "russia_internal/security_cases": 6,
+    "russia_internal/economy": 5,
+    "russia_internal/other": 1,
+    "criticism/government": 4
+   },
+   "flags": 1
   }
  ]
 }
