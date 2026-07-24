@@ -5066,6 +5066,103 @@
     "criticism/government": 4
    },
    "flags": 1
+  },
+  {
+   "trackers": {
+    "frontline": {
+     "pos": 12,
+     "neg": 0,
+     "neu": 3,
+     "net": 80,
+     "story": "Smuglyanka and Rubicon units drop heavy FAB ordnance targeting Ukrainian drone operators across front.",
+     "story_url": "https://t.me/dva_majors/96500",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/96483",
+       "t": "Russian 33rd Guards motor-rifle regiment operators eliminated enemy armored vehicles in Dobropolsky sector.",
+       "ch": "Two Majors"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 12,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Ukraine exaggerates food security impact of Russian port strikes; actual wheat exports to Africa limited.",
+     "story_url": "https://t.me/sashakots/63306",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81933",
+       "t": "Ukrainian minister's claims of Odesa port blockade are temporary; previous work stoppages resumed after.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 4,
+     "neg": 15,
+     "neu": 0,
+     "net": -58,
+     "story": "Ukrainian drones attacked Crimea, Sevastopol, and Russian regions; Russia struck Odesa ports and infrastructure.",
+     "story_url": "https://t.me/dva_majors/96469",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/81938",
+       "t": "Russian strikes disrupt Ukrainian grain exports; critic argues global food security claims prioritize third-party interests.",
+       "ch": "Rybar"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/dva_majors/96485",
+       "t": "Ukraine deploys marine unmanned explosive devices in Atlantic targeting commercial shipping worldwide.",
+       "ch": "Two Majors"
+      }
+     ]
+    }
+   },
+   "date": "2026-07-23",
+   "total": 113,
+   "substantive": 64,
+   "headline": "Odesa port blockade touted; Ukrainian drones kill civilians in Voronezh, Crimea",
+   "topics": {
+    "strikes_on_ukraine": 12,
+    "frontline": 15,
+    "ukraine_strikes_on_russia": 19,
+    "west_nato": 12,
+    "russia_internal": 5,
+    "criticism": 1
+   },
+   "nets": {
+    "strikes_on_ukraine": 100,
+    "frontline": 80,
+    "ukraine_strikes_on_russia": -58,
+    "west_nato": -17,
+    "russia_internal": -20,
+    "criticism": -100
+   },
+   "subtopics": {
+    "strikes_on_ukraine/deep_strikes": 4,
+    "strikes_on_ukraine/fuel_infrastructure": 4,
+    "strikes_on_ukraine/other": 4,
+    "frontline/pokrovsk": 4,
+    "frontline/hulyaipole": 5,
+    "frontline/other": 6,
+    "ukraine_strikes_on_russia/drones_on_regions": 9,
+    "ukraine_strikes_on_russia/other": 10,
+    "west_nato/military_aid": 4,
+    "west_nato/negotiations": 5,
+    "west_nato/other": 3,
+    "russia_internal/ideology_society": 2,
+    "russia_internal/security_cases": 1,
+    "russia_internal/economy": 1,
+    "russia_internal/other": 1,
+    "criticism/government": 1
+   },
+   "flags": 2
   }
  ]
 }
