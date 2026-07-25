@@ -5163,6 +5163,105 @@
     "criticism/government": 1
    },
    "flags": 2
+  },
+  {
+   "trackers": {
+    "frontline": {
+     "pos": 11,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russian forces consolidate control of Konstantinovka, evacuate civilians, continue clearing operations in surrounding areas.",
+     "story_url": "https://t.me/rybar/81960",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/96512",
+       "t": "Russian North group liberated Zakharovka in Kharkiv region; defeated Ukrainian 159th brigade and foreign mercenaries.",
+       "ch": "Two Majors"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 13,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russian campaign against Ukrainian ports confirms hits on 21 vessels; shipping operator Maersk suspends operations.",
+     "story_url": "https://t.me/rybar/81944",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/96509",
+       "t": "Russian strikes hit Odessa, Izmail, Nikolaev ports destroying fuel storage and military infrastructure vessels.",
+       "ch": "Two Majors"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 1,
+     "neg": 8,
+     "neu": 0,
+     "net": -78,
+     "story": "Ukrainian drones attacked Wildberries warehouses across Crimea and western Russia; Russia shot down 571 drones.",
+     "story_url": "https://t.me/dva_majors/96506",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/sashakots/63314",
+       "t": "Ukraine faces demographic collapse with deaths exceeding births fourfold; birth rates plummet at frontline areas.",
+       "ch": "Kotsnews"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/81947",
+       "t": "Ukraine conducted massive drone attack on July 24, destroying over 500 drones; targeted Wildberries warehouses and regional infrastructure.",
+       "ch": "Rybar"
+      }
+     ]
+    }
+   },
+   "date": "2026-07-24",
+   "total": 127,
+   "substantive": 63,
+   "headline": "Russia claims Kyiv exhibition strike, port campaign; drones hit Wildberries",
+   "topics": {
+    "strikes_on_ukraine": 13,
+    "frontline": 11,
+    "ukraine_strikes_on_russia": 9,
+    "west_nato": 17,
+    "russia_internal": 8,
+    "criticism": 5
+   },
+   "nets": {
+    "strikes_on_ukraine": 100,
+    "frontline": 100,
+    "ukraine_strikes_on_russia": -78,
+    "west_nato": 24,
+    "russia_internal": 12,
+    "criticism": -100
+   },
+   "subtopics": {
+    "strikes_on_ukraine/deep_strikes": 12,
+    "strikes_on_ukraine/other": 1,
+    "frontline/pokrovsk": 3,
+    "frontline/hulyaipole": 1,
+    "frontline/kupyansk": 4,
+    "frontline/other": 3,
+    "ukraine_strikes_on_russia/drones_on_regions": 6,
+    "ukraine_strikes_on_russia/other": 3,
+    "west_nato/military_aid": 5,
+    "west_nato/negotiations": 3,
+    "west_nato/alliance_politics": 1,
+    "west_nato/other": 8,
+    "russia_internal/ideology_society": 1,
+    "russia_internal/security_cases": 3,
+    "russia_internal/mobilisation": 2,
+    "russia_internal/other": 2,
+    "criticism/army_command": 1,
+    "criticism/government": 4
+   },
+   "flags": 3
   }
  ]
 }
