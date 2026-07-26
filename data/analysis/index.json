@@ -5262,6 +5262,99 @@
     "criticism/government": 4
    },
    "flags": 3
+  },
+  {
+   "trackers": {
+    "frontline": {
+     "pos": 2,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "New Ukrainian commander will order suicidal offensives; Russia advances successfully, capturing settlements weekly; Ukrainian system collapsing.",
+     "story_url": "https://t.me/Sladkov_plus/15813",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/wargonzo/35756",
+       "t": "Russian forces advance in Osykove, fight in Nikolayevka, push along Seversky Donets toward Starodubovka.",
+       "ch": "WarGonzo"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 19,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Ukraine receives 250 transformers from Australia to repair energy grid damaged by Russian strikes.",
+     "story_url": "https://t.me/dva_majors/96566",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/96581",
+       "t": "Russian Ministry of Defense reports strikes on Black Sea ports and military cargo ships.",
+       "ch": "Two Majors"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 0,
+     "neg": 15,
+     "neu": 0,
+     "net": -100,
+     "story": "Over 250 Ukrainian drones attacked Russian regions; 328 drones shot down; power cuts in Crimea; Russian strikes on Kyiv drone demo and Black Sea ports.",
+     "story_url": "https://t.me/dva_majors/96542",
+     "examples": [
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/81968",
+       "t": "Russian strikes on Odesa region ineffective; oil infrastructure untouched despite week-long campaign.",
+       "ch": "Rybar"
+      }
+     ]
+    }
+   },
+   "date": "2026-07-25",
+   "total": 124,
+   "substantive": 60,
+   "headline": "Kirillovka resort strike and mass drone barrage dominate",
+   "topics": {
+    "strikes_on_ukraine": 19,
+    "frontline": 2,
+    "ukraine_strikes_on_russia": 15,
+    "west_nato": 11,
+    "russia_internal": 10,
+    "criticism": 3
+   },
+   "nets": {
+    "strikes_on_ukraine": 100,
+    "frontline": 100,
+    "ukraine_strikes_on_russia": -100,
+    "west_nato": -18,
+    "russia_internal": 60,
+    "criticism": -100
+   },
+   "subtopics": {
+    "strikes_on_ukraine/fuel_infrastructure": 4,
+    "strikes_on_ukraine/other": 15,
+    "frontline/hulyaipole": 1,
+    "frontline/other": 1,
+    "ukraine_strikes_on_russia/drones_on_regions": 8,
+    "ukraine_strikes_on_russia/other": 7,
+    "west_nato/military_aid": 4,
+    "west_nato/rearmament": 1,
+    "west_nato/negotiations": 3,
+    "west_nato/alliance_politics": 1,
+    "west_nato/other": 2,
+    "russia_internal/ideology_society": 6,
+    "russia_internal/economy": 2,
+    "russia_internal/mobilisation": 1,
+    "russia_internal/other": 1,
+    "criticism/army_command": 1,
+    "criticism/government": 1,
+    "criticism/regional": 1
+   },
+   "flags": 2
   }
  ]
 }
