@@ -5355,6 +5355,99 @@
     "criticism/regional": 1
    },
    "flags": 2
+  },
+  {
+   "trackers": {
+    "frontline": {
+     "pos": 4,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russian Center group's 76th Airborne Division captured Shevchenko; enemy suffered heavy losses.",
+     "story_url": "https://t.me/epoddubny/28373",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/sashakots/63369",
+       "t": "Russian Center group captured Shevchenko settlement in Donetsk, advancing toward Dobropolye.",
+       "ch": "Kotsnews"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 15,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russian strikes hit Ukrainian drone production facility in Kyiv and military port infrastructure in Chornomorsk.",
+     "story_url": "https://t.me/dva_majors/96585",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/96588",
+       "t": "Russian strike hits construction hypermarket Epicenter in Kryvyi Rih.",
+       "ch": "Two Majors"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 1,
+     "neg": 11,
+     "neu": 0,
+     "net": -83,
+     "story": "Ukraine targets Russian logistics hubs and civilian infrastructure, undermining public morale despite Russian military advances.",
+     "story_url": "https://t.me/dva_majors/96584",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/82000",
+       "t": "Turkish dry cargo ship Golden Leo sank off Odesa after Ukrainian attack, first vessel lost in campaign.",
+       "ch": "Rybar"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/81987",
+       "t": "Ukraine attacks Iranian cargo ship in Caspian Sea to demonstrate usefulness to US for Persian Gulf objectives.",
+       "ch": "Rybar"
+      }
+     ]
+    }
+   },
+   "date": "2026-07-26",
+   "total": 122,
+   "substantive": 45,
+   "headline": "Russia claims Shevchenko capture, mass deep strikes; Iranian ship attack roils Caspian",
+   "topics": {
+    "strikes_on_ukraine": 15,
+    "frontline": 4,
+    "ukraine_strikes_on_russia": 12,
+    "west_nato": 3,
+    "russia_internal": 9,
+    "criticism": 2
+   },
+   "nets": {
+    "strikes_on_ukraine": 100,
+    "frontline": 100,
+    "ukraine_strikes_on_russia": -83,
+    "west_nato": -33,
+    "russia_internal": 0,
+    "criticism": -100
+   },
+   "subtopics": {
+    "strikes_on_ukraine/deep_strikes": 10,
+    "strikes_on_ukraine/fuel_infrastructure": 1,
+    "strikes_on_ukraine/other": 4,
+    "frontline/other": 4,
+    "ukraine_strikes_on_russia/drones_on_regions": 5,
+    "ukraine_strikes_on_russia/other": 7,
+    "west_nato/military_aid": 2,
+    "west_nato/other": 1,
+    "russia_internal/ideology_society": 4,
+    "russia_internal/security_cases": 2,
+    "russia_internal/other": 3,
+    "criticism/government": 2
+   },
+   "flags": 1
   }
  ]
 }
