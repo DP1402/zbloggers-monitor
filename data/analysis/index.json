@@ -5448,6 +5448,99 @@
     "criticism/government": 2
    },
    "flags": 1
+  },
+  {
+   "trackers": {
+    "frontline": {
+     "pos": 10,
+     "neg": 0,
+     "neu": 1,
+     "net": 91,
+     "story": "Russian forces capture Kommunarovka settlement on Dnipropetrovsk direction after weeks of fighting.",
+     "story_url": "https://t.me/rybar/82014",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/82020",
+       "t": "Russian forces liberate Kommunarovka on Dnipropetrovsk direction as Ukrainian diversions continue in rear areas.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 9,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Russian strikes destroy Ukrainian vessels, fuel infrastructure; Ukrainian 350+ drone attacks on Russian regions reported.",
+     "story_url": "https://t.me/dva_majors/96609",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/82005",
+       "t": "Russian forces destroy Ukrainian vessels, infrastructure; Ukrainian 350+ drone attacks on Russian regions reported.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 0,
+     "neg": 17,
+     "neu": 1,
+     "net": -94,
+     "story": "Ukrainian attack on Iranian ship in Caspian Sea increases regional tensions among Caspian states.",
+     "story_url": "https://t.me/rybar/82011",
+     "examples": [
+      {
+       "s": "neg",
+       "url": "https://t.me/dva_majors/96607",
+       "t": "Ukrainian drone attack forces traffic closure on Yaroslavl-Moscow highway; regional air defense operations ongoing.",
+       "ch": "Two Majors"
+      }
+     ]
+    }
+   },
+   "date": "2026-07-27",
+   "total": 118,
+   "substantive": 69,
+   "headline": "Ukrainian drones kill five in Rostov; Iranian ship hit in Caspian",
+   "topics": {
+    "strikes_on_ukraine": 9,
+    "frontline": 11,
+    "ukraine_strikes_on_russia": 18,
+    "west_nato": 13,
+    "russia_internal": 16,
+    "criticism": 2
+   },
+   "nets": {
+    "strikes_on_ukraine": 100,
+    "frontline": 91,
+    "ukraine_strikes_on_russia": -94,
+    "west_nato": -38,
+    "russia_internal": 69,
+    "criticism": -100
+   },
+   "subtopics": {
+    "strikes_on_ukraine/fuel_infrastructure": 1,
+    "strikes_on_ukraine/other": 8,
+    "frontline/hulyaipole": 1,
+    "frontline/kupyansk": 1,
+    "frontline/other": 9,
+    "ukraine_strikes_on_russia/drones_on_regions": 14,
+    "ukraine_strikes_on_russia/other": 4,
+    "west_nato/military_aid": 5,
+    "west_nato/negotiations": 2,
+    "west_nato/alliance_politics": 3,
+    "west_nato/other": 3,
+    "russia_internal/ideology_society": 6,
+    "russia_internal/security_cases": 1,
+    "russia_internal/elite_politics": 1,
+    "russia_internal/economy": 1,
+    "russia_internal/mobilisation": 3,
+    "russia_internal/other": 4,
+    "criticism/government": 2
+   },
+   "flags": 2
   }
  ]
 }
