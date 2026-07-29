@@ -54,6 +54,10 @@
   .tag.quiet { color: var(--ink); background: #ececec; }
   .tag.multi { color: #fff; background: var(--pos); }
   .tag.single { color: var(--ink); background: #ececec; }
+  .tag.success { color: #fff; background: var(--pos); }
+  .tag.failure { color: #fff; background: var(--neg); }
+  .tag.running { color: #fff; background: var(--ochre); }
+  .tag.unknown { color: var(--ink); background: #ececec; }
 
   .flag { display: flex; gap: 12px; padding: 10px 0; border-top: 1px solid var(--gridline); font-size: 13px; }
   .flag:first-of-type { border-top: none; }
@@ -129,9 +133,18 @@
 
   .controls { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 12px; }
   .controls select { font: inherit; font-size: 13px; padding: 5px 8px; border: 1px solid var(--line); background: #fff; color: var(--ink); }
+  .controls input[type="text"] { flex: 1 1 260px; font: inherit; font-size: 13px; padding: 6px 10px; border: 1px solid var(--line); background: #fff; color: var(--ink); }
   .rangebtn { appearance: none; font: inherit; font-size: 12px; font-weight: bold; padding: 5px 12px;
     border: 1px solid var(--line); background: #fff; color: var(--ink); cursor: pointer; }
   .rangebtn.active { background: var(--navy); color: #fff; border-color: var(--navy); }
+
+  .pausebtn { appearance: none; font: inherit; font-size: 12.5px; font-weight: bold; padding: 6px 14px;
+    border: 1px solid var(--line); background: #fff; color: var(--ink); cursor: pointer; border-radius: 999px; }
+  .pausebtn.on { color: #fff; background: var(--pos); border-color: var(--pos); }
+  .pausebtn.off { color: #fff; background: var(--neg); border-color: var(--neg); }
+  .pausebtn.unknown { color: var(--grey); }
+  .tokenlink { font: inherit; font-size: 11px; color: var(--grey); background: none; border: none;
+    cursor: pointer; text-decoration: underline; padding: 0; }
 
   table.subtopics { width: 100%; border-collapse: collapse; font-size: 12.5px; }
   table.subtopics th { text-align: left; font-size: 11px; text-transform: uppercase;
@@ -163,6 +176,9 @@
   <header class="top">
     <h1>ZBloggers Monitor</h1>
     <span class="date-label" id="dateLabel">loading…</span>
+    <span style="flex:1 1 auto"></span>
+    <button id="pauseToggle" class="pausebtn unknown" type="button">…</button>
+    <button id="tokenClear" class="tokenlink" type="button">reset saved token</button>
   </header>
   <p class="subtitle">What 10 major pro-Kremlin military Telegram channels are saying — collected, filtered and translated automatically</p>
   <div id="loadnote"></div>
@@ -170,11 +186,25 @@
   <nav class="tabs">
     <button class="active" data-tab="brief">Daily brief</button>
     <button data-tab="trends">Trends &amp; mood</button>
+    <button data-tab="runs">Pipeline runs</button>
     <button data-tab="channels">Channels &amp; methodology</button>
   </nav>
 
   <!-- ============ TAB 1: DAILY BRIEF ============ -->
   <div class="tabpage active" id="tab-brief">
+    <section class="card" id="searchCard">
+      <h2>🔎 Ask the archive</h2>
+      <div class="h-sub">Search every collected post for a theme or question — e.g. "mobilisation rumours" or "criticism of army logistics". Runs a Claude search over the full archive (posts stay in the original Russian; results link back to each Telegram post); takes 30–90 seconds and costs a few cents.</div>
+      <div class="controls">
+        <input id="searchInput" type="text" placeholder="e.g. mobilisation discussion">
+        <button id="searchBtn" class="rangebtn active" type="button">Search</button>
+      </div>
+      <div id="searchStatus" style="font-size:12.5px; font-style:italic; margin-top:8px; display:none"></div>
+      <div id="searchResults" style="margin-top:12px; display:none">
+        <p id="searchSummary" style="font-size:13.5px; margin:0 0 10px"></p>
+        <div id="searchMatches"></div>
+      </div>
+    </section>
     <div class="kpis" id="kpis"></div>
     <div class="cols">
       <div>
@@ -306,7 +336,22 @@
     </section>
   </div>
 
-  <!-- ============ TAB 3: CHANNELS & METHODOLOGY ============ -->
+  <!-- ============ TAB 3: PIPELINE RUNS ============ -->
+  <div class="tabpage" id="tab-runs">
+    <div class="kpis" id="runKpis"></div>
+    <section class="card">
+      <h2>Recent runs</h2>
+      <div class="h-sub">Each row is one GitHub Actions run of the daily pipeline (collect → classify → brief). Cost is the Anthropic API spend recorded by that run.</div>
+      <div id="runsNote" style="font-size:12.5px; font-style:italic; margin-bottom:8px"></div>
+      <table class="subtopics">
+        <thead><tr><th>Date</th><th>Status</th><th>Duration</th><th style="text-align:right">Posts</th><th style="text-align:right">Cost</th><th></th></tr></thead>
+        <tbody id="runsBody"></tbody>
+      </table>
+      <div class="source">Source: GitHub Actions run history (public) + data/runs.json (Anthropic API cost, recorded by the pipeline itself)</div>
+    </section>
+  </div>
+
+  <!-- ============ TAB 4: CHANNELS & METHODOLOGY ============ -->
   <div class="tabpage" id="tab-channels">
     <section class="card">
       <h2>The 10 monitored channels</h2>
@@ -360,7 +405,8 @@
     </section>
   </div>
 
-  <footer>ZBloggers Monitor · internal analytical tool · source data: public Telegram channels</footer>
+  <footer>ZBloggers Monitor · internal analytical tool · source data: public Telegram channels ·
+    <a href="https://github.com/DP1402/zbloggers-monitor/tree/master/data/posts" target="_blank">browse the raw post archive (original Russian, monthly CSVs) ↗</a></footer>
 </div>
 
 <div id="tip"></div>
@@ -804,6 +850,267 @@ async function boot() {
   await loadDay((withBrief || days[days.length - 1]).date);
   renderIndexCharts();
 }
+
+// ---- pause / resume the daily GitHub Actions workflow ----
+const GH_REPO = "DP1402/zbloggers-monitor";
+const GH_WORKFLOW = "daily.yml";
+const GH_TOKEN_KEY = "zb_gh_token";
+
+function ghToken() { return localStorage.getItem(GH_TOKEN_KEY) || ""; }
+
+function renderPauseBtn(state) {
+  const el = document.getElementById("pauseToggle");
+  el.dataset.state = state;
+  el.classList.remove("on", "off", "unknown");
+  if (state === "active") { el.textContent = "🟢 Daily run: ON"; el.classList.add("on"); }
+  else if (state === "disabled_manually") { el.textContent = "🔴 Daily run: PAUSED"; el.classList.add("off"); }
+  else { el.textContent = "⚪ Daily run: status unknown"; el.classList.add("unknown"); }
+}
+
+async function fetchWorkflowState() {
+  const resp = await fetch(`https://api.github.com/repos/${GH_REPO}/actions/workflows/${GH_WORKFLOW}`);
+  if (!resp.ok) throw new Error(String(resp.status));
+  const j = await resp.json();
+  return j.state;
+}
+
+async function onPauseToggleClick() {
+  const el = document.getElementById("pauseToggle");
+  const wasOn = el.dataset.state === "active";
+  const verb = wasOn ? "pause" : "resume";
+  const detail = wasOn
+    ? "This stops tomorrow's collection, analysis and newsletter email until you turn it back on."
+    : "This resumes daily collection, analysis and the newsletter email starting with the next scheduled run.";
+  if (!confirm(`Are you sure you want to ${verb} the daily scraper?\n\n${detail}`)) return;
+
+  let token = ghToken();
+  if (!token) {
+    token = (prompt(
+      "Paste a GitHub token (one-time setup, saved only in this browser):\n\n" +
+      "GitHub.com → Settings → Developer settings → Fine-grained tokens → Generate new token\n" +
+      "Repository access: only zbloggers-monitor\n" +
+      "Permissions: Actions → Read and write\n\nToken:"
+    ) || "").trim();
+    if (!token) return;
+    localStorage.setItem(GH_TOKEN_KEY, token);
+  }
+
+  const prevText = el.textContent;
+  el.textContent = "…";
+  try {
+    const action = wasOn ? "disable" : "enable";
+    const resp = await fetch(`https://api.github.com/repos/${GH_REPO}/actions/workflows/${GH_WORKFLOW}/${action}`, {
+      method: "PUT",
+      headers: { "Authorization": `Bearer ${token}`, "Accept": "application/vnd.github+json" }
+    });
+    if (resp.status === 204) {
+      renderPauseBtn(await fetchWorkflowState());
+    } else if (resp.status === 401 || resp.status === 403) {
+      localStorage.removeItem(GH_TOKEN_KEY);
+      alert("GitHub rejected that token (invalid, expired, or missing the Actions read/write permission). It's been cleared — click the toggle again to enter a new one.");
+      el.textContent = prevText;
+    } else {
+      alert("GitHub API error (status " + resp.status + "). Nothing changed.");
+      el.textContent = prevText;
+    }
+  } catch (e) {
+    alert("Couldn't reach GitHub: " + e.message);
+    el.textContent = prevText;
+  }
+}
+
+async function initPauseToggle() {
+  const el = document.getElementById("pauseToggle");
+  el.addEventListener("click", onPauseToggleClick);
+  document.getElementById("tokenClear").addEventListener("click", () => {
+    if (!ghToken()) { alert("No token is currently saved in this browser."); return; }
+    if (confirm("Clear the saved GitHub token from this browser? You'll be asked to paste it again next time you use the toggle.")) {
+      localStorage.removeItem(GH_TOKEN_KEY);
+      alert("Token cleared.");
+    }
+  });
+  try { renderPauseBtn(await fetchWorkflowState()); }
+  catch (e) { renderPauseBtn("unknown"); }
+}
+initPauseToggle();
+
+// ---- pipeline runs & cost ----
+const fmtCost = c => c === null || c === undefined ? "—" : "$" + c.toFixed(4);
+const fmtDuration = s => s === null || s === undefined ? "—"
+  : s >= 60 ? Math.floor(s / 60) + "m " + Math.round(s % 60) + "s" : Math.round(s) + "s";
+const utcDay = iso => iso.slice(0, 10);
+
+async function fetchGhRuns() {
+  try {
+    const resp = await fetch(`https://api.github.com/repos/${GH_REPO}/actions/workflows/${GH_WORKFLOW}/runs?per_page=30`);
+    if (!resp.ok) return null;
+    return (await resp.json()).workflow_runs || [];
+  } catch (e) { return null; }
+}
+
+async function fetchCostRuns() {
+  try {
+    const resp = await fetch(`${DATA_BASE}/../runs.json`);
+    if (!resp.ok) return [];
+    return await resp.json();
+  } catch (e) { return []; }
+}
+
+function joinRuns(ghRuns, costRuns) {
+  const pool = costRuns.map((r, i) => ({ ...r, _i: i }));
+  return ghRuns.map(gh => {
+    const day = utcDay(gh.created_at);
+    let bestIdx = -1, bestDiff = Infinity;
+    pool.forEach((c, i) => {
+      if (!c.run_at || utcDay(c.run_at) !== day) return;
+      const diff = Math.abs(new Date(c.run_at) - new Date(gh.created_at));
+      if (diff < bestDiff) { bestDiff = diff; bestIdx = i; }
+    });
+    const cost = bestIdx >= 0 ? pool.splice(bestIdx, 1)[0] : null;
+    return { gh, cost };
+  });
+}
+
+function statusTag(gh) {
+  if (gh.status !== "completed") return `<span class="tag running">${esc(gh.status).toUpperCase()}</span>`;
+  if (gh.conclusion === "success") return `<span class="tag success">SUCCESS</span>`;
+  if (gh.conclusion === "failure") return `<span class="tag failure">FAILED</span>`;
+  return `<span class="tag unknown">${esc(gh.conclusion || "unknown").toUpperCase()}</span>`;
+}
+
+function renderRunKpis(costRuns, ghRuns) {
+  const totalCost = costRuns.reduce((a, r) => a + (r.cost_usd || 0), 0);
+  const ym = new Date().toISOString().slice(0, 7);
+  const monthCost = costRuns.filter(r => (r.date || "").startsWith(ym)).reduce((a, r) => a + (r.cost_usd || 0), 0);
+  const avgCost = costRuns.length ? totalCost / costRuns.length : null;
+  const completed = ghRuns.filter(r => r.status === "completed");
+  const successRate = completed.length ? Math.round(completed.filter(r => r.conclusion === "success").length / completed.length * 100) : null;
+  document.getElementById("runKpis").innerHTML = `
+    <div class="tile"><div class="label">Total API cost</div><div class="value">${fmtCost(totalCost)}</div><div class="note">${costRuns.length} runs recorded</div></div>
+    <div class="tile"><div class="label">Cost this month</div><div class="value">${fmtCost(monthCost)}</div><div class="note">${ym} (UTC)</div></div>
+    <div class="tile"><div class="label">Avg cost / run</div><div class="value">${fmtCost(avgCost)}</div><div class="note">Claude Haiku + Opus</div></div>
+    <div class="tile"><div class="label">Success rate</div><div class="value">${successRate === null ? "—" : successRate + "%"}</div><div class="note">last ${completed.length} GitHub Actions runs</div></div>`;
+}
+
+function renderRunsTable(joined) {
+  document.getElementById("runsBody").innerHTML = joined.map(({ gh, cost }) => `
+    <tr>
+      <td>${fmtDate(utcDay(gh.created_at))}</td>
+      <td>${statusTag(gh)}</td>
+      <td class="num">${fmtDuration(cost ? cost.duration_s : (new Date(gh.updated_at) - new Date(gh.created_at)) / 1000)}</td>
+      <td class="num">${cost ? cost.posts_collected : "—"}</td>
+      <td class="num">${cost ? fmtCost(cost.cost_usd) : "—"}</td>
+      <td><a href="${esc(gh.html_url)}" target="_blank">logs ↗</a></td>
+    </tr>`).join("");
+}
+
+async function initRunsTab() {
+  const [ghRuns, costRuns] = await Promise.all([fetchGhRuns(), fetchCostRuns()]);
+  const note = document.getElementById("runsNote");
+  if (ghRuns === null) {
+    note.textContent = "Couldn't load GitHub Actions run history.";
+    document.getElementById("runKpis").innerHTML = "";
+    return;
+  }
+  note.textContent = "";
+  renderRunKpis(costRuns, ghRuns);
+  renderRunsTable(joinRuns(ghRuns, costRuns));
+}
+initRunsTab();
+
+// ---- ask the archive (theme search) ----
+const GH_BRANCH = "master";
+const GH_SEARCH_WORKFLOW = "search.yml";
+
+function genRequestId() {
+  return "s" + Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
+}
+
+async function dispatchSearch(token, query, requestId) {
+  return fetch(`https://api.github.com/repos/${GH_REPO}/actions/workflows/${GH_SEARCH_WORKFLOW}/dispatches`, {
+    method: "POST",
+    headers: { "Authorization": `Bearer ${token}`, "Accept": "application/vnd.github+json" },
+    body: JSON.stringify({ ref: GH_BRANCH, inputs: { query, request_id: requestId } }),
+  });
+}
+
+async function pollSearchResult(requestId, intervalMs = 4000, timeoutMs = 150000) {
+  const url = `https://raw.githubusercontent.com/${GH_REPO}/${GH_BRANCH}/data/search/${requestId}.json`;
+  const start = Date.now();
+  while (Date.now() - start < timeoutMs) {
+    try {
+      const resp = await fetch(`${url}?t=${Date.now()}`, { cache: "no-store" });
+      if (resp.ok) return await resp.json();
+    } catch (e) { /* network hiccup — keep polling */ }
+    await new Promise(r => setTimeout(r, intervalMs));
+  }
+  return null;
+}
+
+function renderSearchResults(data) {
+  document.getElementById("searchSummary").textContent =
+    data.summary || (data.error ? `Search failed: ${data.error}` : "No summary returned.");
+  const matches = data.matches || [];
+  document.getElementById("searchMatches").innerHTML = matches.length ? matches.map(m => `
+    <div class="flag">
+      <span class="ftag tag quiet">${esc(m.date || "")}</span>
+      <p><strong>${esc(m.channel || "")}</strong> — ${esc(m.summary_en || "")}
+        ${m.link ? `<a href="${esc(m.link)}" target="_blank">source ↗</a>` : ""}</p>
+    </div>`).join("") : `<p style="font-size:13px">No matching posts found.</p>`;
+  document.getElementById("searchResults").style.display = "block";
+}
+
+async function onSearchClick() {
+  const input = document.getElementById("searchInput");
+  const query = input.value.trim();
+  if (!query) return;
+  const btn = document.getElementById("searchBtn");
+  const status = document.getElementById("searchStatus");
+  document.getElementById("searchResults").style.display = "none";
+  status.style.display = "block";
+
+  let token = ghToken();
+  if (!token) {
+    token = (prompt(
+      "Paste a GitHub token to run this search (same one used for the pause/resume toggle — one-time setup, saved only in this browser):\n\n" +
+      "GitHub.com → Settings → Developer settings → Fine-grained tokens → Generate new token\n" +
+      "Repository access: only zbloggers-monitor\nPermissions: Actions → Read and write\n\nToken:"
+    ) || "").trim();
+    if (!token) { status.style.display = "none"; return; }
+    localStorage.setItem(GH_TOKEN_KEY, token);
+  }
+
+  const requestId = genRequestId();
+  btn.disabled = true;
+  status.textContent = "Starting search…";
+  try {
+    const resp = await dispatchSearch(token, query, requestId);
+    if (resp.status === 401 || resp.status === 403) {
+      localStorage.removeItem(GH_TOKEN_KEY);
+      status.textContent = "GitHub rejected that token. It's been cleared — click Search again to re-enter it.";
+      return;
+    }
+    if (resp.status !== 204) {
+      status.textContent = `Couldn't start the search (GitHub API status ${resp.status}).`;
+      return;
+    }
+    status.textContent = "Searching the archive — this usually takes 30–90 seconds…";
+    const data = await pollSearchResult(requestId);
+    if (!data) {
+      status.textContent = "The search is taking longer than expected. Check back in a minute, or view the run directly under the repo's Actions tab.";
+      return;
+    }
+    status.style.display = "none";
+    renderSearchResults(data);
+  } catch (e) {
+    status.textContent = "Something went wrong: " + e.message;
+  } finally {
+    btn.disabled = false;
+  }
+}
+
+document.getElementById("searchBtn").addEventListener("click", onSearchClick);
+document.getElementById("searchInput").addEventListener("keydown", e => { if (e.key === "Enter") onSearchClick(); });
 
 // ---- shared tooltip ----
 const tip = document.getElementById("tip");

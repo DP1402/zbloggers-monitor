@@ -21,6 +21,7 @@ import csv
 import datetime
 import json
 import sys
+import time
 from pathlib import Path
 
 import anthropic
@@ -32,14 +33,73 @@ ROOT = Path(__file__).resolve().parent.parent
 POSTS_DIR = ROOT / "data" / "posts"
 DAYS_DIR = ROOT / "data" / "analysis" / "days"
 INDEX_PATH = ROOT / "data" / "analysis" / "index.json"
+RUNS_PATH = ROOT / "data" / "runs.json"
 
 CLASSIFY_MODEL = "claude-haiku-4-5"
 BRIEF_MODEL = "claude-opus-4-8"
 BATCH_SIZE = 25
 MIN_TEXT_LEN = 40  # posts shorter than this are counted but not classified
 
+# $ per 1M tokens (Anthropic pricing, checked 2026-07-29)
+PRICING = {
+    "claude-haiku-4-5": {"input": 1.00, "output": 5.00, "cache_write": 1.25, "cache_read": 0.10},
+    "claude-opus-4-8": {"input": 5.00, "output": 25.00, "cache_write": 6.25, "cache_read": 0.50},
+}
+
 load_dotenv(ROOT / ".env")
 client = anthropic.Anthropic()
+
+_usage_log: list[dict] = []
+
+
+def record_usage(model: str, usage) -> None:
+    _usage_log.append({
+        "model": model,
+        "input_tokens": usage.input_tokens,
+        "output_tokens": usage.output_tokens,
+        "cache_creation_input_tokens": getattr(usage, "cache_creation_input_tokens", 0) or 0,
+        "cache_read_input_tokens": getattr(usage, "cache_read_input_tokens", 0) or 0,
+    })
+
+
+def usage_summary() -> dict:
+    """Per-model token totals plus total USD cost for everything recorded so far."""
+    by_model: dict = {}
+    total_cost = 0.0
+    for u in _usage_log:
+        m = by_model.setdefault(u["model"], {
+            "input_tokens": 0, "output_tokens": 0,
+            "cache_creation_input_tokens": 0, "cache_read_input_tokens": 0,
+        })
+        for k in ("input_tokens", "output_tokens", "cache_creation_input_tokens", "cache_read_input_tokens"):
+            m[k] += u[k]
+        rate = PRICING.get(u["model"])
+        if rate:
+            total_cost += (
+                u["input_tokens"] * rate["input"]
+                + u["output_tokens"] * rate["output"]
+                + u["cache_creation_input_tokens"] * rate["cache_write"]
+                + u["cache_read_input_tokens"] * rate["cache_read"]
+            ) / 1_000_000
+    return {"by_model": by_model, "cost_usd": round(total_cost, 4)}
+
+
+def save_run(day: str, status: str, error: str | None,
+             started_at: str, duration_s: float, stats: dict) -> None:
+    RUNS_PATH.parent.mkdir(parents=True, exist_ok=True)
+    runs = json.loads(RUNS_PATH.read_text(encoding="utf-8")) if RUNS_PATH.exists() else []
+    summary = usage_summary()
+    runs.append({
+        "date": day,
+        "run_at": started_at,
+        "duration_s": round(duration_s, 1),
+        "status": status,
+        "error": error,
+        "usage": summary["by_model"],
+        "cost_usd": summary["cost_usd"],
+        **stats,
+    })
+    RUNS_PATH.write_text(json.dumps(runs, ensure_ascii=False, indent=1), encoding="utf-8")
 
 
 # ---------------------------------------------------------------- data loading
@@ -163,6 +223,7 @@ def classify_posts(posts: list[dict]) -> list[dict]:
             messages=[{"role": "user", "content": json.dumps(payload, ensure_ascii=False)}],
             output_config={"format": {"type": "json_schema", "schema": CLASSIFY_SCHEMA}},
         )
+        record_usage(CLASSIFY_MODEL, response.usage)
         text = next(b.text for b in response.content if b.type == "text")
         by_n = {r["n"]: r for r in json.loads(text)["posts"]}
         for i, it in enumerate(batch):
@@ -385,6 +446,7 @@ def write_brief(day: str, agg: dict, flags: list[dict], classified: list[dict]) 
         output_config={"format": {"type": "json_schema", "schema": BRIEF_SCHEMA}},
     ) as stream:
         response = stream.get_final_message()
+    record_usage(BRIEF_MODEL, response.usage)
     text = next(b.text for b in response.content if b.type == "text")
     return json.loads(text)
 
@@ -497,7 +559,7 @@ def analyze_day(day: str, with_brief: bool = True, brief_only: bool = False):
         posts = load_posts_for_day(day)
         if not posts:
             print("  no posts for this day, skipping")
-            return
+            return {"posts_collected": 0, "substantive_posts": 0}
         print(f"  {len(posts)} posts collected")
         classified = classify_posts(posts)
         agg = aggregate(classified)
@@ -513,6 +575,7 @@ def analyze_day(day: str, with_brief: bool = True, brief_only: bool = False):
     rebuild_index()
     rebuild_month_csv(day[:7])
     print("  saved")
+    return {"posts_collected": agg["total_posts"], "substantive_posts": agg["substantive_posts"]}
 
 
 def main():
@@ -524,16 +587,32 @@ def main():
     args = parser.parse_args()
 
     today = datetime.datetime.now(datetime.timezone.utc).date()
-    if args.backfill:
-        for i in range(args.backfill, 0, -1):
-            day = str(today - datetime.timedelta(days=i))
-            if load_day_json(day):
-                print(f"=== {day} === already analyzed, skipping")
-                continue
-            analyze_day(day, with_brief=False)
-    else:
-        day = args.date or str(today - datetime.timedelta(days=1))
-        analyze_day(day, with_brief=not args.no_brief, brief_only=args.brief_only)
+    started = time.monotonic()
+    started_at = datetime.datetime.now(datetime.timezone.utc).isoformat()
+    run_label = f"backfill-{args.backfill}d" if args.backfill else (args.date or str(today - datetime.timedelta(days=1)))
+    stats = {"posts_collected": 0, "substantive_posts": 0}
+    status, error = "ok", None
+    try:
+        if args.backfill:
+            for i in range(args.backfill, 0, -1):
+                day = str(today - datetime.timedelta(days=i))
+                if load_day_json(day):
+                    print(f"=== {day} === already analyzed, skipping")
+                    continue
+                day_stats = analyze_day(day, with_brief=False)
+                if day_stats:
+                    stats["posts_collected"] += day_stats["posts_collected"]
+                    stats["substantive_posts"] += day_stats["substantive_posts"]
+        else:
+            day = args.date or str(today - datetime.timedelta(days=1))
+            day_stats = analyze_day(day, with_brief=not args.no_brief, brief_only=args.brief_only)
+            if day_stats:
+                stats = day_stats
+    except BaseException as e:
+        status, error = "error", str(e)
+        raise
+    finally:
+        save_run(run_label, status, error, started_at, time.monotonic() - started, stats)
 
 
 if __name__ == "__main__":
