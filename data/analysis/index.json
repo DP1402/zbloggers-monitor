@@ -5541,6 +5541,104 @@
     "criticism/government": 2
    },
    "flags": 2
+  },
+  {
+   "trackers": {
+    "frontline": {
+     "pos": 12,
+     "neg": 0,
+     "neu": 5,
+     "net": 71,
+     "story": "Ukrainian counterattacks and raids on Dnipropetrovsk direction using small groups and drones against Russian positions.",
+     "story_url": "https://t.me/rybar/82043",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/82042",
+       "t": "Russian forces advance in Konstantinovka, clearing ruins and gaining ground in multiple directions.",
+       "ch": "Rybar"
+      }
+     ]
+    },
+    "strikes_on_ukraine": {
+     "pos": 8,
+     "neg": 0,
+     "neu": 0,
+     "net": 100,
+     "story": "Geran-4 drones strike two cargo ships in Mykolaiv port, continuing maritime infrastructure campaign.",
+     "story_url": "https://t.me/dva_majors/96663",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/dva_majors/96646",
+       "t": "Russia strikes Ukrainian ports and military supply ships in Black Sea, hits cargo vessel in Mykolaiv.",
+       "ch": "Two Majors"
+      }
+     ]
+    },
+    "ukraine_strikes_on_russia": {
+     "pos": 11,
+     "neg": 4,
+     "neu": 1,
+     "net": 44,
+     "story": "Ukraine launches 390+ drones at Moscow region; 81 shot down near capital, some hit civilian targets.",
+     "story_url": "https://t.me/dva_majors/96641",
+     "examples": [
+      {
+       "s": "pos",
+       "url": "https://t.me/rybar/82029",
+       "t": "Over 81 Ukrainian drones intercepted near Moscow; Russia strikes Kryvyi Rih logistics and Kyiv power plant.",
+       "ch": "Rybar"
+      },
+      {
+       "s": "neg",
+       "url": "https://t.me/rybar/82039",
+       "t": "Ukrainian drones attacked Russia three thousand times in one week, expanding geographic range and increasing speed and stability.",
+       "ch": "Rybar"
+      }
+     ]
+    }
+   },
+   "date": "2026-07-28",
+   "total": 169,
+   "substantive": 67,
+   "headline": "Mass drone strike on Moscow; Russia squeezes Ukrainian ports",
+   "topics": {
+    "strikes_on_ukraine": 8,
+    "frontline": 17,
+    "ukraine_strikes_on_russia": 16,
+    "west_nato": 10,
+    "russia_internal": 10,
+    "criticism": 6
+   },
+   "nets": {
+    "strikes_on_ukraine": 100,
+    "frontline": 71,
+    "ukraine_strikes_on_russia": 44,
+    "west_nato": -30,
+    "russia_internal": 30,
+    "criticism": -100
+   },
+   "subtopics": {
+    "strikes_on_ukraine/fuel_infrastructure": 3,
+    "strikes_on_ukraine/other": 5,
+    "frontline/hulyaipole": 3,
+    "frontline/kupyansk": 1,
+    "frontline/other": 13,
+    "ukraine_strikes_on_russia/drones_on_regions": 8,
+    "ukraine_strikes_on_russia/other": 8,
+    "west_nato/military_aid": 5,
+    "west_nato/rearmament": 1,
+    "west_nato/negotiations": 1,
+    "west_nato/other": 3,
+    "russia_internal/ideology_society": 7,
+    "russia_internal/security_cases": 1,
+    "russia_internal/economy": 2,
+    "criticism/army_command": 1,
+    "criticism/government": 4,
+    "criticism/regional": 1
+   },
+   "flags": 2
   }
  ]
 }
